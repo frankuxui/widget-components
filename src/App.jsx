@@ -386,6 +386,54 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4'>
+          <div className='flex justify-between items-center mb-4'>
+            <div className='flex-auto'>
+              <button type='button' className='py-1 px-4 font-bold block text-lg hover:bg-slate-100 rounded-md'>Saturday 02</button>
+            </div>
+            <div className='justify-center items-center'>
+              <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+                <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
+                </svg>
+              </button>
+              <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+                <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className='flex items-center'>
+            <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+              <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
+              </svg>
+            </button>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>2020</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 rounded-md bg-[#11C0A1] text-white p-2'>
+              <span className='text-sm font-bold block'>2021</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>2022</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>2023</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>2024</span>
+            </div>
+            <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+              <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
+              </svg>
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   )
