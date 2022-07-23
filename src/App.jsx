@@ -316,6 +316,23 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
+        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden border-2 border-black'>
+          <div className='absolute bg-pink-100 top-0 bottom-0 left-0 w-4/6' />
+          <div className='flex items-center space-x-4 relative'>
+            <img class='flex-none w-28 h-20 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+            <div className='flex-auto space-y-1'>
+              <h5 className='text-black text-xl font-bold'>Warning</h5>
+              <h5 className='no-underline block'>Rhemi, Lynn, Lockamy</h5>
+            </div>
+          </div>
+          <div className='flex flex-col items-center relative'>
+            <svg viewBox='0 0 24 24' height='36' width='36'>
+              <path fill='#e600a8' d='M15,16H13V8H15M11,16H9V8H11M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />
+            </svg>
+          </div>
+        </div>
+
       </div>
     </div>
   )
