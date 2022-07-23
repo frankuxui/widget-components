@@ -2,7 +2,7 @@ import './App.css'
 
 function App () {
   return (
-    <div className='App pt-16'>
+    <div className='App pt-16 pb-16'>
 
       {/** container widgets */}
       <div className='box-border mx-4 max-w-full sm:columns-2 md:columns-2 lg:columns-4 xl:columns-5 gap-4'>
@@ -330,6 +330,59 @@ function App () {
             <svg viewBox='0 0 24 24' height='36' width='36'>
               <path fill='#e600a8' d='M15,16H13V8H15M11,16H9V8H11M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />
             </svg>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4'>
+          <div className='flex justify-between items-center mb-4'>
+            <div className='flex-auto'>
+              <button type='button' className='py-1 px-4 font-bold block text-lg hover:bg-slate-100 rounded-md'>July 2022</button>
+            </div>
+            <div className='justify-center items-center'>
+              <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+                <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
+                </svg>
+              </button>
+              <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+                <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className='flex items-center'>
+            <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+              <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
+              </svg>
+            </button>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>Mon</span>
+              <span className='text-xs font-normal'>1</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 rounded-md bg-[#11C0A1] text-white p-2'>
+              <span className='text-sm font-bold block'>Tue</span>
+              <span className='text-xs font-normal'>2</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>Wed</span>
+              <span className='text-xs font-normal'>3</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>Thu</span>
+              <span className='text-xs font-normal'>4</span>
+            </div>
+            <div className='flex-auto text-center space-y-1 p-2'>
+              <span className='text-sm font-bold block'>Fri</span>
+              <span className='text-xs font-normal'>5</span>
+            </div>
+            <button className='items-center justify-center hover:bg-slate-100 rounded-md'>
+              <svg width='34' height='34' className='text-slate-800' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
+              </svg>
+            </button>
           </div>
         </div>
 
