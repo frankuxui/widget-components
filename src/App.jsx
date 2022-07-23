@@ -165,6 +165,15 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-[#00f5f9] text-black rounded-xl overflow-hidden pr-4 mb-4'>
+          <div className='flex flex-1 flex-col p-6'>
+            <div className='font-bold block text-3xl'> New </div>
+            <div className='font-bold block text-3xl'> Releases </div>
+          </div>
+          <img class='flex-none w-32 h-32 object-cover rotate-12 rounded-full -mb-8 -mr-10' src='https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
+        </div>
+
+        {/** widget */}
         <a href='#' className='break-inside flex items-center justify-center space-x-4 bg-slate-100 rounded-xl overflow-hidden transition-all p-8 mb-4'>
           <svg className='w-8 h-8 text-slate-800' viewBox='0 0 24 24'>
             <path fill='currentColor' d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' />
