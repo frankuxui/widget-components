@@ -287,6 +287,25 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
+          <img class='flex-none w-36 h-36 object-cover' src='https://images.pexels.com/photos/343701/pexels-photo-343701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+          <div className='flex-auto p-5 flex justify-between items-start'>
+            <div className='flex flex-col'>
+              <span className='font-bold text-2xl mb-3'>
+                Pirates of the
+                <br />
+                caribbean
+              </span>
+              <small className='text-md text-gray-600'>2022 · Action · Runtime · 2h 5m</small>
+            </div>
+            <div className='flex justify-center items-center'>
+              <svg viewBox='0 0 24 24' className='w-6 h-6 mr-2'>
+                <path fill='#ff00ea' d='M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z' />
+              </svg>
+              <span className='font-bold text-lg'>4,95</span>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
