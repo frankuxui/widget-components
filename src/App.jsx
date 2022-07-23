@@ -4,8 +4,10 @@ function App () {
   return (
     <div className='App pt-16'>
 
+      {/** container widgets */}
       <div className='box-border mx-4 max-w-full sm:columns-2 md:columns-2 lg:columns-4 xl:columns-5 gap-4'>
 
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
@@ -22,6 +24,7 @@ function App () {
           </a>
         </div>
 
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
@@ -30,6 +33,7 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
         <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center justify-between mb-3'>
             <div className='flex flex-col items-start justify-center'>
@@ -61,6 +65,7 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
         <div className='break-inside bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4 md:space-x-3'>
             <div className='flex-none'>
@@ -81,6 +86,7 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
         <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-start space-x-4'>
             <img class='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
@@ -91,6 +97,7 @@ function App () {
           </div>
         </a>
 
+        {/** widget */}
         <a href='#' className='break-inside flex bg-gradient-to-r from-[#ec00d8] to-[#A649EE] rounded-xl p-4 mb-4 text-white'>
           <div className='flex items-start space-x-4'>
             <img class='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/53.jpg' alt='avatar' />
@@ -101,6 +108,7 @@ function App () {
           </div>
         </a>
 
+        {/** widget */}
         <div className='break-inside flex items-start justify-between bg-yellow-50 rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
@@ -116,6 +124,7 @@ function App () {
           </button>
         </div>
 
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/52.jpg' alt='avatar' />
           <div className='flex-auto'>
@@ -128,6 +137,7 @@ function App () {
           </button>
         </div>
 
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-20 h-20' src='https://randomuser.me/api/portraits/men/51.jpg' alt='avatar' />
           <div className='flex-auto'>
@@ -136,6 +146,7 @@ function App () {
           <button className='inline-flex justify-center items-center rounded-md py-2 px-4 font-medium tracking-wide text-sm transition-all bg-violet-500 text-white hover:bg-violet-600 active:bg-violet-700'>Button</button>
         </div>
 
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img className='w-10 h-10' src='https://www.svgrepo.com/show/402760/sun-behind-cloud.svg' />
@@ -153,6 +164,7 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
         <a href='#' className='break-inside flex items-center justify-center space-x-4 bg-slate-100 rounded-xl overflow-hidden transition-all p-8 mb-4'>
           <svg className='w-8 h-8 text-slate-800' viewBox='0 0 24 24'>
             <path fill='currentColor' d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' />
@@ -160,6 +172,7 @@ function App () {
           <span className='text-slate-800 font-semibold'>New project</span>
         </a>
 
+        {/** widget */}
         <a href='#' className='break-inside overflow-hidden flex bg-gradient-to-r from-[#EC008C] to-[#FC6767] rounded-xl mb-4'>
           <div className='flex-1 items-center relative'>
             <div className='absolute -right-3 -top-1'>
@@ -172,6 +185,7 @@ function App () {
           </div>
         </a>
 
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
@@ -185,6 +199,7 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
         <div className='break-inside bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center'>
             <div className='flex-auto text-center space-y-1'>
@@ -210,6 +225,7 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
         <a href='#' className='break-inside flex flex-row items-center justify-between bg-gradient-to-r from-[#FF512F] to-[#DD2476] rounded-xl p-4 mb-4'>
           <div className='mr-auto'>
             <h3 className='font-bold text-xl text-white'>Seatle</h3>
@@ -219,6 +235,7 @@ function App () {
           <svg className='w-10 h-10 ml-auto' viewBox='0 0 36 36' preserveAspectRatio='xMidYMid meet'><path className='fill-[#FFE600]' d='M14 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm16 12s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 14s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm3.872-7.957s1.414 1.414 0 2.828s-2.828 0-2.828 0L3.629 7.458s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm19.085 2.828s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414z' /><circle className='fill-[#FFE600]' cx='16' cy='16' r='9' /><path className='fill-white stroke' d='M28 20c-.825 0-1.62.125-2.369.357A6.498 6.498 0 0 0 19.5 16c-3.044 0-5.592 2.096-6.299 4.921A4.459 4.459 0 0 0 10.5 20A4.5 4.5 0 0 0 6 24.5c0 .604.123 1.178.339 1.704A4.98 4.98 0 0 0 5 26c-2.762 0-5 2.238-5 5s2.238 5 5 5h23a8 8 0 1 0 0-16z' /></svg>
         </a>
 
+        {/** widget */}
         <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4'>
           <div className='flex justify-between items-start mb-4'>
             <div className='flex-auto'>
@@ -259,6 +276,17 @@ function App () {
             </div>
           </div>
         </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-[#ff7300] text-white rounded-xl overflow-hidden pr-4 mb-4'>
+          <div className='flex flex-1 flex-col p-6'>
+            <div className='font-bold block text-2xl'> Creadores </div>
+            <div className='font-bold block text-2xl'> de Tendencias </div>
+          </div>
+          <img class='flex-none w-26 h-26 object-cover rotate-12 rounded-lg -mb-10 -mr-6' src='https://randomuser.me/api/portraits/women/58.jpg' alt='avatar' />
+        </div>
+
+        {/** widget */}
 
       </div>
     </div>
