@@ -2,10 +2,10 @@ import './App.css'
 
 function App () {
   return (
-    <div className='App pt-16 pb-16 flex justify-center flex-col items-center'>
+    <div className='App pt-16 pb-16 mx-5 '>
 
       {/** container widgets */}
-      <div className='box-border max-w-7xl mx-4 sm:columns-1 md:columns-2 lg:columns-3 xl:columns-3'>
+      <div className='box-border m-auto max-w-7xl columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3xs'>
 
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
@@ -92,7 +92,7 @@ function App () {
             <img class='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='no-underline font-bold'>Jenny Wilson</h5>
-              <p>lorem ipsum dolor sitIn nisi quis nostr minima.</p>
+              <p>lorem ipsum dolor sitIn nisi isnost...</p>
             </div>
           </div>
         </a>

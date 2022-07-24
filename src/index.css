@@ -10,7 +10,6 @@ html, body{
 }
 body {
   display: flex;
-  align-items: center;
   background-color: #E2E9EE;
   justify-content: space-between;
   flex-direction: column;
