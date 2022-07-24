@@ -3,12 +3,18 @@
 html, body{
   font-family: 'Roboto', sans-serif;
 }
-body{
-  background-color: #E2E9EE;
-}
+
 .break-inside {
   -moz-column-break-inside: avoid;
   break-inside: avoid;
+}
+body {
+  display: flex;
+  align-items: center;
+  background-color: #E2E9EE;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 100vh;
 }
 @tailwind base;
 @tailwind components;
