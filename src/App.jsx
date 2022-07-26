@@ -256,6 +256,41 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden border-2 border-black'>
+          <div className='absolute bg-pink-100 top-0 bottom-0 left-0 w-4/6' />
+          <div className='flex items-center space-x-4 relative'>
+            <img class='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+            <div className='flex-auto'>
+              <h5 className='text-black text-lg font-bold'>Warning</h5>
+              <h5 className='no-underline block text-sm'>Rhemi, Lynn, Lockamy</h5>
+            </div>
+          </div>
+          <div className='flex flex-col items-center relative'>
+            <button>
+              <svg viewBox='0 0 24 24' height='36' width='36'>
+                <path fill='#e600a8' d='M15,16H13V8H15M11,16H9V8H11M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/** widget */}
+        <a href='#' className='break-inside flex rounded-2xl p-4 mb-4 bg-cyan-100'>
+          <div className='flex items-start space-x-4'>
+            <div className='rounded-full p-2 bg-cyan-500 flex items-center justify-center'>
+              <svg width='24' height='24' viewBox='0 0 20 20' fill='currentColor'>
+                <path d='M15.5343 3.45429L13.5043 5.48571C12.5027 4.70607 11.2692 4.28368 10 4.28571C8.73076 4.28368 7.49728 4.70607 6.49571 5.48571L4.46571 3.45429C6.01154 2.14353 7.97327 1.42548 10 1.42857C12.11 1.42857 14.0429 2.19143 15.5343 3.45429ZM16.5457 4.46571C17.8565 6.01154 18.5745 7.97327 18.5714 10C18.5714 12.11 17.8086 14.0429 16.5457 15.5343L14.5143 13.5043C15.2657 12.5357 15.7143 11.32 15.7143 10C15.7143 8.68 15.2657 7.46428 14.5143 6.49571L16.5457 4.46571ZM15.5343 16.5457C13.9885 17.8565 12.0267 18.5745 10 18.5714C7.89 18.5714 5.95714 17.8086 4.46571 16.5457L6.49571 14.5143C7.49728 15.2939 8.73076 15.7163 10 15.7143C11.32 15.7143 12.5357 15.2657 13.5043 14.5143L15.5343 16.5457ZM3.45429 15.5343C2.14353 13.9885 1.42548 12.0267 1.42857 10C1.42857 7.89 2.19143 5.95714 3.45429 4.46571L5.48571 6.49571C4.70607 7.49728 4.28368 8.73076 4.28571 10C4.28571 11.32 4.73429 12.5357 5.48571 13.5043L3.45429 15.5343ZM12.7686 6.72857C12.9497 6.88216 13.1178 7.05034 13.2714 7.23143C13.9043 7.97857 14.2857 8.94571 14.2857 10C14.2869 10.623 14.1517 11.2386 13.8896 11.8038C13.6275 12.3689 13.2449 12.8699 12.7686 13.2714C11.9954 13.9275 11.014 14.2871 10 14.2857C9.37703 14.2869 8.76136 14.1517 8.19621 13.8896C7.63106 13.6275 7.13012 13.2449 6.72857 12.7686C6.09571 12.0214 5.71429 11.0543 5.71429 10C5.71313 9.37703 5.84834 8.76136 6.11043 8.19621C6.37253 7.63106 6.75514 7.13012 7.23143 6.72857C7.97857 6.09571 8.94571 5.71428 10 5.71428C11.0557 5.71428 12.0214 6.09571 12.7686 6.72857ZM10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34783 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34783 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0Z' fill='white' />
+              </svg>
+
+            </div>
+            <div className='flex-auto'>
+              <h5 className='no-underline font-bold'>Quick help</h5>
+              <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
+            </div>
+          </div>
+        </a>
+
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
@@ -427,25 +462,6 @@ function App () {
               </svg>
               <span className='font-bold'>4.95</span>
             </div>
-          </div>
-        </div>
-
-        {/** widget */}
-        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden border-2 border-black'>
-          <div className='absolute bg-pink-100 top-0 bottom-0 left-0 w-4/6' />
-          <div className='flex items-center space-x-4 relative'>
-            <img class='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
-            <div className='flex-auto'>
-              <h5 className='text-black text-lg font-bold'>Warning</h5>
-              <h5 className='no-underline block text-sm'>Rhemi, Lynn, Lockamy</h5>
-            </div>
-          </div>
-          <div className='flex flex-col items-center relative'>
-            <button>
-              <svg viewBox='0 0 24 24' height='36' width='36'>
-                <path fill='#e600a8' d='M15,16H13V8H15M11,16H9V8H11M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />
-              </svg>
-            </button>
           </div>
         </div>
 
