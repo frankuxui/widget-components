@@ -320,7 +320,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside mb-4 bg-blue-100 relative'>
+        <div className='break-inside mb-4 relative'>
           <input type='text' className='rounded-full pl-12 pr-9 py-3 bg-white w-full' placeholder='Search' />
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -330,7 +330,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside mb-4 bg-blue-100 relative'>
+        <div className='break-inside mb-4 relative'>
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
@@ -346,7 +346,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside mb-4 bg-blue-100 relative'>
+        <div className='break-inside mb-4 relative'>
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
@@ -361,7 +361,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside mb-4 bg-blue-100 relative'>
+        <div className='break-inside mb-4 relative'>
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
@@ -377,13 +377,28 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside mb-4 bg-blue-100 relative'>
+        <div className='break-inside mb-4 relative'>
           <input type='text' className='rounded-full pl-5 pr-16 py-3 bg-white w-full' placeholder='Phone number' />
           <button className='absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-green-200 rounded-xl'>
             <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M10.5948 4.89827L10.3934 4.70676C9.8948 4.18966 9.98111 3.95027 10.4702 3.46191L13.0784 0.828574C13.8551 0.0433618 13.999 -0.330093 14.7373 0.368938L14.9387 0.560453L10.5948 4.89827ZM11.103 5.32918L15.3223 1.11585C15.9935 2.01597 17.5661 4.43863 16.7894 6.2293C16.0894 7.82845 15.7442 7.90506 14.8716 9.10203C13.0976 11.1225 10.8633 13.2866 9.11808 14.9145C7.90985 15.7859 7.8619 16.1881 6.24133 16.8297C4.51529 17.5095 2.02211 15.9774 1.08237 15.3358L5.3016 11.1225L6.43312 12.6738C6.75915 13.1143 7.58382 12.6163 8.15917 12.0418C9.15644 11.0363 11.2085 8.99669 11.9948 8.14445C12.5606 7.57948 13.0688 6.75597 12.6277 6.42082L11.103 5.32918ZM0.535789 14.9528L0.334416 14.7517C-0.317646 14.0431 0.0563309 13.8899 0.833052 13.1238L3.46048 10.5192C3.94953 10.05 4.17967 9.94469 4.6783 10.4139L4.87009 10.615L0.535789 14.9528Z' fill='black' />
             </svg>
           </button>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full p-3 relative'>
+          <div className='flex items-center space-x-2'>
+            <img className='w-9 h-9 rounded-full' src='https://avatars.githubusercontent.com/u/35234895?v=4' alt='frankuxui' />
+            <a href='#' className='font-medium'>@frankuxui</a>
+          </div>
+          <div className='border-2 border-slate-300 h-4 rounded-sm' />
+          <div className='flex items-center space-x-2 justify-between'>
+            <span>12 Followers</span>
+            <svg width='22' height='22' viewBox='0 0 24 24'>
+              <path fill='currentColor' d='M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z' />
+            </svg>
+          </div>
         </div>
 
         {/** widget */}
@@ -672,21 +687,21 @@ function App () {
             <div className='flex-auto'>
               <h5 className='no-underline font-bold text-lg mb-2'>Amazon</h5>
               <div className='flex items-center'>
-                <span className='mr-2 px-2 py-1 bg-slate-200 rounded-md'>
+                <span className='mr-2 p-1 bg-slate-200 rounded-md'>
                   <svg width='16' height='16' viewBox='0 0 24 24'>
                     <path fill='#333' d='M3.5,18.5L9.5,12.5L13.5,16.5L22,6.92L20.59,5.5L13.5,13.5L9.5,9.5L2,17L3.5,18.5Z' />
                   </svg>
                 </span>
-                <span className='mr-2 text-sm'>Last activity november 23</span>
+                <span className='mr-1 text-sm'>Last view july 23</span>
                 <span>
-                  <svg width='18' height='18' viewBox='0 0 24 24' className='mr-2'>
+                  <svg width='18' height='18' viewBox='0 0 24 24' className='mr-1'>
                     <path fill='#333' d='M20 8L14.5 13.5L13.09 12.09L16.17 9H10.5C8 9 6 11 6 13.5V20H4V13.5C4 9.91 6.91 7 10.5 7H16.17L13.08 3.91L14.5 2.5L20 8Z' />
                   </svg>
                 </span>
-                <span className='text-slate-400 text-sm'>19:23 PM</span>
+                <span className='text-slate-400 text-sm'>03:12 PM</span>
               </div>
               <div className='mt-1'>
-                <a href='#' className='text-blue-500 text-sm font-bold inline-flex items-center'>
+                <a href='#' className='text-blue-500 text-sm font-medium inline-flex items-center'>
                   If was not you?, click here
                   <svg width='20' height='20' viewBox='0 0 24 24' className='ml-2'>
                     <path fill='currentColor' d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z' />
