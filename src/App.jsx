@@ -377,6 +377,16 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside mb-4 bg-blue-100 relative'>
+          <input type='text' className='rounded-full pl-5 pr-16 py-3 bg-white w-full' placeholder='Phone number' />
+          <button className='absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-green-200 rounded-xl'>
+            <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M10.5948 4.89827L10.3934 4.70676C9.8948 4.18966 9.98111 3.95027 10.4702 3.46191L13.0784 0.828574C13.8551 0.0433618 13.999 -0.330093 14.7373 0.368938L14.9387 0.560453L10.5948 4.89827ZM11.103 5.32918L15.3223 1.11585C15.9935 2.01597 17.5661 4.43863 16.7894 6.2293C16.0894 7.82845 15.7442 7.90506 14.8716 9.10203C13.0976 11.1225 10.8633 13.2866 9.11808 14.9145C7.90985 15.7859 7.8619 16.1881 6.24133 16.8297C4.51529 17.5095 2.02211 15.9774 1.08237 15.3358L5.3016 11.1225L6.43312 12.6738C6.75915 13.1143 7.58382 12.6163 8.15917 12.0418C9.15644 11.0363 11.2085 8.99669 11.9948 8.14445C12.5606 7.57948 13.0688 6.75597 12.6277 6.42082L11.103 5.32918ZM0.535789 14.9528L0.334416 14.7517C-0.317646 14.0431 0.0563309 13.8899 0.833052 13.1238L3.46048 10.5192C3.94953 10.05 4.17967 9.94469 4.6783 10.4139L4.87009 10.615L0.535789 14.9528Z' fill='black' />
+            </svg>
+          </button>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
