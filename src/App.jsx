@@ -86,13 +86,13 @@ function App () {
             <dt class='sr-only'>Users</dt>
             <dd className='flex justify-start -space-x-1.5'>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:ring-slate-700 dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:ring-slate-700 dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:ring-slate-700 dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
                 <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:ring-slate-700 dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/men/48.jpg' alt='avatar' />
@@ -277,7 +277,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex rounded-2xl p-4 mb-4 bg-cyan-100'>
           <div className='flex items-start space-x-4'>
-            <div className='rounded-full bg-cyan-500 flex items-center justify-center w-10 h-10'>
+            <div className='rounded-full bg-cyan-500 flex items-center justify-center w-10 h-10 text-white'>
               <svg width='24' height='24' viewBox='0 0 20 20' fill='currentColor'>
                 <path d='M15.5343 3.45429L13.5043 5.48571C12.5027 4.70607 11.2692 4.28368 10 4.28571C8.73076 4.28368 7.49728 4.70607 6.49571 5.48571L4.46571 3.45429C6.01154 2.14353 7.97327 1.42548 10 1.42857C12.11 1.42857 14.0429 2.19143 15.5343 3.45429ZM16.5457 4.46571C17.8565 6.01154 18.5745 7.97327 18.5714 10C18.5714 12.11 17.8086 14.0429 16.5457 15.5343L14.5143 13.5043C15.2657 12.5357 15.7143 11.32 15.7143 10C15.7143 8.68 15.2657 7.46428 14.5143 6.49571L16.5457 4.46571ZM15.5343 16.5457C13.9885 17.8565 12.0267 18.5745 10 18.5714C7.89 18.5714 5.95714 17.8086 4.46571 16.5457L6.49571 14.5143C7.49728 15.2939 8.73076 15.7163 10 15.7143C11.32 15.7143 12.5357 15.2657 13.5043 14.5143L15.5343 16.5457ZM3.45429 15.5343C2.14353 13.9885 1.42548 12.0267 1.42857 10C1.42857 7.89 2.19143 5.95714 3.45429 4.46571L5.48571 6.49571C4.70607 7.49728 4.28368 8.73076 4.28571 10C4.28571 11.32 4.73429 12.5357 5.48571 13.5043L3.45429 15.5343ZM12.7686 6.72857C12.9497 6.88216 13.1178 7.05034 13.2714 7.23143C13.9043 7.97857 14.2857 8.94571 14.2857 10C14.2869 10.623 14.1517 11.2386 13.8896 11.8038C13.6275 12.3689 13.2449 12.8699 12.7686 13.2714C11.9954 13.9275 11.014 14.2871 10 14.2857C9.37703 14.2869 8.76136 14.1517 8.19621 13.8896C7.63106 13.6275 7.13012 13.2449 6.72857 12.7686C6.09571 12.0214 5.71429 11.0543 5.71429 10C5.71313 9.37703 5.84834 8.76136 6.11043 8.19621C6.37253 7.63106 6.75514 7.13012 7.23143 6.72857C7.97857 6.09571 8.94571 5.71428 10 5.71428C11.0557 5.71428 12.0214 6.09571 12.7686 6.72857ZM10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34783 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34783 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0Z' fill='white' />
               </svg>
@@ -292,7 +292,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex rounded-2xl p-4 mb-4 bg-green-100'>
           <div className='flex items-start space-x-4'>
-            <div className='rounded-full bg-green-500 flex items-center justify-center w-10 h-10'>
+            <div className='rounded-full bg-green-500 flex items-center justify-center w-10 h-10 text-white'>
               <svg width='16' height='20' viewBox='0 0 14 18' fill='none'>
                 <path d='M11.235 11.205C11.0075 11.0388 10.6925 10.6538 10.5437 10.47C11.585 9.00875 13.125 6.26125 13.125 2.875C13.125 1.16875 12.4775 0.25 11.375 0.25C10.0275 0.25 7.91 2.0525 7 5.47375C6.09 2.0525 3.9725 0.25 2.625 0.25C1.5225 0.25 0.875 1.16875 0.875 2.875C0.875 6.26125 2.415 9.00875 3.45625 10.47C3.3075 10.6538 2.9925 11.0388 2.765 11.205C2.3275 11.5638 1.3125 12.4038 1.3125 13.8125C1.3125 15.7463 2.87875 17.3125 4.8125 17.3125C6.16875 17.3125 7 16.8225 7 16.8225C7 16.8225 7.83125 17.3125 9.1875 17.3125C11.1213 17.3125 12.6875 15.7463 12.6875 13.8125C12.6875 12.4038 11.6725 11.5638 11.235 11.205ZM4.68125 9.175C3.7975 7.8625 2.625 5.605 2.625 2.875C2.625 2.44625 2.6775 2.175 2.73 2.02625C3.5525 2.2975 5.565 4.3975 5.6875 8.71125C5.27625 8.81625 4.9525 8.97375 4.68125 9.175ZM5.6875 13.1562C5.4425 13.1562 5.25 12.8588 5.25 12.5C5.25 12.1412 5.4425 11.8438 5.6875 11.8438C5.9325 11.8438 6.125 12.1412 6.125 12.5C6.125 12.8588 5.9325 13.1562 5.6875 13.1562ZM7 15.5625C6.51875 15.5625 6.125 14.9325 6.125 14.6875C6.125 14.4425 6.51875 14.25 7 14.25C7.48125 14.25 7.875 14.4425 7.875 14.6875C7.875 14.9325 7.48125 15.5625 7 15.5625ZM8.3125 13.1562C8.0675 13.1562 7.875 12.8588 7.875 12.5C7.875 12.1412 8.0675 11.8438 8.3125 11.8438C8.5575 11.8438 8.75 12.1412 8.75 12.5C8.75 12.8588 8.5575 13.1562 8.3125 13.1562ZM8.3125 8.71125C8.435 4.3975 10.4475 2.2975 11.27 2.02625C11.3225 2.175 11.375 2.44625 11.375 2.875C11.375 5.605 10.2025 7.8625 9.31875 9.175C9.0475 8.97375 8.72375 8.81625 8.3125 8.71125Z' fill='white' />
               </svg>
@@ -302,6 +302,31 @@ function App () {
               <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
             </div>
           </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex rounded-2xl p-4 mb-4 bg-yellow-100'>
+          <div className='flex items-start space-x-4'>
+            <div className='rounded-full bg-yellow-500 flex items-center justify-center w-10 h-10 text-white'>
+              <svg width='24' height='24' viewBox='0 0 24 24' fill='currentColor'>
+                <path d='M22 19H2V21H22V19M4 15C4 15.5 4.2 16 4.6 16.4C5 16.8 5.5 17 6 17V6C5.5 6 5 6.2 4.6 6.6C4.2 7 4 7.5 4 8V15M13.5 6H10.5C10.5 5.6 10.6 5.2 10.9 4.9C11.2 4.6 11.5 4.5 12 4.5C12.4 4.5 12.8 4.6 13.1 4.9C13.3 5.2 13.5 5.6 13.5 6M7 6V17H17V6H15C15 5.2 14.7 4.5 14.1 3.9S12.8 3 12 3C11.2 3 10.5 3.3 9.9 3.9C9.3 4.5 9 5.2 9 6H7M18 17C18.5 17 19 16.8 19.4 16.4C19.8 16 20 15.5 20 15V8C20 7.5 19.8 7 19.4 6.6C19 6.2 18.5 6 18 6V17Z' fill='currentColor' />
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <h5 className='no-underline font-bold'>Short trip</h5>
+              <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside mb-4 bg-blue-100 relative'>
+          <input type='text' className='rounded-full pl-12 pr-9 py-3 bg-white w-full' placeholder='Search' />
+          <span className='absolute left-4 top-1/2 -translate-y-1/2'>
+            <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
+            </svg>
+          </span>
         </div>
 
         {/** widget */}
