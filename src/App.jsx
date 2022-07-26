@@ -249,6 +249,13 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-transparent rounded-xl p-1 mb-4 border-2 border-dashed border-slate-400'>
+          <div className='bg-white rounded-xl w-full p-4 text-center'>
+            <span className='font-medium text-slate-500'>Drag image here</span>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
