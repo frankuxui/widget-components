@@ -220,10 +220,10 @@ function App () {
         {/** widget */}
         <a href='#' className='break-inside overflow-hidden flex bg-gradient-to-r from-[#EC008C] to-[#FC6767] rounded-full mb-4'>
           <div className='flex-1 items-center relative'>
-            <div className='absolute -right-3 -top-1'>
-              <img class='flex-none w-24 h-24 rounded-2xl object-cover rotate-6' src='https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
+            <div className='absolute -right-1 top-2'>
+              <img class='flex-none w-20 h-20 rounded-2xl object-cover rotate-6' src='https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             </div>
-            <div className='mr-auto p-4'>
+            <div className='mr-auto px-8 py-4'>
               <h5 className='font-bold text-md text-white'>Best music</h5>
               <h3 className='font-extrabold text-xl text-white'>Summer 2021</h3>
             </div>
