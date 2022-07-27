@@ -501,6 +501,25 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center flex-none w-12 h-12 rounded-full bg-black'>
+              <svg width='24' height='10' viewBox='0 0 24 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M23.9999 0.7995L6.44194 8.2755C4.98594 8.8915 3.76294 9.2005 2.77394 9.2005C1.65394 9.2005 0.840936 8.8085 0.336936 8.0235C0.0199359 7.5195 -0.0730641 6.8805 0.0569359 6.1055C0.186936 5.3305 0.532936 4.5055 1.09294 3.6275C1.55994 2.9175 2.32494 1.9845 3.38994 0.827499C3.0287 1.39617 2.76381 2.02056 2.60594 2.6755C2.32594 3.8705 2.57794 4.7475 3.36194 5.3075C3.73494 5.5685 4.24794 5.6995 4.90194 5.6995C5.42394 5.6995 6.01194 5.6155 6.66594 5.4475L23.9999 0.7995Z' fill='white' />
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <h5 className='font-bold block'>Nike store</h5>
+              <h5 className='block text-sm'>6 months of promotions</h5>
+            </div>
+          </div>
+          <div className='inline-flex flex-col items-center space-y-1'>
+            <span className='font-bold'>-27.50 €</span>
+            <span className='text-sm'>11:00AM</span>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             <div className='flex-auto space-y-1'>
               <span className='text-slate-600'>Mountains</span>
