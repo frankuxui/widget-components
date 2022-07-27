@@ -308,6 +308,35 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside bg-[#503D9C] text-white rounded-xl overflow-hidden p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex-auto flex flex-col'>
+              <a href='#' className='no-underline font-medium block text-lg'>Mobile App design</a>
+              <span className='text-[#D9D3F1]'>Thomas and Niki</span>
+            </div>
+            <button className='w-10 h-10 flex justify-center items-center rounded-full text-white hover:bg-[#412f8b] transition-all'>
+              <svg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M4.74795 16.875C4.80068 16.875 4.85342 16.8697 4.90615 16.8618L9.34111 16.084C9.39385 16.0734 9.44395 16.0497 9.48086 16.0102L20.6579 4.83311C20.6824 4.80871 20.7017 4.77974 20.715 4.74784C20.7282 4.71594 20.735 4.68175 20.735 4.64722C20.735 4.61268 20.7282 4.57849 20.715 4.54659C20.7017 4.5147 20.6824 4.48572 20.6579 4.46133L16.2757 0.0764649C16.2256 0.0263672 16.1597 0 16.0885 0C16.0173 0 15.9514 0.0263672 15.9013 0.0764649L4.72422 11.2535C4.68467 11.2931 4.66094 11.3405 4.65039 11.3933L3.87256 15.8282C3.84691 15.9695 3.85607 16.1148 3.89926 16.2518C3.94245 16.3887 4.01835 16.513 4.12041 16.614C4.29443 16.7827 4.51328 16.875 4.74795 16.875ZM6.5251 12.2766L16.0885 2.71582L18.0212 4.64853L8.45781 14.2093L6.11377 14.6232L6.5251 12.2766ZM21.1562 19.0898H1.75C1.2833 19.0898 0.90625 19.4669 0.90625 19.9336V20.8828C0.90625 20.9988 1.00117 21.0938 1.11719 21.0938H21.7891C21.9051 21.0938 22 20.9988 22 20.8828V19.9336C22 19.4669 21.6229 19.0898 21.1562 19.0898Z' fill='white' />
+              </svg>
+            </button>
+          </div>
+          <div className='flex justify-between flex-row items-center mt-6'>
+            <div className='col-start-2 row-start-1 row-end-3'>
+              <dt class='sr-only'>Users</dt>
+              <dd className='flex justify-start -space-x-1.5'>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                </a>
+              </dd>
+            </div>
+            <span>10.00 AM - 11.00 AM</span>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex rounded-2xl p-4 mb-4 bg-cyan-100'>
           <div className='flex items-start space-x-4'>
             <div className='rounded-full bg-cyan-500 flex items-center justify-center w-10 h-10 text-white'>
