@@ -402,6 +402,24 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full p-3 relative'>
+          <div className='flex items-center justify-between w-full'>
+            <div className='flex items-center space-x-2'>
+              <svg width='20' height='20' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z' />
+              </svg>
+              <div className='font-bold text-sm bg-blue-100 text-blue-600 rounded-md py-[3px] px-1'>04:32</div>
+            </div>
+            <div className='border-2 border-slate-300 h-4 rounded-sm' />
+            <div className='font-medium'>Installation...</div>
+            <div className='border-2 border-slate-300 h-4 rounded-sm' />
+            <svg width='22' height='22' viewBox='0 0 24 24'>
+              <path fill='currentColor' d='M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M9,9H15V15H9' />
+            </svg>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
