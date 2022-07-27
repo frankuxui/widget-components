@@ -422,6 +422,28 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center flex-none w-12 h-12 rounded-full bg-[#DDFBFF]'>
+              <svg className='text-slate-800' width='22' height='22' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z' />
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <h5 className='font-bold block'>Apple store</h5>
+              <h5 className='block text-sm'>16 January - 3:25 PM</h5>
+            </div>
+          </div>
+          <div className='inline-flex flex-col items-center space-y-1'>
+            <span className='font-bold'>-$327.68</span>
+            <svg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M0.700422 0.500001H13.3008C13.4284 0.500268 13.5534 0.523766 13.6625 0.567966C13.7715 0.612164 13.8605 0.675391 13.9197 0.750839C13.979 0.826288 14.0063 0.911102 13.9988 0.996151C13.9912 1.0812 13.9491 1.16326 13.8769 1.23351L7.57672 7.31101C7.31561 7.563 6.68699 7.563 6.42518 7.31101L0.125005 1.23351C0.0520805 1.16341 0.00931579 1.08131 0.00135729 0.996115C-0.00660121 0.910924 0.0205509 0.825906 0.0798637 0.750297C0.139176 0.674689 0.228381 0.611381 0.337786 0.567254C0.447191 0.523126 0.572612 0.499866 0.700422 0.500001Z' fill='#E31414' />
+            </svg>
+
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             <div className='flex-auto space-y-1'>
               <span className='text-slate-600'>Mountains</span>
