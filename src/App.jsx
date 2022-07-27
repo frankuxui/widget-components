@@ -294,6 +294,20 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
+          <img class='flex-none w-24 h-32 object-cover' src='https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
+          <div className='flex-auto flex flex-col'>
+            <a href='#' className='no-underline font-bold block text-lg'>The Weeknd</a>
+            <span className='overflow-ellipsis w-[8.5rem] text-sm overflow-hidden whitespace-nowrap'>Take My Breath Offici..</span>
+          </div>
+          <button className='w-10 h-10 flex justify-center items-center bg-slate-200 rounded-full text-black'>
+            <svg height='24' width='24' viewBox='0 0 24 24'>
+              <path fill='currentColor' d='M8,5.14V19.14L19,12.14L8,5.14Z' />
+            </svg>
+          </button>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex rounded-2xl p-4 mb-4 bg-cyan-100'>
           <div className='flex items-start space-x-4'>
             <div className='rounded-full bg-cyan-500 flex items-center justify-center w-10 h-10 text-white'>
