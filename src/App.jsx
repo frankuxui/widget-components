@@ -486,6 +486,19 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4'>
+          <div className='flex flex-row items-center space-x-2'>
+            <svg width='39' height='33' viewBox='0 0 39 33' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M35.4205 6.38339C31.5739 4.17693 26.655 5.488 24.432 9.3104L18.8285 18.9556C17.2071 21.7409 19.2945 22.7141 21.622 24.1009L27.0139 27.1931C28.8399 28.2397 31.1721 27.6184 32.2253 25.8065L37.9859 15.894C39.9209 12.5632 38.7727 8.30632 35.4205 6.38339Z' fill='#EA4335' />
+              <path d='M29.08 10.3756L23.6881 7.28332C20.7116 5.64149 19.0259 5.5328 17.804 7.46285L9.85147 21.1479C7.63091 24.9677 8.95264 29.853 12.797 32.0547C16.1492 33.9776 20.4334 32.8367 22.3686 29.5058L30.4733 15.5562C31.5312 13.7419 30.906 11.4221 29.08 10.3756Z' fill='#FBBC04' />
+              <path d='M26.3306 1.16712C22.1417 -1.23522 16.7852 0.189227 14.3674 4.35161L7.15666 16.7608C6.09162 18.5917 6.724 20.9352 8.5666 21.991L12.8079 24.4242C14.9023 25.6268 17.5793 24.9132 18.7895 22.8321L27.0272 8.65569C28.7342 5.71945 32.512 4.7131 35.467 6.40927L26.3306 1.16712Z' fill='#34A853' />
+              <path d='M15.3918 7.9023L11.2978 5.55884C9.47198 4.51465 7.13975 5.13347 6.0866 6.94318L1.17458 15.3766C-1.24312 19.5272 0.190437 24.8377 4.37943 27.2332L12.9169 32.1182C10.0046 30.1812 9.0797 26.2999 10.8603 23.2431L16.7897 13.0638C17.8405 11.2589 17.2153 8.94649 15.3918 7.9023Z' fill='#4285F4' />
+            </svg>
+            <span className='font-bold block text-lg'>Media component</span>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
