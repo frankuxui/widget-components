@@ -411,7 +411,7 @@ function App () {
               <div className='font-bold text-sm bg-blue-100 text-blue-600 rounded-md py-[3px] px-1'>04:32</div>
             </div>
             <div className='border-2 border-slate-300 h-4 rounded-sm' />
-            <div className='font-medium'>Installation...</div>
+            <div className='font-medium text-sm'>Installation...</div>
             <div className='border-2 border-slate-300 h-4 rounded-sm' />
             <svg width='22' height='22' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M9,9H15V15H9' />
@@ -458,6 +458,19 @@ function App () {
               <path d='M12.1842 0.567262C10.2458 -0.552394 7.76723 0.111692 6.6485 2.05217L3.31172 7.83625C2.81878 8.68958 3.11148 9.78206 3.96415 10.2744L5.92679 11.4086C6.896 11.9692 8.1347 11.6365 8.69467 10.6664L12.5067 4.05819C13.2965 2.68924 15.0446 2.22008 16.412 3.01079L12.1842 0.567262Z' fill='#34A853' />
               <path d='M7.12253 3.70687L5.22795 2.6144C4.38301 2.12786 3.30381 2.41621 2.81654 3.25973L0.543667 7.19109C-0.575239 9.12606 0.0881985 11.6014 2.02643 12.7183L5.97698 14.9955C4.62948 14.0926 4.20151 12.2832 5.02548 10.8584L7.76929 6.11324C8.25535 5.27195 7.96643 4.19358 7.12253 3.70687Z' fill='#4285F4' />
             </svg>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4'>
+          <div className='flex flex-row items-center justify-between'>
+            <span className='font-bold block text-sm'>Transaction</span>
+            <span className='font-bold block text-sm'>$8.347 / $23.892</span>
+          </div>
+          <div>
+            <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden'>
+              <div className='absolute left-0 w-1/3 h-full bg-pink-500' />
+            </div>
           </div>
         </div>
 
