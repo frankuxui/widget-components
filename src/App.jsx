@@ -275,6 +275,25 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden'>
+          <div className='absolute bg-cyan-100 top-0 bottom-0 left-0 w-3/5' />
+          <div className='flex items-center space-x-4 relative'>
+            <img class='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg' alt='avatar' />
+            <div className='flex-auto'>
+              <h5 className='text-black font-bold'>Visions - Purple Disco</h5>
+              <h5 className='no-underline block text-sm'>Eli Escobar</h5>
+            </div>
+          </div>
+          <div className='flex flex-col items-center relative'>
+            <button className='w-7 h-7 flex justify-center items-center bg-black rounded-full text-white'>
+              <svg height='24' width='24' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M8,5.14V19.14L19,12.14L8,5.14Z' />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex rounded-2xl p-4 mb-4 bg-cyan-100'>
           <div className='flex items-start space-x-4'>
             <div className='rounded-full bg-cyan-500 flex items-center justify-center w-10 h-10 text-white'>
