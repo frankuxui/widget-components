@@ -538,12 +538,24 @@ function App () {
         </button>
 
         {/** widget */}
-        <button type='button' className='flex break-inside bg-black rounded-xl px-8 py-4 mb-4 w-full'>
+        <button type='button' className='flex break-inside bg-black rounded-3xl px-8 py-4 mb-4 w-full'>
           <div className='flex items-center justify-between flex-1'>
             <span className='text-lg font-medium text-white'>Get started</span>
             <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path fill-rule='evenodd' clip-rule='evenodd' d='M0 8.71423C0 8.47852 0.094421 8.25246 0.262491 8.08578C0.430562 7.91911 0.658514 7.82547 0.896201 7.82547H13.9388L8.29808 2.23337C8.12979 2.06648 8.03525 1.84013 8.03525 1.60412C8.03525 1.36811 8.12979 1.14176 8.29808 0.974875C8.46636 0.807989 8.6946 0.714233 8.93259 0.714233C9.17057 0.714233 9.39882 0.807989 9.5671 0.974875L16.7367 8.08499C16.8202 8.16755 16.8864 8.26562 16.9316 8.3736C16.9767 8.48158 17 8.59733 17 8.71423C17 8.83114 16.9767 8.94689 16.9316 9.05487C16.8864 9.16284 16.8202 9.26092 16.7367 9.34348L9.5671 16.4536C9.39882 16.6205 9.17057 16.7142 8.93259 16.7142C8.6946 16.7142 8.46636 16.6205 8.29808 16.4536C8.12979 16.2867 8.03525 16.0604 8.03525 15.8243C8.03525 15.5883 8.12979 15.362 8.29808 15.1951L13.9388 9.603H0.896201C0.658514 9.603 0.430562 9.50936 0.262491 9.34268C0.094421 9.17601 0 8.94995 0 8.71423Z' fill='white' />
             </svg>
+          </div>
+        </button>
+
+        {/** widget */}
+        <button type='button' className='flex break-inside bg-black rounded-3xl px-6 py-4 mb-4 w-full'>
+          <div className='m-auto'>
+            <div className='flex items-center justify-start flex-1 space-x-4'>
+              <svg className='text-white' width='26' height='26' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z' />
+              </svg>
+              <span className='font-medium text-white mb-[-3px]'>Continue with Apple</span>
+            </div>
           </div>
         </button>
 
