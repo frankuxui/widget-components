@@ -478,6 +478,11 @@ function App () {
         </div>
 
         {/** widget */}
+        <button type='button' className='break-inside text-center bg-[#1E49E2] rounded-xl p-4 mb-4 w-full'>
+          <span className='uppercase font-medium text-white'>Send files now</span>
+        </button>
+
+        {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
