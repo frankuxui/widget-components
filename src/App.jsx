@@ -450,6 +450,34 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4'>
+          <div className='flex flex-row justify-between items-center w-full'>
+            <div className='flex flex-col items-start'>
+              <span className='text-sm text-slate-400'>16 January 2017</span>
+              <span className='font-bold block mb-1'>Statement of earnings</span>
+            </div>
+            <span className='font-bold block mb-1'>76%</span>
+          </div>
+          <div className='-mt-5'>
+            <svg width='309' height='63' viewBox='0 0 309 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M2 61C4.32346 58.9538 8.85421 55.4069 15.3599 56.2254C23.492 57.2486 28.1389 61 32.7859 56.2254C37.4328 51.4509 40.918 47.3584 44.984 48.0405C49.0501 48.7225 51.9544 52.474 57.1822 51.7919C62.41 51.1098 47.8445 58.7369 71.123 48.0405C94.4014 37.3441 91.867 38.9745 93.1959 42.5838C94.8338 47.0326 99.5854 53.4971 109.46 49.4046C119.335 45.3121 119.567 40.8786 126.305 40.8786C133.043 40.8786 129.209 39.1734 131.533 40.8786C133.856 42.5838 135.018 41.9017 137.922 39.8555C140.827 37.8092 144.992 31.6705 148.477 34.3988C151.962 37.1272 154.768 42.5838 161.738 42.5838C168.708 42.5838 179.954 37.1272 187.506 33.0347C195.057 28.9422 199.494 36.7861 201.237 38.8324C202.979 40.8786 215.758 36.7861 222.729 31.6705C228.305 27.578 233.959 33.6031 236.089 37.1272C243.64 35.6493 260.253 31.8069 266.294 28.2601C272.335 24.7133 275.781 27.9191 276.749 29.9653C282.171 27.578 304.096 10.8671 307 2' stroke='url(#paint0_linear_7_414)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
+              <defs>
+                <linearGradient id='paint0_linear_7_414' x1='307' y1='0.635821' x2='19.4084' y2='117.088' gradientUnits='userSpaceOnUse'>
+                  <stop stop-color='white' />
+                  <stop offset='0.0782926' stop-color='#F9F2FF' />
+                  <stop offset='0.205255' stop-color='#EB98FF' />
+                  <stop offset='0.401455' stop-color='#FF12E7' />
+                  <stop offset='0.581288' stop-color='#FF0AAC' />
+                  <stop offset='0.729526' stop-color='#FF046E' />
+                  <stop offset='0.882474' stop-color='#FFE7E7' />
+                  <stop offset='1' stop-color='white' />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
