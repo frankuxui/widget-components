@@ -951,7 +951,7 @@ function App () {
             </div>
           </div>
         </div>
-
+        
         {/** widget */}
         <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center justify-between mb-3'>
@@ -1386,6 +1386,32 @@ function App () {
               </svg>
             </button>
           </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <img class='flex-none w-16 h-16 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
+            <div className='flex-auto space-y-2'>
+              <a href='#' className='no-underline font-bold block'>Marloon Flick</a>
+              <div className='flex items-center gap-2'>
+                <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg'>
+                  <span className='text-sm font-medium'>Angular</span>
+                </span>
+                <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg'>
+                  <span className='text-sm font-medium'>Svelte</span>
+                </span>
+                <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg'>
+                  <span className='text-sm font-medium'>Nextjs</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          <button className='no-underline inline-block rounded-full p-3 text-[#5F1FE7]'>
+            <svg width='26' height='26' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z' fill='currentColor' />
+            </svg>
+          </button>
         </div>
 
         {/* widget */}
