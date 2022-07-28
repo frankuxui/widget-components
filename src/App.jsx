@@ -41,6 +41,18 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <a href='#'>
+              <img class='flex-none w-14 h-14 rounded-full object-cover ring-4 ring-pink-500 border-2 border-white' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
+            </a>
+            <div className='flex-auto'>
+              <a href='#' className='no-underline font-bold block'>Jenny Wilson</a>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
