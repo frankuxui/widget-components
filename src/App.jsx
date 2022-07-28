@@ -596,6 +596,22 @@ function App () {
         </button>
 
         {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <img class='flex-none w-12 h-12 rounded-full object-cover ring-4 border-2 ring-pink-500' src='https://randomuser.me/api/portraits/men/81.jpg' alt='avatar' />
+            <div className='flex-auto'>
+              <a href='#' className='no-underline font-bold block'>Robert Fox</a>
+              <span className='text-slate-600 text-sm'>Download all information</span>
+            </div>
+          </div>
+          <button className='no-underline inline-block hover:bg-slate-100 rounded-full p-3 transition-all'>
+            <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z' fill='currentColor' />
+            </svg>
+          </button>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
@@ -627,16 +643,16 @@ function App () {
             <dt class='sr-only'>Users</dt>
             <dd className='flex justify-start -space-x-1.5'>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white dark:ring-slate-700 dark:group-hover:ring-white' src='https://randomuser.me/api/portraits/men/48.jpg' alt='avatar' />
+                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/48.jpg' alt='avatar' />
               </a>
             </dd>
           </div>
