@@ -217,6 +217,30 @@ function App () {
         </a>
 
         {/** widget */}
+        <div className='break-inside flex justify-between flex-col rounded-xl bg-white p-4 mb-4 space-y-2'>
+          <div className='flex justify-between items-start'>
+            <div className='flex items-center space-x-2'>
+              <svg width='35' height='16' viewBox='0 0 35 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M34.59 13L30.51 8L34.51 3.1C34.7288 2.83194 34.8666 2.50707 34.9074 2.16347C34.9481 1.81987 34.89 1.47178 34.74 1.15999C34.588 0.810534 34.336 0.513891 34.0156 0.307458C33.6953 0.101025 33.321 -0.0059584 32.94 -4.85155e-06H1.94C1.68917 -0.00397559 1.44001 0.0415059 1.20676 0.133841C0.973502 0.226177 0.760723 0.363558 0.580571 0.538138C0.400419 0.712719 0.256424 0.921077 0.156808 1.15132C0.0571926 1.38155 0.00390885 1.62916 0 1.88V14.13C0.0105107 14.6348 0.220501 15.115 0.58405 15.4654C0.947598 15.8158 1.43512 16.008 1.94 16H33.05C33.4183 16.0062 33.7806 15.9068 34.0943 15.7136C34.4079 15.5205 34.6597 15.2416 34.82 14.91C34.9639 14.6019 35.0186 14.2597 34.978 13.9221C34.9373 13.5845 34.8029 13.2651 34.59 13ZM2 14V2H32.78L27.94 7.93L32.85 14H2Z' fill='black' />
+                <path d='M9.39 9.35L6.13 5H5V11.18H6.13V6.84L9.39 11.18H10.51V5H9.39V9.35Z' fill='black' />
+                <path d='M12.1799 11.18H16.8399V10.16H13.3099V8.55H16.4999V7.52H13.3099V6.03H16.8399V5H12.1799V11.18Z' fill='black' />
+                <path d='M24.5201 9.43L23.0601 5H21.8401L20.3701 9.43L19.0501 5H17.8201L19.7801 11.18H20.8901L22.4501 6.59L24.0001 11.18H25.1301L27.0801 5H25.8501L24.5201 9.43Z' fill='black' />
+              </svg>
+              <h5 className='font-medium text-lg'>Components</h5>
+            </div>
+            <button className='flex items-center justify-center hover:bg-slate-200 rounded-full p-1 transition-all'>
+              <svg width='26' height='26' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z' fill='currentColor' />
+              </svg>
+            </button>
+          </div>
+          <div className='flex justify-between items-start flex-col'>
+            <h5 className='font-medium text-lg'>Improve large organization</h5>
+            <p>Lorem ipsum dolor sit amet, consecte permis palis.</p>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
