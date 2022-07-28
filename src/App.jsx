@@ -511,6 +511,23 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center justify-start space-x-4'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-12 h-12 rounded-full'>
+              <svg width='16' height='20' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M12.3857 7.11111H10.7143V4.84444C10.7143 2.10839 9.47464 0.5 7 0.5C4.52443 0.5 3.28571 2.10839 3.28571 4.84444V7.11111H1.42857C0.915071 7.11111 0.5 7.72122 0.5 8.2435V15.6111C0.5 16.1296 0.897429 16.6868 1.38307 16.8455L2.49457 17.211C3.08412 17.3858 3.69329 17.4829 4.30714 17.5H9.69286C10.3065 17.4831 10.9154 17.3856 11.5045 17.2101L12.6151 16.8446C13.1016 16.6868 13.5 16.1296 13.5 15.6111V8.2435C13.5 7.72122 12.8983 7.11111 12.3857 7.11111ZM8.85714 7.11111H5.14286V4.46572C5.14286 3.101 5.88293 2.38889 7 2.38889C8.11707 2.38889 8.85714 3.101 8.85714 4.46572V7.11111Z' fill='white' />
+              </svg>
+            </div>
+            <span className='text-lg font-medium'>Blocked up</span>
+          </div>
+          <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100'>
+            <svg className='w-8 h-8 text-slate-800' viewBox='0 0 24 24'>
+              <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+            </svg>
+          </button>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
