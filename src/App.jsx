@@ -66,6 +66,34 @@ function App () {
         </a>
 
         {/** widget */}
+        <div className='break-inside flex justify-between flex-col bg-white rounded-xl p-4 mb-4'>
+          <div className='flex justify-between items-start mb-5'>
+            <h5 className='font-medium text-xl'>New task completed
+              successfully
+            </h5>
+            <button className='no-underline inline-block hover:bg-slate-100 transition-all rounded-full p-2'>
+              <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='currentColor' />
+              </svg>
+            </button>
+          </div>
+          <div className='flex justify-between items-center'>
+            <div className='flex items-center space-x-4'>
+              <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
+              <div className='flex-auto'>
+                <a href='#' className='no-underline font-bold block'>Yolanda</a>
+              </div>
+            </div>
+            <div className='flex items-center space-x-2'>
+              <svg width='20' height='20' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M12 20C16.4 20 20 16.4 20 12S16.4 4 12 4 4 7.6 4 12 7.6 20 12 20M12 2C17.5 2 22 6.5 22 12S17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2M12.5 13H11L7 10.7L7.8 9.4L11.1 11.3V7H12.6V13Z' fill='currentColor' />
+              </svg>
+              <span className='text-gray-600 font-medium'>3 min</span>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
