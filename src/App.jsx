@@ -763,8 +763,28 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-between items-center bg-white rounded-xl p-4 mb-4'>
-          working...
+        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 space-y-3'>
+          <div className='flex flex-row items-center justify-between'>
+            <div className='flex items-center space-x-2'>
+              <span className='px-2 py-1 rounded-full font-medium bg-green-100 text-sm'>Highlight</span>
+              <span className='px-2 py-1 rounded-full font-medium bg-pink-100 text-sm'>Feeds</span>
+            </div>
+            <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100'>
+              <svg className='w-8 h-8 text-slate-800' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+              </svg>
+            </button>
+          </div>
+          <div className=''>
+            <h5 className='font-bold text-lg'>Dashboard</h5>
+            <p className='text-slate-600'>Business management service</p>
+          </div>
+          <div className='flex justify-between items-center font-bold space-x-4'>
+            <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden'>
+              <div className='absolute left-0 w-1/3 h-full bg-[#8DD794]' />
+            </div>
+            <span>80%</span>
+          </div>
         </div>
 
         {/* widget */}
