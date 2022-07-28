@@ -612,13 +612,12 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
-          <div className='flex items-center space-x-4'>
-            <div className='flex-auto'>
-              <div className='no-underline font-bold block'>All your notifications are well turned on</div>
-            </div>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 space-x-4'>
+          <div className='flex-1'>
+            <div className='no-underline font-bold block '>All your notifications are well turned on</div>
           </div>
-          <div className='flex items-center justify-center border-l-2 border-slate-400'>
+          <div className='border-2 border-slate-300 h-8 rounded-sm' />
+          <div className='flex items-center justify-center space-x-2'>
             <button className='no-underline inline-block hover:bg-slate-100 rounded-full p-2 transition-all'>
               <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z' fill='currentColor' />
@@ -740,6 +739,27 @@ function App () {
               <span>France</span>
             </div>
           </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <img class='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/84.jpg' alt='avatar' />
+            <div className='flex-auto'>
+              <a href='#' className='no-underline font-bold text-lg'>Wade warren</a>
+              <div className='flex items-center space-x-3'>
+                <svg width='37' height='15' viewBox='0 0 33 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M17.0668 3.35155C17.048 4.74459 18.3898 5.52191 19.4005 5.98413C20.439 6.45831 20.7878 6.76242 20.7837 7.18653C20.7759 7.83551 19.9553 8.12195 19.1874 8.13308C17.8477 8.15256 17.0687 7.79365 16.4495 7.52221L15.9668 9.64141C16.5882 9.91007 17.7387 10.1444 18.9317 10.1547C21.7322 10.1547 23.5643 8.85743 23.5742 6.84613C23.5852 4.29351 19.8117 4.15222 19.8375 3.01127C19.8464 2.66531 20.1982 2.29612 20.9691 2.20225C21.3506 2.15483 22.4039 2.11854 23.5981 2.63458L24.0668 0.584212C23.4246 0.36478 22.5992 0.154663 21.5716 0.154663C18.9357 0.154663 17.0818 1.46956 17.0668 3.35155V3.35155ZM28.5705 0.331273C28.0592 0.331273 27.6282 0.611188 27.4359 1.04074L23.4355 10.0041H26.234L26.7908 8.55985H30.2105L30.5335 10.0041H33L30.8477 0.331273H28.5705V0.331273ZM28.962 2.94426L29.7696 6.57649H27.5578L28.962 2.94426V2.94426ZM13.6739 0.331394L11.468 10.0039H14.1347L16.3395 0.331152H13.6739V0.331394ZM9.72894 0.331152L6.95333 6.91496L5.83056 1.31702C5.69882 0.692114 5.17855 0.331273 4.60079 0.331273H0.0635508L0 0.612155C0.931477 0.801829 1.9898 1.10775 2.63098 1.43509C3.02337 1.63504 3.13526 1.80984 3.26416 2.28499L5.39073 10.0041H8.20875L12.5292 0.331273H9.72894' fill='#1518E0' />
+                </svg>
+                <span className='font-medium'>4293 3242 ••••</span>
+              </div>
+            </div>
+          </div>
+          <button className='no-underline inline-block hover:bg-slate-100 rounded-full p-3 transition-all'>
+            <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M11.83,9L15,12.16C15,12.11 15,12.05 15,12A3,3 0 0,0 12,9C11.94,9 11.89,9 11.83,9M7.53,9.8L9.08,11.35C9.03,11.56 9,11.77 9,12A3,3 0 0,0 12,15C12.22,15 12.44,14.97 12.65,14.92L14.2,16.47C13.53,16.8 12.79,17 12,17A5,5 0 0,1 7,12C7,11.21 7.2,10.47 7.53,9.8M2,4.27L4.28,6.55L4.73,7C3.08,8.3 1.78,10 1,12C2.73,16.39 7,19.5 12,19.5C13.55,19.5 15.03,19.2 16.38,18.66L16.81,19.08L19.73,22L21,20.73L3.27,3M12,7A5,5 0 0,1 17,12C17,12.64 16.87,13.26 16.64,13.82L19.57,16.75C21.07,15.5 22.27,13.86 23,12C21.27,7.61 17,4.5 12,4.5C10.6,4.5 9.26,4.75 8,5.2L10.17,7.35C10.74,7.13 11.35,7 12,7Z' fill='currentColor' />
+            </svg>
+          </button>
         </div>
 
         {/* widget */}
