@@ -53,6 +53,19 @@ function App () {
         </div>
 
         {/** widget */}
+        <a href='#' className='break-inside overflow-hidden flex bg-[#A649EE] rounded-2xl mb-4'>
+          <div className='flex-1 items-center relative'>
+            <div className='absolute -right-1 -top-4'>
+              <img class='flex-none w-28 h-28 rounded-2xl object-cover rotate-12' src='https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+            </div>
+            <div className='mr-auto px-8 py-4'>
+              <h5 className='font-medium text-lg text-white'>Dance</h5>
+              <h3 className='font-bold text-xl text-white'>Electrónic</h3>
+            </div>
+          </div>
+        </a>
+
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
