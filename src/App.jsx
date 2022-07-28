@@ -1,8 +1,83 @@
+import React, { useState, useEffect, useRef } from 'react'
 import './App.css'
 
 function App () {
+  const buttonThemenRef = useRef(null)
+  const [theme, setTheme] = useState(false)
+  const handleToggleTheme = () => {
+    document.documentElement.classList.toggle('dark')
+    setTheme(!theme)
+  }
+  useEffect(() => {
+    buttonThemenRef.current.addEventListener('click', handleToggleTheme)
+    return () => {
+      buttonThemenRef.current.removeEventListener('click', handleToggleTheme)
+    }
+  }
+  , [theme])
+
   return (
     <div className='App pt-16 pb-16 mx-5 '>
+
+      <div className='flex justify-center m-auto mb-3'>
+        <button ref={buttonThemenRef} className='rounded-full w-16 h-16 bg-slate-300 text-3xl'>
+          {theme ? '🌞' : '🌙'}
+        </button>
+      </div>
+
+      <div className='flex justify-center flex-col m-auto mb-16 text-center text-lg'>
+        <p className='font-bold mb-1'>Built by <a href='#' className='underline'>Frank Esteban</a></p>
+        <p>Contact me on the different platforms and social networks</p>
+        <div className='flex items-center justify-center space-x-2 mt-4'>
+          <a href='https://www.linkedin.com/in/frankuxui/' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <circle cx='4.983' cy='5.009' r='2.188' />
+              <path d='M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://www.figma.com/@frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M15.332 8.668a3.333 3.333 0 0 0 0-6.663H8.668a3.333 3.333 0 0 0 0 6.663 3.333 3.333 0 0 0 0 6.665 3.333 3.333 0 0 0 0 6.664A3.334 3.334 0 0 0 12 18.664V8.668h3.332z' fill='currentColor' />
+              <circle cx='15.332' cy='12' r='3.332' />
+            </svg>
+          </a>
+          <a href='https://dribbble.com/frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M20.66 6.98a9.932 9.932 0 0 0-3.641-3.64C15.486 2.447 13.813 2 12 2s-3.486.447-5.02 1.34c-1.533.893-2.747 2.107-3.64 3.64S2 10.187 2 12s.446 3.487 1.34 5.02a9.924 9.924 0 0 0 3.641 3.64C8.514 21.553 10.187 22 12 22s3.486-.447 5.02-1.34a9.932 9.932 0 0 0 3.641-3.64C21.554 15.487 22 13.813 22 12s-.446-3.487-1.34-5.02zM12 3.66c2 0 3.772.64 5.32 1.919-.92 1.174-2.286 2.14-4.1 2.9-1.002-1.813-2.088-3.327-3.261-4.54A7.715 7.715 0 0 1 12 3.66zM5.51 6.8a8.116 8.116 0 0 1 2.711-2.22c1.212 1.201 2.325 2.7 3.34 4.5-2 .6-4.114.9-6.341.9-.573 0-1.006-.013-1.3-.04A8.549 8.549 0 0 1 5.51 6.8zM3.66 12c0-.054.003-.12.01-.2.007-.08.01-.146.01-.2.254.014.641.02 1.161.02 2.666 0 5.146-.367 7.439-1.1.187.373.381.793.58 1.26-1.32.293-2.674 1.006-4.061 2.14S6.4 16.247 5.76 17.5c-1.4-1.587-2.1-3.42-2.1-5.5zM12 20.34c-1.894 0-3.594-.587-5.101-1.759.601-1.187 1.524-2.322 2.771-3.401 1.246-1.08 2.483-1.753 3.71-2.02a29.441 29.441 0 0 1 1.56 6.62 8.166 8.166 0 0 1-2.94.56zm7.08-3.96a8.351 8.351 0 0 1-2.58 2.621c-.24-2.08-.7-4.107-1.379-6.081.932-.066 1.765-.1 2.5-.1.799 0 1.686.034 2.659.1a8.098 8.098 0 0 1-1.2 3.46zm-1.24-5c-1.16 0-2.233.047-3.22.14a27.053 27.053 0 0 0-.68-1.62c2.066-.906 3.532-2.006 4.399-3.3 1.2 1.414 1.854 3.027 1.96 4.84-.812-.04-1.632-.06-2.459-.06z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://codesandbox.io/u/frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M2 6l10.455-6L22.91 6 23 17.95 12.455 24 2 18V6zm2.088 2.481v4.757l3.345 1.86v3.516l3.972 2.296v-8.272L4.088 8.481zm16.739 0l-7.317 4.157v8.272l3.972-2.296V15.1l3.345-1.861V8.48zM5.134 6.601l7.303 4.144 7.32-4.18-3.871-2.197-3.41 1.945-3.43-1.968L5.133 6.6z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://codepen.io/frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M21.838 8.445c0-.001-.001-.001 0 0l-.003-.004-.001-.001v-.001a.809.809 0 0 0-.235-.228l-9.164-6.08a.834.834 0 0 0-.898 0L2.371 8.214A.786.786 0 0 0 2 8.897v6.16a.789.789 0 0 0 .131.448v.001l.002.002.01.015v.002h.001l.001.001.001.001c.063.088.14.16.226.215l9.165 6.082a.787.787 0 0 0 .448.139.784.784 0 0 0 .45-.139l9.165-6.082a.794.794 0 0 0 .371-.685v-6.16a.793.793 0 0 0-.133-.452zm-9.057-4.172 6.953 4.613-3.183 2.112-3.771-2.536V4.273zm-1.592 0v4.189l-3.771 2.536-3.181-2.111 6.952-4.614zm-7.595 6.098 2.395 1.59-2.395 1.611v-3.201zm7.595 9.311-6.96-4.617 3.195-2.15 3.765 2.498v4.269zm.795-5.653-3.128-2.078 3.128-2.105 3.131 2.105-3.131 2.078zm.797 5.653v-4.27l3.766-2.498 3.193 2.15-6.959 4.618zm7.597-6.11-2.396-1.611 2.396-1.59v3.201z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://tailwindcomponents.com/u/frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://github.com/frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://www.instagram.com/frankuxui/' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z' fill='currentColor' />
+            </svg>
+          </a>
+          <a href='https://twitter.com/frankuxui' className='flex items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all'>
+            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z' fill='currentColor' />
+            </svg>
+          </a>
+        </div>
+      </div>
 
       {/** container widgets */}
       <div className='box-border m-auto max-w-[75rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3'>
@@ -10,7 +85,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold block'>Yolanda</a>
               <span className='text-slate-600 text-sm'>Web Development</span>
@@ -27,7 +102,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold block'>Marina Flick</a>
               <span className='text-slate-600 text-sm'>Web Development</span>
@@ -44,7 +119,7 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <a href='#'>
-              <img class='flex-none w-14 h-14 rounded-full object-cover ring-4 ring-pink-500 border-2 border-white' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
+              <img className='flex-none w-14 h-14 rounded-full object-cover ring-4 ring-pink-500 border-2 border-white' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
             </a>
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold block'>Jenny Wilson</a>
@@ -56,7 +131,7 @@ function App () {
         <a href='#' className='break-inside overflow-hidden flex bg-[#A649EE] rounded-2xl mb-4'>
           <div className='flex-1 items-center relative'>
             <div className='absolute -right-1 -top-4'>
-              <img class='flex-none w-28 h-28 rounded-2xl object-cover rotate-12' src='https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+              <img className='flex-none w-28 h-28 rounded-2xl object-cover rotate-12' src='https://images.pexels.com/photos/1389429/pexels-photo-1389429.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
             </div>
             <div className='mr-auto px-8 py-4'>
               <h5 className='font-medium text-lg text-white'>Dance</h5>
@@ -77,7 +152,7 @@ function App () {
           </div>
           <div className='flex justify-between items-center'>
             <div className='flex items-center space-x-4'>
-              <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/60.jpg' alt='avatar' />
+              <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/60.jpg' alt='avatar' />
               <div className='flex-auto'>
                 <a href='#' className='no-underline font-bold block'>Lucianna</a>
               </div>
@@ -104,7 +179,7 @@ function App () {
           </div>
           <div className='flex justify-between items-center'>
             <div className='flex items-center space-x-4'>
-              <img class='flex-none w-9 h-9 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+              <img className='flex-none w-9 h-9 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
               <div className='flex-auto'>
                 <a href='#' className='no-underline font-bold block'>Veronica</a>
               </div>
@@ -151,7 +226,7 @@ function App () {
               </div>
             </div>
             <div className='flex items-center space-x-4'>
-              <img class='flex-none w-8 h-8 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+              <img className='flex-none w-8 h-8 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
             </div>
           </div>
         </div>
@@ -199,7 +274,7 @@ function App () {
               </div>
             </div>
             <div className='flex items-center space-x-4'>
-              <img class='flex-none w-8 h-8 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/46.jpg' alt='avatar' />
+              <img className='flex-none w-8 h-8 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/46.jpg' alt='avatar' />
             </div>
           </div>
         </div>
@@ -242,7 +317,7 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-[#12C0E7] rounded-full p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div className='overflow-hidden rounded-full border-1 border-white'>
-              <img class='flex-none w-16 h-16 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/women/62.jpg' alt='avatar' />
+              <img className='flex-none w-16 h-16 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/women/62.jpg' alt='avatar' />
             </div>
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold block text-lg text-white'>Mariam jimenez</a>
@@ -254,16 +329,16 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-[#740EF5] rounded-full py-4 px-6 mb-4'>
           <div className='flex items-center space-x-4'>
             <div>
-              <dt class='sr-only'>Users</dt>
+              <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                  <img className='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                  <img className='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+                  <img className='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
@@ -278,13 +353,13 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-[#FFF614] rounded-full p-6 mb-4'>
           <div className='flex items-center space-x-4'>
             <div>
-              <dt class='sr-only'>Users</dt>
+              <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/women/16.jpg' alt='avatar' />
+                  <img className='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/women/16.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/men/65.jpg' alt='avatar' />
+                  <img className='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/men/65.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
@@ -318,7 +393,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
+          <img className='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
             <a href='#' className='no-underline font-bold block'>Julia Robert</a>
             <span className='text-slate-600'>Frontend Development</span>
@@ -331,7 +406,7 @@ function App () {
             <a href='#' className='no-underline font-bold block'>Fermin vargas</a>
             <span className='text-slate-600'>Construction manager</span>
           </div>
-          <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+          <img className='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
         </div>
 
         {/** widget */}
@@ -340,7 +415,7 @@ function App () {
             <div className='font-bold block text-lg'> Creadores </div>
             <div className='font-bold block text-lg'> de Tendencias </div>
           </div>
-          <img class='flex-none w-20 h-20 object-cover rotate-12 rounded-lg -mb-6 -mr-6' src='https://randomuser.me/api/portraits/women/58.jpg' alt='avatar' />
+          <img className='flex-none w-20 h-20 object-cover rotate-12 rounded-lg -mb-6 -mr-6' src='https://randomuser.me/api/portraits/women/58.jpg' alt='avatar' />
         </div>
 
         {/** widget */}
@@ -460,17 +535,17 @@ function App () {
           </div>
           <div className='-mt-5'>
             <svg width='309' height='63' viewBox='0 0 309 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M2 61C4.32346 58.9538 8.85421 55.4069 15.3599 56.2254C23.492 57.2486 28.1389 61 32.7859 56.2254C37.4328 51.4509 40.918 47.3584 44.984 48.0405C49.0501 48.7225 51.9544 52.474 57.1822 51.7919C62.41 51.1098 47.8445 58.7369 71.123 48.0405C94.4014 37.3441 91.867 38.9745 93.1959 42.5838C94.8338 47.0326 99.5854 53.4971 109.46 49.4046C119.335 45.3121 119.567 40.8786 126.305 40.8786C133.043 40.8786 129.209 39.1734 131.533 40.8786C133.856 42.5838 135.018 41.9017 137.922 39.8555C140.827 37.8092 144.992 31.6705 148.477 34.3988C151.962 37.1272 154.768 42.5838 161.738 42.5838C168.708 42.5838 179.954 37.1272 187.506 33.0347C195.057 28.9422 199.494 36.7861 201.237 38.8324C202.979 40.8786 215.758 36.7861 222.729 31.6705C228.305 27.578 233.959 33.6031 236.089 37.1272C243.64 35.6493 260.253 31.8069 266.294 28.2601C272.335 24.7133 275.781 27.9191 276.749 29.9653C282.171 27.578 304.096 10.8671 307 2' stroke='url(#paint0_linear_7_414)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' />
+              <path d='M2 61C4.32346 58.9538 8.85421 55.4069 15.3599 56.2254C23.492 57.2486 28.1389 61 32.7859 56.2254C37.4328 51.4509 40.918 47.3584 44.984 48.0405C49.0501 48.7225 51.9544 52.474 57.1822 51.7919C62.41 51.1098 47.8445 58.7369 71.123 48.0405C94.4014 37.3441 91.867 38.9745 93.1959 42.5838C94.8338 47.0326 99.5854 53.4971 109.46 49.4046C119.335 45.3121 119.567 40.8786 126.305 40.8786C133.043 40.8786 129.209 39.1734 131.533 40.8786C133.856 42.5838 135.018 41.9017 137.922 39.8555C140.827 37.8092 144.992 31.6705 148.477 34.3988C151.962 37.1272 154.768 42.5838 161.738 42.5838C168.708 42.5838 179.954 37.1272 187.506 33.0347C195.057 28.9422 199.494 36.7861 201.237 38.8324C202.979 40.8786 215.758 36.7861 222.729 31.6705C228.305 27.578 233.959 33.6031 236.089 37.1272C243.64 35.6493 260.253 31.8069 266.294 28.2601C272.335 24.7133 275.781 27.9191 276.749 29.9653C282.171 27.578 304.096 10.8671 307 2' stroke='url(#paint0_linear_7_414)' strokeWidth='3' strokeLinecap='round' strokeLinejoin='round' />
               <defs>
                 <linearGradient id='paint0_linear_7_414' x1='307' y1='0.635821' x2='19.4084' y2='117.088' gradientUnits='userSpaceOnUse'>
-                  <stop stop-color='white' />
-                  <stop offset='0.0782926' stop-color='#F9F2FF' />
-                  <stop offset='0.205255' stop-color='#EB98FF' />
-                  <stop offset='0.401455' stop-color='#FF12E7' />
-                  <stop offset='0.581288' stop-color='#FF0AAC' />
-                  <stop offset='0.729526' stop-color='#FF046E' />
-                  <stop offset='0.882474' stop-color='#FFE7E7' />
-                  <stop offset='1' stop-color='white' />
+                  <stop stopColor='white' />
+                  <stop offset='0.0782926' stopColor='#F9F2FF' />
+                  <stop offset='0.205255' stopColor='#EB98FF' />
+                  <stop offset='0.401455' stopColor='#FF12E7' />
+                  <stop offset='0.581288' stopColor='#FF0AAC' />
+                  <stop offset='0.729526' stopColor='#FF046E' />
+                  <stop offset='0.882474' stopColor='#FFE7E7' />
+                  <stop offset='1' stopColor='white' />
                 </linearGradient>
               </defs>
             </svg>
@@ -542,7 +617,7 @@ function App () {
           <div className='flex items-center justify-between flex-1'>
             <span className='text-lg font-medium text-white'>Get started</span>
             <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path fill-rule='evenodd' clip-rule='evenodd' d='M0 8.71423C0 8.47852 0.094421 8.25246 0.262491 8.08578C0.430562 7.91911 0.658514 7.82547 0.896201 7.82547H13.9388L8.29808 2.23337C8.12979 2.06648 8.03525 1.84013 8.03525 1.60412C8.03525 1.36811 8.12979 1.14176 8.29808 0.974875C8.46636 0.807989 8.6946 0.714233 8.93259 0.714233C9.17057 0.714233 9.39882 0.807989 9.5671 0.974875L16.7367 8.08499C16.8202 8.16755 16.8864 8.26562 16.9316 8.3736C16.9767 8.48158 17 8.59733 17 8.71423C17 8.83114 16.9767 8.94689 16.9316 9.05487C16.8864 9.16284 16.8202 9.26092 16.7367 9.34348L9.5671 16.4536C9.39882 16.6205 9.17057 16.7142 8.93259 16.7142C8.6946 16.7142 8.46636 16.6205 8.29808 16.4536C8.12979 16.2867 8.03525 16.0604 8.03525 15.8243C8.03525 15.5883 8.12979 15.362 8.29808 15.1951L13.9388 9.603H0.896201C0.658514 9.603 0.430562 9.50936 0.262491 9.34268C0.094421 9.17601 0 8.94995 0 8.71423Z' fill='white' />
+              <path fillRule='evenodd' clipRule='evenodd' d='M0 8.71423C0 8.47852 0.094421 8.25246 0.262491 8.08578C0.430562 7.91911 0.658514 7.82547 0.896201 7.82547H13.9388L8.29808 2.23337C8.12979 2.06648 8.03525 1.84013 8.03525 1.60412C8.03525 1.36811 8.12979 1.14176 8.29808 0.974875C8.46636 0.807989 8.6946 0.714233 8.93259 0.714233C9.17057 0.714233 9.39882 0.807989 9.5671 0.974875L16.7367 8.08499C16.8202 8.16755 16.8864 8.26562 16.9316 8.3736C16.9767 8.48158 17 8.59733 17 8.71423C17 8.83114 16.9767 8.94689 16.9316 9.05487C16.8864 9.16284 16.8202 9.26092 16.7367 9.34348L9.5671 16.4536C9.39882 16.6205 9.17057 16.7142 8.93259 16.7142C8.6946 16.7142 8.46636 16.6205 8.29808 16.4536C8.12979 16.2867 8.03525 16.0604 8.03525 15.8243C8.03525 15.5883 8.12979 15.362 8.29808 15.1951L13.9388 9.603H0.896201C0.658514 9.603 0.430562 9.50936 0.262491 9.34268C0.094421 9.17601 0 8.94995 0 8.71423Z' fill='white' />
             </svg>
           </div>
         </button>
@@ -598,7 +673,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-12 h-12 rounded-full object-cover ring-4 border-2 ring-pink-500' src='https://randomuser.me/api/portraits/men/81.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover ring-4 border-2 ring-pink-500' src='https://randomuser.me/api/portraits/men/81.jpg' alt='avatar' />
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold block'>Robert Fox</a>
               <span className='text-slate-600 text-sm'>Download all information</span>
@@ -649,8 +724,8 @@ function App () {
                 <path d='M54.575 30.6546C57.0189 30.6546 59.034 32.6467 58.6688 35.0631C58.1258 38.6557 56.9218 42.13 55.1047 45.3056C52.5522 49.7665 48.8785 53.4832 44.4475 56.0873C40.0165 58.6915 34.9821 60.0929 29.8428 60.1526C24.7036 60.2124 19.6379 58.9284 15.1476 56.4279C10.6573 53.9273 6.89824 50.2971 4.24273 45.8967C1.58722 41.4962 0.127435 36.4784 0.00799284 31.3402C-0.11145 26.202 1.11359 21.1218 3.56176 16.6027C5.30453 13.3858 7.62408 10.5327 10.3922 8.17926C12.2542 6.59631 15.0088 7.26037 16.2957 9.33794C17.5826 11.4155 16.8979 14.1143 15.1415 15.8136C13.6337 17.2724 12.3508 18.9585 11.3432 20.8183C9.62952 23.9816 8.77199 27.5378 8.8556 31.1345C8.93921 34.7313 9.96106 38.2438 11.8199 41.324C13.6788 44.4043 16.3101 46.9455 19.4533 48.6959C22.5966 50.4463 26.1425 51.3451 29.74 51.3032C33.3375 51.2614 36.8616 50.2805 39.9633 48.4575C43.0649 46.6346 45.6365 44.0329 47.4233 40.9103C48.4738 39.0744 49.2316 37.0959 49.6777 35.0459C50.1974 32.6579 52.1312 30.6546 54.575 30.6546Z' fill='url(#paint0_linear_336_22)' />
                 <defs>
                   <linearGradient id='paint0_linear_336_22' x1='0' y1='30.6546' x2='59' y2='30.6546' gradientUnits='userSpaceOnUse'>
-                    <stop stop-color='#EB3349' />
-                    <stop offset='1' stop-color='#F45C43' />
+                    <stop stopColor='#EB3349' />
+                    <stop offset='1' stopColor='#F45C43' />
                   </linearGradient>
                 </defs>
               </svg>
@@ -744,7 +819,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/84.jpg' alt='avatar' />
+            <img className='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/84.jpg' alt='avatar' />
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold text-lg'>Wade warren</a>
               <div className='flex items-center space-x-3'>
@@ -791,26 +866,26 @@ function App () {
         <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4'>
           <div className='flex justify-between items-center'>
             <div className='block'>
-              <dt class='sr-only'>Users</dt>
+              <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/48.jpg' alt='avatar' />
+                  <img className='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/48.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/15.jpg' alt='avatar' />
+                  <img className='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/15.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/37.jpg' alt='avatar' />
+                  <img className='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/37.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/78.jpg' alt='avatar' />
+                  <img className='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/78.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
             <div className='flex justify-center items-center rounded-md px-2 py-1 bg-red-100 space-x-3 font-medium'>
               <span>23%</span>
-              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.57835 7.65466H14.1787C14.3063 7.6544 14.4313 7.6309 14.5404 7.5867C14.6495 7.5425 14.7384 7.47927 14.7977 7.40382C14.8569 7.32837 14.8842 7.24356 14.8767 7.15851C14.8692 7.07346 14.827 6.9914 14.7548 6.92115L8.45465 0.84365C8.19354 0.591667 7.56492 0.591667 7.30311 0.84365L1.00293 6.92115C0.93001 6.99125 0.887245 7.07336 0.879287 7.15855C0.871328 7.24374 0.898481 7.32876 0.957793 7.40437C1.01711 7.47997 1.10631 7.54328 1.21572 7.58741C1.32512 7.63154 1.45054 7.6548 1.57835 7.65466Z" fill="#E31414"/>
+              <svg width='15' height='8' viewBox='0 0 15 8' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M1.57835 7.65466H14.1787C14.3063 7.6544 14.4313 7.6309 14.5404 7.5867C14.6495 7.5425 14.7384 7.47927 14.7977 7.40382C14.8569 7.32837 14.8842 7.24356 14.8767 7.15851C14.8692 7.07346 14.827 6.9914 14.7548 6.92115L8.45465 0.84365C8.19354 0.591667 7.56492 0.591667 7.30311 0.84365L1.00293 6.92115C0.93001 6.99125 0.887245 7.07336 0.879287 7.15855C0.871328 7.24374 0.898481 7.32876 0.957793 7.40437C1.01711 7.47997 1.10631 7.54328 1.21572 7.58741C1.32512 7.63154 1.45054 7.6548 1.57835 7.65466Z' fill='#E31414' />
               </svg>
             </div>
             <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100'>
@@ -826,36 +901,36 @@ function App () {
           <ul className='flex justify-between items-center'>
             <li className='flex items-center justify-center'>
               <a href='#' className='flex items-center justify-center w-12 h-12 bg-white rounded-full transition-all hover:bg-bg-white'>
-              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.7127 0.450376C10.6197 0.356674 10.5092 0.282302 10.3874 0.231548C10.2655 0.180794 10.1349 0.154663 10.0029 0.154663C9.87092 0.154663 9.74025 0.180794 9.61842 0.231548C9.4966 0.282302 9.38603 0.356674 9.2931 0.450376L0.295712 9.44777C0.202011 9.5407 0.127638 9.65127 0.0768846 9.7731C0.0261306 9.89492 0 10.0256 0 10.1576C0 10.2895 0.0261306 10.4202 0.0768846 10.542C0.127638 10.6639 0.202011 10.7744 0.295712 10.8674C0.389125 10.96 0.499909 11.0333 0.621711 11.0831C0.743513 11.1328 0.873938 11.158 1.00551 11.1573H2.00522V18.1552C2.00522 18.6855 2.21587 19.1941 2.59083 19.569C2.9658 19.944 3.47435 20.1547 4.00463 20.1547H16.0011C16.5314 20.1547 17.04 19.944 17.4149 19.569C17.7899 19.1941 18.0006 18.6855 18.0006 18.1552V11.1573H19.0003C19.2654 11.1573 19.5197 11.0519 19.7072 10.8645C19.8947 10.677 20 10.4227 20 10.1576C20.0007 10.026 19.9755 9.89557 19.9258 9.77377C19.876 9.65196 19.8027 9.54118 19.7101 9.44777L10.7127 0.450376ZM4.00463 18.1552V8.56802L10.0029 2.56976L16.0011 8.56802V18.1552H4.00463Z" fill="black"/>
-              </svg>
-             </a>
+                <svg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M10.7127 0.450376C10.6197 0.356674 10.5092 0.282302 10.3874 0.231548C10.2655 0.180794 10.1349 0.154663 10.0029 0.154663C9.87092 0.154663 9.74025 0.180794 9.61842 0.231548C9.4966 0.282302 9.38603 0.356674 9.2931 0.450376L0.295712 9.44777C0.202011 9.5407 0.127638 9.65127 0.0768846 9.7731C0.0261306 9.89492 0 10.0256 0 10.1576C0 10.2895 0.0261306 10.4202 0.0768846 10.542C0.127638 10.6639 0.202011 10.7744 0.295712 10.8674C0.389125 10.96 0.499909 11.0333 0.621711 11.0831C0.743513 11.1328 0.873938 11.158 1.00551 11.1573H2.00522V18.1552C2.00522 18.6855 2.21587 19.1941 2.59083 19.569C2.9658 19.944 3.47435 20.1547 4.00463 20.1547H16.0011C16.5314 20.1547 17.04 19.944 17.4149 19.569C17.7899 19.1941 18.0006 18.6855 18.0006 18.1552V11.1573H19.0003C19.2654 11.1573 19.5197 11.0519 19.7072 10.8645C19.8947 10.677 20 10.4227 20 10.1576C20.0007 10.026 19.9755 9.89557 19.9258 9.77377C19.876 9.65196 19.8027 9.54118 19.7101 9.44777L10.7127 0.450376ZM4.00463 18.1552V8.56802L10.0029 2.56976L16.0011 8.56802V18.1552H4.00463Z' fill='black' />
+                </svg>
+              </a>
             </li>
             <li className='flex items-center justify-center'>
               <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
                 <svg width='20' height='21' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                  <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='white' stroke-width='2' stroke-linecap='round' />
+                  <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='white' strokeWidth='2' strokeLinecap='round' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
               <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 1.23792C3.239 1.23792 1 3.45391 1 6.18791C1 8.39491 1.875 13.6329 10.488 18.9279C10.6423 19.0218 10.8194 19.0714 11 19.0714C11.1806 19.0714 11.3577 19.0218 11.512 18.9279C20.125 13.6329 21 8.39491 21 6.18791C21 3.45391 18.761 1.23792 16 1.23792C13.239 1.23792 11 4.23792 11 4.23792C11 4.23792 8.761 1.23792 6 1.23792Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <svg width='22' height='21' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M6 1.23792C3.239 1.23792 1 3.45391 1 6.18791C1 8.39491 1.875 13.6329 10.488 18.9279C10.6423 19.0218 10.8194 19.0714 11 19.0714C11.1806 19.0714 11.3577 19.0218 11.512 18.9279C20.125 13.6329 21 8.39491 21 6.18791C21 3.45391 18.761 1.23792 16 1.23792C13.239 1.23792 11 4.23792 11 4.23792C11 4.23792 8.761 1.23792 6 1.23792Z' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
               <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-              <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.7886 3.26538C22.4242 3.09926 22.0196 3.04523 21.6251 3.10999C21.2306 3.17476 20.8636 3.35547 20.5697 3.62966L17.991 6.05823V4.29752C17.991 3.33137 17.6119 2.4048 16.9371 1.72163C16.2623 1.03846 15.3471 0.654663 14.3928 0.654663H3.5982C2.6439 0.654663 1.72868 1.03846 1.05389 1.72163C0.379095 2.4048 0 3.33137 0 4.29752V14.0118C0 14.978 0.379095 15.9045 1.05389 16.5877C1.72868 17.2709 2.6439 17.6547 3.5982 17.6547H14.3928C15.3471 17.6547 16.2623 17.2709 16.9371 16.5877C17.6119 15.9045 17.991 14.978 17.991 14.0118V12.2511L20.5817 14.6797C20.9631 15.0292 21.4586 15.2238 21.973 15.2261C22.2585 15.2254 22.5406 15.1633 22.8006 15.0439C23.1544 14.8991 23.4574 14.6507 23.6711 14.3306C23.8847 14.0105 23.9992 13.6331 24 13.2468V5.06252C23.9983 4.67478 23.882 4.29644 23.6661 3.97617C23.4502 3.6559 23.1446 3.40835 22.7886 3.26538ZM15.5922 14.0118C15.5922 14.3339 15.4658 14.6427 15.2409 14.8704C15.016 15.0982 14.7109 15.2261 14.3928 15.2261H3.5982C3.2801 15.2261 2.97503 15.0982 2.7501 14.8704C2.52517 14.6427 2.3988 14.3339 2.3988 14.0118V4.29752C2.3988 3.97547 2.52517 3.66661 2.7501 3.43889C2.97503 3.21117 3.2801 3.08323 3.5982 3.08323H14.3928C14.7109 3.08323 15.016 3.21117 15.2409 3.43889C15.4658 3.66661 15.5922 3.97547 15.5922 4.29752V14.0118ZM21.5892 12.3118L18.2189 9.15466L21.5892 5.99752V12.3118Z" fill="white"/>
+                <svg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M22.7886 3.26538C22.4242 3.09926 22.0196 3.04523 21.6251 3.10999C21.2306 3.17476 20.8636 3.35547 20.5697 3.62966L17.991 6.05823V4.29752C17.991 3.33137 17.6119 2.4048 16.9371 1.72163C16.2623 1.03846 15.3471 0.654663 14.3928 0.654663H3.5982C2.6439 0.654663 1.72868 1.03846 1.05389 1.72163C0.379095 2.4048 0 3.33137 0 4.29752V14.0118C0 14.978 0.379095 15.9045 1.05389 16.5877C1.72868 17.2709 2.6439 17.6547 3.5982 17.6547H14.3928C15.3471 17.6547 16.2623 17.2709 16.9371 16.5877C17.6119 15.9045 17.991 14.978 17.991 14.0118V12.2511L20.5817 14.6797C20.9631 15.0292 21.4586 15.2238 21.973 15.2261C22.2585 15.2254 22.5406 15.1633 22.8006 15.0439C23.1544 14.8991 23.4574 14.6507 23.6711 14.3306C23.8847 14.0105 23.9992 13.6331 24 13.2468V5.06252C23.9983 4.67478 23.882 4.29644 23.6661 3.97617C23.4502 3.6559 23.1446 3.40835 22.7886 3.26538ZM15.5922 14.0118C15.5922 14.3339 15.4658 14.6427 15.2409 14.8704C15.016 15.0982 14.7109 15.2261 14.3928 15.2261H3.5982C3.2801 15.2261 2.97503 15.0982 2.7501 14.8704C2.52517 14.6427 2.3988 14.3339 2.3988 14.0118V4.29752C2.3988 3.97547 2.52517 3.66661 2.7501 3.43889C2.97503 3.21117 3.2801 3.08323 3.5982 3.08323H14.3928C14.7109 3.08323 15.016 3.21117 15.2409 3.43889C15.4658 3.66661 15.5922 3.97547 15.5922 4.29752V14.0118ZM21.5892 12.3118L18.2189 9.15466L21.5892 5.99752V12.3118Z' fill='white' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
               <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15.2626 16.1432L15.9145 15.5046C18.9308 15.6017 18.9772 15.4975 19.1097 15.1917L19.9384 13.2024L20 13.0138L19.9326 12.8488C19.8971 12.7617 19.7878 12.5017 17.9044 10.731V9.79951C20.0775 7.73519 20.0311 7.62948 19.9073 7.32733L19.0822 5.3173C18.9583 5.01587 18.9113 4.89801 15.9167 4.97872L15.2648 4.31443C15.3321 3.33591 15.2978 2.35318 15.1626 1.38152L15.0786 1.19366L12.9243 0.265079C12.607 0.122219 12.4955 0.0707899 10.4614 2.25511L9.54727 2.24154C7.4531 0.037218 7.35386 0.0772185 7.0402 0.20222L5.03731 1.0008C4.72365 1.12581 4.61282 1.17009 4.73452 4.17014L4.08765 4.80586C1.0728 4.70872 1.02644 4.81443 0.895328 5.11872L0.0651939 7.10875L0 7.29947L0.0680913 7.46519C0.103586 7.5509 0.20862 7.80805 2.09634 9.58094V10.5095C-0.0767836 12.5738 -0.0296994 12.6796 0.0948932 12.9824L0.919232 14.9946C1.04527 15.3025 1.09019 15.4117 4.08403 15.3346L4.73597 16.0025C4.66839 16.9795 4.70164 17.9607 4.8352 18.9311L4.91923 19.1204L7.08729 20.0547C7.40239 20.1847 7.51177 20.2311 9.54002 18.0546L10.4542 18.0661C12.5512 20.2732 12.6585 20.2304 12.9649 20.1082L14.9634 19.3118C15.2792 19.1882 15.3894 19.1447 15.2626 16.1432ZM6.67294 11.4831C6.42018 10.8317 6.36814 10.1212 6.52335 9.44074C6.67856 8.76029 7.03412 8.14018 7.5454 7.65825C8.05668 7.17631 8.70092 6.85401 9.39727 6.73178C10.0936 6.60955 10.8111 6.69283 11.4596 6.97119C12.1081 7.24954 12.6589 7.71057 13.0427 8.29641C13.4265 8.88225 13.6263 9.56682 13.617 10.2642C13.6077 10.9616 13.3897 11.6408 12.9905 12.2165C12.5912 12.7922 12.0284 13.2388 11.3727 13.5003C10.478 13.8453 9.48122 13.8267 8.60041 13.4487C7.7196 13.0706 7.02655 12.3639 6.67294 11.4831Z" fill="white"/>
+                <svg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M15.2626 16.1432L15.9145 15.5046C18.9308 15.6017 18.9772 15.4975 19.1097 15.1917L19.9384 13.2024L20 13.0138L19.9326 12.8488C19.8971 12.7617 19.7878 12.5017 17.9044 10.731V9.79951C20.0775 7.73519 20.0311 7.62948 19.9073 7.32733L19.0822 5.3173C18.9583 5.01587 18.9113 4.89801 15.9167 4.97872L15.2648 4.31443C15.3321 3.33591 15.2978 2.35318 15.1626 1.38152L15.0786 1.19366L12.9243 0.265079C12.607 0.122219 12.4955 0.0707899 10.4614 2.25511L9.54727 2.24154C7.4531 0.037218 7.35386 0.0772185 7.0402 0.20222L5.03731 1.0008C4.72365 1.12581 4.61282 1.17009 4.73452 4.17014L4.08765 4.80586C1.0728 4.70872 1.02644 4.81443 0.895328 5.11872L0.0651939 7.10875L0 7.29947L0.0680913 7.46519C0.103586 7.5509 0.20862 7.80805 2.09634 9.58094V10.5095C-0.0767836 12.5738 -0.0296994 12.6796 0.0948932 12.9824L0.919232 14.9946C1.04527 15.3025 1.09019 15.4117 4.08403 15.3346L4.73597 16.0025C4.66839 16.9795 4.70164 17.9607 4.8352 18.9311L4.91923 19.1204L7.08729 20.0547C7.40239 20.1847 7.51177 20.2311 9.54002 18.0546L10.4542 18.0661C12.5512 20.2732 12.6585 20.2304 12.9649 20.1082L14.9634 19.3118C15.2792 19.1882 15.3894 19.1447 15.2626 16.1432ZM6.67294 11.4831C6.42018 10.8317 6.36814 10.1212 6.52335 9.44074C6.67856 8.76029 7.03412 8.14018 7.5454 7.65825C8.05668 7.17631 8.70092 6.85401 9.39727 6.73178C10.0936 6.60955 10.8111 6.69283 11.4596 6.97119C12.1081 7.24954 12.6589 7.71057 13.0427 8.29641C13.4265 8.88225 13.6263 9.56682 13.617 10.2642C13.6077 10.9616 13.3897 11.6408 12.9905 12.2165C12.5912 12.7922 12.0284 13.2388 11.3727 13.5003C10.478 13.8453 9.48122 13.8267 8.60041 13.4487C7.7196 13.0706 7.02655 12.3639 6.67294 11.4831Z' fill='white' />
                 </svg>
               </a>
             </li>
@@ -866,31 +941,31 @@ function App () {
         <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-2'>
             <div className='mr-2'>
-              <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
+              <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
             </div>
             <button type='button'>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z" fill="black"/>
+              <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z' fill='black' />
               </svg>
             </button>
             <button type='button'>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z" fill="black"/>
+              <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z' fill='black' />
               </svg>
             </button>
             <button type='button'>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z" fill="black"/>
+              <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z' fill='black' />
               </svg>
             </button>
             <button type='button'>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z" fill="black"/>
+              <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z' fill='black' />
               </svg>
             </button>
             <button type='button'>
-              <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z" fill="black"/>
+              <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M17.1206 22.0917C16.7435 22.0894 16.3746 21.9811 16.0561 21.7792L11.3295 18.7812L6.94478 21.5644C6.58457 21.794 6.16337 21.9095 5.73641 21.8955C5.30945 21.8816 4.89667 21.7389 4.55221 21.4863C4.19609 21.2294 3.92553 20.8712 3.77575 20.4584C3.62596 20.0456 3.60387 19.5973 3.71236 19.1718L4.99166 14.1718L0.72408 10.6269C0.414555 10.3655 0.189833 10.0179 0.0785303 9.6283C-0.0327721 9.23874 -0.0256185 8.82487 0.0990802 8.43939C0.221194 8.05796 0.454908 7.72192 0.770011 7.47472C1.08512 7.22751 1.46712 7.08049 1.86666 7.05268L7.41353 6.70111L9.48385 1.4765C9.62929 1.10544 9.8832 0.786828 10.2125 0.562243C10.5417 0.337659 10.931 0.217529 11.3295 0.217529C11.7281 0.217529 12.1174 0.337659 12.4466 0.562243C12.7759 0.786828 13.0298 1.10544 13.1753 1.4765L15.2456 6.70111L20.7924 7.05268C21.192 7.08049 21.574 7.22751 21.8891 7.47472C22.2042 7.72192 22.4379 8.05796 22.56 8.43939C22.6847 8.82487 22.6919 9.23874 22.5806 9.6283C22.4693 10.0179 22.2445 10.3655 21.935 10.6269L17.6674 14.1718L19.0444 19.5722C19.1465 19.9649 19.1274 20.3793 18.9897 20.761C18.8521 21.1427 18.6022 21.4738 18.2729 21.7109C17.9393 21.9576 17.5355 22.0911 17.1206 22.0917ZM11.3295 16.3788C11.7029 16.3764 12.0691 16.4815 12.3842 16.6816L16.5639 19.3281L15.353 14.5527C15.2593 14.1815 15.2719 13.7915 15.3893 13.4271C15.5067 13.0627 15.7243 12.7387 16.017 12.4921L19.8061 9.33783L14.8745 9.02533C14.4984 8.99848 14.1376 8.866 13.8336 8.64314C13.5295 8.42027 13.2945 8.11608 13.1557 7.76557L11.3295 3.17572L9.50338 7.76557C9.36457 8.11608 9.12961 8.42027 8.82555 8.64314C8.52148 8.866 8.16066 8.99848 7.78463 9.02533L2.85299 9.33783L6.64205 12.4921C6.93484 12.7387 7.15237 13.0627 7.26979 13.4271C7.38721 13.7915 7.3998 14.1815 7.30611 14.5527L6.09517 19.3281L10.2749 16.6816C10.59 16.4815 10.9562 16.3764 11.3295 16.3788Z' fill='black' />
               </svg>
             </button>
           </div>
@@ -899,8 +974,8 @@ function App () {
         {/* widget */}
         <div className='break-inside flex flex-row justify-between bg-white items-center rounded-full px-6 py-4 mb-4'>
           <div className='flex items-center space-x-5 font-medium'>
-            <svg width="23" height="27" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3.9 0.154663V2.79103H2.6C1.157 2.79103 0 3.96421 0 5.42739V23.8819C0 24.5811 0.273928 25.2517 0.761522 25.7461C1.24912 26.2405 1.91044 26.5183 2.6 26.5183H10.53C12.168 28.1528 14.417 29.1547 16.9 29.1547C21.931 29.1547 26 25.0288 26 19.9274C26 17.4097 25.012 15.1292 23.4 13.4683V5.42739C23.4 4.72818 23.1261 4.05761 22.6385 3.5632C22.1509 3.06879 21.4896 2.79103 20.8 2.79103H19.5V0.154663H16.9V2.79103H6.5V0.154663M2.6 5.42739H20.8V8.06375H2.6M2.6 10.7001H20.8V11.5833C19.617 11.0165 18.291 10.7001 16.9 10.7001C11.869 10.7001 7.8 14.826 7.8 19.9274C7.8 21.3378 8.112 22.6824 8.671 23.8819H2.6M16.9 13.5342C20.384 13.5342 23.205 16.3947 23.205 19.9274C23.205 23.4601 20.384 26.3206 16.9 26.3206C13.416 26.3206 10.595 23.4601 10.595 19.9274C10.595 16.3947 13.416 13.5342 16.9 13.5342ZM15.6 15.9728V20.8369L19.747 23.2624L20.722 21.5488L17.55 19.6901V15.9728H15.6Z" fill="black"/>
+            <svg width='23' height='27' viewBox='0 0 26 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M3.9 0.154663V2.79103H2.6C1.157 2.79103 0 3.96421 0 5.42739V23.8819C0 24.5811 0.273928 25.2517 0.761522 25.7461C1.24912 26.2405 1.91044 26.5183 2.6 26.5183H10.53C12.168 28.1528 14.417 29.1547 16.9 29.1547C21.931 29.1547 26 25.0288 26 19.9274C26 17.4097 25.012 15.1292 23.4 13.4683V5.42739C23.4 4.72818 23.1261 4.05761 22.6385 3.5632C22.1509 3.06879 21.4896 2.79103 20.8 2.79103H19.5V0.154663H16.9V2.79103H6.5V0.154663M2.6 5.42739H20.8V8.06375H2.6M2.6 10.7001H20.8V11.5833C19.617 11.0165 18.291 10.7001 16.9 10.7001C11.869 10.7001 7.8 14.826 7.8 19.9274C7.8 21.3378 8.112 22.6824 8.671 23.8819H2.6M16.9 13.5342C20.384 13.5342 23.205 16.3947 23.205 19.9274C23.205 23.4601 20.384 26.3206 16.9 26.3206C13.416 26.3206 10.595 23.4601 10.595 19.9274C10.595 16.3947 13.416 13.5342 16.9 13.5342ZM15.6 15.9728V20.8369L19.747 23.2624L20.722 21.5488L17.55 19.6901V15.9728H15.6Z' fill='black' />
             </svg>
             <div className='border-2 border-slate-300 h-6 rounded-sm' />
             <span>January, 05</span>
@@ -915,24 +990,24 @@ function App () {
         {/* widget */}
         <div className='break-inside flex flex-row justify-between bg-white items-center rounded-full px-6 py-4 mb-4'>
           <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12'>
-          <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M10.3214 11.1547C10.3214 11.4672 10.4456 11.767 10.6666 11.988C10.8877 12.2091 11.1874 12.3332 11.5 12.3332C11.8126 12.3332 12.1123 12.2091 12.3334 11.988C12.5544 11.767 12.6786 11.4672 12.6786 11.1547C12.6786 10.8421 12.5544 10.5423 12.3334 10.3213C12.1123 10.1003 11.8126 9.97609 11.5 9.97609C11.1874 9.97609 10.8877 10.1003 10.6666 10.3213C10.4456 10.5423 10.3214 10.8421 10.3214 11.1547ZM15.2321 11.1547C15.2321 11.4672 15.3563 11.767 15.5773 11.988C15.7983 12.2091 16.0981 12.3332 16.4107 12.3332C16.7232 12.3332 17.023 12.2091 17.244 11.988C17.465 11.767 17.5892 11.4672 17.5892 11.1547C17.5892 10.8421 17.465 10.5423 17.244 10.3213C17.023 10.1003 16.7232 9.97609 16.4107 9.97609C16.0981 9.97609 15.7983 10.1003 15.5773 10.3213C15.3563 10.5423 15.2321 10.8421 15.2321 11.1547ZM5.41079 11.1547C5.41079 11.4672 5.53496 11.767 5.75598 11.988C5.97701 12.2091 6.27678 12.3332 6.58935 12.3332C6.90192 12.3332 7.20169 12.2091 7.42271 11.988C7.64374 11.767 7.76791 11.4672 7.76791 11.1547C7.76791 10.8421 7.64374 10.5423 7.42271 10.3213C7.20169 10.1003 6.90192 9.97609 6.58935 9.97609C6.27678 9.97609 5.97701 10.1003 5.75598 10.3213C5.53496 10.5423 5.41079 10.8421 5.41079 11.1547ZM21.6454 6.89216C21.0905 5.57364 20.295 4.39015 19.2809 3.37364C18.274 2.363 17.0786 1.55967 15.7624 1.00913C14.412 0.44194 12.9781 0.154663 11.5 0.154663H11.4509C9.96297 0.162029 8.52169 0.456672 7.16635 1.03614C5.86149 1.59233 4.6773 2.39708 3.67979 3.40556C2.67556 4.41962 1.8874 5.59819 1.34232 6.91181C0.777591 8.27207 0.492773 9.71828 0.500139 11.2062C0.508471 12.9114 0.911877 14.5914 1.6787 16.1145V19.8466C1.6787 20.1462 1.79769 20.4335 2.0095 20.6453C2.22132 20.8571 2.5086 20.9761 2.80815 20.9761H6.5427C8.06572 21.7429 9.74574 22.1463 11.4509 22.1547H11.5025C12.9732 22.1547 14.3997 21.8698 15.7428 21.3125C17.0523 20.7685 18.2432 19.9745 19.249 18.975C20.2631 17.9707 21.061 16.7971 21.6184 15.4884C22.1979 14.133 22.4925 12.6917 22.4999 11.2038C22.5072 9.70846 22.2175 8.25734 21.6454 6.89216ZM17.9354 17.6466C16.2142 19.3506 13.9308 20.2886 11.5 20.2886H11.4583C9.9777 20.2812 8.50696 19.9129 7.20809 19.2205L7.00184 19.11H3.54474V15.6529L3.43425 15.4466C2.74185 14.1477 2.37355 12.677 2.36619 11.1964C2.35637 8.74841 3.29185 6.4502 5.00812 4.71917C6.72194 2.98815 9.01276 2.03056 11.4607 2.02073H11.5025C12.7301 2.02073 13.921 2.2589 15.043 2.73033C16.1381 3.18948 17.1202 3.84998 17.9649 4.69462C18.8071 5.53681 19.47 6.5214 19.9291 7.61649C20.4055 8.75087 20.6436 9.95399 20.6387 11.1964C20.624 13.6419 19.664 15.9328 17.9354 17.6466Z" fill="black"/>
+            <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M10.3214 11.1547C10.3214 11.4672 10.4456 11.767 10.6666 11.988C10.8877 12.2091 11.1874 12.3332 11.5 12.3332C11.8126 12.3332 12.1123 12.2091 12.3334 11.988C12.5544 11.767 12.6786 11.4672 12.6786 11.1547C12.6786 10.8421 12.5544 10.5423 12.3334 10.3213C12.1123 10.1003 11.8126 9.97609 11.5 9.97609C11.1874 9.97609 10.8877 10.1003 10.6666 10.3213C10.4456 10.5423 10.3214 10.8421 10.3214 11.1547ZM15.2321 11.1547C15.2321 11.4672 15.3563 11.767 15.5773 11.988C15.7983 12.2091 16.0981 12.3332 16.4107 12.3332C16.7232 12.3332 17.023 12.2091 17.244 11.988C17.465 11.767 17.5892 11.4672 17.5892 11.1547C17.5892 10.8421 17.465 10.5423 17.244 10.3213C17.023 10.1003 16.7232 9.97609 16.4107 9.97609C16.0981 9.97609 15.7983 10.1003 15.5773 10.3213C15.3563 10.5423 15.2321 10.8421 15.2321 11.1547ZM5.41079 11.1547C5.41079 11.4672 5.53496 11.767 5.75598 11.988C5.97701 12.2091 6.27678 12.3332 6.58935 12.3332C6.90192 12.3332 7.20169 12.2091 7.42271 11.988C7.64374 11.767 7.76791 11.4672 7.76791 11.1547C7.76791 10.8421 7.64374 10.5423 7.42271 10.3213C7.20169 10.1003 6.90192 9.97609 6.58935 9.97609C6.27678 9.97609 5.97701 10.1003 5.75598 10.3213C5.53496 10.5423 5.41079 10.8421 5.41079 11.1547ZM21.6454 6.89216C21.0905 5.57364 20.295 4.39015 19.2809 3.37364C18.274 2.363 17.0786 1.55967 15.7624 1.00913C14.412 0.44194 12.9781 0.154663 11.5 0.154663H11.4509C9.96297 0.162029 8.52169 0.456672 7.16635 1.03614C5.86149 1.59233 4.6773 2.39708 3.67979 3.40556C2.67556 4.41962 1.8874 5.59819 1.34232 6.91181C0.777591 8.27207 0.492773 9.71828 0.500139 11.2062C0.508471 12.9114 0.911877 14.5914 1.6787 16.1145V19.8466C1.6787 20.1462 1.79769 20.4335 2.0095 20.6453C2.22132 20.8571 2.5086 20.9761 2.80815 20.9761H6.5427C8.06572 21.7429 9.74574 22.1463 11.4509 22.1547H11.5025C12.9732 22.1547 14.3997 21.8698 15.7428 21.3125C17.0523 20.7685 18.2432 19.9745 19.249 18.975C20.2631 17.9707 21.061 16.7971 21.6184 15.4884C22.1979 14.133 22.4925 12.6917 22.4999 11.2038C22.5072 9.70846 22.2175 8.25734 21.6454 6.89216ZM17.9354 17.6466C16.2142 19.3506 13.9308 20.2886 11.5 20.2886H11.4583C9.9777 20.2812 8.50696 19.9129 7.20809 19.2205L7.00184 19.11H3.54474V15.6529L3.43425 15.4466C2.74185 14.1477 2.37355 12.677 2.36619 11.1964C2.35637 8.74841 3.29185 6.4502 5.00812 4.71917C6.72194 2.98815 9.01276 2.03056 11.4607 2.02073H11.5025C12.7301 2.02073 13.921 2.2589 15.043 2.73033C16.1381 3.18948 17.1202 3.84998 17.9649 4.69462C18.8071 5.53681 19.47 6.5214 19.9291 7.61649C20.4055 8.75087 20.6436 9.95399 20.6387 11.1964C20.624 13.6419 19.664 15.9328 17.9354 17.6466Z' fill='black' />
             </svg>
           </button>
           <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12'>
-          <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.5 3.65466C0.5 2.85901 0.82924 2.09595 1.41529 1.53334C2.00134 0.970733 2.7962 0.654663 3.625 0.654663H15.3438C16.1017 0.654578 16.8339 0.918952 17.4039 1.39855C17.9739 1.87816 18.3429 2.54029 18.4422 3.26166L23.3016 1.18866C23.5394 1.08692 23.8 1.04386 24.0596 1.06339C24.3192 1.08292 24.5696 1.16443 24.788 1.30051C25.0065 1.43658 25.186 1.62291 25.3104 1.84255C25.4347 2.06219 25.4999 2.30818 25.5 2.55816V13.7512C25.4998 14.0009 25.4346 14.2467 25.3103 14.4662C25.1861 14.6857 25.0067 14.8719 24.7885 15.0079C24.5702 15.1439 24.3201 15.2255 24.0607 15.2452C23.8013 15.2649 23.5409 15.2221 23.3031 15.1207L18.4422 13.0477C18.3429 13.769 17.9739 14.4312 17.4039 14.9108C16.8339 15.3904 16.1017 15.6547 15.3438 15.6547H3.625C2.7962 15.6547 2.00134 15.3386 1.41529 14.776C0.82924 14.2134 0.5 13.4503 0.5 12.6547V3.65466ZM18.4688 11.4172L23.9375 13.7512V2.55816L18.4688 4.89216V11.4172ZM3.625 2.15466C3.2106 2.15466 2.81317 2.3127 2.52015 2.594C2.22712 2.87531 2.0625 3.25684 2.0625 3.65466V12.6547C2.0625 13.0525 2.22712 13.434 2.52015 13.7153C2.81317 13.9966 3.2106 14.1547 3.625 14.1547H15.3438C15.7582 14.1547 16.1556 13.9966 16.4486 13.7153C16.7416 13.434 16.9062 13.0525 16.9062 12.6547V3.65466C16.9062 3.25684 16.7416 2.87531 16.4486 2.594C16.1556 2.3127 15.7582 2.15466 15.3438 2.15466H3.625Z" fill="black"/>
+            <svg width='26' height='16' viewBox='0 0 26 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path fillRule='evenodd' clipRule='evenodd' d='M0.5 3.65466C0.5 2.85901 0.82924 2.09595 1.41529 1.53334C2.00134 0.970733 2.7962 0.654663 3.625 0.654663H15.3438C16.1017 0.654578 16.8339 0.918952 17.4039 1.39855C17.9739 1.87816 18.3429 2.54029 18.4422 3.26166L23.3016 1.18866C23.5394 1.08692 23.8 1.04386 24.0596 1.06339C24.3192 1.08292 24.5696 1.16443 24.788 1.30051C25.0065 1.43658 25.186 1.62291 25.3104 1.84255C25.4347 2.06219 25.4999 2.30818 25.5 2.55816V13.7512C25.4998 14.0009 25.4346 14.2467 25.3103 14.4662C25.1861 14.6857 25.0067 14.8719 24.7885 15.0079C24.5702 15.1439 24.3201 15.2255 24.0607 15.2452C23.8013 15.2649 23.5409 15.2221 23.3031 15.1207L18.4422 13.0477C18.3429 13.769 17.9739 14.4312 17.4039 14.9108C16.8339 15.3904 16.1017 15.6547 15.3438 15.6547H3.625C2.7962 15.6547 2.00134 15.3386 1.41529 14.776C0.82924 14.2134 0.5 13.4503 0.5 12.6547V3.65466ZM18.4688 11.4172L23.9375 13.7512V2.55816L18.4688 4.89216V11.4172ZM3.625 2.15466C3.2106 2.15466 2.81317 2.3127 2.52015 2.594C2.22712 2.87531 2.0625 3.25684 2.0625 3.65466V12.6547C2.0625 13.0525 2.22712 13.434 2.52015 13.7153C2.81317 13.9966 3.2106 14.1547 3.625 14.1547H15.3438C15.7582 14.1547 16.1556 13.9966 16.4486 13.7153C16.7416 13.434 16.9062 13.0525 16.9062 12.6547V3.65466C16.9062 3.25684 16.7416 2.87531 16.4486 2.594C16.1556 2.3127 15.7582 2.15466 15.3438 2.15466H3.625Z' fill='black' />
             </svg>
           </button>
-          <img class='flex-none w-14 h-14 rounded-full object-cover ring-8 ring-slate-100 border-4 border-white' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
+          <img className='flex-none w-14 h-14 rounded-full object-cover ring-8 ring-slate-100 border-4 border-white' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
           <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12'>
-          <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M16.489 19.279C16.489 17.0211 14.302 15.8721 12.172 14.9492C10.049 14.0303 9.371 13.2563 9.371 11.5975C9.371 10.6033 10.019 10.927 10.303 9.10335C10.423 8.34736 10.995 9.09129 11.105 7.36518C11.105 6.67755 10.792 6.50665 10.792 6.50665C10.792 6.50665 10.951 5.48828 11.013 4.70414C11.077 3.8828 10.615 2.13056 8.712 1.59272C8.38 1.24991 8.155 0.706042 9.179 0.161166C6.939 0.0566147 6.418 1.23483 5.225 2.1014C4.21 2.86141 3.936 4.06476 3.985 4.70514C4.05 5.48928 4.208 6.50765 4.208 6.50765C4.208 6.50765 3.894 6.67856 3.894 7.36618C4.004 9.0933 4.578 8.34837 4.697 9.10436C4.981 10.928 5.63 10.6043 5.63 11.5985C5.63 13.2573 5.418 13.8202 3.294 14.7391C1.163 15.661 0.5 17.1388 0.511 19.279C0.514 19.9194 0.5 20.1547 0.5 20.1547H16.5C16.5 20.1547 16.489 19.9194 16.489 19.279ZM19.028 13.4845C17.893 13.025 17.423 12.4772 17.423 11.4075C17.423 10.7631 17.841 10.9732 18.025 9.79601C18.102 9.30944 18.472 9.78796 18.543 8.67509C18.543 8.23175 18.341 8.12117 18.341 8.12117C18.341 8.12117 18.444 7.46169 18.484 6.95602C18.534 6.32569 18.12 4.6971 16.216 4.6971C14.313 4.6971 13.898 6.32569 13.947 6.95602C13.989 7.46068 14.091 8.12117 14.091 8.12117C14.091 8.12117 13.889 8.23075 13.889 8.67509C13.96 9.78796 14.33 9.30944 14.407 9.79601C14.591 10.9742 15.009 10.7641 15.009 11.4075C15.009 12.4772 14.571 12.9778 13.2 13.5709C13.131 13.6001 13.08 13.6393 13.017 13.6735C14.657 14.3892 17.243 15.6248 17.855 18.1441H20.5V15.8138C20.5 14.8085 20.227 13.97 19.028 13.4845Z" fill="black"/>
+            <svg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M16.489 19.279C16.489 17.0211 14.302 15.8721 12.172 14.9492C10.049 14.0303 9.371 13.2563 9.371 11.5975C9.371 10.6033 10.019 10.927 10.303 9.10335C10.423 8.34736 10.995 9.09129 11.105 7.36518C11.105 6.67755 10.792 6.50665 10.792 6.50665C10.792 6.50665 10.951 5.48828 11.013 4.70414C11.077 3.8828 10.615 2.13056 8.712 1.59272C8.38 1.24991 8.155 0.706042 9.179 0.161166C6.939 0.0566147 6.418 1.23483 5.225 2.1014C4.21 2.86141 3.936 4.06476 3.985 4.70514C4.05 5.48928 4.208 6.50765 4.208 6.50765C4.208 6.50765 3.894 6.67856 3.894 7.36618C4.004 9.0933 4.578 8.34837 4.697 9.10436C4.981 10.928 5.63 10.6043 5.63 11.5985C5.63 13.2573 5.418 13.8202 3.294 14.7391C1.163 15.661 0.5 17.1388 0.511 19.279C0.514 19.9194 0.5 20.1547 0.5 20.1547H16.5C16.5 20.1547 16.489 19.9194 16.489 19.279ZM19.028 13.4845C17.893 13.025 17.423 12.4772 17.423 11.4075C17.423 10.7631 17.841 10.9732 18.025 9.79601C18.102 9.30944 18.472 9.78796 18.543 8.67509C18.543 8.23175 18.341 8.12117 18.341 8.12117C18.341 8.12117 18.444 7.46169 18.484 6.95602C18.534 6.32569 18.12 4.6971 16.216 4.6971C14.313 4.6971 13.898 6.32569 13.947 6.95602C13.989 7.46068 14.091 8.12117 14.091 8.12117C14.091 8.12117 13.889 8.23075 13.889 8.67509C13.96 9.78796 14.33 9.30944 14.407 9.79601C14.591 10.9742 15.009 10.7641 15.009 11.4075C15.009 12.4772 14.571 12.9778 13.2 13.5709C13.131 13.6001 13.08 13.6393 13.017 13.6735C14.657 14.3892 17.243 15.6248 17.855 18.1441H20.5V15.8138C20.5 14.8085 20.227 13.97 19.028 13.4845Z' fill='black' />
             </svg>
           </button>
           <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12'>
-          <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15.947 21.6052V21.6169M19.5274 18.6902V18.7019M21.5 14.4809V14.4925M21.5 9.81679V9.82846M19.5274 5.60747V5.61913M15.947 2.69242V2.70408M11.5 1.65466V1.66632M7.05302 2.69242V2.70408M3.47263 5.60747V5.61913M1.5 9.81679V9.82846M1.5 14.4809V14.4925M3.47263 18.6902V18.7019M7.05302 21.6052V21.6169M11.5 22.643V22.6547M12.6403 12.1488C12.6403 12.7928 12.1297 13.3149 11.5 13.3149C10.8703 13.3149 10.3597 12.7928 10.3597 12.1488C10.3597 11.5049 10.8703 10.9828 11.5 10.9828C12.1297 10.9828 12.6403 11.5049 12.6403 12.1488ZM17.2013 12.1488C17.2013 15.3687 14.6487 17.9789 11.5 17.9789C8.35128 17.9789 5.79875 15.3687 5.79875 12.1488C5.79875 8.92896 8.35128 6.31874 11.5 6.31874C14.6487 6.31874 17.2013 8.92896 17.2013 12.1488Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <svg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M15.947 21.6052V21.6169M19.5274 18.6902V18.7019M21.5 14.4809V14.4925M21.5 9.81679V9.82846M19.5274 5.60747V5.61913M15.947 2.69242V2.70408M11.5 1.65466V1.66632M7.05302 2.69242V2.70408M3.47263 5.60747V5.61913M1.5 9.81679V9.82846M1.5 14.4809V14.4925M3.47263 18.6902V18.7019M7.05302 21.6052V21.6169M11.5 22.643V22.6547M12.6403 12.1488C12.6403 12.7928 12.1297 13.3149 11.5 13.3149C10.8703 13.3149 10.3597 12.7928 10.3597 12.1488C10.3597 11.5049 10.8703 10.9828 11.5 10.9828C12.1297 10.9828 12.6403 11.5049 12.6403 12.1488ZM17.2013 12.1488C17.2013 15.3687 14.6487 17.9789 11.5 17.9789C8.35128 17.9789 5.79875 15.3687 5.79875 12.1488C5.79875 8.92896 8.35128 6.31874 11.5 6.31874C14.6487 6.31874 17.2013 8.92896 17.2013 12.1488Z' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
             </svg>
           </button>
         </div>
@@ -951,7 +1026,7 @@ function App () {
             </div>
           </div>
         </div>
-        
+
         {/** widget */}
         <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center justify-between mb-3'>
@@ -966,19 +1041,19 @@ function App () {
             </a>
           </div>
           <div className='col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4'>
-            <dt class='sr-only'>Users</dt>
+            <dt className='sr-only'>Users</dt>
             <dd className='flex justify-start -space-x-1.5'>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                <img className='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                <img className='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+                <img className='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
               </a>
               <a href='#' className='inline-block -m-1'>
-                <img class='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/48.jpg' alt='avatar' />
+                <img className='w-9 h-9 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/48.jpg' alt='avatar' />
               </a>
             </dd>
           </div>
@@ -997,7 +1072,7 @@ function App () {
             <div className='min-w-0 flex-auto'>
               <a href='#' className='no-underline font-bold'>Notion podcast</a>
               <p className='truncate mb-2 text-sm text-slate-600'>Lorem ipsum dolor sit consectetur permi...</p>
-              <div class='w-full rounded-full overflow-hidden bg-slate-100 h-2 whitespace-nowrap'>
+              <div className='w-full rounded-full overflow-hidden bg-slate-100 h-2 whitespace-nowrap'>
                 <div className='bg-cyan-400 h-full w-1/3'><span className='sr-only'>33%</span></div>
               </div>
             </div>
@@ -1008,7 +1083,7 @@ function App () {
         {/** widget */}
         <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-start space-x-4'>
-            <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='no-underline font-bold'>Jenny Wilson</h5>
               <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
@@ -1019,7 +1094,7 @@ function App () {
         {/** widget */}
         <a href='#' className='break-inside flex bg-gradient-to-r from-[#ec00d8] to-[#A649EE] rounded-xl p-4 mb-4 text-white'>
           <div className='flex items-start space-x-4'>
-            <img class='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/53.jpg' alt='avatar' />
+            <img className='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/53.jpg' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='no-underline font-bold'>Ana Martinez</h5>
               <p className='text-sm'>lorem ipsum dolor sitIn nisi quis nostrud minim.</p>
@@ -1030,7 +1105,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-start justify-between bg-yellow-50 rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='font-bold block'>Landescape</h5>
               <h5 className='font-bold block'>423Km</h5>
@@ -1045,7 +1120,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/52.jpg' alt='avatar' />
+          <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/52.jpg' alt='avatar' />
           <div className='flex-auto'>
             <a href='#' className='no-underline font-bold block text-lg'>Maria</a>
           </div>
@@ -1058,7 +1133,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-20 h-20' src='https://randomuser.me/api/portraits/men/51.jpg' alt='avatar' />
+          <img className='flex-none w-20 h-20' src='https://randomuser.me/api/portraits/men/51.jpg' alt='avatar' />
           <div className='flex-auto'>
             <a href='#' className='no-underline font-bold block'>Jhonny</a>
           </div>
@@ -1089,7 +1164,7 @@ function App () {
             <div className='font-bold block text-lg'> New </div>
             <div className='font-bold block text-lg'> Releases </div>
           </div>
-          <img class='flex-none w-24 h-24 object-cover rotate-12 rounded-full -mb-8 -mr-10' src='https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
+          <img className='flex-none w-24 h-24 object-cover rotate-12 rounded-full -mb-8 -mr-10' src='https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
         </div>
 
         {/** widget */}
@@ -1104,7 +1179,7 @@ function App () {
         <a href='#' className='break-inside overflow-hidden flex bg-gradient-to-r from-[#EC008C] to-[#FC6767] rounded-full mb-4'>
           <div className='flex-1 items-center relative'>
             <div className='absolute -right-1 top-2'>
-              <img class='flex-none w-20 h-20 rounded-2xl object-cover rotate-6' src='https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
+              <img className='flex-none w-20 h-20 rounded-2xl object-cover rotate-6' src='https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             </div>
             <div className='mr-auto px-8 py-4'>
               <h5 className='font-bold text-md text-white'>Best music</h5>
@@ -1117,7 +1192,7 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-yellow-100 rounded-full p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div className='overflow-hidden rounded-full border-2 border-black'>
-              <img class='flex-none w-12 h-12 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/men/3.jpg' alt='avatar' />
+              <img className='flex-none w-12 h-12 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/men/3.jpg' alt='avatar' />
             </div>
             <div className='flex-auto'>
               <a href='#' className='no-underline font-bold block'>Marc Andress</a>
@@ -1142,7 +1217,7 @@ function App () {
         <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden border-2 border-black'>
           <div className='absolute bg-pink-100 top-0 bottom-0 left-0 w-4/6' />
           <div className='flex items-center space-x-4 relative'>
-            <img class='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+            <img className='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='text-black text-lg font-bold'>Warning</h5>
               <h5 className='no-underline block text-sm'>Rhemi, Lynn, Lockamy</h5>
@@ -1161,7 +1236,7 @@ function App () {
         <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden'>
           <div className='absolute bg-cyan-100 top-0 bottom-0 left-0 w-3/5' />
           <div className='flex items-center space-x-4 relative'>
-            <img class='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg' alt='avatar' />
+            <img className='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='text-black font-bold'>Visions - Purple Disco</h5>
               <h5 className='no-underline block text-sm'>Eli Escobar</h5>
@@ -1178,7 +1253,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-24 h-32 object-cover' src='https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
+          <img className='flex-none w-24 h-32 object-cover' src='https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
           <div className='flex-auto flex flex-col'>
             <a href='#' className='no-underline font-bold block text-lg'>The Weeknd</a>
             <span className='overflow-ellipsis w-[8.5rem] text-sm overflow-hidden whitespace-nowrap'>Take My Breath Offici..</span>
@@ -1205,13 +1280,13 @@ function App () {
           </div>
           <div className='flex justify-between flex-row items-center mt-6'>
             <div className='col-start-2 row-start-1 row-end-3'>
-              <dt class='sr-only'>Users</dt>
+              <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                  <img className='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img class='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                  <img className='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
@@ -1223,8 +1298,8 @@ function App () {
         <div className='break-inside bg-white items-center rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div className='flex flex-none justify-center items-center w-12 h-12 bg-[#F6F4FD] rounded-full'>
-              <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M15 17L11 13M5 13V1V13ZM5 1L1 5L5 1ZM5 1L9 5L5 1ZM15 5V17V5ZM15 17L19 13L15 17Z" stroke="#503D9C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <svg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M15 17L11 13M5 13V1V13ZM5 1L1 5L5 1ZM5 1L9 5L5 1ZM15 5V17V5ZM15 17L19 13L15 17Z' stroke='#503D9C' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
               </svg>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur permis palis.</p>
@@ -1249,8 +1324,8 @@ function App () {
         <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-3 bg-slate-100 rounded-full px-2 py-2'>
             <div className='flex flex-none justify-center items-center w-10 h-10 bg-[#FF9900] rounded-full font-medium text-white text-xl ring-2 ring-[#FF9900] border-2 border-white'>
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.06 11.57C17.65 10.88 18 10 18 9C18 7.14 16.73 5.57 15 5.13V3H13V5H11V3H9V5H6V7H8V17H6V19H9V21H11V19H13V21H15V19C17.21 19 19 17.21 19 15C19 13.55 18.22 12.27 17.06 11.57M10 7H14C15.1 7 16 7.9 16 9S15.1 11 14 11H10V7M15 17H10V13H15C16.1 13 17 13.9 17 15S16.1 17 15 17Z" fill='currentColor'/>
+              <svg width='26' height='26' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M17.06 11.57C17.65 10.88 18 10 18 9C18 7.14 16.73 5.57 15 5.13V3H13V5H11V3H9V5H6V7H8V17H6V19H9V21H11V19H13V21H15V19C17.21 19 19 17.21 19 15C19 13.55 18.22 12.27 17.06 11.57M10 7H14C15.1 7 16 7.9 16 9S15.1 11 14 11H10V7M15 17H10V13H15C16.1 13 17 13.9 17 15S16.1 17 15 17Z' fill='currentColor' />
               </svg>
             </div>
             <div className='flex items-center'>
@@ -1269,16 +1344,16 @@ function App () {
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Javascript</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>React</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
@@ -1289,24 +1364,24 @@ function App () {
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-red-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
@@ -1317,48 +1392,48 @@ function App () {
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>css</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Bootstrap</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1'>
             <span className='text-sm font-medium'>Material</span>
             <button className='flex items-center justify-center p-2'>
-              <svg width="10" height="10" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z" fill="black"/>
+              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
               </svg>
             </button>
           </span>
@@ -1391,7 +1466,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-16 h-16 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
+            <img className='flex-none w-16 h-16 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
             <div className='flex-auto space-y-2'>
               <a href='#' className='no-underline font-bold block'>Marloon Flick</a>
               <div className='flex items-center gap-2'>
@@ -1418,9 +1493,9 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-black text-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div className='relative flex flex-row items-center justify-center w-[4.5rem] h-[4.5rem]'>
-              <svg width="74" height="74" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 2.3509e-05 32 2.3509e-05C49.6731 2.3509e-05 64 14.3269 64 32ZM6.13666 32C6.13666 46.284 17.7161 57.8634 32 57.8634C46.2839 57.8634 57.8633 46.284 57.8633 32C57.8633 17.7161 46.2839 6.13668 32 6.13668C17.7161 6.13668 6.13666 17.7161 6.13666 32Z" fill="#3C3C3C"/>
-                <path d="M20.0412 5.65559C19.3408 4.11254 20.0205 2.2786 21.6235 1.72908C27.1738 -0.173579 33.1614 -0.519827 38.9281 0.759001C45.6969 2.26006 51.795 5.91887 56.3049 11.1848C60.8148 16.4508 63.4924 23.039 63.9348 29.9581C64.3117 35.8528 63.0489 41.716 60.3154 46.9078C59.5259 48.4072 57.6093 48.7968 56.1923 47.8674C54.7753 46.9381 54.3984 45.0422 55.1535 43.5252C57.1768 39.4605 58.1027 34.9168 57.8106 30.3497C57.4531 24.7575 55.2889 19.4327 51.6439 15.1766C47.9989 10.9205 43.0702 7.96331 37.5995 6.75011C33.1316 5.7593 28.4996 5.97546 24.1721 7.34971C22.557 7.8626 20.7417 7.19864 20.0412 5.65559Z" fill="white"/>
+              <svg width='74' height='74' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 2.3509e-05 32 2.3509e-05C49.6731 2.3509e-05 64 14.3269 64 32ZM6.13666 32C6.13666 46.284 17.7161 57.8634 32 57.8634C46.2839 57.8634 57.8633 46.284 57.8633 32C57.8633 17.7161 46.2839 6.13668 32 6.13668C17.7161 6.13668 6.13666 17.7161 6.13666 32Z' fill='#3C3C3C' />
+                <path d='M20.0412 5.65559C19.3408 4.11254 20.0205 2.2786 21.6235 1.72908C27.1738 -0.173579 33.1614 -0.519827 38.9281 0.759001C45.6969 2.26006 51.795 5.91887 56.3049 11.1848C60.8148 16.4508 63.4924 23.039 63.9348 29.9581C64.3117 35.8528 63.0489 41.716 60.3154 46.9078C59.5259 48.4072 57.6093 48.7968 56.1923 47.8674C54.7753 46.9381 54.3984 45.0422 55.1535 43.5252C57.1768 39.4605 58.1027 34.9168 57.8106 30.3497C57.4531 24.7575 55.2889 19.4327 51.6439 15.1766C47.9989 10.9205 43.0702 7.96331 37.5995 6.75011C33.1316 5.7593 28.4996 5.97546 24.1721 7.34971C22.557 7.8626 20.7417 7.19864 20.0412 5.65559Z' fill='white' />
               </svg>
               <span className='absolute text-md font-bold top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>32%</span>
             </div>
@@ -1491,7 +1566,7 @@ function App () {
           <input type='text' className='rounded-full pl-12 pr-9 py-3 bg-white w-full h-12' placeholder='Search' />
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
+              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
         </div>
@@ -1500,7 +1575,7 @@ function App () {
         <div className='break-inside mb-4 relative'>
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
+              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
           <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12' placeholder='Search' />
@@ -1516,7 +1591,7 @@ function App () {
         <div className='break-inside mb-4 relative'>
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
+              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
           <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12' placeholder='Search' />
@@ -1531,7 +1606,7 @@ function App () {
         <div className='break-inside mb-4 relative'>
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
-              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' stroke-width='2' stroke-linecap='round' />
+              <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='#1C262C' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
           <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12' placeholder='Search' />
@@ -1691,7 +1766,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
           <div className='flex items-center space-x-4'>
-            <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             <div className='flex-auto space-y-1'>
               <span className='text-slate-600'>Mountains</span>
               <h5 className='no-underline font-bold block'>423Km, 3 Week</h5>
@@ -1840,7 +1915,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/42.jpg' alt='avatar' />
+          <img className='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/42.jpg' alt='avatar' />
           <div className='flex rounded-3xl bg-slate-200 p-2 w-full justify-between'>
             <div className='flex items-center justify-center bg-white p-2 rounded-full'>
               <button>
@@ -1861,7 +1936,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-28 h-full object-cover' src='https://images.pexels.com/photos/343701/pexels-photo-343701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+          <img className='flex-none w-28 h-full object-cover' src='https://images.pexels.com/photos/343701/pexels-photo-343701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
           <div className='flex-auto flex justify-between items-start'>
             <div className='flex flex-col'>
               <span className='font-bold text-md mb-2'>
