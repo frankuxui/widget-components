@@ -404,6 +404,52 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex bg-white rounded-2xl p-6 mb-4'>
+          <div className='flex flex-row justify-between items-center w-full'>
+            <div className='flex flex-row justify-center items-center space-x-3'>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[50%]'>
+                  <span className='sr-only'>50%</span>
+                </div>
+              </div>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[70%]'>
+                  <span className='sr-only'>70%</span>
+                </div>
+              </div>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[45%]'>
+                  <span className='sr-only'>45%</span>
+                </div>
+              </div>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[5%]'>
+                  <span className='sr-only'>5%</span>
+                </div>
+              </div>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[25%]'>
+                  <span className='sr-only'>25%</span>
+                </div>
+              </div>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[15%]'>
+                  <span className='sr-only'>15%</span>
+                </div>
+              </div>
+              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden'>
+                <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[40%]'>
+                  <span className='sr-only'>40%</span>
+                </div>
+              </div>
+            </div>
+            <div className='flex flex-col justify-center items-center'>
+              <span className='font-bold block text-2xl'>88%</span>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
