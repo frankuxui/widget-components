@@ -68,9 +68,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex justify-between flex-col bg-white rounded-xl p-4 mb-4'>
           <div className='flex justify-between items-start mb-5'>
-            <h5 className='font-medium text-xl'>New task completed
-              successfully
-            </h5>
+            <h5 className='font-medium text-xl'>New task completed successfully</h5>
             <button className='no-underline inline-block hover:bg-slate-100 transition-all rounded-full p-2'>
               <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='currentColor' />
@@ -255,7 +253,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-[#740EF5] rounded-full py-4 px-6 mb-4'>
           <div className='flex items-center space-x-4'>
-            <div className=''>
+            <div>
               <dt class='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
@@ -279,7 +277,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-[#FFF614] rounded-full p-6 mb-4'>
           <div className='flex items-center space-x-4'>
-            <div className=''>
+            <div>
               <dt class='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
@@ -293,6 +291,28 @@ function App () {
             <div className='flex flex-col flex-auto'>
               <a href='#' className='no-underline font-bold block text-xl text-black'>New Teams</a>
             </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex flex-col justify-between bg-white rounded-[2rem] p-6 mb-4'>
+          <div className='flex items-center justify-between'>
+            <div className='flex items-center space-x-4'>
+              <div className='flex justify-center items-center bg-slate-200 w-12 h-12 rounded-full'>
+                <svg width='26' height='26' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M21.7 13.35L20.7 14.35L18.65 12.35L19.65 11.35C19.85 11.14 20.19 11.13 20.42 11.35L21.7 12.63C21.89 12.83 21.89 13.15 21.7 13.35M12 18.94V21H14.06L20.12 14.88L18.07 12.88L12 18.94M5 19H10V21H5C3.9 21 3 20.11 3 19V5C3 3.9 3.9 3 5 3H6V1H8V3H16V1H18V3H19C20.11 3 21 3.9 21 5V9H5V19M5 5V7H19V5H5Z' />
+                </svg>
+              </div>
+              <div className='flex flex-col flex-auto'>
+                <span className='font-medium text-sm text-slate-400'>SCHEDULE DATE</span>
+                <a href='#' className='no-underline font-bold block  text-black'>Sat 24, September</a>
+              </div>
+            </div>
+            <button className='no-underline inline-block hover:bg-slate-100 transition-all rounded-full p-2'>
+              <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='currentColor' />
+              </svg>
+            </button>
           </div>
         </div>
 
