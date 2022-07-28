@@ -277,6 +277,26 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-[#FFF614] rounded-full p-6 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <div className=''>
+              <dt class='sr-only'>Users</dt>
+              <dd className='flex justify-start -space-x-1.5'>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/women/16.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/men/65.jpg' alt='avatar' />
+                </a>
+              </dd>
+            </div>
+            <div className='flex flex-col flex-auto'>
+              <a href='#' className='no-underline font-bold block text-xl text-black'>New Teams</a>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
