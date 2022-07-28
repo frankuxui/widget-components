@@ -241,6 +241,18 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-[#12C0E7] rounded-full p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <div className='overflow-hidden rounded-full border-1 border-white'>
+              <img class='flex-none w-16 h-16 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/women/62.jpg' alt='avatar' />
+            </div>
+            <div className='flex-auto'>
+              <a href='#' className='no-underline font-bold block text-lg text-white'>Mariam jimenez</a>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
           <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
@@ -251,7 +263,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
-          <div className='flex flex-row justify-between items-start w-full'>
+          <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
               <span className='font-bold block'>Jun</span>
               <span className='text-lg font-bold text-pink-500'>23</span>
