@@ -345,7 +345,7 @@ function App () {
 
         {/** widget */}
         <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4'>
-          <div className='flex items-center justify-between mb-3'>
+          <div className='flex items-center justify-between'>
             <a href='#' className='flex flex-row items-center justify-center space-x-4'>
               <svg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.375 21C0.375 25.0562 1.54375 28.8375 3.5375 32H38.3937C40.3875 28.8375 41.5563 25.0562 41.5563 21C41.5563 16.9437 40.3875 13.1625 38.3937 10H3.5375C1.54375 13.1625 0.375 16.9437 0.375 21Z' fill='#FFCE31' />
@@ -481,6 +481,19 @@ function App () {
         <button type='button' className='break-inside text-center bg-[#1E49E2] rounded-xl p-4 mb-4 w-full'>
           <span className='uppercase font-medium text-white'>Send files now</span>
         </button>
+
+        {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center justify-start space-x-4'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#2AB849] w-12 h-12 rounded-full'>
+              <svg width='24' height='14' viewBox='0 0 24 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M0.33252 8.065L5.98752 13.72L7.39752 12.3L1.74752 6.65L0.33252 8.065ZM22.2465 0.280999L11.6475 10.891L7.41052 6.643L5.98052 8.053L11.6475 13.72L23.6675 1.701L22.2475 0.280999H22.2465ZM18.0095 1.7L16.5995 0.279999L10.2285 6.65L11.6485 8.06L18.0085 1.7H18.0095Z' fill='white' />
+              </svg>
+            </div>
+            <span className='text-lg font-medium'>Complete task</span>
+          </div>
+          <span className='text-lg font-medium'>76%</span>
+        </div>
 
         {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
