@@ -326,6 +326,24 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pl-4 mb-4'>
+          <div className='flex-auto text-right'>
+            <a href='#' className='no-underline font-bold block'>Fermin vargas</a>
+            <span className='text-slate-600'>Construction manager</span>
+          </div>
+          <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between bg-[#ff7300] text-white rounded-xl overflow-hidden pr-4 mb-4'>
+          <div className='flex flex-1 flex-col p-4'>
+            <div className='font-bold block text-lg'> Creadores </div>
+            <div className='font-bold block text-lg'> de Tendencias </div>
+          </div>
+          <img class='flex-none w-20 h-20 object-cover rotate-12 rounded-lg -mb-6 -mr-6' src='https://randomuser.me/api/portraits/women/58.jpg' alt='avatar' />
+        </div>
+
+        {/** widget */}
         <div className='break-inside flex bg-white rounded-xl p-4 mb-4'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
@@ -1023,15 +1041,6 @@ function App () {
               </button>
             </div>
           </div>
-        </div>
-
-        {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-[#ff7300] text-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <div className='flex flex-1 flex-col p-4'>
-            <div className='font-bold block text-lg'> Creadores </div>
-            <div className='font-bold block text-lg'> de Tendencias </div>
-          </div>
-          <img class='flex-none w-20 h-20 object-cover rotate-12 rounded-lg -mb-6 -mr-6' src='https://randomuser.me/api/portraits/women/58.jpg' alt='avatar' />
         </div>
 
         {/** widget */}
