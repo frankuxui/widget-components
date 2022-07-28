@@ -25,24 +25,19 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
-          <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/42.jpg' alt='avatar' />
-          <div className='flex rounded-3xl bg-slate-200 p-2 w-full justify-between'>
-            <div className='flex items-center justify-center bg-white p-2 rounded-full'>
-              <button>
-                <svg width='20' height='20' viewBox='0 0 24 24'>
-                  <path fill='currentColor' d='M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z' />
-                </svg>
-              </button>
-            </div>
-            <div className='flex items-center justify-center bg-white p-2 rounded-full'>
-              <button>
-                <svg width='20' height='20' viewBox='0 0 24 24'>
-                  <path fill='currentColor' d='M10 13C11.1 13 12 13.89 12 15C12 16.11 11.11 17 10 17S8 16.11 8 15 8.9 13 10 13M18 1C15.24 1 13 3.24 13 6V8H4C2.9 8 2 8.9 2 10V20C2 21.1 2.9 22 4 22H16C17.1 22 18 21.1 18 20V10C18 8.9 17.1 8 16 8H15V6C15 4.34 16.34 3 18 3S21 4.34 21 6V8H23V6C23 3.24 20.76 1 18 1M16 10V20H4V10H16Z' />
-                </svg>
-              </button>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <img class='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
+            <div className='flex-auto'>
+              <a href='#' className='no-underline font-bold block'>Marina Flick</a>
+              <span className='text-slate-600 text-sm'>Web Development</span>
             </div>
           </div>
+          <button className='no-underline inline-block bg-slate-100 rounded-full p-3 hover:bg-slate-200 transition-all'>
+            <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' fill='currentColor' />
+            </svg>
+          </button>
         </div>
 
         {/** widget */}
@@ -464,20 +459,24 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full p-3 relative'>
-          <div className='flex items-center justify-between w-full'>
-            <div className='flex items-center space-x-2'>
+        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full px-4 py-3 relative'>
+          <div className='flex items-center justify-around w-full'>
+            <div className='flex items-center justify-center space-x-2'>
               <svg width='20' height='20' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z' />
               </svg>
               <div className='font-bold text-sm bg-blue-100 text-blue-600 rounded-md py-[3px] px-1'>04:32</div>
             </div>
-            <div className='border-2 border-slate-300 h-4 rounded-sm' />
-            <div className='font-medium text-sm'>Installation...</div>
-            <div className='border-2 border-slate-300 h-4 rounded-sm' />
-            <svg width='22' height='22' viewBox='0 0 24 24'>
-              <path fill='currentColor' d='M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M9,9H15V15H9' />
-            </svg>
+            <div className='font-medium text-sm flex-1 justify-center items-center flex space-x-6'>
+              <div className='border-2 border-slate-300 h-4 rounded-sm' />
+              <span>Installation...</span>
+              <div className='border-2 border-slate-300 h-4 rounded-sm' />
+            </div>
+            <div className='flex justify-center items-center'>
+              <svg width='22' height='22' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M9,9H15V15H9' />
+              </svg>
+            </div>
           </div>
         </div>
 
@@ -726,6 +725,27 @@ function App () {
           <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white'>
             <span className='text-sm font-bold block'>Fri</span>
             <span className='text-xs font-normal'>14</span>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4'>
+          <img class='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/42.jpg' alt='avatar' />
+          <div className='flex rounded-3xl bg-slate-200 p-2 w-full justify-between'>
+            <div className='flex items-center justify-center bg-white p-2 rounded-full'>
+              <button>
+                <svg width='20' height='20' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M12,17C10.89,17 10,16.1 10,15C10,13.89 10.89,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z' />
+                </svg>
+              </button>
+            </div>
+            <div className='flex items-center justify-center bg-white p-2 rounded-full'>
+              <button>
+                <svg width='20' height='20' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M10 13C11.1 13 12 13.89 12 15C12 16.11 11.11 17 10 17S8 16.11 8 15 8.9 13 10 13M18 1C15.24 1 13 3.24 13 6V8H4C2.9 8 2 8.9 2 10V20C2 21.1 2.9 22 4 22H16C17.1 22 18 21.1 18 20V10C18 8.9 17.1 8 16 8H15V6C15 4.34 16.34 3 18 3S21 4.34 21 6V8H23V6C23 3.24 20.76 1 18 1M16 10V20H4V10H16Z' />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
 
