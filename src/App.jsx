@@ -1232,6 +1232,25 @@ function App () {
         </div>
 
         {/* widget */}
+        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex flex-none justify-center items-center w-14 h-14 bg-[#12C6DE] rounded-full font-medium text-white text-xl ring-2 ring-[#12C6DE] border-2 border-white'>
+              <span>M</span>
+            </div>
+            <div className='flex flex-col'>
+              <a className='font-medium' href='#'>Mathías Anderson</a>
+              <p className='text-sm'>16 January 2022 - 3:25 PM</p>
+            </div>
+          </div>
+          <span className='text-red-500 font-bold'>-$275</span>
+        </div>
+
+        {/* widget */}
+        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-xl p-4 mb-4'>
+          working...
+        </div>
+
+        {/* widget */}
         <div className='break-inside flex flex-row justify-between bg-white items-center rounded-xl p-4 mb-4'>
           working...
         </div>
