@@ -787,13 +787,83 @@ function App () {
           </div>
         </div>
 
-        {/* widget */}
-        <div className='break-inside flex flex-row justify-between items-center bg-white rounded-xl p-4 mb-4'>
-          working...
+        {/** widget */}
+        <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4'>
+          <div className='flex justify-between items-center'>
+            <div className='block'>
+              <dt class='sr-only'>Users</dt>
+              <dd className='flex justify-start -space-x-1.5'>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/48.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/15.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/women/37.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img class='w-10 h-10 rounded-full bg-slate-100 ring-2 ring-white' src='https://randomuser.me/api/portraits/men/78.jpg' alt='avatar' />
+                </a>
+              </dd>
+            </div>
+            <div className='flex justify-center items-center rounded-md px-2 py-1 bg-red-100 space-x-3 font-medium'>
+              <span>23%</span>
+              <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.57835 7.65466H14.1787C14.3063 7.6544 14.4313 7.6309 14.5404 7.5867C14.6495 7.5425 14.7384 7.47927 14.7977 7.40382C14.8569 7.32837 14.8842 7.24356 14.8767 7.15851C14.8692 7.07346 14.827 6.9914 14.7548 6.92115L8.45465 0.84365C8.19354 0.591667 7.56492 0.591667 7.30311 0.84365L1.00293 6.92115C0.93001 6.99125 0.887245 7.07336 0.879287 7.15855C0.871328 7.24374 0.898481 7.32876 0.957793 7.40437C1.01711 7.47997 1.10631 7.54328 1.21572 7.58741C1.32512 7.63154 1.45054 7.6548 1.57835 7.65466Z" fill="#E31414"/>
+              </svg>
+            </div>
+            <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100'>
+              <svg className='w-8 h-8 text-slate-800' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+              </svg>
+            </button>
+          </div>
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-between items-center bg-white rounded-xl p-4 mb-4'>
+        <div className='break-inside rounded-xl p-4 mb-4 bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0]'>
+          <ul className='flex justify-between items-center'>
+            <li className='flex items-center justify-center'>
+              <a href='#' className='flex items-center justify-center w-12 h-12 bg-white rounded-full transition-all hover:bg-bg-white'>
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7127 0.450376C10.6197 0.356674 10.5092 0.282302 10.3874 0.231548C10.2655 0.180794 10.1349 0.154663 10.0029 0.154663C9.87092 0.154663 9.74025 0.180794 9.61842 0.231548C9.4966 0.282302 9.38603 0.356674 9.2931 0.450376L0.295712 9.44777C0.202011 9.5407 0.127638 9.65127 0.0768846 9.7731C0.0261306 9.89492 0 10.0256 0 10.1576C0 10.2895 0.0261306 10.4202 0.0768846 10.542C0.127638 10.6639 0.202011 10.7744 0.295712 10.8674C0.389125 10.96 0.499909 11.0333 0.621711 11.0831C0.743513 11.1328 0.873938 11.158 1.00551 11.1573H2.00522V18.1552C2.00522 18.6855 2.21587 19.1941 2.59083 19.569C2.9658 19.944 3.47435 20.1547 4.00463 20.1547H16.0011C16.5314 20.1547 17.04 19.944 17.4149 19.569C17.7899 19.1941 18.0006 18.6855 18.0006 18.1552V11.1573H19.0003C19.2654 11.1573 19.5197 11.0519 19.7072 10.8645C19.8947 10.677 20 10.4227 20 10.1576C20.0007 10.026 19.9755 9.89557 19.9258 9.77377C19.876 9.65196 19.8027 9.54118 19.7101 9.44777L10.7127 0.450376ZM4.00463 18.1552V8.56802L10.0029 2.56976L16.0011 8.56802V18.1552H4.00463Z" fill="black"/>
+              </svg>
+             </a>
+            </li>
+            <li className='flex items-center justify-center'>
+              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
+                <svg width='20' height='21' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='white' stroke-width='2' stroke-linecap='round' />
+                </svg>
+              </a>
+            </li>
+            <li className='flex items-center justify-center'>
+              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
+                <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M6 1.23792C3.239 1.23792 1 3.45391 1 6.18791C1 8.39491 1.875 13.6329 10.488 18.9279C10.6423 19.0218 10.8194 19.0714 11 19.0714C11.1806 19.0714 11.3577 19.0218 11.512 18.9279C20.125 13.6329 21 8.39491 21 6.18791C21 3.45391 18.761 1.23792 16 1.23792C13.239 1.23792 11 4.23792 11 4.23792C11 4.23792 8.761 1.23792 6 1.23792Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </li>
+            <li className='flex items-center justify-center'>
+              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
+              <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.7886 3.26538C22.4242 3.09926 22.0196 3.04523 21.6251 3.10999C21.2306 3.17476 20.8636 3.35547 20.5697 3.62966L17.991 6.05823V4.29752C17.991 3.33137 17.6119 2.4048 16.9371 1.72163C16.2623 1.03846 15.3471 0.654663 14.3928 0.654663H3.5982C2.6439 0.654663 1.72868 1.03846 1.05389 1.72163C0.379095 2.4048 0 3.33137 0 4.29752V14.0118C0 14.978 0.379095 15.9045 1.05389 16.5877C1.72868 17.2709 2.6439 17.6547 3.5982 17.6547H14.3928C15.3471 17.6547 16.2623 17.2709 16.9371 16.5877C17.6119 15.9045 17.991 14.978 17.991 14.0118V12.2511L20.5817 14.6797C20.9631 15.0292 21.4586 15.2238 21.973 15.2261C22.2585 15.2254 22.5406 15.1633 22.8006 15.0439C23.1544 14.8991 23.4574 14.6507 23.6711 14.3306C23.8847 14.0105 23.9992 13.6331 24 13.2468V5.06252C23.9983 4.67478 23.882 4.29644 23.6661 3.97617C23.4502 3.6559 23.1446 3.40835 22.7886 3.26538ZM15.5922 14.0118C15.5922 14.3339 15.4658 14.6427 15.2409 14.8704C15.016 15.0982 14.7109 15.2261 14.3928 15.2261H3.5982C3.2801 15.2261 2.97503 15.0982 2.7501 14.8704C2.52517 14.6427 2.3988 14.3339 2.3988 14.0118V4.29752C2.3988 3.97547 2.52517 3.66661 2.7501 3.43889C2.97503 3.21117 3.2801 3.08323 3.5982 3.08323H14.3928C14.7109 3.08323 15.016 3.21117 15.2409 3.43889C15.4658 3.66661 15.5922 3.97547 15.5922 4.29752V14.0118ZM21.5892 12.3118L18.2189 9.15466L21.5892 5.99752V12.3118Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+            <li className='flex items-center justify-center'>
+              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
+              <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.2626 16.1432L15.9145 15.5046C18.9308 15.6017 18.9772 15.4975 19.1097 15.1917L19.9384 13.2024L20 13.0138L19.9326 12.8488C19.8971 12.7617 19.7878 12.5017 17.9044 10.731V9.79951C20.0775 7.73519 20.0311 7.62948 19.9073 7.32733L19.0822 5.3173C18.9583 5.01587 18.9113 4.89801 15.9167 4.97872L15.2648 4.31443C15.3321 3.33591 15.2978 2.35318 15.1626 1.38152L15.0786 1.19366L12.9243 0.265079C12.607 0.122219 12.4955 0.0707899 10.4614 2.25511L9.54727 2.24154C7.4531 0.037218 7.35386 0.0772185 7.0402 0.20222L5.03731 1.0008C4.72365 1.12581 4.61282 1.17009 4.73452 4.17014L4.08765 4.80586C1.0728 4.70872 1.02644 4.81443 0.895328 5.11872L0.0651939 7.10875L0 7.29947L0.0680913 7.46519C0.103586 7.5509 0.20862 7.80805 2.09634 9.58094V10.5095C-0.0767836 12.5738 -0.0296994 12.6796 0.0948932 12.9824L0.919232 14.9946C1.04527 15.3025 1.09019 15.4117 4.08403 15.3346L4.73597 16.0025C4.66839 16.9795 4.70164 17.9607 4.8352 18.9311L4.91923 19.1204L7.08729 20.0547C7.40239 20.1847 7.51177 20.2311 9.54002 18.0546L10.4542 18.0661C12.5512 20.2732 12.6585 20.2304 12.9649 20.1082L14.9634 19.3118C15.2792 19.1882 15.3894 19.1447 15.2626 16.1432ZM6.67294 11.4831C6.42018 10.8317 6.36814 10.1212 6.52335 9.44074C6.67856 8.76029 7.03412 8.14018 7.5454 7.65825C8.05668 7.17631 8.70092 6.85401 9.39727 6.73178C10.0936 6.60955 10.8111 6.69283 11.4596 6.97119C12.1081 7.24954 12.6589 7.71057 13.0427 8.29641C13.4265 8.88225 13.6263 9.56682 13.617 10.2642C13.6077 10.9616 13.3897 11.6408 12.9905 12.2165C12.5912 12.7922 12.0284 13.2388 11.3727 13.5003C10.478 13.8453 9.48122 13.8267 8.60041 13.4487C7.7196 13.0706 7.02655 12.3639 6.67294 11.4831Z" fill="white"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        {/* widget */}
+        <div className='break-inside flex flex-row justify-between items-center rounded-xl p-4 mb-4'>
           working...
         </div>
 
