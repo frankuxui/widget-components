@@ -2102,7 +2102,7 @@ function App () {
                   <radialGradient id='paint0_radial_351_13' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(31 -4) rotate(51.3402) scale(44.8219 135.575)'>
                     <stop />
                     <stop offset='0.422473' />
-                    <stop offset='1' stop-color='#EBEBEB' />
+                    <stop offset='1' stopColor='#EBEBEB' />
                   </radialGradient>
                 </defs>
               </svg>
@@ -2131,7 +2131,7 @@ function App () {
           <div className='flex items-center space-x-3'>
             <div className='flex flex-none justify-center items-center rounded-lg font-medium border-2 border-black px-2 py-1 space-x-2 text-sm'>
               <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5.8 1V4.2M12.2 1V4.2M1 7.4H17M4.2 2.6H13.8C15.5673 2.6 17 4.03269 17 5.8V13.8C17 15.5673 15.5673 17 13.8 17H4.2C2.43269 17 1 15.5673 1 13.8V5.8C1 4.03269 2.43269 2.6 4.2 2.6Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M5.8 1V4.2M12.2 1V4.2M1 7.4H17M4.2 2.6H13.8C15.5673 2.6 17 4.03269 17 5.8V13.8C17 15.5673 15.5673 17 13.8 17H4.2C2.43269 17 1 15.5673 1 13.8V5.8C1 4.03269 2.43269 2.6 4.2 2.6Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               <span>Feb, 24</span>
             </div>
@@ -2142,6 +2142,24 @@ function App () {
               <path d="M10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 7.67936 2.17187 5.45376 3.81282 3.81282C5.45376 2.17187 7.67936 1.25 10 1.25C12.3206 1.25 14.5462 2.17187 16.1872 3.81282C17.8281 5.45376 18.75 7.67936 18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75ZM10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20Z" fill="black"/>
               <path d="M13.7125 6.2125C13.7036 6.22113 13.6952 6.23031 13.6875 6.24L9.34625 11.7712L6.73 9.15375C6.55228 8.98815 6.31722 8.898 6.07435 8.90228C5.83147 8.90657 5.59974 9.00496 5.42797 9.17672C5.25621 9.34849 5.15782 9.58022 5.15353 9.8231C5.14925 10.066 5.2394 10.301 5.405 10.4788L8.7125 13.7875C8.8016 13.8764 8.90771 13.9465 9.02448 13.9936C9.14125 14.0406 9.26631 14.0637 9.39218 14.0613C9.51806 14.059 9.64217 14.0313 9.75712 13.98C9.87207 13.9286 9.9755 13.8547 10.0612 13.7625L15.0513 7.525C15.2212 7.34666 15.3141 7.10862 15.3099 6.86234C15.3057 6.61605 15.2047 6.38131 15.0288 6.20887C14.8529 6.03643 14.6162 5.94014 14.3699 5.94081C14.1236 5.94149 13.8874 6.03909 13.7125 6.2125Z" fill="black"/>
               </svg>
+          </span>
+        </div>
+
+        {/* widget */}
+        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 space-x-2'>
+          <div className='flex items-center space-x-3'>
+            <div className='flex flex-none justify-center items-center rounded-lg font-medium border-2 border-black px-2 py-1 space-x-2 text-sm'>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.8 1V4.2M12.2 1V4.2M1 7.4H17M4.2 2.6H13.8C15.5673 2.6 17 4.03269 17 5.8V13.8C17 15.5673 15.5673 17 13.8 17H4.2C2.43269 17 1 15.5673 1 13.8V5.8C1 4.03269 2.43269 2.6 4.2 2.6Z" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+              <span>Jan, 06</span>
+            </div>
+            <p className='text-sm line-through'>Lorem ipsum dolor sit amet cosectur adipisng...</p>
+          </div>
+          <span>
+          <svg width='25' height='25' viewBox="0 0 24 24">
+            <path fill="currentColor" d="M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z" />
+          </svg>
           </span>
         </div>
 
