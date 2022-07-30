@@ -2091,6 +2091,41 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
+        <div className='break-inside flex items-start justify-between bg-white rounded-xl p-4 mb-4'>
+          <div className='flex items-center space-x-4'>
+            <div className='relative flex items-center justify-center flex-none'>
+              <svg width='74' height='74' viewBox='0 0 63 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M63 31.5C63 48.897 48.897 63 31.5 63C14.103 63 1.08791e-06 48.897 1.08791e-06 31.5C1.08791e-06 14.103 14.103 0 31.5 0C48.897 0 63 14.103 63 31.5ZM5.02136 31.5C5.02136 46.1237 16.8763 57.9786 31.5 57.9786C46.1238 57.9786 57.9786 46.1237 57.9786 31.5C57.9786 16.8763 46.1238 5.02136 31.5 5.02136C16.8763 5.02136 5.02136 16.8763 5.02136 31.5Z' fill='#EBEBEB' />
+                <path d='M59.4021 39.3648C60.7367 39.7409 61.5232 41.1324 61.0419 42.4328C59.4513 46.7309 56.938 50.6403 53.6675 53.8797C49.8012 57.7094 45.0085 60.4721 39.7568 61.8986C34.505 63.3251 28.9733 63.3666 23.7007 62.0192C18.4281 60.6718 13.5945 57.9813 9.67106 54.2101C5.74759 50.4388 2.86808 45.7155 1.31317 40.5003C-0.24175 35.2851 -0.419028 29.756 0.798611 24.452C2.01625 19.1479 4.58727 14.2498 8.26109 10.2349C11.3686 6.83897 15.1755 4.17299 19.4074 2.4136C20.6877 1.88129 22.1092 2.61213 22.5378 3.93081C22.9665 5.24949 22.2388 6.65505 20.9666 7.20665C17.5567 8.68514 14.4872 10.869 11.9656 13.6248C8.87738 16.9996 6.71621 21.1169 5.69267 25.5755C4.66913 30.034 4.81815 34.6817 6.1252 39.0656C7.43225 43.4494 9.85274 47.4198 13.1508 50.5899C16.4488 53.76 20.5119 56.0215 24.944 57.1542C29.3761 58.2868 34.026 58.2519 38.4406 57.0528C42.8552 55.8537 46.8838 53.5314 50.1339 50.3122C52.7877 47.6835 54.8485 44.53 56.191 41.0643C56.6918 39.7713 58.0675 38.9886 59.4021 39.3648Z' fill='url(#paint0_radial_351_13)' />
+                <defs>
+                  <radialGradient id='paint0_radial_351_13' cx='0' cy='0' r='1' gradientUnits='userSpaceOnUse' gradientTransform='translate(31 -4) rotate(51.3402) scale(44.8219 135.575)'>
+                    <stop />
+                    <stop offset='0.422473' />
+                    <stop offset='1' stop-color='#EBEBEB' />
+                  </radialGradient>
+                </defs>
+              </svg>
+              <span className='absolute text-md font-bold top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>46%</span>
+              <div className='absolute flex justify-center items-center text-md font-bold bottom-0 right-0 rounded-full bg-white h-8 w-8 shadow-[#00000052] shadow-xl'>
+                <svg height='20' width='20' viewBox='0 0 24 24'>
+                  <path fill='currentColor' d='M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z' />
+                </svg>
+              </div>
+            </div>
+            <div className='flex-auto'>
+              <h5 className='font-medium'>Development Status</h5>
+              <h5 className='font-medium'>13/27 Completed</h5>
+              <h5 className='block text-sm text-slate-500'>Updated 3 days ago</h5>
+            </div>
+          </div>
+          <span className='mt-2'>
+            <svg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <path d='M13 1L1 13M3 1H13V11' stroke='black' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
+            </svg>
+          </span>
+        </div>
+
       </div>
     </div>
   )
