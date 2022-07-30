@@ -19,3 +19,7 @@ body {
 @tailwind components;
 @tailwind utilities;
 
+.dark body {
+  background-color: #111827;
+}
+
