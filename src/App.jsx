@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react'
-import './App.css'
 
 function App () {
   const buttonThemenRef = useRef(null)
