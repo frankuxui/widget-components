@@ -27,7 +27,7 @@ function App () {
       </div>
 
       <div className='flex justify-center flex-col m-auto mb-16 text-center text-lg dark:text-slate-200'>
-        <p className='font-bold mb-1'>Built by <a href='#' className='underline dark:text-white'>Frank Esteban</a></p>
+        <p className='font-bold mb-1'>Built by <a href='https://allmylinks.com/frankuxui' className='underline dark:text-white'>Frank Esteban</a></p>
         <p>Contact me on the different platforms and social networks</p>
         <div className='flex items-center justify-center space-x-2 mt-4 flex-wrap'>
           <a href='https://www.linkedin.com/in/frankuxui/' className='flex flex-none items-center justify-center rounded-full w-12 h-12 hover:bg-slate-300 transition-all dark:hover:bg-slate-700'>
