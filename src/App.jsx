@@ -85,7 +85,7 @@ function App () {
       </div>
 
       {/** container widgets */}
-      <div className='box-border m-auto max-w-[75rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3'>
+      <div className='box-border m-auto max-w-[75rem] 3xl:max-w-[100rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3 3xl:columns-4'>
 
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-slate-50'>
