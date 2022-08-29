@@ -85,18 +85,18 @@ function App () {
       </div>
 
       {/** container widgets */}
-      <div className='box-border m-auto max-w-[75rem] 3xl:max-w-[100rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3 3xl:columns-4'>
+      <div className='box-border m-auto max-w-[75rem] 3xl:max-w-[100rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3 3xl:columns-5'>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-slate-50'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-slate-50'>
           <div className='flex items-center space-x-4'>
-            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
+            <img className='flex-none w-11 h-11 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Yolanda</a>
+              <a href='#' className='text-base font-bold block'>Yolanda</a>
               <span className='text-sm text-slate-600 dark:text-slate-300'>Web Development</span>
             </div>
           </div>
-          <a href='#' className='no-underline inline-block'>
+          <a href='#' className='inline-block'>
             <svg width='27' height='22' viewBox='0 0 27 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M25.3125 17.75C25.3125 18.1976 25.1347 18.6268 24.8182 18.9432C24.5018 19.2597 24.0726 19.4375 23.625 19.4375H3.375C2.92745 19.4375 2.49822 19.2597 2.18176 18.9432C1.86529 18.6268 1.6875 18.1976 1.6875 17.75V7.625C1.6875 7.17745 1.86529 6.74823 2.18176 6.43176C2.49822 6.11529 2.92745 5.9375 3.375 5.9375H5.35275C6.69471 5.93677 7.98148 5.40324 8.93025 4.45419L10.3309 3.05694C10.6464 2.74127 11.0742 2.56349 11.5206 2.5625H15.4761C15.9236 2.5626 16.3527 2.74045 16.6691 3.05694L18.0664 4.45419C18.5366 4.92452 19.0948 5.2976 19.7092 5.55211C20.3237 5.80662 20.9822 5.93758 21.6472 5.9375H23.625C24.0726 5.9375 24.5018 6.11529 24.8182 6.43176C25.1347 6.74823 25.3125 7.17745 25.3125 7.625V17.75ZM3.375 4.25C2.47989 4.25 1.62145 4.60558 0.988515 5.23851C0.355579 5.87145 0 6.72989 0 7.625V17.75C0 18.6451 0.355579 19.5035 0.988515 20.1365C1.62145 20.7694 2.47989 21.125 3.375 21.125H23.625C24.5201 21.125 25.3785 20.7694 26.0115 20.1365C26.6444 19.5035 27 18.6451 27 17.75V7.625C27 6.72989 26.6444 5.87145 26.0115 5.23851C25.3785 4.60558 24.5201 4.25 23.625 4.25H21.6472C20.7522 4.24981 19.8939 3.8941 19.2611 3.26113L17.8639 1.86387C17.2311 1.2309 16.3728 0.875191 15.4777 0.875H11.5223C10.6272 0.875191 9.76891 1.2309 9.13612 1.86387L7.73887 3.26113C7.10609 3.8941 6.24778 4.24981 5.35275 4.25H3.375Z' fill='currentColor' />
               <path d='M13.5 16.0625C12.3811 16.0625 11.3081 15.618 10.5169 14.8269C9.72572 14.0357 9.28125 12.9626 9.28125 11.8438C9.28125 10.7249 9.72572 9.65181 10.5169 8.86064C11.3081 8.06947 12.3811 7.625 13.5 7.625C14.6189 7.625 15.6919 8.06947 16.4831 8.86064C17.2743 9.65181 17.7188 10.7249 17.7188 11.8438C17.7188 12.9626 17.2743 14.0357 16.4831 14.8269C15.6919 15.618 14.6189 16.0625 13.5 16.0625ZM13.5 17.75C15.0664 17.75 16.5687 17.1277 17.6763 16.0201C18.784 14.9125 19.4062 13.4102 19.4062 11.8438C19.4062 10.2773 18.784 8.77504 17.6763 7.6674C16.5687 6.55976 15.0664 5.9375 13.5 5.9375C11.9336 5.9375 10.4313 6.55976 9.32365 7.6674C8.21601 8.77504 7.59375 10.2773 7.59375 11.8438C7.59375 13.4102 8.21601 14.9125 9.32365 16.0201C10.4313 17.1277 11.9336 17.75 13.5 17.75ZM5.0625 8.46875C5.0625 8.69253 4.9736 8.90714 4.81537 9.06537C4.65714 9.22361 4.44253 9.3125 4.21875 9.3125C3.99497 9.3125 3.78036 9.22361 3.62213 9.06537C3.46389 8.90714 3.375 8.69253 3.375 8.46875C3.375 8.24497 3.46389 8.03036 3.62213 7.87213C3.78036 7.7139 3.99497 7.625 4.21875 7.625C4.44253 7.625 4.65714 7.7139 4.81537 7.87213C4.9736 8.03036 5.0625 8.24497 5.0625 8.46875Z' fill='currentColor' />
@@ -105,15 +105,15 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 bg-white dark:bg-slate-700 dark:text-gray-50'>
+        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
           <div className='flex items-center space-x-4'>
-            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/81.jpg' alt='avatar' />
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Marina Flick</a>
+              <a href='#' className='text-base font-bold block'>Marina Flick</a>
               <span className='text-sm text-slate-600 dark:text-gray-400'>Web Development</span>
             </div>
           </div>
-          <button className='no-underline inline-block rounded-full p-3 transition-all bg-slate-100 hover:bg-slate-200 dark:bg-slate-600 dark:hover:bg-slate-500'>
+          <button className='inline-block rounded-full p-3 transition-all bg-slate-100 hover:bg-slate-200 dark:bg-slate-600 dark:hover:bg-slate-500'>
             <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' fill='currentColor' />
             </svg>
@@ -121,13 +121,13 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 bg-white dark:bg-slate-700 dark:text-slate-50'>
+        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 bg-white dark:bg-slate-800 dark:text-slate-50'>
           <div className='flex items-center space-x-4'>
             <a href='#'>
-              <img className='flex-none w-14 h-14 rounded-full object-cover ring-4 ring-pink-500 border-2 border-white dark:border-slate-700' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
+              <img className='flex-none w-12 h-12 rounded-full object-cover ring-2 ring-pink-500 border-2 border-white dark:border-slate-700' src='https://randomuser.me/api/portraits/women/80.jpg' alt='avatar' />
             </a>
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Jenny Wilson</a>
+              <a href='#' className='font-bold block'>Jenny Wilson</a>
             </div>
           </div>
         </div>
@@ -146,10 +146,10 @@ function App () {
         </a>
 
         {/** widget */}
-        <div className='break-inside flex justify-between flex-col rounded-xl p-4 mb-4 bg-white dark:bg-slate-700 dark:text-slate-50'>
-          <div className='flex justify-between items-start mb-5'>
-            <h5 className='font-medium text-xl'>New task completed successfully</h5>
-            <button className='no-underline inline-block transition-all rounded-full p-2 hover:bg-slate-100 dark:hover:bg-slate-600'>
+        <div className='break-inside flex justify-between flex-col rounded-xl p-4 mb-4 space-y-2 bg-white dark:bg-slate-800 dark:text-slate-50'>
+          <div className='flex justify-between items-start'>
+            <h5 className='font-medium text-base'>New task completed successfully</h5>
+            <button className='inline-block transition-all rounded-full p-1 hover:bg-slate-100 dark:hover:bg-slate-600'>
               <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='currentColor' />
               </svg>
@@ -157,9 +157,9 @@ function App () {
           </div>
           <div className='flex justify-between items-center'>
             <div className='flex items-center space-x-4'>
-              <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/60.jpg' alt='avatar' />
+              <img className='flex-none w-11 h-11 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/60.jpg' alt='avatar' />
               <div className='flex-auto'>
-                <a href='#' className='no-underline font-bold block'>Lucianna</a>
+                <a href='#' className='font-bold block'>Lucianna</a>
               </div>
             </div>
             <div className='flex items-center space-x-2 text-gray-600 dark:text-slate-400'>
@@ -172,12 +172,12 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex justify-between flex-col rounded-xl p-4 mb-4 space-y-5 bg-white dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between flex-col rounded-xl p-4 mb-4 space-y-5 bg-white dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-start space-x-3'>
             <svg width='34' height='34' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M12.36,6L12.76,8H18V14H14.64L14.24,12H7V6H12.36M14,4H5V21H7V14H12.6L13,16H20V6H14.4' fill='currentColor' />
             </svg>
-            <h5 className='font-medium text-lg'>Improve large organization onboarding</h5>
+            <h5 className='font-medium text-base'>Improve large organization onboarding</h5>
           </div>
           <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden'>
             <div className='absolute left-0 w-1/3 h-full bg-[#D903EC]' />
@@ -186,7 +186,7 @@ function App () {
             <div className='flex items-center space-x-4'>
               <img className='flex-none w-9 h-9 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
               <div className='flex-auto'>
-                <a href='#' className='no-underline font-bold block'>Veronica</a>
+                <a href='#' className='font-bold block'>Veronica</a>
               </div>
             </div>
             <div className='flex items-center space-x-2'>
@@ -196,15 +196,15 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex justify-between flex-col p-4 mb-4 space-y-5 border-l-[5px] border-blue-500 bg-white dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between flex-col p-4 mb-4 text-sm space-y-5 border-l-[5px] border-blue-500 bg-white dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-start space-x-3'>
             <svg width='34' height='34' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M12.36,6L12.76,8H18V14H14.64L14.24,12H7V6H12.36M14,4H5V21H7V14H12.6L13,16H20V6H14.4' fill='currentColor' />
             </svg>
-            <h5 className='font-medium text-lg'>Improve large organization onboarding</h5>
+            <h5 className='font-medium text-base'>Improve large organization onboarding</h5>
           </div>
           <div className='flex justify-between items-center'>
-            <div className='flex space-x-2 items-center'>
+            <div className='flex space-x-1 items-center'>
               <div className='flex items-center space-x-2 py-1 px-2 rounded-md bg-slate-200 dark:bg-slate-600 dark:text-white'>
                 <svg width='16' height='16' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M4,6V18H20V6H4M6,9H18V11H6V9M6,13H16V15H6V13Z' fill='currentColor' />
@@ -237,22 +237,22 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex justify-between flex-col p-4 mb-4 space-y-5 border-l-[5px] border-pink-600 bg-white dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between flex-col p-4 mb-4 text-sm space-y-5 border-l-[5px] border-pink-600 bg-white dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-start'>
             <div className='flex items-start space-x-2'>
               <svg width='34' height='34' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12.36,6L12.76,8H18V14H14.64L14.24,12H7V6H12.36M14,4H5V21H7V14H12.6L13,16H20V6H14.4' fill='currentColor' />
               </svg>
-              <h5 className='font-medium text-lg'>Improve large organization onboarding</h5>
+              <h5 className='font-medium text-base'>Improve large organization onboarding</h5>
             </div>
             <button className='flex items-center justify-center hover:bg-slate-200 dark:hover:bg-red-600 rounded-full p-1 transition-all'>
-              <svg width='26' height='26' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' fill='currentColor' />
               </svg>
             </button>
           </div>
           <div className='flex justify-between items-center'>
-            <div className='flex space-x-2 items-center'>
+            <div className='flex space-x-1 items-center'>
               <div className='flex items-center space-x-2 py-1 px-2 rounded-md bg-pink-200 dark:bg-red-600'>
                 <svg width='16' height='16' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20M4,6V18H20V6H4M6,9H18V11H6V9M6,13H16V15H6V13Z' fill='currentColor' />
@@ -285,17 +285,20 @@ function App () {
         </div>
 
         {/** widget */}
-        <a href='#' className='break-inside flex flex-row items-center justify-between bg-gradient-to-r from-[#7400e1] to-[#5b00ca] rounded-xl p-4 mb-4'>
-          <div className='mr-auto'>
-            <h3 className='font-bold text-xl text-white'>Tarragona</h3>
+        <a href='#' className='break-inside flex items-center justify-between text-sm bg-gradient-to-r from-[#7400e1] to-[#5b00ca] rounded-xl p-4 mb-4'>
+          <div>
+            <h3 className='font-bold text-lg text-white'>Tarragona</h3>
             <h5 className='text-white'>Cloudy</h5>
           </div>
-          <span className='text-4xl font-bold text-white'>24°</span>
-          <svg className='w-10 h-10 ml-auto' viewBox='0 0 36 36' preserveAspectRatio='xMidYMid meet'><path className='fill-[#FFE600]' d='M14 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm16 12s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 14s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm3.872-7.957s1.414 1.414 0 2.828s-2.828 0-2.828 0L3.629 7.458s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm19.085 2.828s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414z' /><circle className='fill-[#FFE600]' cx='16' cy='16' r='9' /><path className='fill-white stroke' d='M28 20c-.825 0-1.62.125-2.369.357A6.498 6.498 0 0 0 19.5 16c-3.044 0-5.592 2.096-6.299 4.921A4.459 4.459 0 0 0 10.5 20A4.5 4.5 0 0 0 6 24.5c0 .604.123 1.178.339 1.704A4.98 4.98 0 0 0 5 26c-2.762 0-5 2.238-5 5s2.238 5 5 5h23a8 8 0 1 0 0-16z' /></svg>
+          <span className='text-3xl font-bold text-white'>24°</span>
+          <svg width='40' height='40' viewBox='0 0 36 36' preserveAspectRatio='xMidYMid meet'>
+            <path className='fill-[#FFE600]' d='M14 2s0-2 2-2s2 2 2 2v2s0 2-2 2s-2-2-2-2V2zm16 12s2 0 2 2s-2 2-2 2h-2s-2 0-2-2s2-2 2-2h2zM4 14s2 0 2 2s-2 2-2 2H2s-2 0-2-2s2-2 2-2h2zm3.872-7.957s1.414 1.414 0 2.828s-2.828 0-2.828 0L3.629 7.458s-1.414-1.414 0-2.829c1.415-1.414 2.829 0 2.829 0l1.414 1.414zm19.085 2.828s-1.414 1.414-2.828 0s0-2.828 0-2.828l1.414-1.414s1.414-1.414 2.828 0s0 2.828 0 2.828l-1.414 1.414z' /><circle className='fill-[#FFE600]' cx='16' cy='16' r='9' />
+            <path className='fill-white stroke' d='M28 20c-.825 0-1.62.125-2.369.357A6.498 6.498 0 0 0 19.5 16c-3.044 0-5.592 2.096-6.299 4.921A4.459 4.459 0 0 0 10.5 20A4.5 4.5 0 0 0 6 24.5c0 .604.123 1.178.339 1.704A4.98 4.98 0 0 0 5 26c-2.762 0-5 2.238-5 5s2.238 5 5 5h23a8 8 0 1 0 0-16z' />
+          </svg>
         </a>
 
         {/** widget */}
-        <div className='break-inside flex justify-between flex-col rounded-xl p-4 mb-4 space-y-2 bg-white dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between flex-col rounded-xl p-4 mb-4 text-sm space-y-2 bg-white dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-center'>
             <div className='flex items-center space-x-2'>
               <svg width='35' height='16' viewBox='0 0 35 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -304,16 +307,16 @@ function App () {
                 <path d='M12.1799 11.18H16.8399V10.16H13.3099V8.55H16.4999V7.52H13.3099V6.03H16.8399V5H12.1799V11.18Z' fill='currentColor' />
                 <path d='M24.5201 9.43L23.0601 5H21.8401L20.3701 9.43L19.0501 5H17.8201L19.7801 11.18H20.8901L22.4501 6.59L24.0001 11.18H25.1301L27.0801 5H25.8501L24.5201 9.43Z' fill='currentColor' />
               </svg>
-              <h5 className='font-medium text-lg'>Components</h5>
+              <h5 className='font-medium text-base'>Components</h5>
             </div>
             <span className='flex items-center justify-center'>
-              <svg width='26' height='26' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z' fill='currentColor' />
               </svg>
             </span>
           </div>
-          <div className='flex justify-between items-start flex-col'>
-            <h5 className='font-medium text-lg'>Improve large organization</h5>
+          <div className='flex justify-between items-start flex-col space-y-1'>
+            <h5 className='font-medium text-base'>Improve large organization</h5>
             <p>Lorem ipsum dolor sit amet, consecte permis palis.</p>
           </div>
         </div>
@@ -322,10 +325,10 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-[#12C0E7] rounded-full p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div className='overflow-hidden rounded-full border-1 border-white'>
-              <img className='flex-none w-16 h-16 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/women/62.jpg' alt='avatar' />
+              <img className='flex-none w-12 h-12 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/women/62.jpg' alt='avatar' />
             </div>
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block text-lg text-white'>Mariam jimenez</a>
+              <a href='#' className='font-bold block text-lg text-white'>Mariam jimenez</a>
             </div>
           </div>
         </div>
@@ -337,18 +340,18 @@ function App () {
               <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-12 h-12 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 ring-2 ring-[#740EF5]' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
             <div className='flex flex-col flex-auto'>
-              <a href='#' className='no-underline font-bold block text-lg text-white'>Teams</a>
+              <a href='#' className='font-bold block text-base text-white'>Teams</a>
               <span className='text-[#F5EEFF] text-sm'>Two currently</span>
             </div>
           </div>
@@ -361,35 +364,35 @@ function App () {
               <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/women/16.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/women/16.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-14 h-14 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/men/65.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 ring-2 ring-[#FFF614]' src='https://randomuser.me/api/portraits/men/65.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
             <div className='flex flex-col flex-auto'>
-              <a href='#' className='no-underline font-bold block text-xl text-black'>New Teams</a>
+              <a href='#' className='font-bold block text-base text-black'>New Teams</a>
             </div>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex flex-col justify-between rounded-[2rem] p-6 mb-4 bg-white dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col justify-between rounded-[2rem] p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-between'>
             <div className='flex items-center space-x-4'>
-              <div className='flex justify-center items-center bg-slate-200 dark:bg-slate-500 w-12 h-12 rounded-full'>
-                <svg width='26' height='26' viewBox='0 0 24 24'>
+              <div className='flex justify-center items-center bg-slate-200 dark:bg-slate-500 w-11 h-11 rounded-full'>
+                <svg width='22' height='22' viewBox='0 0 24 24'>
                   <path fill='currentColor' d='M21.7 13.35L20.7 14.35L18.65 12.35L19.65 11.35C19.85 11.14 20.19 11.13 20.42 11.35L21.7 12.63C21.89 12.83 21.89 13.15 21.7 13.35M12 18.94V21H14.06L20.12 14.88L18.07 12.88L12 18.94M5 19H10V21H5C3.9 21 3 20.11 3 19V5C3 3.9 3.9 3 5 3H6V1H8V3H16V1H18V3H19C20.11 3 21 3.9 21 5V9H5V19M5 5V7H19V5H5Z' />
                 </svg>
               </div>
               <div className='flex flex-col flex-auto'>
-                <span className='font-medium text-sm text-slate-400 dark:text-slate-400'>SCHEDULE DATE</span>
-                <a href='#' className='no-underline font-bold block'>Sat 24, September</a>
+                <span className='font-medium text-xs text-slate-400 dark:text-slate-400'>SCHEDULE DATE</span>
+                <a href='#' className='text-base font-bold block'>Sat 24, September</a>
               </div>
             </div>
-            <button className='no-underline inline-block hover:bg-slate-100 transition-all rounded-full p-2 dark:hover:bg-slate-600'>
-              <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+            <button className='inline-block hover:bg-slate-100 transition-all rounded-full p-1 dark:hover:bg-slate-600'>
+              <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='currentColor' />
               </svg>
             </button>
@@ -397,37 +400,37 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <img className='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
-            <a href='#' className='no-underline font-bold block'>Julia Robert</a>
+            <a href='#' className='text-base font-bold block'>Julia Robert</a>
             <span className='text-slate-600 dark:text-slate-400'>Frontend Development</span>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pl-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pl-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex-auto text-right'>
-            <a href='#' className='no-underline font-bold block'>Fermin vargas</a>
+            <a href='#' className='font-bold block'>Fermin vargas</a>
             <span className='text-slate-600 dark:text-slate-400'>Construction manager</span>
           </div>
-          <img className='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+          <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
         </div>
 
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-[#ff7300] text-white rounded-xl overflow-hidden pr-4 mb-4'>
           <div className='flex flex-1 flex-col p-4'>
-            <div className='font-bold block text-lg'> Creadores </div>
-            <div className='font-bold block text-lg'> de Tendencias </div>
+            <div className='font-bold block text-base'> Creadores </div>
+            <div className='font-bold block text-base'> de Tendencias </div>
           </div>
           <img className='flex-none w-20 h-20 object-cover rotate-12 rounded-lg -mb-6 -mr-6' src='https://randomuser.me/api/portraits/women/58.jpg' alt='avatar' />
         </div>
 
         {/** widget */}
-        <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-between'>
             <a href='#' className='flex flex-row items-center justify-center space-x-4'>
-              <svg width='42' height='42' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='40' height='40' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.375 21C0.375 25.0562 1.54375 28.8375 3.5375 32H38.3937C40.3875 28.8375 41.5563 25.0562 41.5563 21C41.5563 16.9437 40.3875 13.1625 38.3937 10H3.5375C1.54375 13.1625 0.375 16.9437 0.375 21Z' fill='#FFCE31' />
                 <path d='M38.4625 10C34.8188 4.225 28.3563 0.375 21 0.375C13.6438 0.375 7.18125 4.225 3.5375 10H38.4625Z' fill='#ED4C5C' />
                 <path d='M3.5375 32C7.18125 37.775 13.6438 41.625 21 41.625C28.3563 41.625 34.8188 37.775 38.4625 32H3.5375Z' fill='#ED4C5C' />
@@ -473,10 +476,10 @@ function App () {
                 <path d='M14.3312 23.2L14.0562 23.9563L14.2625 24.025L14.125 24.3H14.5375L14.4687 24.025L14.675 23.9563L14.3312 23.2Z' fill='#C8B100' />
                 <path d='M13.85 24.0938L13.5062 24.85L13.7125 24.9188L13.6437 25.1937H13.9875L13.9187 24.9188L14.125 24.85L13.85 24.0938Z' fill='#C8B100' />
               </svg>
-              <span className='no-underline font-bold block text-lg'>España</span>
+              <span className='font-bold block text-lbase'>España</span>
             </a>
-            <button className='no-underline rounded-full p-2 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
-              <svg xmlns='http://www.w3.org/2000/svg' className='w-8 h-8' viewBox='0 0 24 24'>
+            <button className='rounded-full p-2 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
                 <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' fill='currentColor' />
               </svg>
             </button>
@@ -484,62 +487,62 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex bg-white rounded-2xl p-6 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex bg-white rounded-2xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row justify-between items-center w-full'>
             <div className='flex flex-row justify-center items-center space-x-3'>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[50%]'>
                   <span className='sr-only'>50%</span>
                 </div>
               </div>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[70%]'>
                   <span className='sr-only'>70%</span>
                 </div>
               </div>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[45%]'>
                   <span className='sr-only'>45%</span>
                 </div>
               </div>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[5%]'>
                   <span className='sr-only'>5%</span>
                 </div>
               </div>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[25%]'>
                   <span className='sr-only'>25%</span>
                 </div>
               </div>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[15%]'>
                   <span className='sr-only'>15%</span>
                 </div>
               </div>
-              <div className='relative h-16 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
+              <div className='relative h-12 w-3 rounded-full bg-slate-100 overflow-hidden dark:bg-slate-500'>
                 <div className='absolute bg-gradient-to-t from-[#c900db] to-[#ff0ace] bottom-0 left-0 w-full top-[40%]'>
                   <span className='sr-only'>40%</span>
                 </div>
               </div>
             </div>
             <div className='flex flex-col justify-center items-center'>
-              <span className='font-bold block text-2xl'>88%</span>
+              <span className='font-bold block text-lg'>88%</span>
             </div>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row justify-between items-center w-full'>
             <div className='flex flex-col items-start'>
-              <span className='text-sm text-slate-400'>16 January 2017</span>
-              <span className='font-bold block mb-1'>Statement of earnings</span>
+              <span className='text-slate-400'>16 January 2017</span>
+              <span className='font-bold text-base block mb-1'>Statement of earnings</span>
             </div>
-            <span className='font-bold block mb-1'>76%</span>
+            <span className='text-base font-bold block mb-1'>76%</span>
           </div>
           <div className='-mt-5'>
-            <svg width='309' height='63' viewBox='0 0 309 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <svg width='100%' height='63' viewBox='0 0 309 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M2 61C4.32346 58.9538 8.85421 55.4069 15.3599 56.2254C23.492 57.2486 28.1389 61 32.7859 56.2254C37.4328 51.4509 40.918 47.3584 44.984 48.0405C49.0501 48.7225 51.9544 52.474 57.1822 51.7919C62.41 51.1098 47.8445 58.7369 71.123 48.0405C94.4014 37.3441 91.867 38.9745 93.1959 42.5838C94.8338 47.0326 99.5854 53.4971 109.46 49.4046C119.335 45.3121 119.567 40.8786 126.305 40.8786C133.043 40.8786 129.209 39.1734 131.533 40.8786C133.856 42.5838 135.018 41.9017 137.922 39.8555C140.827 37.8092 144.992 31.6705 148.477 34.3988C151.962 37.1272 154.768 42.5838 161.738 42.5838C168.708 42.5838 179.954 37.1272 187.506 33.0347C195.057 28.9422 199.494 36.7861 201.237 38.8324C202.979 40.8786 215.758 36.7861 222.729 31.6705C228.305 27.578 233.959 33.6031 236.089 37.1272C243.64 35.6493 260.253 31.8069 266.294 28.2601C272.335 24.7133 275.781 27.9191 276.749 29.9653C282.171 27.578 304.096 10.8671 307 2' stroke='url(#paint0_linear_7_414)' strokeWidth='3' strokeLinecap='round' strokeLinejoin='round' />
               <defs>
                 <linearGradient id='paint0_linear_7_414' x1='307' y1='0.635821' x2='19.4084' y2='117.088' gradientUnits='userSpaceOnUse'>
@@ -563,62 +566,62 @@ function App () {
         </button>
 
         {/** widget */}
-        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 text-base  dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#2AB849] w-12 h-12 rounded-full'>
-              <svg width='24' height='14' viewBox='0 0 24 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#2AB849] w-11 h-11 rounded-full'>
+              <svg width='22' height='12' viewBox='0 0 24 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.33252 8.065L5.98752 13.72L7.39752 12.3L1.74752 6.65L0.33252 8.065ZM22.2465 0.280999L11.6475 10.891L7.41052 6.643L5.98052 8.053L11.6475 13.72L23.6675 1.701L22.2475 0.280999H22.2465ZM18.0095 1.7L16.5995 0.279999L10.2285 6.65L11.6485 8.06L18.0085 1.7H18.0095Z' fill='white' />
               </svg>
             </div>
-            <span className='text-lg font-medium'>Complete task</span>
+            <span className='font-medium'>Complete task</span>
           </div>
-          <span className='text-lg font-medium'>76%</span>
+          <span className='font-medium'>76%</span>
         </div>
 
         {/** widget */}
-        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 text-base dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#09C6D2] w-12 h-12 rounded-full'>
-              <svg width='24' height='24' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#09C6D2] w-11 h-11 rounded-full'>
+              <svg width='22' height='22' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M10 14.0714C9.19475 14.0714 8.40758 13.8326 7.73804 13.3853C7.06849 12.9379 6.54665 12.302 6.23849 11.5581C5.93033 10.8141 5.84971 9.99548 6.0068 9.2057C6.1639 8.41592 6.55167 7.69047 7.12107 7.12107C7.69047 6.55167 8.41592 6.1639 9.2057 6.0068C9.99548 5.84971 10.8141 5.93033 11.5581 6.23849C12.302 6.54665 12.9379 7.06849 13.3853 7.73804C13.8326 8.40758 14.0714 9.19475 14.0714 10C14.0702 11.0794 13.6408 12.1143 12.8775 12.8775C12.1143 13.6408 11.0794 14.0702 10 14.0714ZM10 7.28571C9.46317 7.28571 8.93839 7.4449 8.49202 7.74315C8.04566 8.0414 7.69776 8.46532 7.49233 8.96129C7.28689 9.45726 7.23314 10.003 7.33787 10.5295C7.4426 11.0561 7.70111 11.5397 8.08071 11.9193C8.46031 12.2989 8.94395 12.5574 9.47047 12.6621C9.99699 12.7669 10.5427 12.7131 11.0387 12.5077C11.5347 12.3022 11.9586 11.9543 12.2568 11.508C12.5551 11.0616 12.7143 10.5368 12.7143 10C12.7134 9.2804 12.4271 8.59053 11.9183 8.0817C11.4095 7.57287 10.7196 7.28661 10 7.28571Z' fill='white' />
                 <path d='M10 16.7857C9.04546 16.785 8.10177 16.5832 7.2304 16.1936C6.35902 15.8039 5.5795 15.235 4.9426 14.524L5.95368 13.6188C6.55733 14.2938 7.32024 14.8071 8.17295 15.1118C9.02565 15.4166 9.94105 15.5033 10.8358 15.3639C11.7305 15.2245 12.5762 14.8634 13.2958 14.3137C14.0153 13.7639 14.5859 13.0429 14.9556 12.2163C15.3253 11.3897 15.4824 10.4837 15.4125 9.58085C15.3425 8.67801 15.0479 7.80701 14.5553 7.04716C14.0628 6.2873 13.3879 5.66273 12.5923 5.23033C11.7967 4.79792 10.9055 4.57141 10 4.57143V3.21429C11.7997 3.21429 13.5257 3.92921 14.7982 5.20177C16.0708 6.47434 16.7857 8.20032 16.7857 10C16.7857 11.7997 16.0708 13.5257 14.7982 14.7982C13.5257 16.0708 11.7997 16.7857 10 16.7857Z' fill='white' />
                 <path d='M10 19.5C8.12108 19.5 6.28435 18.9428 4.72209 17.899C3.15982 16.8551 1.94218 15.3714 1.22315 13.6355C0.504116 11.8996 0.315985 9.98946 0.682544 8.14665C1.0491 6.30383 1.95389 4.61109 3.28249 3.28249C4.61109 1.95389 6.30383 1.0491 8.14665 0.682544C9.98946 0.315985 11.8996 0.504116 13.6355 1.22315C15.3714 1.94218 16.8551 3.15982 17.899 4.72209C18.9428 6.28435 19.5 8.12108 19.5 10C19.4971 12.5187 18.4953 14.9334 16.7143 16.7143C14.9334 18.4953 12.5187 19.4971 10 19.5ZM10 1.85715C8.3895 1.85715 6.81516 2.33472 5.47607 3.22947C4.13699 4.12421 3.0933 5.39595 2.47698 6.88387C1.86067 8.37178 1.69942 10.009 2.01361 11.5886C2.3278 13.1682 3.10334 14.6191 4.24213 15.7579C5.38093 16.8967 6.83185 17.6722 8.41141 17.9864C9.99097 18.3006 11.6282 18.1393 13.1161 17.523C14.604 16.9067 15.8758 15.863 16.7705 14.5239C17.6653 13.1848 18.1429 11.6105 18.1429 10C18.1403 7.84116 17.2816 5.77145 15.7551 4.24491C14.2286 2.71837 12.1589 1.85966 10 1.85715Z' fill='white' />
               </svg>
             </div>
-            <span className='text-lg font-medium'>In progress</span>
+            <span className='font-medium'>In progress</span>
           </div>
-          <span className='text-lg font-medium'>+28</span>
+          <span className='font-medium'>+28</span>
         </div>
 
         {/** widget */}
-        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-12 h-12 rounded-full'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-11 h-11 rounded-full'>
               <svg width='16' height='20' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12.3857 7.11111H10.7143V4.84444C10.7143 2.10839 9.47464 0.5 7 0.5C4.52443 0.5 3.28571 2.10839 3.28571 4.84444V7.11111H1.42857C0.915071 7.11111 0.5 7.72122 0.5 8.2435V15.6111C0.5 16.1296 0.897429 16.6868 1.38307 16.8455L2.49457 17.211C3.08412 17.3858 3.69329 17.4829 4.30714 17.5H9.69286C10.3065 17.4831 10.9154 17.3856 11.5045 17.2101L12.6151 16.8446C13.1016 16.6868 13.5 16.1296 13.5 15.6111V8.2435C13.5 7.72122 12.8983 7.11111 12.3857 7.11111ZM8.85714 7.11111H5.14286V4.46572C5.14286 3.101 5.88293 2.38889 7 2.38889C8.11707 2.38889 8.85714 3.101 8.85714 4.46572V7.11111Z' fill='white' />
               </svg>
             </div>
-            <span className='text-lg font-medium'>Blocked up</span>
+            <span className='font-medium'>Blocked up</span>
           </div>
           <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-            <svg width='30' height='30' viewBox='0 0 24 24'>
+            <svg width='26' height='26' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <button type='button' className='flex break-inside bg-[#D20939] rounded-xl p-4 mb-4 w-full'>
+        <button type='button' className='break-inside bg-[#D20939] rounded-xl p-4 mb-4 w-full'>
           <div className='flex items-center space-x-4'>
-            <svg width='36' height='36' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <svg width='32' height='32' viewBox='0 0 38 38' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M5.10714 0C3.75264 0 2.45362 0.538072 1.49585 1.49585C0.538072 2.45362 0 3.75264 0 5.10714V29.4643C0 30.8188 0.538072 32.1178 1.49585 33.0756C2.45362 34.0334 3.75264 34.5714 5.10714 34.5714H18.0714C17.5227 33.8418 17.0607 33.0508 16.6949 32.2143H5.10714C4.3778 32.2143 3.67832 31.9246 3.1626 31.4088C2.64687 30.8931 2.35714 30.1936 2.35714 29.4643V5.10714C2.35714 3.58914 3.58914 2.35714 5.10714 2.35714H29.4643C30.9823 2.35714 32.2143 3.58914 32.2143 5.10714V16.6949C33.0507 17.0602 33.8417 17.5216 34.5714 18.0699V5.10714C34.5714 3.75264 34.0334 2.45362 33.0756 1.49585C32.1178 0.538072 30.8188 0 29.4643 0H5.10714ZM8.64286 10.989C7.60094 10.989 6.60169 11.4029 5.86494 12.1397C5.12819 12.8764 4.71429 13.8757 4.71429 14.9176C4.71429 15.9595 5.12819 16.9587 5.86494 17.6955C6.60169 18.4322 7.60094 18.8461 8.64286 18.8461C9.68478 18.8461 10.684 18.4322 11.4208 17.6955C12.1575 16.9587 12.5714 15.9595 12.5714 14.9176C12.5714 13.8757 12.1575 12.8764 11.4208 12.1397C10.684 11.4029 9.68478 10.989 8.64286 10.989ZM7.07143 14.9176C7.07143 14.5008 7.23699 14.1011 7.53169 13.8064C7.82639 13.5117 8.22609 13.3461 8.64286 13.3461C9.05963 13.3461 9.45933 13.5117 9.75403 13.8064C10.0487 14.1011 10.2143 14.5008 10.2143 14.9176C10.2143 15.3343 10.0487 15.734 9.75403 16.0287C9.45933 16.3234 9.05963 16.489 8.64286 16.489C8.22609 16.489 7.82639 16.3234 7.53169 16.0287C7.23699 15.734 7.07143 15.3343 7.07143 14.9176ZM4.71429 25.9239C4.71429 24.8819 5.12819 23.8827 5.86494 23.1459C6.60169 22.4092 7.60094 21.9953 8.64286 21.9953C9.68478 21.9953 10.684 22.4092 11.4208 23.1459C12.1575 23.8827 12.5714 24.8819 12.5714 25.9239C12.5714 26.9658 12.1575 27.965 11.4208 28.7018C10.684 29.4385 9.68478 29.8524 8.64286 29.8524C7.60094 29.8524 6.60169 29.4385 5.86494 28.7018C5.12819 27.965 4.71429 26.9658 4.71429 25.9239ZM8.64286 24.3524C8.22609 24.3524 7.82639 24.518 7.53169 24.8127C7.23699 25.1074 7.07143 25.5071 7.07143 25.9239C7.07143 26.3406 7.23699 26.7403 7.53169 27.035C7.82639 27.3297 8.22609 27.4953 8.64286 27.4953C9.05963 27.4953 9.45933 27.3297 9.75403 27.035C10.0487 26.7403 10.2143 26.3406 10.2143 25.9239C10.2143 25.5071 10.0487 25.1074 9.75403 24.8127C9.45933 24.518 9.05963 24.3524 8.64286 24.3524ZM15.3214 12.5714C15.0089 12.5714 14.7091 12.6956 14.4881 12.9166C14.267 13.1377 14.1429 13.4374 14.1429 13.75C14.1429 14.0626 14.267 14.3624 14.4881 14.5834C14.7091 14.8044 15.0089 14.9286 15.3214 14.9286H28.6786C28.9912 14.9286 29.2909 14.8044 29.5119 14.5834C29.733 14.3624 29.8571 14.0626 29.8571 13.75C29.8571 13.4374 29.733 13.1377 29.5119 12.9166C29.2909 12.6956 28.9912 12.5714 28.6786 12.5714H15.3214ZM27.5 37.7143C30.209 37.7143 32.807 36.6381 34.7226 34.7226C36.6381 32.807 37.7143 30.209 37.7143 27.5C37.7143 24.791 36.6381 22.193 34.7226 20.2774C32.807 18.3619 30.209 17.2857 27.5 17.2857C24.791 17.2857 22.193 18.3619 20.2774 20.2774C18.3619 22.193 17.2857 24.791 17.2857 27.5C17.2857 30.209 18.3619 32.807 20.2774 34.7226C22.193 36.6381 24.791 37.7143 27.5 37.7143V37.7143ZM27.5 20.4286C27.7084 20.4286 27.9082 20.5114 28.0556 20.6587C28.2029 20.8061 28.2857 21.0059 28.2857 21.2143V26.7143H33.7857C33.9941 26.7143 34.194 26.7971 34.3413 26.9444C34.4887 27.0918 34.5714 27.2916 34.5714 27.5C34.5714 27.7084 34.4887 27.9082 34.3413 28.0556C34.194 28.2029 33.9941 28.2857 33.7857 28.2857H28.2857V33.7857C28.2857 33.9941 28.2029 34.194 28.0556 34.3413C27.9082 34.4887 27.7084 34.5714 27.5 34.5714C27.2916 34.5714 27.0918 34.4887 26.9444 34.3413C26.7971 34.194 26.7143 33.9941 26.7143 33.7857V28.2857H21.2143C21.0059 28.2857 20.8061 28.2029 20.6587 28.0556C20.5114 27.9082 20.4286 27.7084 20.4286 27.5C20.4286 27.2916 20.5114 27.0918 20.6587 26.9444C20.8061 26.7971 21.0059 26.7143 21.2143 26.7143H26.7143V21.2143C26.7143 21.0059 26.7971 20.8061 26.9444 20.6587C27.0918 20.5114 27.2916 20.4286 27.5 20.4286V20.4286ZM5.89286 4.71429C5.58028 4.71429 5.28051 4.83846 5.05948 5.05948C4.83846 5.28051 4.71429 5.58028 4.71429 5.89286C4.71429 6.20543 4.83846 6.50521 5.05948 6.72623C5.28051 6.94726 5.58028 7.07143 5.89286 7.07143H28.6786C28.9912 7.07143 29.2909 6.94726 29.5119 6.72623C29.733 6.50521 29.8571 6.20543 29.8571 5.89286C29.8571 5.58028 29.733 5.28051 29.5119 5.05948C29.2909 4.83846 28.9912 4.71429 28.6786 4.71429H5.89286Z' fill='white' />
             </svg>
-            <span className='text-lg font-medium text-white'>Add New Project</span>
+            <span className='text-base font-medium text-white'>Add New Project</span>
           </div>
         </button>
 
         {/** widget */}
-        <button type='button' className='flex break-inside bg-black rounded-3xl px-8 py-4 mb-4 w-full dark:bg-slate-700 dark:text-white'>
+        <button type='button' className='flex break-inside bg-black rounded-3xl px-8 py-4 mb-4 w-full dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-between flex-1'>
             <span className='text-lg font-medium text-white'>Get started</span>
             <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -628,7 +631,7 @@ function App () {
         </button>
 
         {/** widget */}
-        <button type='button' className='flex break-inside bg-black text-white border-2 border-transparent rounded-3xl px-6 py-3 mb-4 w-full dark:bg-slate-700 dark:text-white'>
+        <button type='button' className='flex break-inside bg-black text-white border-2 border-transparent rounded-3xl px-6 py-3 mb-4 w-full dark:bg-slate-800 dark:text-white'>
           <div className='m-auto'>
             <div className='flex items-center justify-start flex-1 space-x-4'>
               <svg className='text-white' width='26' height='26' viewBox='0 0 24 24'>
@@ -640,7 +643,7 @@ function App () {
         </button>
 
         {/** widget */}
-        <button type='button' className='flex break-inside bg-white text-black border-2 border-black rounded-3xl px-6 py-3 mb-4 w-full dark:bg-slate-700 dark:text-white'>
+        <button type='button' className='flex break-inside bg-white text-black border-2 border-black rounded-3xl px-6 py-3 mb-4 w-full dark:bg-slate-800 dark:text-white'>
           <div className='m-auto'>
             <div className='flex items-center justify-start flex-1 space-x-4'>
               <svg width='25' height='25' viewBox='0 0 24 24'>
@@ -652,7 +655,7 @@ function App () {
         </button>
 
         {/** widget */}
-        <button type='button' className='flex break-inside bg-white text-black border-2 border-black rounded-3xl px-6 py-3 mb-4 w-full dark:bg-slate-700 dark:text-white'>
+        <button type='button' className='flex break-inside bg-white text-black border-2 border-black rounded-3xl px-6 py-3 mb-4 w-full dark:bg-slate-800 dark:text-white'>
           <div className='m-auto'>
             <div className='flex items-center justify-start flex-1 space-x-4'>
               <svg width='25' height='25' viewBox='0 0 24 24'>
@@ -676,30 +679,30 @@ function App () {
         </button>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <img className='flex-none w-12 h-12 rounded-full object-cover ring-4 border-2 ring-pink-500 dark:border-slate-700' src='https://randomuser.me/api/portraits/men/81.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover ring-2 border-2 ring-pink-500 dark:border-slate-700' src='https://randomuser.me/api/portraits/men/81.jpg' alt='avatar' />
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Robert Fox</a>
+              <a href='#' className='text-base font-bold block'>Robert Fox</a>
               <span className='text-slate-600 dark:text-slate-400 text-sm'>Download all information</span>
             </div>
           </div>
-          <button className='no-underline inline-block hover:bg-slate-100 rounded-full p-3 transition-all dark:hover:bg-slate-600'>
-            <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+          <button className='inline-block hover:bg-slate-100 rounded-full p-2 transition-all dark:hover:bg-slate-600'>
+            <svg width='20' height='20' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M2 12H4V17H20V12H22V17C22 18.11 21.11 19 20 19H4C2.9 19 2 18.11 2 17V12M12 15L17.55 9.54L16.13 8.13L13 11.25V2H11V11.25L7.88 8.13L6.46 9.55L12 15Z' fill='currentColor' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 space-x-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm space-x-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex-1'>
-            <div className='no-underline font-bold block '>All your notifications are well turned on</div>
+            <div className='font-medium block '>All your notifications are well turned on</div>
           </div>
-          <div className='border-2 bg-slate-300 h-8 rounded-sm dark:bg-slate-600 dark:border-slate-600' />
+          <div className='border-2 h-6 rounded-sm border-slate-300 dark:border-slate-500' />
           <div className='flex items-center justify-center space-x-2'>
-            <button className='no-underline inline-block hover:bg-slate-100 rounded-full p-2 transition-all dark:hover:bg-slate-600'>
-              <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+            <button className='inline-block hover:bg-slate-100 rounded-full p-2 transition-all dark:hover:bg-slate-600'>
+              <svg width='20' height='20' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M10 21H14C14 22.1 13.1 23 12 23S10 22.1 10 21M21 19V20H3V19L5 17V11C5 7.9 7 5.2 10 4.3V4C10 2.9 10.9 2 12 2S14 2.9 14 4V4.3C17 5.2 19 7.9 19 11V17L21 19M17 11C17 8.2 14.8 6 12 6S7 8.2 7 11V18H17V11Z' fill='currentColor' />
               </svg>
             </button>
@@ -714,17 +717,17 @@ function App () {
               <svg width='32' height='32' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12,10.11C13.03,10.11 13.87,10.95 13.87,12C13.87,13 13.03,13.85 12,13.85C10.97,13.85 10.13,13 10.13,12C10.13,10.95 10.97,10.11 12,10.11M7.37,20C8,20.38 9.38,19.8 10.97,18.3C10.45,17.71 9.94,17.07 9.46,16.4C8.64,16.32 7.83,16.2 7.06,16.04C6.55,18.18 6.74,19.65 7.37,20M8.08,14.26L7.79,13.75C7.68,14.04 7.57,14.33 7.5,14.61C7.77,14.67 8.07,14.72 8.38,14.77C8.28,14.6 8.18,14.43 8.08,14.26M14.62,13.5L15.43,12L14.62,10.5C14.32,9.97 14,9.5 13.71,9.03C13.17,9 12.6,9 12,9C11.4,9 10.83,9 10.29,9.03C10,9.5 9.68,9.97 9.38,10.5L8.57,12L9.38,13.5C9.68,14.03 10,14.5 10.29,14.97C10.83,15 11.4,15 12,15C12.6,15 13.17,15 13.71,14.97C14,14.5 14.32,14.03 14.62,13.5M12,6.78C11.81,7 11.61,7.23 11.41,7.5C11.61,7.5 11.8,7.5 12,7.5C12.2,7.5 12.39,7.5 12.59,7.5C12.39,7.23 12.19,7 12,6.78M12,17.22C12.19,17 12.39,16.77 12.59,16.5C12.39,16.5 12.2,16.5 12,16.5C11.8,16.5 11.61,16.5 11.41,16.5C11.61,16.77 11.81,17 12,17.22M16.62,4C16,3.62 14.62,4.2 13.03,5.7C13.55,6.29 14.06,6.93 14.54,7.6C15.36,7.68 16.17,7.8 16.94,7.96C17.45,5.82 17.26,4.35 16.62,4M15.92,9.74L16.21,10.25C16.32,9.96 16.43,9.67 16.5,9.39C16.23,9.33 15.93,9.28 15.62,9.23C15.72,9.4 15.82,9.57 15.92,9.74M17.37,2.69C18.84,3.53 19,5.74 18.38,8.32C20.92,9.07 22.75,10.31 22.75,12C22.75,13.69 20.92,14.93 18.38,15.68C19,18.26 18.84,20.47 17.37,21.31C15.91,22.15 13.92,21.19 12,19.36C10.08,21.19 8.09,22.15 6.62,21.31C5.16,20.47 5,18.26 5.62,15.68C3.08,14.93 1.25,13.69 1.25,12C1.25,10.31 3.08,9.07 5.62,8.32C5,5.74 5.16,3.53 6.62,2.69C8.09,1.85 10.08,2.81 12,4.64C13.92,2.81 15.91,1.85 17.37,2.69M17.08,12C17.42,12.75 17.72,13.5 17.97,14.26C20.07,13.63 21.25,12.73 21.25,12C21.25,11.27 20.07,10.37 17.97,9.74C17.72,10.5 17.42,11.25 17.08,12M6.92,12C6.58,11.25 6.28,10.5 6.03,9.74C3.93,10.37 2.75,11.27 2.75,12C2.75,12.73 3.93,13.63 6.03,14.26C6.28,13.5 6.58,12.75 6.92,12M15.92,14.26C15.82,14.43 15.72,14.6 15.62,14.77C15.93,14.72 16.23,14.67 16.5,14.61C16.43,14.33 16.32,14.04 16.21,13.75L15.92,14.26M13.03,18.3C14.62,19.8 16,20.38 16.62,20C17.26,19.65 17.45,18.18 16.94,16.04C16.17,16.2 15.36,16.32 14.54,16.4C14.06,17.07 13.55,17.71 13.03,18.3M8.08,9.74C8.18,9.57 8.28,9.4 8.38,9.23C8.07,9.28 7.77,9.33 7.5,9.39C7.57,9.67 7.68,9.96 7.79,10.25L8.08,9.74M10.97,5.7C9.38,4.2 8,3.62 7.37,4C6.74,4.35 6.55,5.82 7.06,7.96C7.83,7.8 8.64,7.68 9.46,7.6C9.94,6.93 10.45,6.29 10.97,5.7Z' fill='currentColor' />
               </svg>
-              <div className='no-underline font-medium block text-lg'>Radioactive</div>
+              <div className='font-medium block text-base'>Radioactive</div>
             </div>
           </div>
           <div className='absolute h-24 w-24 bg-yellow-200 -right-6 -top-12 rounded-full z-0' />
         </div>
 
         {/** widget */}
-        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
             <div className='relative flex flex-row items-center justify-center w-[4.5rem] h-[4.5rem]'>
-              <svg width='100%' height='100%' viewBox='0 0 59 61' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='70' height='70' viewBox='0 0 59 61' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M56.7593 41.2212C59.6861 34.1467 59.7479 26.2115 56.9317 19.0923C54.1154 11.973 48.6417 6.22754 41.6672 3.06984C34.6927 -0.0878663 26.7638 -0.410408 19.5558 2.17037C12.3479 4.75114 6.42564 10.0331 3.04044 16.9C-0.344766 23.767 -0.927703 31.681 1.4148 38.9699C3.75731 46.2587 8.84175 52.3514 15.5937 55.9604C22.3457 59.5695 30.2364 60.4122 37.5983 58.3105C44.9602 56.2088 51.2166 51.3273 55.0456 44.6976L47.3819 40.2714C44.7016 44.9122 40.3221 48.3293 35.1688 49.8005C30.0155 51.2717 24.492 50.6818 19.7656 48.1554C15.0392 45.6291 11.4801 41.3643 9.84037 36.2621C8.20062 31.1599 8.60867 25.62 10.9783 20.8132C13.348 16.0063 17.4935 12.3089 22.5391 10.5024C27.5847 8.69585 33.1349 8.92163 38.0171 11.132C42.8992 13.3424 46.7308 17.3643 48.7022 22.3477C50.6735 27.3312 50.6303 32.8859 48.5815 37.838L56.7593 41.2212Z' fill='currentColor' className='fill-slate-200 dark:fill-slate-600' />
                 <path d='M54.575 30.6546C57.0189 30.6546 59.034 32.6467 58.6688 35.0631C58.1258 38.6557 56.9218 42.13 55.1047 45.3056C52.5522 49.7665 48.8785 53.4832 44.4475 56.0873C40.0165 58.6915 34.9821 60.0929 29.8428 60.1526C24.7036 60.2124 19.6379 58.9284 15.1476 56.4279C10.6573 53.9273 6.89824 50.2971 4.24273 45.8967C1.58722 41.4962 0.127435 36.4784 0.00799284 31.3402C-0.11145 26.202 1.11359 21.1218 3.56176 16.6027C5.30453 13.3858 7.62408 10.5327 10.3922 8.17926C12.2542 6.59631 15.0088 7.26037 16.2957 9.33794C17.5826 11.4155 16.8979 14.1143 15.1415 15.8136C13.6337 17.2724 12.3508 18.9585 11.3432 20.8183C9.62952 23.9816 8.77199 27.5378 8.8556 31.1345C8.93921 34.7313 9.96106 38.2438 11.8199 41.324C13.6788 44.4043 16.3101 46.9455 19.4533 48.6959C22.5966 50.4463 26.1425 51.3451 29.74 51.3032C33.3375 51.2614 36.8616 50.2805 39.9633 48.4575C43.0649 46.6346 45.6365 44.0329 47.4233 40.9103C48.4738 39.0744 49.2316 37.0959 49.6777 35.0459C50.1974 32.6579 52.1312 30.6546 54.575 30.6546Z' fill='url(#paint0_linear_336_22)' />
                 <defs>
@@ -734,7 +737,7 @@ function App () {
                   </linearGradient>
                 </defs>
               </svg>
-              <span className='absolute text-md font-bold top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>70%</span>
+              <span className='absolute text-sm font-medium top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>70%</span>
             </div>
             <span className='text-lg font-bold'>Storage</span>
           </div>
@@ -744,11 +747,11 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 text-base dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-between'>
-            <span className='text-lg font-bold text-red-500 dark:text-red-100'>7'</span>
+            <span className='font-bold text-red-500 dark:text-red-100'>7'</span>
             <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-              <svg className='w-8 h-8' viewBox='0 0 24 24'>
+              <svg width='22' height='22' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
               </svg>
             </button>
@@ -756,7 +759,7 @@ function App () {
           <div className='flex items-center justify-between'>
             <div className='flex items-center justify-center space-x-3 font-medium'>
               <span>Spain</span>
-              <svg width='36' height='36' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='32' height='32' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.375 21C0.375 25.0562 1.54375 28.8375 3.5375 32H38.3937C40.3875 28.8375 41.5563 25.0562 41.5563 21C41.5563 16.9437 40.3875 13.1625 38.3937 10H3.5375C1.54375 13.1625 0.375 16.9437 0.375 21Z' fill='#FFCE31' />
                 <path d='M38.4625 10C34.8188 4.225 28.3563 0.375 21 0.375C13.6438 0.375 7.18125 4.225 3.5375 10H38.4625Z' fill='#ED4C5C' />
                 <path d='M3.5375 32C7.18125 37.775 13.6438 41.625 21 41.625C28.3563 41.625 34.8188 37.775 38.4625 32H3.5375Z' fill='#ED4C5C' />
@@ -811,7 +814,7 @@ function App () {
               </div>
             </div>
             <div className='flex items-center justify-center space-x-3 font-medium'>
-              <svg width='36' height='36' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='32' height='32' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.712524 11.6547C0.712524 16.5672 3.86252 20.7297 8.21252 22.2672V1.04216C3.86252 2.57966 0.712524 6.74216 0.712524 11.6547Z' fill='#428BC1' />
                 <path d='M23.2125 11.6547C23.2125 6.74216 20.1 2.57966 15.7125 1.04216V22.2672C20.1 20.7297 23.2125 16.5672 23.2125 11.6547Z' fill='#ED4C5C' />
                 <path d='M8.21252 22.2672C9.37502 22.6797 10.65 22.9047 11.9625 22.9047C13.275 22.9047 14.55 22.6797 15.7125 22.2672V1.04216C14.55 0.629663 13.3125 0.404663 11.9625 0.404663C10.6125 0.404663 9.37502 0.629663 8.21252 1.04216V22.2672Z' fill='white' />
@@ -822,41 +825,41 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-base dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <img className='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/84.jpg' alt='avatar' />
+            <img className='flex-none w-11 h-11 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/84.jpg' alt='avatar' />
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold text-lg'>Wade warren</a>
+              <a href='#' className='font-bold'>Wade warren</a>
               <div className='flex items-center space-x-3'>
-                <svg width='37' height='15' viewBox='0 0 33 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <svg width='36' height='14' viewBox='0 0 33 11' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M17.0668 3.35155C17.048 4.74459 18.3898 5.52191 19.4005 5.98413C20.439 6.45831 20.7878 6.76242 20.7837 7.18653C20.7759 7.83551 19.9553 8.12195 19.1874 8.13308C17.8477 8.15256 17.0687 7.79365 16.4495 7.52221L15.9668 9.64141C16.5882 9.91007 17.7387 10.1444 18.9317 10.1547C21.7322 10.1547 23.5643 8.85743 23.5742 6.84613C23.5852 4.29351 19.8117 4.15222 19.8375 3.01127C19.8464 2.66531 20.1982 2.29612 20.9691 2.20225C21.3506 2.15483 22.4039 2.11854 23.5981 2.63458L24.0668 0.584212C23.4246 0.36478 22.5992 0.154663 21.5716 0.154663C18.9357 0.154663 17.0818 1.46956 17.0668 3.35155V3.35155ZM28.5705 0.331273C28.0592 0.331273 27.6282 0.611188 27.4359 1.04074L23.4355 10.0041H26.234L26.7908 8.55985H30.2105L30.5335 10.0041H33L30.8477 0.331273H28.5705V0.331273ZM28.962 2.94426L29.7696 6.57649H27.5578L28.962 2.94426V2.94426ZM13.6739 0.331394L11.468 10.0039H14.1347L16.3395 0.331152H13.6739V0.331394ZM9.72894 0.331152L6.95333 6.91496L5.83056 1.31702C5.69882 0.692114 5.17855 0.331273 4.60079 0.331273H0.0635508L0 0.612155C0.931477 0.801829 1.9898 1.10775 2.63098 1.43509C3.02337 1.63504 3.13526 1.80984 3.26416 2.28499L5.39073 10.0041H8.20875L12.5292 0.331273H9.72894' fill='currentColor' className='fill-blue-600 dark:fill-blue-400' />
                 </svg>
                 <span className='font-medium'>4293 3242 ••••</span>
               </div>
             </div>
           </div>
-          <button className='no-underline inline-block hover:bg-slate-100 rounded-full p-3 transition-all dark:hover:bg-slate-600'>
-            <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+          <button className='inline-block hover:bg-slate-100 rounded-full p-2 transition-all dark:hover:bg-slate-600'>
+            <svg width='20' height='20' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M11.83,9L15,12.16C15,12.11 15,12.05 15,12A3,3 0 0,0 12,9C11.94,9 11.89,9 11.83,9M7.53,9.8L9.08,11.35C9.03,11.56 9,11.77 9,12A3,3 0 0,0 12,15C12.22,15 12.44,14.97 12.65,14.92L14.2,16.47C13.53,16.8 12.79,17 12,17A5,5 0 0,1 7,12C7,11.21 7.2,10.47 7.53,9.8M2,4.27L4.28,6.55L4.73,7C3.08,8.3 1.78,10 1,12C2.73,16.39 7,19.5 12,19.5C13.55,19.5 15.03,19.2 16.38,18.66L16.81,19.08L19.73,22L21,20.73L3.27,3M12,7A5,5 0 0,1 17,12C17,12.64 16.87,13.26 16.64,13.82L19.57,16.75C21.07,15.5 22.27,13.86 23,12C21.27,7.61 17,4.5 12,4.5C10.6,4.5 9.26,4.75 8,5.2L10.17,7.35C10.74,7.13 11.35,7 12,7Z' fill='currentColor' />
             </svg>
           </button>
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 space-y-3 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 space-y-2 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row items-center justify-between'>
             <div className='flex items-center space-x-2'>
-              <span className='px-2 py-1 rounded-full font-medium bg-green-100 text-sm dark:bg-green-400'>Highlight</span>
-              <span className='px-2 py-1 rounded-full font-medium bg-pink-100 text-sm dark:bg-pink-400'>Feeds</span>
+              <span className='px-2 py-1 rounded-full font-medium bg-green-100 dark:bg-green-400'>Highlight</span>
+              <span className='px-2 py-1 rounded-full font-medium bg-pink-100 dark:bg-pink-400'>Feeds</span>
             </div>
-            <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-              <svg className='w-8 h-8 ' viewBox='0 0 24 24'>
+            <button className='inline-flex items-center justify-center p-2 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
+              <svg width='22' height='22' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
               </svg>
             </button>
           </div>
           <div className=''>
-            <h5 className='font-bold text-lg'>Dashboard</h5>
+            <h5 className='font-bold text-base'>Dashboard</h5>
             <p className='text-slate-600 dark:text-slate-400'>Business management service</p>
           </div>
           <div className='flex justify-between items-center font-bold space-x-4'>
@@ -868,12 +871,12 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-center'>
             <div className='block'>
               <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
-                <a href='#' className='inline-block -m-1'>
+                <a href='#' className='inline-block -m-2'>
                   <img className='w-10 h-10 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/women/48.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
@@ -894,7 +897,7 @@ function App () {
               </svg>
             </div>
             <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-              <svg className='w-8 h-8' viewBox='0 0 24 24'>
+              <svg width='24' height='24' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
               </svg>
             </button>
@@ -905,36 +908,36 @@ function App () {
         <div className='break-inside rounded-xl p-4 mb-4 bg-gradient-to-r from-[#8E2DE2] to-[#4A00E0]'>
           <ul className='flex justify-between items-center'>
             <li className='flex items-center justify-center'>
-              <a href='#' className='flex items-center justify-center w-12 h-12 bg-white rounded-full transition-all hover:bg-bg-white'>
-                <svg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <a href='#' className='flex items-center justify-center w-10 h-10 bg-white rounded-full transition-all hover:bg-bg-white'>
+                <svg width='19' height='20' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M10.7127 0.450376C10.6197 0.356674 10.5092 0.282302 10.3874 0.231548C10.2655 0.180794 10.1349 0.154663 10.0029 0.154663C9.87092 0.154663 9.74025 0.180794 9.61842 0.231548C9.4966 0.282302 9.38603 0.356674 9.2931 0.450376L0.295712 9.44777C0.202011 9.5407 0.127638 9.65127 0.0768846 9.7731C0.0261306 9.89492 0 10.0256 0 10.1576C0 10.2895 0.0261306 10.4202 0.0768846 10.542C0.127638 10.6639 0.202011 10.7744 0.295712 10.8674C0.389125 10.96 0.499909 11.0333 0.621711 11.0831C0.743513 11.1328 0.873938 11.158 1.00551 11.1573H2.00522V18.1552C2.00522 18.6855 2.21587 19.1941 2.59083 19.569C2.9658 19.944 3.47435 20.1547 4.00463 20.1547H16.0011C16.5314 20.1547 17.04 19.944 17.4149 19.569C17.7899 19.1941 18.0006 18.6855 18.0006 18.1552V11.1573H19.0003C19.2654 11.1573 19.5197 11.0519 19.7072 10.8645C19.8947 10.677 20 10.4227 20 10.1576C20.0007 10.026 19.9755 9.89557 19.9258 9.77377C19.876 9.65196 19.8027 9.54118 19.7101 9.44777L10.7127 0.450376ZM4.00463 18.1552V8.56802L10.0029 2.56976L16.0011 8.56802V18.1552H4.00463Z' fill='black' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
-              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-                <svg width='20' height='21' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <a href='#' className='flex items-center justify-center w-10 h-10 rounded-full transition-all hover:bg-[#ffffff1a]'>
+                <svg width='19' height='20' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' stroke='white' strokeWidth='2' strokeLinecap='round' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
-              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-                <svg width='22' height='21' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <a href='#' className='flex items-center justify-center w-10 h-10 rounded-full transition-all hover:bg-[#ffffff1a]'>
+                <svg width='21' height='20' viewBox='0 0 22 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M6 1.23792C3.239 1.23792 1 3.45391 1 6.18791C1 8.39491 1.875 13.6329 10.488 18.9279C10.6423 19.0218 10.8194 19.0714 11 19.0714C11.1806 19.0714 11.3577 19.0218 11.512 18.9279C20.125 13.6329 21 8.39491 21 6.18791C21 3.45391 18.761 1.23792 16 1.23792C13.239 1.23792 11 4.23792 11 4.23792C11 4.23792 8.761 1.23792 6 1.23792Z' stroke='white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
-              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-                <svg width='24' height='18' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <a href='#' className='flex items-center justify-center w-10 h-10 rounded-full transition-all hover:bg-[#ffffff1a]'>
+                <svg width='22' height='16' viewBox='0 0 24 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M22.7886 3.26538C22.4242 3.09926 22.0196 3.04523 21.6251 3.10999C21.2306 3.17476 20.8636 3.35547 20.5697 3.62966L17.991 6.05823V4.29752C17.991 3.33137 17.6119 2.4048 16.9371 1.72163C16.2623 1.03846 15.3471 0.654663 14.3928 0.654663H3.5982C2.6439 0.654663 1.72868 1.03846 1.05389 1.72163C0.379095 2.4048 0 3.33137 0 4.29752V14.0118C0 14.978 0.379095 15.9045 1.05389 16.5877C1.72868 17.2709 2.6439 17.6547 3.5982 17.6547H14.3928C15.3471 17.6547 16.2623 17.2709 16.9371 16.5877C17.6119 15.9045 17.991 14.978 17.991 14.0118V12.2511L20.5817 14.6797C20.9631 15.0292 21.4586 15.2238 21.973 15.2261C22.2585 15.2254 22.5406 15.1633 22.8006 15.0439C23.1544 14.8991 23.4574 14.6507 23.6711 14.3306C23.8847 14.0105 23.9992 13.6331 24 13.2468V5.06252C23.9983 4.67478 23.882 4.29644 23.6661 3.97617C23.4502 3.6559 23.1446 3.40835 22.7886 3.26538ZM15.5922 14.0118C15.5922 14.3339 15.4658 14.6427 15.2409 14.8704C15.016 15.0982 14.7109 15.2261 14.3928 15.2261H3.5982C3.2801 15.2261 2.97503 15.0982 2.7501 14.8704C2.52517 14.6427 2.3988 14.3339 2.3988 14.0118V4.29752C2.3988 3.97547 2.52517 3.66661 2.7501 3.43889C2.97503 3.21117 3.2801 3.08323 3.5982 3.08323H14.3928C14.7109 3.08323 15.016 3.21117 15.2409 3.43889C15.4658 3.66661 15.5922 3.97547 15.5922 4.29752V14.0118ZM21.5892 12.3118L18.2189 9.15466L21.5892 5.99752V12.3118Z' fill='white' />
                 </svg>
               </a>
             </li>
             <li className='flex items-center justify-center'>
-              <a href='#' className='flex items-center justify-center w-12 h-12 rounded-full transition-all hover:bg-[#ffffff1a]'>
-                <svg width='20' height='21' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <a href='#' className='flex items-center justify-center w-10 h-10 rounded-full transition-all hover:bg-[#ffffff1a]'>
+                <svg width='18' height='19' viewBox='0 0 20 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path d='M15.2626 16.1432L15.9145 15.5046C18.9308 15.6017 18.9772 15.4975 19.1097 15.1917L19.9384 13.2024L20 13.0138L19.9326 12.8488C19.8971 12.7617 19.7878 12.5017 17.9044 10.731V9.79951C20.0775 7.73519 20.0311 7.62948 19.9073 7.32733L19.0822 5.3173C18.9583 5.01587 18.9113 4.89801 15.9167 4.97872L15.2648 4.31443C15.3321 3.33591 15.2978 2.35318 15.1626 1.38152L15.0786 1.19366L12.9243 0.265079C12.607 0.122219 12.4955 0.0707899 10.4614 2.25511L9.54727 2.24154C7.4531 0.037218 7.35386 0.0772185 7.0402 0.20222L5.03731 1.0008C4.72365 1.12581 4.61282 1.17009 4.73452 4.17014L4.08765 4.80586C1.0728 4.70872 1.02644 4.81443 0.895328 5.11872L0.0651939 7.10875L0 7.29947L0.0680913 7.46519C0.103586 7.5509 0.20862 7.80805 2.09634 9.58094V10.5095C-0.0767836 12.5738 -0.0296994 12.6796 0.0948932 12.9824L0.919232 14.9946C1.04527 15.3025 1.09019 15.4117 4.08403 15.3346L4.73597 16.0025C4.66839 16.9795 4.70164 17.9607 4.8352 18.9311L4.91923 19.1204L7.08729 20.0547C7.40239 20.1847 7.51177 20.2311 9.54002 18.0546L10.4542 18.0661C12.5512 20.2732 12.6585 20.2304 12.9649 20.1082L14.9634 19.3118C15.2792 19.1882 15.3894 19.1447 15.2626 16.1432ZM6.67294 11.4831C6.42018 10.8317 6.36814 10.1212 6.52335 9.44074C6.67856 8.76029 7.03412 8.14018 7.5454 7.65825C8.05668 7.17631 8.70092 6.85401 9.39727 6.73178C10.0936 6.60955 10.8111 6.69283 11.4596 6.97119C12.1081 7.24954 12.6589 7.71057 13.0427 8.29641C13.4265 8.88225 13.6263 9.56682 13.617 10.2642C13.6077 10.9616 13.3897 11.6408 12.9905 12.2165C12.5912 12.7922 12.0284 13.2388 11.3727 13.5003C10.478 13.8453 9.48122 13.8267 8.60041 13.4487C7.7196 13.0706 7.02655 12.3639 6.67294 11.4831Z' fill='white' />
                 </svg>
               </a>
@@ -943,7 +946,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-2'>
             <div className='mr-2'>
               <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
@@ -977,70 +980,70 @@ function App () {
         </a>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-full px-6 py-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-full px-6 py-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-5 font-medium'>
-            <svg width='23' height='27' viewBox='0 0 26 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <svg width='20' height='24' viewBox='0 0 26 30' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M3.9 0.154663V2.79103H2.6C1.157 2.79103 0 3.96421 0 5.42739V23.8819C0 24.5811 0.273928 25.2517 0.761522 25.7461C1.24912 26.2405 1.91044 26.5183 2.6 26.5183H10.53C12.168 28.1528 14.417 29.1547 16.9 29.1547C21.931 29.1547 26 25.0288 26 19.9274C26 17.4097 25.012 15.1292 23.4 13.4683V5.42739C23.4 4.72818 23.1261 4.05761 22.6385 3.5632C22.1509 3.06879 21.4896 2.79103 20.8 2.79103H19.5V0.154663H16.9V2.79103H6.5V0.154663M2.6 5.42739H20.8V8.06375H2.6M2.6 10.7001H20.8V11.5833C19.617 11.0165 18.291 10.7001 16.9 10.7001C11.869 10.7001 7.8 14.826 7.8 19.9274C7.8 21.3378 8.112 22.6824 8.671 23.8819H2.6M16.9 13.5342C20.384 13.5342 23.205 16.3947 23.205 19.9274C23.205 23.4601 20.384 26.3206 16.9 26.3206C13.416 26.3206 10.595 23.4601 10.595 19.9274C10.595 16.3947 13.416 13.5342 16.9 13.5342ZM15.6 15.9728V20.8369L19.747 23.2624L20.722 21.5488L17.55 19.6901V15.9728H15.6Z' fill='currentColor' />
             </svg>
             <div className='border-2 border-slate-300 bg-slate-300 h-6 rounded-sm dark:bg-slate-500 dark:border-slate-500' />
             <span>January, 05</span>
           </div>
-          <button className='no-underline inline-block hover:bg-slate-100 transition-all rounded-full p-1 dark:hover:bg-slate-600'>
-            <svg width='28' height='28' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+          <button className='inline-block hover:bg-slate-100 transition-all rounded-full p-1 dark:hover:bg-slate-600'>
+            <svg width='26' height='26' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z' fill='currentColor' />
             </svg>
           </button>
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-full px-6 py-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12 dark:hover:bg-slate-600'>
-            <svg width='23' height='23' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
+        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-full px-6 py-4 mb-4 dark:bg-slate-800 dark:text-white'>
+          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-11 h-11 dark:hover:bg-slate-600'>
+            <svg width='20' height='20' viewBox='0 0 23 23' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M10.3214 11.1547C10.3214 11.4672 10.4456 11.767 10.6666 11.988C10.8877 12.2091 11.1874 12.3332 11.5 12.3332C11.8126 12.3332 12.1123 12.2091 12.3334 11.988C12.5544 11.767 12.6786 11.4672 12.6786 11.1547C12.6786 10.8421 12.5544 10.5423 12.3334 10.3213C12.1123 10.1003 11.8126 9.97609 11.5 9.97609C11.1874 9.97609 10.8877 10.1003 10.6666 10.3213C10.4456 10.5423 10.3214 10.8421 10.3214 11.1547ZM15.2321 11.1547C15.2321 11.4672 15.3563 11.767 15.5773 11.988C15.7983 12.2091 16.0981 12.3332 16.4107 12.3332C16.7232 12.3332 17.023 12.2091 17.244 11.988C17.465 11.767 17.5892 11.4672 17.5892 11.1547C17.5892 10.8421 17.465 10.5423 17.244 10.3213C17.023 10.1003 16.7232 9.97609 16.4107 9.97609C16.0981 9.97609 15.7983 10.1003 15.5773 10.3213C15.3563 10.5423 15.2321 10.8421 15.2321 11.1547ZM5.41079 11.1547C5.41079 11.4672 5.53496 11.767 5.75598 11.988C5.97701 12.2091 6.27678 12.3332 6.58935 12.3332C6.90192 12.3332 7.20169 12.2091 7.42271 11.988C7.64374 11.767 7.76791 11.4672 7.76791 11.1547C7.76791 10.8421 7.64374 10.5423 7.42271 10.3213C7.20169 10.1003 6.90192 9.97609 6.58935 9.97609C6.27678 9.97609 5.97701 10.1003 5.75598 10.3213C5.53496 10.5423 5.41079 10.8421 5.41079 11.1547ZM21.6454 6.89216C21.0905 5.57364 20.295 4.39015 19.2809 3.37364C18.274 2.363 17.0786 1.55967 15.7624 1.00913C14.412 0.44194 12.9781 0.154663 11.5 0.154663H11.4509C9.96297 0.162029 8.52169 0.456672 7.16635 1.03614C5.86149 1.59233 4.6773 2.39708 3.67979 3.40556C2.67556 4.41962 1.8874 5.59819 1.34232 6.91181C0.777591 8.27207 0.492773 9.71828 0.500139 11.2062C0.508471 12.9114 0.911877 14.5914 1.6787 16.1145V19.8466C1.6787 20.1462 1.79769 20.4335 2.0095 20.6453C2.22132 20.8571 2.5086 20.9761 2.80815 20.9761H6.5427C8.06572 21.7429 9.74574 22.1463 11.4509 22.1547H11.5025C12.9732 22.1547 14.3997 21.8698 15.7428 21.3125C17.0523 20.7685 18.2432 19.9745 19.249 18.975C20.2631 17.9707 21.061 16.7971 21.6184 15.4884C22.1979 14.133 22.4925 12.6917 22.4999 11.2038C22.5072 9.70846 22.2175 8.25734 21.6454 6.89216ZM17.9354 17.6466C16.2142 19.3506 13.9308 20.2886 11.5 20.2886H11.4583C9.9777 20.2812 8.50696 19.9129 7.20809 19.2205L7.00184 19.11H3.54474V15.6529L3.43425 15.4466C2.74185 14.1477 2.37355 12.677 2.36619 11.1964C2.35637 8.74841 3.29185 6.4502 5.00812 4.71917C6.72194 2.98815 9.01276 2.03056 11.4607 2.02073H11.5025C12.7301 2.02073 13.921 2.2589 15.043 2.73033C16.1381 3.18948 17.1202 3.84998 17.9649 4.69462C18.8071 5.53681 19.47 6.5214 19.9291 7.61649C20.4055 8.75087 20.6436 9.95399 20.6387 11.1964C20.624 13.6419 19.664 15.9328 17.9354 17.6466Z' fill='currentColor' />
             </svg>
           </button>
-          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12 dark:hover:bg-slate-600'>
-            <svg width='26' height='16' viewBox='0 0 26 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
+          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-11 h-11 dark:hover:bg-slate-600'>
+            <svg width='24' height='14' viewBox='0 0 26 16' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path fillRule='evenodd' clipRule='evenodd' d='M0.5 3.65466C0.5 2.85901 0.82924 2.09595 1.41529 1.53334C2.00134 0.970733 2.7962 0.654663 3.625 0.654663H15.3438C16.1017 0.654578 16.8339 0.918952 17.4039 1.39855C17.9739 1.87816 18.3429 2.54029 18.4422 3.26166L23.3016 1.18866C23.5394 1.08692 23.8 1.04386 24.0596 1.06339C24.3192 1.08292 24.5696 1.16443 24.788 1.30051C25.0065 1.43658 25.186 1.62291 25.3104 1.84255C25.4347 2.06219 25.4999 2.30818 25.5 2.55816V13.7512C25.4998 14.0009 25.4346 14.2467 25.3103 14.4662C25.1861 14.6857 25.0067 14.8719 24.7885 15.0079C24.5702 15.1439 24.3201 15.2255 24.0607 15.2452C23.8013 15.2649 23.5409 15.2221 23.3031 15.1207L18.4422 13.0477C18.3429 13.769 17.9739 14.4312 17.4039 14.9108C16.8339 15.3904 16.1017 15.6547 15.3438 15.6547H3.625C2.7962 15.6547 2.00134 15.3386 1.41529 14.776C0.82924 14.2134 0.5 13.4503 0.5 12.6547V3.65466ZM18.4688 11.4172L23.9375 13.7512V2.55816L18.4688 4.89216V11.4172ZM3.625 2.15466C3.2106 2.15466 2.81317 2.3127 2.52015 2.594C2.22712 2.87531 2.0625 3.25684 2.0625 3.65466V12.6547C2.0625 13.0525 2.22712 13.434 2.52015 13.7153C2.81317 13.9966 3.2106 14.1547 3.625 14.1547H15.3438C15.7582 14.1547 16.1556 13.9966 16.4486 13.7153C16.7416 13.434 16.9062 13.0525 16.9062 12.6547V3.65466C16.9062 3.25684 16.7416 2.87531 16.4486 2.594C16.1556 2.3127 15.7582 2.15466 15.3438 2.15466H3.625Z' fill='currentColor' />
             </svg>
           </button>
-          <img className='flex-none w-14 h-14 rounded-full object-cover ring-8 ring-slate-100 border-4 border-white dark:ring-slate-600 dark:border-slate-700' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
-          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12 dark:hover:bg-slate-600'>
+          <img className='flex-none w-12 h-12 rounded-full object-cover ring-8 ring-slate-100 border-4 border-white dark:ring-slate-600 dark:border-slate-700' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
+          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-11 h-11 dark:hover:bg-slate-600'>
             <svg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M16.489 19.279C16.489 17.0211 14.302 15.8721 12.172 14.9492C10.049 14.0303 9.371 13.2563 9.371 11.5975C9.371 10.6033 10.019 10.927 10.303 9.10335C10.423 8.34736 10.995 9.09129 11.105 7.36518C11.105 6.67755 10.792 6.50665 10.792 6.50665C10.792 6.50665 10.951 5.48828 11.013 4.70414C11.077 3.8828 10.615 2.13056 8.712 1.59272C8.38 1.24991 8.155 0.706042 9.179 0.161166C6.939 0.0566147 6.418 1.23483 5.225 2.1014C4.21 2.86141 3.936 4.06476 3.985 4.70514C4.05 5.48928 4.208 6.50765 4.208 6.50765C4.208 6.50765 3.894 6.67856 3.894 7.36618C4.004 9.0933 4.578 8.34837 4.697 9.10436C4.981 10.928 5.63 10.6043 5.63 11.5985C5.63 13.2573 5.418 13.8202 3.294 14.7391C1.163 15.661 0.5 17.1388 0.511 19.279C0.514 19.9194 0.5 20.1547 0.5 20.1547H16.5C16.5 20.1547 16.489 19.9194 16.489 19.279ZM19.028 13.4845C17.893 13.025 17.423 12.4772 17.423 11.4075C17.423 10.7631 17.841 10.9732 18.025 9.79601C18.102 9.30944 18.472 9.78796 18.543 8.67509C18.543 8.23175 18.341 8.12117 18.341 8.12117C18.341 8.12117 18.444 7.46169 18.484 6.95602C18.534 6.32569 18.12 4.6971 16.216 4.6971C14.313 4.6971 13.898 6.32569 13.947 6.95602C13.989 7.46068 14.091 8.12117 14.091 8.12117C14.091 8.12117 13.889 8.23075 13.889 8.67509C13.96 9.78796 14.33 9.30944 14.407 9.79601C14.591 10.9742 15.009 10.7641 15.009 11.4075C15.009 12.4772 14.571 12.9778 13.2 13.5709C13.131 13.6001 13.08 13.6393 13.017 13.6735C14.657 14.3892 17.243 15.6248 17.855 18.1441H20.5V15.8138C20.5 14.8085 20.227 13.97 19.028 13.4845Z' fill='currentColor' />
             </svg>
           </button>
-          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-12 h-12 dark:hover:bg-slate-600'>
-            <svg width='23' height='24' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+          <button className='flex justify-center items-center rounded-full transition-all hover:bg-slate-100 w-11 h-11 dark:hover:bg-slate-600'>
+            <svg width='21' height='22' viewBox='0 0 23 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M15.947 21.6052V21.6169M19.5274 18.6902V18.7019M21.5 14.4809V14.4925M21.5 9.81679V9.82846M19.5274 5.60747V5.61913M15.947 2.69242V2.70408M11.5 1.65466V1.66632M7.05302 2.69242V2.70408M3.47263 5.60747V5.61913M1.5 9.81679V9.82846M1.5 14.4809V14.4925M3.47263 18.6902V18.7019M7.05302 21.6052V21.6169M11.5 22.643V22.6547M12.6403 12.1488C12.6403 12.7928 12.1297 13.3149 11.5 13.3149C10.8703 13.3149 10.3597 12.7928 10.3597 12.1488C10.3597 11.5049 10.8703 10.9828 11.5 10.9828C12.1297 10.9828 12.6403 11.5049 12.6403 12.1488ZM17.2013 12.1488C17.2013 15.3687 14.6487 17.9789 11.5 17.9789C8.35128 17.9789 5.79875 15.3687 5.79875 12.1488C5.79875 8.92896 8.35128 6.31874 11.5 6.31874C14.6487 6.31874 17.2013 8.92896 17.2013 12.1488Z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row justify-around items-start w-full'>
             <div className='flex flex-col justify-center items-center'>
               <span className='font-bold block'>Jun</span>
-              <span className='text-lg font-bold text-pink-500'>23</span>
+              <span className='text-base font-bold text-pink-500'>23</span>
             </div>
             <div className='border h-full bg-slate-200 dark:bg-slate-500 dark:border-slate-500' />
             <div className='flex flex-col justify-center items-start'>
               <span className='font-bold block mb-1'>Wednesday</span>
-              <span className='text-sm text-slate-400'>08:00 PM - 18:30 PM</span>
+              <span className='text-slate-400'>08:00 PM - 18:30 PM</span>
             </div>
           </div>
         </div>
 
         {/** widget */}
-        <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <div className='flex items-center justify-between mb-3'>
+        <div className='flex flex-col break-inside bg-white rounded-xl space-y-4 p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-center justify-between'>
             <div className='flex flex-col items-start justify-center'>
-              <a href='#' className='no-underline font-bold block'>New plan started</a>
+              <a href='#' className='text-base font-bold block'>New plan started</a>
               <span className='text-slate-600 dark:text-slate-400'>Engineering</span>
             </div>
-            <button className='no-underline rounded-full p-2 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
-              <svg xmlns='http://www.w3.org/2000/svg' className='w-8 h-8' viewBox='0 0 24 24'>
+            <button className='rounded-full p-2 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'viewBox='0 0 24 24'>
                 <path d='m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z' fill='currentColor' />
               </svg>
             </button>
@@ -1065,17 +1068,17 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4 md:space-x-3'>
             <div className='flex-none'>
-              <button type='button' className='inline-flex items-center justify-center rounded-full w-12 h-12 bg-cyan-400'>
-                <svg width='26' height='26' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <button type='button' className='inline-flex items-center justify-center rounded-full w-11 h-11 bg-cyan-400'>
+                <svg width='24' height='24' viewBox='0 0 15 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
                   <path className='fill-white' d='M4.79062 2.09314C4.63821 1.98427 4.43774 1.96972 4.27121 2.05542C4.10467 2.14112 4 2.31271 4 2.5V12.5C4 12.6873 4.10467 12.8589 4.27121 12.9446C4.43774 13.0303 4.63821 13.0157 4.79062 12.9069L11.7906 7.90687C11.922 7.81301 12 7.66148 12 7.5C12 7.33853 11.922 7.18699 11.7906 7.09314L4.79062 2.09314Z' fill='currentColor' />
                 </svg>
               </button>
             </div>
             <div className='min-w-0 flex-auto'>
-              <a href='#' className='no-underline font-bold'>Notion podcast</a>
+              <a href='#' className='text-base font-bold'>Notion podcast</a>
               <p className='truncate mb-2 text-sm text-slate-600 dark:text-slate-400'>Lorem ipsum dolor sit consectetur permi...</p>
               <div className='w-full rounded-full overflow-hidden bg-slate-100 h-2 whitespace-nowrap'>
                 <div className='bg-cyan-400 h-full w-1/3'>
@@ -1088,69 +1091,69 @@ function App () {
         </div>
 
         {/** widget */}
-        <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <a href='#' className='break-inside flex bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-start space-x-4'>
-            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
+            <img className='flex-none w-11 h-11 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/50.jpg' alt='avatar' />
             <div className='flex-auto'>
-              <h5 className='no-underline font-bold'>Jenny Wilson</h5>
-              <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
+              <h5 className='text-base font-bold'>Jenny Wilson</h5>
+              <p className='text-sm'>lorem ipsum dolor sitIn nisnot...</p>
             </div>
           </div>
         </a>
 
         {/** widget */}
-        <a href='#' className='break-inside flex bg-gradient-to-r from-[#ec00d8] to-[#A649EE] rounded-xl p-4 mb-4 text-white'>
+        <a href='#' className='break-inside flex bg-gradient-to-r from-[#ec00d8] to-[#A649EE] rounded-xl p-4 mb-4 text-sm text-white'>
           <div className='flex items-start space-x-4'>
-            <img className='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/53.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/53.jpg' alt='avatar' />
             <div className='flex-auto'>
-              <h5 className='no-underline font-bold'>Ana Martinez</h5>
-              <p className='text-sm'>lorem ipsum dolor sitIn nisi quis nostrud minim.</p>
+              <h5 className='text-base font-bold'>Ana Martinez</h5>
+              <p>lorem ipsum dolor sitIn nisi quis nostrud minim.</p>
             </div>
           </div>
         </a>
 
         {/** widget */}
-        <div className='break-inside flex items-start justify-between bg-yellow-50 rounded-xl p-4 mb-4 dark:bg-yellow-100 dark:text-black'>
+        <div className='break-inside flex items-start justify-between bg-yellow-50 rounded-xl p-4 mb-4 font-bold text-sm dark:bg-yellow-100 dark:text-black'>
           <div className='flex items-center space-x-4'>
             <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             <div className='flex-auto'>
-              <h5 className='font-bold block'>Landescape</h5>
-              <h5 className='font-bold block'>423Km</h5>
+              <h5 className='text-base block'>Landescape</h5>
+              <h5 className='block'>423Km</h5>
             </div>
           </div>
-          <button className='inline-flex items-center justify-center p-2 transition-all rounded-full hover:bg-yellow-100 dark:hover:bg-yellow-200'>
-            <svg className='w-8 h-8 text-slate-800' viewBox='0 0 24 24'>
+          <button className='inline-flex items-center justify-center p-2 transition-all rounded-full hover:bg-yellow-200 dark:hover:bg-yellow-200'>
+            <svg width='24' height='24'className='text-slate-800' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 text-base dark:bg-slate-800 dark:text-white'>
           <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/52.jpg' alt='avatar' />
           <div className='flex-auto'>
-            <a href='#' className='no-underline font-bold block text-lg'>Maria</a>
+            <a href='#' className='font-bold block'>Maria</a>
           </div>
           <button className='inline-flex justify-center items-center rounded-full p-3 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
-            <svg viewBox='0 0 24 24' height='30' width='30'>
+            <svg viewBox='0 0 24 24' height='26' width='26'>
               <path fill='currentColor' d='M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <img className='flex-none w-20 h-20' src='https://randomuser.me/api/portraits/men/51.jpg' alt='avatar' />
           <div className='flex-auto'>
-            <a href='#' className='no-underline font-bold block'>Jhonny</a>
+            <a href='#' className='font-bold block'>Jhonny</a>
           </div>
-          <button className='inline-flex justify-center items-center rounded-md py-2 px-4 font-medium tracking-wide text-sm transition-all bg-violet-500 text-white hover:bg-violet-600 active:bg-violet-700'>Button</button>
+          <button className='inline-flex justify-center items-center rounded-md py-2 px-3 font-medium tracking-wide text-sm transition-all bg-violet-500 text-white hover:bg-violet-600 active:bg-violet-700'>Button</button>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <svg width='54' height='54' viewBox='0 0 64 64' ariaHidden='true' role='img' className='iconify iconify--emojione' preserveAspectRatio='xMidYMid meet'>
+            <svg width='52' height='52' viewBox='0 0 64 64' ariaHidden='true' role='img' className='iconify iconify--emojione' preserveAspectRatio='xMidYMid meet'>
               <g fill='currentColor'>
                 <path className='fill-yellow-400 dark:fill-white' d='M14.7 44.4l4.8-4.9c-1.7-.4-3.3-1-4.7-2l-.1 6.9' />
                 <path className='fill-yellow-400 dark:fill-white' d='M30.3 6.6l-4.8 4.9c1.7.4 3.3 1 4.7 2l.1-6.9' />
@@ -1173,14 +1176,14 @@ function App () {
               <path d='M17.2 57.1c-1 0-2-.2-2.9-.5c-3.8-1.3-6.4-4.9-6.4-9c0-2.7 1.2-5.4 3.2-7.2c.5-.5 1.1-.9 1.7-1.2l.6-2.2c1.5-5.5 6.5-9.3 12.1-9.3c.6 0 1.1 0 1.8.1l1.5.3l.2-.5c2.3-4.2 6.6-6.7 11.2-6.7C47.3 20.9 53 26.8 53 34v1.3c.5.2 1.1.5 1.6.8c3.4 2 5.5 5.8 5.5 9.8c0 5.3-3.5 9.8-8.6 11c-.8.2-1.7.3-2.5.3H17.2z' fill='currentColor' className='fill-white dark:fill-slate-600' />
               <path d='M40.3 22.8c6 0 10.9 5 10.9 11.2v.9c-2.5.2-4.8 1.2-6.6 2.8c1.3-.8 2.9-1.2 4.6-1.2c.6 0 1.2.1 1.8.2c1 .2 1.9.6 2.8 1.1c2.7 1.6 4.6 4.6 4.6 8.1c0 4.4-3 8.2-7.1 9.1c-.7.2-1.3.2-2.1.2h-32c-.8 0-1.6-.1-2.3-.4c-3-1-5.1-3.9-5.1-7.2c0-2.3 1-4.3 2.6-5.7c.7-.6 1.5-1.1 2.4-1.5c.8-.3 1.6-.4 2.5-.4c2.4 0 4.5 1.2 5.9 3h.1c-1.6-3-4.5-5.1-8-5.4c1.3-4.6 5.4-8 10.3-8c.5 0 1 .1 1.5.1c1 .1 1.9.4 2.8.8c3.3 1.5 5.7 4.7 6.3 8.5v-.1c0-4.3-2.2-8.1-5.4-10.3c1.8-3.5 5.3-5.8 9.5-5.8m0-3.8c-5 0-9.7 2.6-12.4 7h-.3c-.8-.1-1.4-.2-2.1-.2c-6.4 0-12.2 4.4-13.9 10.7l-.5 1.5c-.5.3-.9.6-1.3 1C7.4 41.1 6 44.3 6 47.6c0 4.9 3.1 9.3 7.7 10.8c1.1.4 2.3.6 3.5.6h31.9c1 0 1.9-.1 2.9-.3c5.9-1.4 10-6.7 10-12.8c0-4.7-2.5-9.1-6.5-11.4l-.6-.3v-.1c0-8.4-6.5-15.1-14.6-15.1z' fill='currentColor' className='fill-[#75d6ff] dark:fill-white' />
             </svg>
-            <div className='flex-auto space-y-1'>
-              <h5 className='no-underline font-bold block'>Schedule your day</h5>
-              <span className='text-slate-500 text-sm dark:text-slate-400'>November, 22</span>
+            <div className='flex-auto'>
+              <h5 className='text-base font-bold block'>Schedule your day</h5>
+              <span className='text-slate-500 dark:text-slate-400'>November, 22</span>
             </div>
           </div>
           <div className='flex flex-col items-center'>
             <button type='button' className='inline-flex items-center justify-center rounded-full w-8 h-8 bg-violet-600'>
-              <svg className='w-5 h-5' viewBox='0 0 15 15' fill='none'>
+              <svg width='18' height='18' viewBox='0 0 15 15' fill='none'>
                 <path className='fill-white' d='M4.79062 2.09314C4.63821 1.98427 4.43774 1.96972 4.27121 2.05542C4.10467 2.14112 4 2.31271 4 2.5V12.5C4 12.6873 4.10467 12.8589 4.27121 12.9446C4.43774 13.0303 4.63821 13.0157 4.79062 12.9069L11.7906 7.90687C11.922 7.81301 12 7.66148 12 7.5C12 7.33853 11.922 7.18699 11.7906 7.09314L4.79062 2.09314Z' fill='black' />
               </svg>
             </button>
@@ -1197,8 +1200,8 @@ function App () {
         </div>
 
         {/** widget */}
-        <a href='#' className='break-inside flex items-center justify-center space-x-4 bg-slate-100 rounded-xl overflow-hidden transition-all p-8 mb-4 dark:bg-slate-700 dark:text-white'>
-          <svg width='30' height='30' viewBox='0 0 24 24'>
+        <a href='#' className='break-inside flex items-center justify-center space-x-4 bg-slate-100 rounded-xl overflow-hidden transition-all p-6 mb-4 dark:bg-slate-800 dark:text-white'>
+          <svg width='28' height='28' viewBox='0 0 24 24'>
             <path fill='currentColor' d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' />
           </svg>
           <span className='font-semibold'>New project</span>
@@ -1224,11 +1227,11 @@ function App () {
               <img className='flex-none w-12 h-12 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/men/3.jpg' alt='avatar' />
             </div>
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Marc Andress</a>
+              <a href='#' className='font-bold block'>Marc Andress</a>
               <span className='text-slate-600 text-sm'>Web designer</span>
             </div>
           </div>
-          <button className='no-underline inline-block rounded-full p-2 bg-[#00C1EB] text-white'>
+          <button className='inline-block rounded-full p-2 bg-[#00C1EB] text-white'>
             <svg height='20' width='20' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z' />
             </svg>
@@ -1237,19 +1240,19 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center justify-between cursor-pointer bg-transparent rounded-xl p-1 mb-4 border-2 border-dashed border-slate-400 dark:bg-[#0b101a] dark:border-slate-400'>
-          <div className='bg-white rounded-xl w-full p-4 text-center dark:bg-slate-700 dark:text-white'>
+          <div className='bg-white rounded-xl w-full p-4 text-center dark:bg-slate-800 dark:text-white'>
             <span className='font-medium text-slate-500 dark:text-slate-300'>Drag image here</span>
           </div>
         </div>
 
         {/** widget */}
-        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden border-2 border-black dark:bg-slate-700 dark:text-white dark:border-white'>
+        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden border-2 border-black dark:bg-slate-800 dark:text-white dark:border-white'>
           <div className='absolute bg-pink-100 top-0 bottom-0 left-0 w-4/6 dark:bg-pink-600 dark:opacity-40' />
           <div className='flex items-center space-x-4 relative'>
-            <img className='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+            <img className='flex-none w-20 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
             <div className='flex-auto'>
-              <h5 className='text-lg font-bold'>Warning</h5>
-              <h5 className='no-underline block text-sm'>Rhemi, Lynn, Lockamy</h5>
+              <h5 className='text-base font-bold'>Warning</h5>
+              <h5 className='block text-sm'>Rhemi, Lynn, Lockamy</h5>
             </div>
           </div>
           <div className='flex flex-col items-center relative'>
@@ -1262,18 +1265,18 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 overflow-hidden dark:bg-slate-700 dark:text-white'>
+        <div className='relative break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm overflow-hidden dark:bg-slate-800 dark:text-white'>
           <div className='absolute bg-cyan-100 top-0 bottom-0 left-0 w-3/5 dark:bg-cyan-700' />
           <div className='flex items-center space-x-4 relative'>
-            <img className='flex-none w-24 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg' alt='avatar' />
+            <img className='flex-none w-20 h-18 rounded-xl object-cover' src='https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg' alt='avatar' />
             <div className='flex-auto'>
               <h5 className='font-bold'>Visions - Purple Disco</h5>
-              <h5 className='no-underline block text-sm'>Eli Escobar</h5>
+              <h5 className='block text-sm'>Eli Escobar</h5>
             </div>
           </div>
           <div className='flex flex-col items-center relative'>
-            <button className='w-7 h-7 flex justify-center items-center bg-black rounded-full text-white'>
-              <svg height='24' width='24' viewBox='0 0 24 24'>
+            <button className='w-8 h-8 flex justify-center items-center bg-black rounded-full text-white'>
+              <svg height='20' width='20' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M8,5.14V19.14L19,12.14L8,5.14Z' />
               </svg>
             </button>
@@ -1281,28 +1284,28 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <img className='flex-none w-24 h-32 object-cover' src='https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <img className='flex-none w-20 h-24 object-cover' src='https://images.pexels.com/photos/1762578/pexels-photo-1762578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
           <div className='flex-auto flex flex-col'>
-            <a href='#' className='no-underline font-bold block text-lg'>The Weeknd</a>
-            <span className='overflow-ellipsis w-[8.5rem] text-sm overflow-hidden whitespace-nowrap'>Take My Breath Offici..</span>
+            <a href='#' className='font-bold block text-base'>The Weeknd</a>
+            <span className='overflow-ellipsis w-[8.5rem] overflow-hidden whitespace-nowrap'>Take My Breath Offi..</span>
           </div>
-          <button className='w-10 h-10 flex justify-center items-center bg-slate-200 rounded-full dark:bg-slate-500'>
-            <svg height='24' width='24' viewBox='0 0 24 24'>
+          <button className='w-9 h-9 flex flex-none justify-center items-center bg-slate-200 rounded-full dark:bg-slate-500'>
+            <svg height='20' width='20' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M8,5.14V19.14L19,12.14L8,5.14Z' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <div className='break-inside bg-[#503D9C] text-white rounded-xl overflow-hidden p-4 mb-4'>
+        <div className='break-inside bg-[#503D9C] text-white rounded-xl overflow-hidden p-4 mb-4 text-sm'>
           <div className='flex items-center space-x-4'>
             <div className='flex-auto flex flex-col'>
-              <a href='#' className='no-underline font-medium block text-lg'>Mobile App design</a>
+              <a href='#' className='font-medium block text-base'>Mobile App design</a>
               <span className='text-[#D9D3F1]'>Thomas and Niki</span>
             </div>
             <button className='w-10 h-10 flex justify-center items-center rounded-full text-white hover:bg-[#412f8b] transition-all'>
-              <svg width='22' height='22' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='20' height='20' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M4.74795 16.875C4.80068 16.875 4.85342 16.8697 4.90615 16.8618L9.34111 16.084C9.39385 16.0734 9.44395 16.0497 9.48086 16.0102L20.6579 4.83311C20.6824 4.80871 20.7017 4.77974 20.715 4.74784C20.7282 4.71594 20.735 4.68175 20.735 4.64722C20.735 4.61268 20.7282 4.57849 20.715 4.54659C20.7017 4.5147 20.6824 4.48572 20.6579 4.46133L16.2757 0.0764649C16.2256 0.0263672 16.1597 0 16.0885 0C16.0173 0 15.9514 0.0263672 15.9013 0.0764649L4.72422 11.2535C4.68467 11.2931 4.66094 11.3405 4.65039 11.3933L3.87256 15.8282C3.84691 15.9695 3.85607 16.1148 3.89926 16.2518C3.94245 16.3887 4.01835 16.513 4.12041 16.614C4.29443 16.7827 4.51328 16.875 4.74795 16.875ZM6.5251 12.2766L16.0885 2.71582L18.0212 4.64853L8.45781 14.2093L6.11377 14.6232L6.5251 12.2766ZM21.1562 19.0898H1.75C1.2833 19.0898 0.90625 19.4669 0.90625 19.9336V20.8828C0.90625 20.9988 1.00117 21.0938 1.11719 21.0938H21.7891C21.9051 21.0938 22 20.9988 22 20.8828V19.9336C22 19.4669 21.6229 19.0898 21.1562 19.0898Z' fill='white' />
               </svg>
             </button>
@@ -1312,10 +1315,10 @@ function App () {
               <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-12 h-12 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                  <img className='w-11 h-11 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
@@ -1324,9 +1327,9 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside bg-white items-center rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside bg-white items-center rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <div className='flex flex-none justify-center items-center w-12 h-12 bg-[#F6F4FD] rounded-full dark:bg-slate-600'>
+            <div className='flex flex-none justify-center items-center w-11 h-11 bg-[#F6F4FD] rounded-full dark:bg-slate-600'>
               <svg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M15 17L11 13M5 13V1V13ZM5 1L1 5L5 1ZM5 1L9 5L5 1ZM15 5V17V5ZM15 17L19 13L15 17Z' className='stroke-[#503D9C] dark:stroke-white' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
               </svg>
@@ -1336,42 +1339,42 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <div className='flex flex-none justify-center items-center w-14 h-14 bg-[#12C6DE] rounded-full font-medium text-white text-xl ring-2 ring-[#12C6DE] border-2 border-white dark:border-slate-700'>
+            <div className='flex flex-none justify-center items-center w-11 h-11 bg-[#12C6DE] rounded-full font-medium text-white text-xl ring-2 ring-[#12C6DE] border-2 border-white dark:border-slate-700'>
               <span>M</span>
             </div>
             <div className='flex flex-col'>
-              <a className='font-medium' href='#'>Mathías Anderson</a>
-              <p className='text-sm'>16 January 2022 - 3:25 PM</p>
+              <a className='text-base font-medium' href='#'>Mathías Anderson</a>
+              <p>16 January 2022 - 3:25 PM</p>
             </div>
           </div>
           <span className='text-red-500 font-bold'>-$275</span>
         </div>
 
         {/* widget */}
-        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-3 bg-slate-100 rounded-full px-2 py-2 dark:bg-slate-600 dark:text-white'>
             <div className='flex flex-none justify-center items-center w-10 h-10 bg-[#FF9900] rounded-full font-medium text-white text-xl ring-2 ring-[#FF9900] border-2 border-white'>
-              <svg width='26' height='26' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='22' height='22' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M17.06 11.57C17.65 10.88 18 10 18 9C18 7.14 16.73 5.57 15 5.13V3H13V5H11V3H9V5H6V7H8V17H6V19H9V21H11V19H13V21H15V19C17.21 19 19 17.21 19 15C19 13.55 18.22 12.27 17.06 11.57M10 7H14C15.1 7 16 7.9 16 9S15.1 11 14 11H10V7M15 17H10V13H15C16.1 13 17 13.9 17 15S16.1 17 15 17Z' fill='currentColor' />
               </svg>
             </div>
             <div className='flex items-center'>
               <span className='font-medium'>USD</span>
-              <svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'>
                 <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' fill='currentColor' />
               </svg>
             </div>
           </div>
-          <span className='font-bold text-lg'>Balance</span>
+          <span className='font-bold text-base'>Balance</span>
           <span className='text-red-500 font-bold dark:text-red-400'>$3427.00</span>
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-4 mb-4 gap-2 flex-wrap dark:bg-slate-700'>
+        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800'>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Javascript</span>
+            <span className='font-medium'>Javascript</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
@@ -1389,9 +1392,9 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-4 mb-4 gap-2 flex-wrap dark:bg-slate-700'>
+        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800'>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Angular</span>
+            <span className='font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
@@ -1399,7 +1402,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Svelte</span>
+            <span className='font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
@@ -1407,7 +1410,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-red-100 rounded-lg space-x-1 dark:bg-red-300'>
-            <span className='text-sm font-medium'>Next</span>
+            <span className='font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='black' />
@@ -1417,9 +1420,9 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-4 mb-4 gap-2 flex-wrap dark:bg-slate-700'>
+        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800'>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Angular</span>
+            <span className='font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1427,7 +1430,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Svelte</span>
+            <span className='font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1435,7 +1438,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Next</span>
+            <span className='font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1443,15 +1446,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>css</span>
-            <button className='flex items-center justify-center p-2'>
-              <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
-              </svg>
-            </button>
-          </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Bootstrap</span>
+            <span className='font-medium'>css</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1459,7 +1454,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-red-100 rounded-lg space-x-1 dark:bg-red-300'>
-            <span className='text-sm font-medium'>Material</span>
+            <span className='font-medium'>Material</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1467,7 +1462,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Solid</span>
+            <span className='font-medium'>Solid</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1475,7 +1470,7 @@ function App () {
             </button>
           </span>
           <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
-            <span className='text-sm font-medium'>Figma</span>
+            <span className='font-medium'>Figma</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1488,49 +1483,49 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-4 mb-4 gap-2 flex-wrap dark:bg-slate-700 dark:text-white'>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-500'>
-            <span className='text-sm font-medium'>Angular</span>
+        <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800 dark:text-white'>
+          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+            <span className='font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-500'>
-            <span className='text-sm font-medium'>Svelte</span>
+          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+            <span className='font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-500'>
-            <span className='text-sm font-medium'>Next</span>
+          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+            <span className='font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-500'>
-            <span className='text-sm font-medium'>css</span>
+          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+            <span className='font-medium'>css</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-500'>
-            <span className='text-sm font-medium'>Bootstrap</span>
+          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+            <span className='font-medium'>Bootstrap</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-500'>
-            <span className='text-sm font-medium'>Material</span>
+          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+            <span className='font-medium'>Material</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.195685 6.80432C0.32102 6.92961 0.490987 7 0.668211 7C0.845434 7 1.0154 6.92961 1.14074 6.80432L3.50403 4.44102L5.86733 6.80432C5.99339 6.92606 6.16221 6.99343 6.33745 6.9919C6.51269 6.99038 6.68033 6.92009 6.80424 6.79617C6.92816 6.67226 6.99845 6.50462 6.99997 6.32938C7.0015 6.15414 6.93413 5.98532 6.81239 5.85926L4.44909 3.49597L6.81239 1.13267C6.93413 1.00661 7.0015 0.837787 6.99997 0.662547C6.99845 0.487306 6.92816 0.319674 6.80424 0.195756C6.68033 0.0718384 6.51269 0.00154829 6.33745 2.57492e-05C6.16221 -0.00149727 5.99339 0.0658689 5.86733 0.187615L3.50403 2.55091L1.14074 0.187615C1.01468 0.0658689 0.845856 -0.00149727 0.670616 2.57492e-05C0.495376 0.00154829 0.327745 0.0718384 0.203826 0.195756C0.0799082 0.319674 0.00961814 0.487306 0.00809535 0.662547C0.00657256 0.837787 0.0739388 1.00661 0.195685 1.13267L2.55898 3.49597L0.195685 5.85926C0.0703879 5.9846 0 6.15457 0 6.33179C0 6.50901 0.0703879 6.67898 0.195685 6.80432Z' fill='currentColor' />
@@ -1540,23 +1535,23 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-between items-center rounded-xl p-3 mb-4 bg-gradient-to-r from-[#C9FFBF] to-[#FFAFBD] '>
+        <div className='break-inside flex flex-row justify-between items-center rounded-xl p-3 mb-4 text-sm bg-gradient-to-r from-[#C9FFBF] to-[#FFAFBD] '>
           <div className='flex flex-1 bg-[#BC007C] text-white rounded-xl p-4'>
             <div className='flex flex-row justify-around items-start w-full space-x-3'>
               <div className='flex flex-col justify-center items-center'>
-                <span className='font-bold block'>April</span>
-                <span className='text-lg font-bold'>25</span>
+                <span className='text-base font-bold block'>April</span>
+                <span className='text-base font-bold'>25</span>
               </div>
-              <div className='border h-full bg-white' />
+              <div className='w-[2px] h-full bg-[#ffffff61]' />
               <div className='flex flex-col justify-center items-start'>
-                <span className='font-bold block mb-1'>Wednesday</span>
-                <span className='text-sm'>09:00 AM - 19:30 PM</span>
+                <span className='text-base font-bold block mb-1'>Wednesday</span>
+                <span>09:00 AM - 19:30 PM</span>
               </div>
             </div>
           </div>
           <div className='flex'>
             <button className='flex justify-center items-center rounded-full p-4'>
-              <svg width='28' height='28' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='24' height='24' viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M4.74795 16.875C4.80068 16.875 4.85342 16.8697 4.90615 16.8618L9.34111 16.084C9.39385 16.0734 9.44395 16.0497 9.48086 16.0102L20.6579 4.83311C20.6824 4.80871 20.7017 4.77974 20.715 4.74784C20.7282 4.71594 20.735 4.68175 20.735 4.64722C20.735 4.61268 20.7282 4.57849 20.715 4.54659C20.7017 4.5147 20.6824 4.48572 20.6579 4.46133L16.2757 0.0764649C16.2256 0.0263672 16.1597 0 16.0885 0C16.0173 0 15.9514 0.0263672 15.9013 0.0764649L4.72422 11.2535C4.68467 11.2931 4.66094 11.3405 4.65039 11.3933L3.87256 15.8282C3.84691 15.9695 3.85607 16.1148 3.89926 16.2518C3.94245 16.3887 4.01835 16.513 4.12041 16.614C4.29443 16.7827 4.51328 16.875 4.74795 16.875ZM6.5251 12.2766L16.0885 2.71582L18.0212 4.64853L8.45781 14.2093L6.11377 14.6232L6.5251 12.2766ZM21.1562 19.0898H1.75C1.2833 19.0898 0.90625 19.4669 0.90625 19.9336V20.8828C0.90625 20.9988 1.00117 21.0938 1.11719 21.0938H21.7891C21.9051 21.0938 22 20.9988 22 20.8828V19.9336C22 19.4669 21.6229 19.0898 21.1562 19.0898Z' fill='black' />
               </svg>
             </button>
@@ -1564,43 +1559,43 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside relative flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <img className='flex-none w-16 h-16 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
-            <div className='flex-auto space-y-2'>
-              <a href='#' className='no-underline font-bold block'>Marloon Flick</a>
+            <img className='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
+            <div className='flex-auto space-y-1'>
+              <a href='#' className='text-base font-bold block'>Marloon Flick</a>
               <div className='flex items-center gap-2'>
                 <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
-                  <span className='text-sm font-medium'>Angular</span>
+                  <span className='text-xs font-medium'>Angular</span>
                 </span>
                 <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
-                  <span className='text-sm font-medium'>Svelte</span>
+                  <span className='text-xs font-medium'>Svelte</span>
                 </span>
                 <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
-                  <span className='text-sm font-medium'>Nextjs</span>
+                  <span className='text-xs font-medium'>Nextjs</span>
                 </span>
               </div>
             </div>
           </div>
-          <button className='no-underline inline-block rounded-full p-3 text-[#5F1FE7] dark:text-white'>
-            <svg width='26' height='26' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+          <button className='absolute right-5 top-5 text-[#5F1FE7] dark:text-white'>
+            <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
               <path d='M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z' fill='currentColor' />
             </svg>
           </button>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-black text-white rounded-xl p-4 mb-4 dark:bg-slate-900'>
+        <div className='break-inside flex items-center justify-between bg-black text-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-900'>
           <div className='flex items-center space-x-4'>
             <div className='relative flex flex-row items-center justify-center w-[4.5rem] h-[4.5rem]'>
-              <svg width='74' height='74' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='60' height='60' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 2.3509e-05 32 2.3509e-05C49.6731 2.3509e-05 64 14.3269 64 32ZM6.13666 32C6.13666 46.284 17.7161 57.8634 32 57.8634C46.2839 57.8634 57.8633 46.284 57.8633 32C57.8633 17.7161 46.2839 6.13668 32 6.13668C17.7161 6.13668 6.13666 17.7161 6.13666 32Z' fill='#3C3C3C' />
                 <path d='M20.0412 5.65559C19.3408 4.11254 20.0205 2.2786 21.6235 1.72908C27.1738 -0.173579 33.1614 -0.519827 38.9281 0.759001C45.6969 2.26006 51.795 5.91887 56.3049 11.1848C60.8148 16.4508 63.4924 23.039 63.9348 29.9581C64.3117 35.8528 63.0489 41.716 60.3154 46.9078C59.5259 48.4072 57.6093 48.7968 56.1923 47.8674C54.7753 46.9381 54.3984 45.0422 55.1535 43.5252C57.1768 39.4605 58.1027 34.9168 57.8106 30.3497C57.4531 24.7575 55.2889 19.4327 51.6439 15.1766C47.9989 10.9205 43.0702 7.96331 37.5995 6.75011C33.1316 5.7593 28.4996 5.97546 24.1721 7.34971C22.557 7.8626 20.7417 7.19864 20.0412 5.65559Z' fill='white' />
               </svg>
-              <span className='absolute text-md font-bold top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>32%</span>
+              <span className='absolute text-md font-medium top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>32%</span>
             </div>
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Verified space</a>
+              <a href='#' className='text-base font-medium block'>Verified space</a>
               <div className='flex items-center gap-2 text-[#BCBCBC]'> This operation may take several minutes </div>
             </div>
           </div>
@@ -1612,58 +1607,58 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-row justify-between bg-white items-center rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           working...
         </div>
 
         {/** widget */}
-        <div className='break-inside flex rounded-2xl p-4 mb-4 bg-cyan-100'>
+        <div className='break-inside flex rounded-2xl p-4 mb-4 text-sm bg-cyan-100'>
           <div className='flex items-start space-x-4'>
-            <div className='rounded-full bg-cyan-500 flex items-center justify-center w-10 h-10 text-white'>
+            <div className='rounded-full bg-cyan-500 flex items-center justify-center w-11 h-11 text-white'>
               <svg width='24' height='24' viewBox='0 0 20 20' fill='currentColor'>
                 <path d='M15.5343 3.45429L13.5043 5.48571C12.5027 4.70607 11.2692 4.28368 10 4.28571C8.73076 4.28368 7.49728 4.70607 6.49571 5.48571L4.46571 3.45429C6.01154 2.14353 7.97327 1.42548 10 1.42857C12.11 1.42857 14.0429 2.19143 15.5343 3.45429ZM16.5457 4.46571C17.8565 6.01154 18.5745 7.97327 18.5714 10C18.5714 12.11 17.8086 14.0429 16.5457 15.5343L14.5143 13.5043C15.2657 12.5357 15.7143 11.32 15.7143 10C15.7143 8.68 15.2657 7.46428 14.5143 6.49571L16.5457 4.46571ZM15.5343 16.5457C13.9885 17.8565 12.0267 18.5745 10 18.5714C7.89 18.5714 5.95714 17.8086 4.46571 16.5457L6.49571 14.5143C7.49728 15.2939 8.73076 15.7163 10 15.7143C11.32 15.7143 12.5357 15.2657 13.5043 14.5143L15.5343 16.5457ZM3.45429 15.5343C2.14353 13.9885 1.42548 12.0267 1.42857 10C1.42857 7.89 2.19143 5.95714 3.45429 4.46571L5.48571 6.49571C4.70607 7.49728 4.28368 8.73076 4.28571 10C4.28571 11.32 4.73429 12.5357 5.48571 13.5043L3.45429 15.5343ZM12.7686 6.72857C12.9497 6.88216 13.1178 7.05034 13.2714 7.23143C13.9043 7.97857 14.2857 8.94571 14.2857 10C14.2869 10.623 14.1517 11.2386 13.8896 11.8038C13.6275 12.3689 13.2449 12.8699 12.7686 13.2714C11.9954 13.9275 11.014 14.2871 10 14.2857C9.37703 14.2869 8.76136 14.1517 8.19621 13.8896C7.63106 13.6275 7.13012 13.2449 6.72857 12.7686C6.09571 12.0214 5.71429 11.0543 5.71429 10C5.71313 9.37703 5.84834 8.76136 6.11043 8.19621C6.37253 7.63106 6.75514 7.13012 7.23143 6.72857C7.97857 6.09571 8.94571 5.71428 10 5.71428C11.0557 5.71428 12.0214 6.09571 12.7686 6.72857ZM10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34783 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34783 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0Z' fill='white' />
               </svg>
             </div>
             <div className='flex-auto'>
-              <h5 className='no-underline font-bold'>Quick help</h5>
-              <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
+              <h5 className='text-base font-bold'>Quick help</h5>
+              <p>lorem ipsum dolor sitIn nist...</p>
             </div>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex rounded-2xl p-4 mb-4 bg-green-100'>
+        <div className='break-inside flex rounded-2xl p-4 mb-4 text-sm bg-green-100'>
           <div className='flex items-start space-x-4'>
-            <div className='rounded-full bg-green-500 flex items-center justify-center w-10 h-10 text-white'>
+            <div className='rounded-full bg-green-500 flex items-center justify-center w-11 h-11 text-white'>
               <svg width='16' height='20' viewBox='0 0 14 18' fill='none'>
                 <path d='M11.235 11.205C11.0075 11.0388 10.6925 10.6538 10.5437 10.47C11.585 9.00875 13.125 6.26125 13.125 2.875C13.125 1.16875 12.4775 0.25 11.375 0.25C10.0275 0.25 7.91 2.0525 7 5.47375C6.09 2.0525 3.9725 0.25 2.625 0.25C1.5225 0.25 0.875 1.16875 0.875 2.875C0.875 6.26125 2.415 9.00875 3.45625 10.47C3.3075 10.6538 2.9925 11.0388 2.765 11.205C2.3275 11.5638 1.3125 12.4038 1.3125 13.8125C1.3125 15.7463 2.87875 17.3125 4.8125 17.3125C6.16875 17.3125 7 16.8225 7 16.8225C7 16.8225 7.83125 17.3125 9.1875 17.3125C11.1213 17.3125 12.6875 15.7463 12.6875 13.8125C12.6875 12.4038 11.6725 11.5638 11.235 11.205ZM4.68125 9.175C3.7975 7.8625 2.625 5.605 2.625 2.875C2.625 2.44625 2.6775 2.175 2.73 2.02625C3.5525 2.2975 5.565 4.3975 5.6875 8.71125C5.27625 8.81625 4.9525 8.97375 4.68125 9.175ZM5.6875 13.1562C5.4425 13.1562 5.25 12.8588 5.25 12.5C5.25 12.1412 5.4425 11.8438 5.6875 11.8438C5.9325 11.8438 6.125 12.1412 6.125 12.5C6.125 12.8588 5.9325 13.1562 5.6875 13.1562ZM7 15.5625C6.51875 15.5625 6.125 14.9325 6.125 14.6875C6.125 14.4425 6.51875 14.25 7 14.25C7.48125 14.25 7.875 14.4425 7.875 14.6875C7.875 14.9325 7.48125 15.5625 7 15.5625ZM8.3125 13.1562C8.0675 13.1562 7.875 12.8588 7.875 12.5C7.875 12.1412 8.0675 11.8438 8.3125 11.8438C8.5575 11.8438 8.75 12.1412 8.75 12.5C8.75 12.8588 8.5575 13.1562 8.3125 13.1562ZM8.3125 8.71125C8.435 4.3975 10.4475 2.2975 11.27 2.02625C11.3225 2.175 11.375 2.44625 11.375 2.875C11.375 5.605 10.2025 7.8625 9.31875 9.175C9.0475 8.97375 8.72375 8.81625 8.3125 8.71125Z' fill='white' />
               </svg>
             </div>
             <div className='flex-auto'>
-              <h5 className='no-underline font-bold'>Free giveway</h5>
-              <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
+              <h5 className='text-base font-bold'>Free giveway</h5>
+              <p>lorem ipsum dolor sitIn nist...</p>
             </div>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex rounded-2xl p-4 mb-4 bg-yellow-100'>
+        <div className='break-inside flex rounded-2xl p-4 mb-4 text-sm bg-yellow-100'>
           <div className='flex items-start space-x-4'>
-            <div className='rounded-full bg-yellow-500 flex items-center justify-center w-10 h-10 text-white'>
+            <div className='rounded-full bg-yellow-500 flex items-center justify-center w-11 h-11 text-white'>
               <svg width='24' height='24' viewBox='0 0 24 24' fill='currentColor'>
                 <path d='M22 19H2V21H22V19M4 15C4 15.5 4.2 16 4.6 16.4C5 16.8 5.5 17 6 17V6C5.5 6 5 6.2 4.6 6.6C4.2 7 4 7.5 4 8V15M13.5 6H10.5C10.5 5.6 10.6 5.2 10.9 4.9C11.2 4.6 11.5 4.5 12 4.5C12.4 4.5 12.8 4.6 13.1 4.9C13.3 5.2 13.5 5.6 13.5 6M7 6V17H17V6H15C15 5.2 14.7 4.5 14.1 3.9S12.8 3 12 3C11.2 3 10.5 3.3 9.9 3.9C9.3 4.5 9 5.2 9 6H7M18 17C18.5 17 19 16.8 19.4 16.4C19.8 16 20 15.5 20 15V8C20 7.5 19.8 7 19.4 6.6C19 6.2 18.5 6 18 6V17Z' fill='currentColor' />
               </svg>
             </div>
             <div className='flex-auto'>
-              <h5 className='no-underline font-bold'>Short trip</h5>
-              <p className='text-sm'>lorem ipsum dolor sitIn nisiisnost...</p>
+              <h5 className='text-base font-bold'>Short trip</h5>
+              <p>lorem ipsum dolor sitIn nist...</p>
             </div>
           </div>
         </div>
 
         {/** widget */}
         <div className='break-inside mb-4 relative'>
-          <input type='text' className='rounded-full pl-12 pr-9 py-3 bg-white w-full h-12 dark:bg-slate-700 dark:text-white' placeholder='Search' />
+          <input type='text' className='rounded-full pl-12 pr-9 py-3 bg-white w-full h-12 dark:bg-slate-800 dark:text-white' placeholder='Search' />
           <span className='absolute left-4 top-1/2 -translate-y-1/2'>
             <svg width='18' height='19' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' className='stroke-black dark:stroke-white' strokeWidth='2' strokeLinecap='round' />
@@ -1678,7 +1673,7 @@ function App () {
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' className='stroke-black dark:stroke-white' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
-          <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-700 dark:text-white' placeholder='Search' />
+          <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-800 dark:text-white' placeholder='Search' />
           <button className='absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-slate-100 rounded-full dark:bg-slate-500 dark:text-white'>
             <svg width='22' height='22' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M9 17.375C6.91142 17.375 4.90838 16.5453 3.43153 15.0685C1.95468 13.5916 1.125 11.5886 1.125 9.5C1.125 7.41142 1.95468 5.40838 3.43153 3.93153C4.90838 2.45468 6.91142 1.625 9 1.625C11.0886 1.625 13.0916 2.45468 14.5685 3.93153C16.0453 5.40838 16.875 7.41142 16.875 9.5C16.875 11.5886 16.0453 13.5916 14.5685 15.0685C13.0916 16.5453 11.0886 17.375 9 17.375ZM9 18.5C11.3869 18.5 13.6761 17.5518 15.364 15.864C17.0518 14.1761 18 11.8869 18 9.5C18 7.11305 17.0518 4.82387 15.364 3.13604C13.6761 1.44821 11.3869 0.5 9 0.5C6.61305 0.5 4.32387 1.44821 2.63604 3.13604C0.948212 4.82387 0 7.11305 0 9.5C0 11.8869 0.948212 14.1761 2.63604 15.864C4.32387 17.5518 6.61305 18.5 9 18.5Z' fill='currentColor' />
@@ -1694,7 +1689,7 @@ function App () {
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' className='stroke-black dark:stroke-white' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
-          <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-700 dark:text-white' placeholder='Search' />
+          <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-800 dark:text-white' placeholder='Search' />
           <button className='absolute right-5 top-1/2 -translate-y-1/2 dark:text-white'>
             <svg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M5.9375 2.90216C5.62256 2.90216 5.32051 3.02854 5.09781 3.25351C4.87511 3.47848 4.75 3.78361 4.75 4.10176C4.75 4.41992 4.87511 4.72504 5.09781 4.95001C5.32051 5.17498 5.62256 5.30137 5.9375 5.30137C6.25244 5.30137 6.55449 5.17498 6.77719 4.95001C6.99989 4.72504 7.125 4.41992 7.125 4.10176C7.125 3.78361 6.99989 3.47848 6.77719 3.25351C6.55449 3.02854 6.25244 2.90216 5.9375 2.90216ZM2.57688 2.90216C2.82221 2.19975 3.27719 1.5915 3.87909 1.16127C4.48098 0.731039 5.20017 0.5 5.9375 0.5C6.67483 0.5 7.39402 0.731039 7.99591 1.16127C8.59781 1.5915 9.05278 2.19975 9.29813 2.90216H17.8125C18.1274 2.90216 18.4295 3.02854 18.6522 3.25351C18.8749 3.47848 19 3.78361 19 4.10176C19 4.41992 18.8749 4.72504 18.6522 4.95001C18.4295 5.17498 18.1274 5.30137 17.8125 5.30137H9.29813C9.05278 6.00378 8.59781 6.61202 7.99591 7.04226C7.39402 7.47249 6.67483 7.70353 5.9375 7.70353C5.20017 7.70353 4.48098 7.47249 3.87909 7.04226C3.27719 6.61202 2.82221 6.00378 2.57688 5.30137H1.1875C0.872555 5.30137 0.57051 5.17498 0.347811 4.95001C0.125111 4.72504 0 4.41992 0 4.10176C0 3.78361 0.125111 3.47848 0.347811 3.25351C0.57051 3.02854 0.872555 2.90216 1.1875 2.90216H2.57688ZM13.0625 13.6986C12.7476 13.6986 12.4455 13.825 12.2228 14.05C12.0001 14.275 11.875 14.5801 11.875 14.8982C11.875 15.2164 12.0001 15.5215 12.2228 15.7465C12.4455 15.9715 12.7476 16.0978 13.0625 16.0978C13.3774 16.0978 13.6795 15.9715 13.9022 15.7465C14.1249 15.5215 14.25 15.2164 14.25 14.8982C14.25 14.5801 14.1249 14.275 13.9022 14.05C13.6795 13.825 13.3774 13.6986 13.0625 13.6986ZM9.70187 13.6986C9.94722 12.9962 10.4022 12.388 11.0041 11.9577C11.606 11.5275 12.3252 11.2965 13.0625 11.2965C13.7998 11.2965 14.519 11.5275 15.1209 11.9577C15.7228 12.388 16.1778 12.9962 16.4231 13.6986H17.8125C18.1274 13.6986 18.4295 13.825 18.6522 14.05C18.8749 14.275 19 14.5801 19 14.8982C19 15.2164 18.8749 15.5215 18.6522 15.7465C18.4295 15.9715 18.1274 16.0978 17.8125 16.0978H16.4231C16.1778 16.8003 15.7228 17.4085 15.1209 17.8387C14.519 18.269 13.7998 18.5 13.0625 18.5C12.3252 18.5 11.606 18.269 11.0041 17.8387C10.4022 17.4085 9.94722 16.8003 9.70187 16.0978H1.1875C0.872555 16.0978 0.57051 15.9715 0.347811 15.7465C0.125111 15.5215 0 15.2164 0 14.8982C0 14.5801 0.125111 14.275 0.347811 14.05C0.57051 13.825 0.872555 13.6986 1.1875 13.6986H9.70187Z' fill='currentColor' />
@@ -1709,7 +1704,7 @@ function App () {
               <path d='M17 17.5L13.2223 13.7156L17 17.5ZM15.3158 8.65789C15.3158 10.5563 14.5617 12.3769 13.2193 13.7193C11.8769 15.0617 10.0563 15.8158 8.15789 15.8158C6.2595 15.8158 4.43886 15.0617 3.0965 13.7193C1.75413 12.3769 1 10.5563 1 8.65789C1 6.7595 1.75413 4.93886 3.0965 3.5965C4.43886 2.25413 6.2595 1.5 8.15789 1.5C10.0563 1.5 11.8769 2.25413 13.2193 3.5965C14.5617 4.93886 15.3158 6.7595 15.3158 8.65789V8.65789Z' className='stroke-black dark:stroke-white' strokeWidth='2' strokeLinecap='round' />
             </svg>
           </span>
-          <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-700 dark:text-white' placeholder='Search' />
+          <input type='text' className='rounded-full pl-12 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-800 dark:text-white' placeholder='Search' />
           <button className='absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-yellow-300 rounded-full'>
             <svg width='22' height='22' viewBox='0 0 18 19' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M9 17.375C6.91142 17.375 4.90838 16.5453 3.43153 15.0685C1.95468 13.5916 1.125 11.5886 1.125 9.5C1.125 7.41142 1.95468 5.40838 3.43153 3.93153C4.90838 2.45468 6.91142 1.625 9 1.625C11.0886 1.625 13.0916 2.45468 14.5685 3.93153C16.0453 5.40838 16.875 7.41142 16.875 9.5C16.875 11.5886 16.0453 13.5916 14.5685 15.0685C13.0916 16.5453 11.0886 17.375 9 17.375ZM9 18.5C11.3869 18.5 13.6761 17.5518 15.364 15.864C17.0518 14.1761 18 11.8869 18 9.5C18 7.11305 17.0518 4.82387 15.364 3.13604C13.6761 1.44821 11.3869 0.5 9 0.5C6.61305 0.5 4.32387 1.44821 2.63604 3.13604C0.948212 4.82387 0 7.11305 0 9.5C0 11.8869 0.948212 14.1761 2.63604 15.864C4.32387 17.5518 6.61305 18.5 9 18.5Z' fill='black' />
@@ -1720,7 +1715,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside mb-4 relative'>
-          <input type='text' className='rounded-full pl-5 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-700 dark:text-white' placeholder='Phone number' />
+          <input type='text' className='rounded-full pl-5 pr-16 py-3 bg-white w-full h-12 dark:bg-slate-800 dark:text-white' placeholder='Phone number' />
           <button className='absolute right-3 top-1/2 -translate-y-1/2 p-2 bg-green-200 rounded-xl'>
             <svg width='17' height='17' viewBox='0 0 17 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M10.5948 4.89827L10.3934 4.70676C9.8948 4.18966 9.98111 3.95027 10.4702 3.46191L13.0784 0.828574C13.8551 0.0433618 13.999 -0.330093 14.7373 0.368938L14.9387 0.560453L10.5948 4.89827ZM11.103 5.32918L15.3223 1.11585C15.9935 2.01597 17.5661 4.43863 16.7894 6.2293C16.0894 7.82845 15.7442 7.90506 14.8716 9.10203C13.0976 11.1225 10.8633 13.2866 9.11808 14.9145C7.90985 15.7859 7.8619 16.1881 6.24133 16.8297C4.51529 17.5095 2.02211 15.9774 1.08237 15.3358L5.3016 11.1225L6.43312 12.6738C6.75915 13.1143 7.58382 12.6163 8.15917 12.0418C9.15644 11.0363 11.2085 8.99669 11.9948 8.14445C12.5606 7.57948 13.0688 6.75597 12.6277 6.42082L11.103 5.32918ZM0.535789 14.9528L0.334416 14.7517C-0.317646 14.0431 0.0563309 13.8899 0.833052 13.1238L3.46048 10.5192C3.94953 10.05 4.17967 9.94469 4.6783 10.4139L4.87009 10.615L0.535789 14.9528Z' fill='black' />
@@ -1729,7 +1724,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full p-3 relative dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full p-3 relative text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-2'>
             <img className='w-9 h-9 rounded-full' src='https://avatars.githubusercontent.com/u/35234895?v=4' alt='frankuxui' />
             <a href='#' className='font-medium'>@frankuxui</a>
@@ -1744,7 +1739,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full px-4 py-3 relative dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between items-center mb-4 bg-white rounded-full px-4 py-3 relative dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-around w-full'>
             <div className='flex items-center justify-center space-x-2'>
               <svg width='20' height='20' viewBox='0 0 24 24'>
@@ -1766,15 +1761,15 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
             <div className='flex items-center justify-center flex-none w-12 h-12 rounded-full bg-[#DDFBFF]'>
               <svg className='text-slate-800' width='22' height='22' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z' />
               </svg>
             </div>
-            <div className='flex-auto'>
-              <h5 className='font-bold block'>Apple store</h5>
+            <div>
+              <h5 className='text-base font-bold block'>Apple store</h5>
               <h5 className='block text-sm'>16 January - 3:25 PM</h5>
             </div>
           </div>
@@ -1787,7 +1782,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
             <svg width='22' height='22' viewBox='0 0 24 24'>
               <path d='M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z' fill='currentColor' />
@@ -1808,7 +1803,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row items-center justify-between'>
             <span className='font-bold block text-sm'>Transaction</span>
             <span className='font-bold block text-sm'>$8.347 / $23.892</span>
@@ -1821,7 +1816,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside relative overflow-hidden flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside relative overflow-hidden flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row items-center space-x-2'>
             <svg width='38' height='38' viewBox='0 0 24 24'>
               <path fill='#1ED760' d='M17.9,10.9C14.7,9 9.35,8.8 6.3,9.75C5.8,9.9 5.3,9.6 5.15,9.15C5,8.65 5.3,8.15 5.75,8C9.3,6.95 15.15,7.15 18.85,9.35C19.3,9.6 19.45,10.2 19.2,10.65C18.95,11 18.35,11.15 17.9,10.9M17.8,13.7C17.55,14.05 17.1,14.2 16.75,13.95C14.05,12.3 9.95,11.8 6.8,12.8C6.4,12.9 5.95,12.7 5.85,12.3C5.75,11.9 5.95,11.45 6.35,11.35C10,10.25 14.5,10.8 17.6,12.7C17.9,12.85 18.05,13.35 17.8,13.7M16.6,16.45C16.4,16.75 16.05,16.85 15.75,16.65C13.4,15.2 10.45,14.9 6.95,15.7C6.6,15.8 6.3,15.55 6.2,15.25C6.1,14.9 6.35,14.6 6.65,14.5C10.45,13.65 13.75,14 16.35,15.6C16.7,15.75 16.75,16.15 16.6,16.45M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z' />
@@ -1832,20 +1827,20 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col justify-between bg-white space-y-2 rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex flex-row items-center space-x-2'>
-            <svg width='39' height='33' viewBox='0 0 39 33' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <svg width='36' height='30' viewBox='0 0 39 33' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M35.4205 6.38339C31.5739 4.17693 26.655 5.488 24.432 9.3104L18.8285 18.9556C17.2071 21.7409 19.2945 22.7141 21.622 24.1009L27.0139 27.1931C28.8399 28.2397 31.1721 27.6184 32.2253 25.8065L37.9859 15.894C39.9209 12.5632 38.7727 8.30632 35.4205 6.38339Z' fill='#EA4335' />
               <path d='M29.08 10.3756L23.6881 7.28332C20.7116 5.64149 19.0259 5.5328 17.804 7.46285L9.85147 21.1479C7.63091 24.9677 8.95264 29.853 12.797 32.0547C16.1492 33.9776 20.4334 32.8367 22.3686 29.5058L30.4733 15.5562C31.5312 13.7419 30.906 11.4221 29.08 10.3756Z' fill='#FBBC04' />
               <path d='M26.3306 1.16712C22.1417 -1.23522 16.7852 0.189227 14.3674 4.35161L7.15666 16.7608C6.09162 18.5917 6.724 20.9352 8.5666 21.991L12.8079 24.4242C14.9023 25.6268 17.5793 24.9132 18.7895 22.8321L27.0272 8.65569C28.7342 5.71945 32.512 4.7131 35.467 6.40927L26.3306 1.16712Z' fill='#34A853' />
               <path d='M15.3918 7.9023L11.2978 5.55884C9.47198 4.51465 7.13975 5.13347 6.0866 6.94318L1.17458 15.3766C-1.24312 19.5272 0.190437 24.8377 4.37943 27.2332L12.9169 32.1182C10.0046 30.1812 9.0797 26.2999 10.8603 23.2431L16.7897 13.0638C17.8405 11.2589 17.2153 8.94649 15.3918 7.9023Z' fill='#4285F4' />
             </svg>
-            <span className='font-bold block text-lg'>Media component</span>
+            <span className='font-bold block text-base'>Media component</span>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
             <div className='flex items-center justify-center flex-none w-12 h-12 rounded-full bg-black'>
               <svg width='24' height='10' viewBox='0 0 24 10' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1853,23 +1848,23 @@ function App () {
               </svg>
             </div>
             <div className='flex-auto'>
-              <h5 className='font-bold block'>Nike store</h5>
-              <h5 className='block text-sm'>6 months of promotions</h5>
+              <h5 className='text-base font-bold block'>Nike store</h5>
+              <h5 className='block'>6 months of promotions</h5>
             </div>
           </div>
           <div className='inline-flex flex-col items-center space-y-1'>
             <span className='font-bold'>-27.50 €</span>
-            <span className='text-sm'>11:00AM</span>
+            <span>11:00AM</span>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
             <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260' alt='avatar' />
             <div className='flex-auto space-y-1'>
               <span className='text-slate-600 dark:text-slate-400'>Mountains</span>
-              <h5 className='no-underline font-bold block'>423Km, 3 Week</h5>
+              <h5 className='font-bold block'>423Km, 3 Week</h5>
             </div>
           </div>
           <div className='flex flex-col items-center'>
@@ -1878,27 +1873,27 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center'>
             <div className='flex-auto text-center space-y-1'>
               <img className='w-8 h-8 m-auto' src='https://www.svgrepo.com/show/402760/sun-behind-cloud.svg' />
-              <span className='no-underline font-bold block text-sm'>Mon</span>
+              <span className='font-bold block text-sm'>Mon</span>
             </div>
             <div className='flex-auto text-center space-y-1'>
               <img className='w-8 h-8 m-auto' src='https://www.svgrepo.com/show/400800/sunraincloud.svg' />
-              <span className='no-underline font-bold block text-sm'>Tue</span>
+              <span className='font-bold block text-sm'>Tue</span>
             </div>
             <div className='flex-auto text-center space-y-1'>
               <img className='w-8 h-8 m-auto' src='https://www.svgrepo.com/show/402760/sun-behind-cloud.svg' />
-              <span className='no-underline font-bold block text-sm'>Wed</span>
+              <span className='font-bold block text-sm'>Wed</span>
             </div>
             <div className='flex-auto text-center space-y-1'>
               <img className='w-8 h-8 m-auto' src='https://www.svgrepo.com/show/400797/sunbehindcloud.svg' />
-              <span className='no-underline font-bold block text-sm'>Thu</span>
+              <span className='font-bold block text-sm'>Thu</span>
             </div>
             <div className='flex-auto text-center space-y-1'>
               <img className='w-8 h-8 m-auto' src='https://www.svgrepo.com/show/402761/sun-behind-small-cloud.svg' />
-              <span className='no-underline font-bold block text-sm'>Fri</span>
+              <span className='font-bold block text-sm'>Fri</span>
             </div>
           </div>
         </div>
@@ -1914,10 +1909,10 @@ function App () {
         </a>
 
         {/** widget */}
-        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-start mb-4'>
             <div className='flex-auto'>
-              <a href='#' className='no-underline font-bold block'>Great day to schedule</a>
+              <a href='#' className='font-bold block'>Great day to schedule</a>
               <span className='text-slate-600 dark:text-slate-400'>Your usual hours</span>
             </div>
             <button className='items-center justify-center'>
@@ -1956,18 +1951,18 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-start space-x-4'>
             <div className='flex flex-col'>
               <div className='flex flex-row justify-between items-center'>
-                <h5 className='no-underline font-bold text-lg text-purple-600 dark:text-purple-400'>Figma Shot</h5>
+                <h5 className='font-bold text-base text-purple-600 dark:text-purple-400'>Figma Shot</h5>
                 <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-                  <svg width='28' height='28' viewBox='0 0 24 24'>
+                  <svg width='24' height='24' viewBox='0 0 24 24'>
                     <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
                   </svg>
                 </button>
               </div>
-              <p className='mr-2 text-sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod.</p>
+              <p className='mr-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod.</p>
               <div className='my-3'>
                 <div className='relative w-full cursor-pointer'>
                   <span className='absolute left-[33%] bg-purple-500 rounded-full w-4 h-4 z-10 top-1/2 -translate-y-1/2 dark:bg-purple-400' />
@@ -1981,7 +1976,7 @@ function App () {
                   <svg className='text-slate-800 mr-2 dark:text-slate-400' height='18' width='18' viewBox='0 0 24 24'>
                     <path fill='currentColor' d='M19 3H18V1H16V3H8V1H6V3H5C3.89 3 3 3.9 3 5V19C3 20.11 3.9 21 5 21H19C20.11 21 21 20.11 21 19V5C21 3.9 20.11 3 19 3M19 19H5V9H19V19M19 7H5V5H19V7Z' />
                   </svg>
-                  <span className='text-sm text-[#556878] dark:text-slate-400'>Wed 23, 06:30 PM, 2022</span>
+                  <span className='text-[#556878] dark:text-slate-400'>Wed 23, 06:30 PM, 2022</span>
                 </div>
                 <span className='font-bold'>26%</span>
               </div>
@@ -1991,7 +1986,7 @@ function App () {
 
         {/** widget */}
         <div className='relative break-inside flex items-center justify-between rounded-xl mb-4 gap-4'>
-          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-700 dark:text-white'>
+          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-800 dark:text-white'>
             <span className='text-sm font-bold block'>Mon</span>
             <span className='text-xs font-normal'>10</span>
           </div>
@@ -1999,22 +1994,22 @@ function App () {
             <span className='text-sm font-bold block'>Tue</span>
             <span className='text-xs font-normal'>11</span>
           </div>
-          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-700 dark:text-white'>
+          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-800 dark:text-white'>
             <span className='text-sm font-bold block'>Wed</span>
             <span className='text-xs font-normal'>12</span>
           </div>
-          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-700 dark:text-white'>
+          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-800 dark:text-white'>
             <span className='text-sm font-bold block'>Thu</span>
             <span className='text-xs font-normal'>13</span>
           </div>
-          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-700 dark:text-white'>
+          <div className='text-center space-y-1 px-2 py-6 flex-1 rounded-3xl bg-white dark:bg-slate-800 dark:text-white'>
             <span className='text-sm font-bold block'>Fri</span>
             <span className='text-xs font-normal'>14</span>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <img className='flex-none w-24 h-24 object-cover' src='https://randomuser.me/api/portraits/men/42.jpg' alt='avatar' />
           <div className='flex rounded-3xl bg-slate-200 p-2 w-full justify-between dark:bg-slate-600'>
             <div className='flex items-center justify-center bg-white p-2 rounded-full dark:bg-slate-500'>
@@ -2035,40 +2030,40 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <img className='flex-none w-28 h-full object-cover' src='https://images.pexels.com/photos/343701/pexels-photo-343701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
-          <div className='flex-auto flex justify-between items-start'>
-            <div className='flex flex-col'>
+        <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <img className='flex-none w-24 h-full object-cover' src='https://images.pexels.com/photos/343701/pexels-photo-343701.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='avatar' />
+          <div className='flex justify-between flex-col'>
+            <div className='flex flex-row justify-between items-start'>
               <span className='font-bold text-md mb-2'>
                 Pirates of the
                 <br />
                 caribbean
               </span>
-              <small className='text-md text-gray-600 dark:text-slate-400'>2022 · Action · Runtime · 2h 5m</small>
+              <div className='flex justify-center items-center'>
+                <svg viewBox='0 0 24 24' className='mr-2' width='21' height='21'>
+                  <path fill='#ff00ea' d='M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z' />
+                </svg>
+                <span className='font-bold'>4.95</span>
+              </div>
             </div>
-            <div className='flex justify-center items-center'>
-              <svg viewBox='0 0 24 24' className='mr-2' width='22' height='22'>
-                <path fill='#ff00ea' d='M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z' />
-              </svg>
-              <span className='font-bold'>4.95</span>
-            </div>
+            <small className='text-xs text-gray-600 dark:text-slate-400'>2022 · Action · Runtime · 2h 5m</small>
           </div>
         </div>
 
         {/** widget */}
-        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <div className='flex justify-between items-center mb-4'>
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 text-sm space-y-3 dark:bg-slate-800 dark:text-white'>
+          <div className='flex justify-between items-center'>
             <div className='flex-auto'>
               <button type='button' className='py-1 px-4 font-bold block text-md hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>July 2022</button>
             </div>
             <div className='justify-center items-center'>
               <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-                <svg width='34' height='34' viewBox='0 0 24 24'>
+                <svg width='28' height='28' viewBox='0 0 24 24'>
                   <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
                 </svg>
               </button>
               <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-                <svg width='34' height='34' viewBox='0 0 24 24'>
+                <svg width='28' height='28' viewBox='0 0 24 24'>
                   <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
                 </svg>
               </button>
@@ -2076,7 +2071,7 @@ function App () {
           </div>
           <div className='flex items-center'>
             <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-              <svg width='34' height='34' viewBox='0 0 24 24'>
+              <svg width='28' height='28' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
               </svg>
             </button>
@@ -2101,7 +2096,7 @@ function App () {
               <span className='text-xs font-normal'>5</span>
             </div>
             <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-              <svg width='34' height='34' viewBox='0 0 24 24'>
+              <svg width='28' height='28' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
               </svg>
             </button>
@@ -2109,19 +2104,19 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <div className='flex justify-between items-center mb-4'>
+        <div className='break-inside flex flex-col bg-white rounded-xl p-4 mb-4 space-y-3 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='flex justify-between items-center'>
             <div className='flex-auto'>
               <button type='button' className='py-1 px-4 font-bold block text-md hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>Saturday 02</button>
             </div>
             <div className='justify-center items-center'>
               <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-                <svg width='34' height='34' viewBox='0 0 24 24'>
+                <svg width='28' height='28' viewBox='0 0 24 24'>
                   <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
                 </svg>
               </button>
               <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-                <svg width='34' height='34' viewBox='0 0 24 24'>
+                <svg width='28' height='28' viewBox='0 0 24 24'>
                   <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
                 </svg>
               </button>
@@ -2129,27 +2124,24 @@ function App () {
           </div>
           <div className='flex items-center'>
             <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-              <svg width='34' height='34' viewBox='0 0 24 24'>
+              <svg width='28' height='28' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z' />
               </svg>
             </button>
-            <div className='flex-auto text-center space-y-1 p-2'>
-              <span className='text-sm font-bold block'>2020</span>
+            <div className='flex-auto text-center p-2'>
+              <span className='font-bold block'>2020</span>
             </div>
-            <div className='flex-auto text-center space-y-1 rounded-md bg-[#11C0A1] text-white p-2'>
-              <span className='text-sm font-bold block'>2021</span>
+            <div className='flex-auto text-center rounded-md bg-[#11C0A1] text-white p-2'>
+              <span className='font-bold block'>2021</span>
             </div>
-            <div className='flex-auto text-center space-y-1 p-2'>
-              <span className='text-sm font-bold block'>2022</span>
+            <div className='flex-auto text-center p-2'>
+              <span className='font-bold block'>2022</span>
             </div>
-            <div className='flex-auto text-center space-y-1 p-2'>
-              <span className='text-sm font-bold block'>2023</span>
-            </div>
-            <div className='flex-auto text-center space-y-1 p-2'>
-              <span className='text-sm font-bold block'>2024</span>
+            <div className='flex-auto text-center p-2'>
+              <span className='font-bold block'>2023</span>
             </div>
             <button className='items-center justify-center hover:bg-slate-100 rounded-md dark:hover:bg-slate-600'>
-              <svg width='34' height='34' viewBox='0 0 24 24'>
+              <svg width='28' height='28' viewBox='0 0 24 24'>
                 <path fill='currentColor' d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
               </svg>
             </button>
@@ -2157,32 +2149,34 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
-          <div className='flex items-start space-x-4'>
-            <svg width='50' height='50' viewBox='0 0 1024 1024' fill='#232f3e'>
+        <div className='break-inside relative flex bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='absolute top-4 right-4 flex items-center'>
+            <span>
+              <svg width='16' height='16' viewBox='0 0 24 24' className='mr-1'>
+                <path fill='currentColor' d='M20 8L14.5 13.5L13.09 12.09L16.17 9H10.5C8 9 6 11 6 13.5V20H4V13.5C4 9.91 6.91 7 10.5 7H16.17L13.08 3.91L14.5 2.5L20 8Z' />
+              </svg>
+            </span>
+            <span className='text-slate-400'>03:12 PM</span>
+          </div>
+          <div className='flex items-start space-x-3'>
+            <svg width='45' height='45' viewBox='0 0 1024 1024' fill='#232f3e'>
               <circle cx='512' cy='512' r='512' />
               <path fill='white' d='M400.3 479.1c0 6.3.7 11.4 1.9 15.1 1.4 3.8 3.1 7.9 5.5 12.3.9 1.3 1.2 2.7 1.2 3.9 0 1.7-1 3.4-3.2 5.1l-10.7 7.1c-1.3.9-2.8 1.5-4.4 1.5-1.7 0-3.4-.9-5.1-2.4-2.3-2.5-4.3-5.1-6.1-8-1.9-3.3-3.7-6.6-5.3-10-13.3 15.7-30 23.5-50.1 23.5-14.3 0-25.7-4.1-34-12.2-8.3-8.2-12.6-19.1-12.6-32.7 0-14.5 5.1-26.2 15.5-35.1 10.4-8.9 24.2-13.3 41.7-13.3 5.8 0 11.8.5 18 1.4 6.3.9 12.8 2.2 19.6 3.8v-12.4c0-12.9-2.7-22-8-27.2-5.4-5.3-14.6-7.8-27.7-7.8-6 0-12.1.7-18.4 2.2s-12.4 3.4-18.4 5.8c-1.9.9-3.9 1.6-6 2.2-.9.3-1.8.4-2.7.5-2.4 0-3.6-1.7-3.6-5.3v-8.3c0-2.7.3-4.8 1.2-6 1.3-1.5 2.9-2.8 4.8-3.6 6-3.1 13.1-5.6 21.4-7.7 8.7-2.2 17.6-3.3 26.6-3.2 20.3 0 35.1 4.6 44.6 13.8 9.4 9.2 14.1 23.1 14.1 41.9v55.2l.2-.1zM331.2 505c5.6 0 11.4-1 17.5-3.1 6.1-2 11.6-5.8 16.2-10.9 2.7-3.2 4.8-6.8 5.8-10.9 1-4.1 1.7-9 1.7-14.8v-7.1c-5.2-1.3-10.4-2.2-15.7-2.9-5.3-.7-10.7-1-16-1-11.4 0-19.8 2.2-25.4 6.8-5.6 4.6-8.3 11.1-8.3 19.6 0 8 2 14 6.3 18 4.1 4.3 10 6.3 17.9 6.3zm136.7 18.4c-3.1 0-5.1-.5-6.5-1.7-1.4-1-2.6-3.4-3.6-6.6l-40-131.6c-.8-2.2-1.3-4.5-1.5-6.8 0-2.7 1.4-4.3 4.1-4.3h16.7c3.2 0 5.4.5 6.6 1.7 1.4 1 2.4 3.4 3.4 6.7l28.6 112.7 26.6-112.7c.9-3.4 1.9-5.6 3.2-6.7 2-1.3 4.4-1.9 6.8-1.7H526c3.2 0 5.5.5 6.8 1.7 1.3 1 2.6 3.4 3.2 6.7l26.9 114.1 29.5-114.1c1-3.4 2.2-5.6 3.4-6.7 2-1.3 4.3-1.9 6.6-1.7h15.9c2.7 0 4.3 1.4 4.3 4.3 0 .9-.2 1.7-.4 2.7-.3 1.5-.7 2.9-1.2 4.3l-41 131.6c-1 3.4-2.2 5.6-3.6 6.6-1.9 1.2-4.2 1.8-6.5 1.7h-14.7c-3.2 0-5.4-.5-6.8-1.7-1.3-1.2-2.5-3.4-3.2-6.8l-26.4-109.8L492.6 515c-.9 3.4-1.9 5.6-3.2 6.8-1.4 1.2-3.8 1.7-6.8 1.7l-14.7-.1zm218.8 4.6c-8.9 0-17.7-1-26.2-3.1-8.5-2-15.1-4.3-19.6-6.8-2.7-1.5-4.6-3.2-5.3-4.8-.7-1.5-1-3.1-1-4.8v-8.7c0-3.6 1.4-5.3 3.9-5.3 1 0 2 .2 3.1.5 1 .3 2.6 1 4.3 1.7 5.8 2.6 12.1 4.6 18.7 6 6.8 1.4 13.4 2 20.3 2 10.7 0 19.1-1.9 24.9-5.6 5.6-3.4 9-9.6 8.9-16.2.1-4.4-1.5-8.7-4.6-11.9-3.1-3.2-8.9-6.1-17.2-8.9l-24.7-7.7c-12.4-3.9-21.6-9.7-27.2-17.3-5.5-7.1-8.5-15.8-8.5-24.7 0-7.1 1.6-13.4 4.6-18.9 3.1-5.4 7.1-10.2 12.3-14 5.1-3.9 10.9-6.8 17.7-8.9 6.8-2 14-2.9 21.5-2.9 3.7 0 7.7.2 11.4.7 3.9.5 7.5 1.2 11.1 1.9 3.4.9 6.7 1.7 9.7 2.7 3.1 1 5.5 2 7.2 3.1 2 1 3.8 2.5 5.1 4.3 1.1 1.7 1.6 3.6 1.5 5.6v8c0 3.6-1.4 5.5-3.9 5.5-2.3-.3-4.5-1-6.5-2-10.3-4.5-21.4-6.8-32.7-6.6-9.7 0-17.4 1.5-22.7 4.8-5.3 3.2-8 8.2-8 15.1 0 4.8 1.7 8.9 5.1 12.1 3.4 3.2 9.7 6.5 18.7 9.4l24.2 7.6c12.2 3.9 21.1 9.4 26.4 16.4 5.3 7 7.8 15 7.8 23.8 0 7.3-1.5 14-4.4 19.8-3.1 5.8-7.2 10.9-12.4 15-5.3 4.3-11.6 7.3-18.9 9.5-7.9 2.4-15.9 3.6-24.6 3.6zm32.2 82.7c-56 41.4-137.4 63.3-207.4 63.3-98.1 0-186.5-36.3-253.2-96.6-5.3-4.8-.5-11.2 5.8-7.5 72.2 41.9 161.3 67.3 253.4 67.3 62.2 0 130.4-12.9 193.3-39.5 9.3-4.2 17.3 6.2 8.1 13zm23.3-26.5c-7.2-9.2-47.4-4.4-65.6-2.2-5.4.7-6.3-4.1-1.3-7.7 32-22.5 84.6-16 90.8-8.5 6.1 7.7-1.7 60.3-31.7 85.5-4.6 3.9-9 1.9-7-3.2 6.8-16.9 22-54.9 14.8-63.9z' />
             </svg>
-            <div className='flex-auto'>
-              <h5 className='no-underline font-bold text-lg mb-2'>Amazon</h5>
+            <div>
+              <h5 className='font-bold text-base mb-2'>Amazon</h5>
               <div className='flex items-center'>
                 <span className='mr-2 p-1 bg-slate-200 rounded-md'>
-                  <svg width='16' height='16' viewBox='0 0 24 24'>
+                  <svg width='14' height='14' viewBox='0 0 24 24'>
                     <path fill='#333' d='M3.5,18.5L9.5,12.5L13.5,16.5L22,6.92L20.59,5.5L13.5,13.5L9.5,9.5L2,17L3.5,18.5Z' />
                   </svg>
                 </span>
-                <span className='mr-1 text-sm'>Last view july 23</span>
-                <span>
-                  <svg width='18' height='18' viewBox='0 0 24 24' className='mr-1'>
-                    <path fill='#333' d='M20 8L14.5 13.5L13.09 12.09L16.17 9H10.5C8 9 6 11 6 13.5V20H4V13.5C4 9.91 6.91 7 10.5 7H16.17L13.08 3.91L14.5 2.5L20 8Z' />
-                  </svg>
-                </span>
-                <span className='text-slate-400 text-sm'>03:12 PM</span>
+                <span className='mr-1'>Last view july 23</span>
               </div>
               <div className='mt-1'>
-                <a href='#' className='text-blue-500 text-sm font-medium inline-flex items-center'>
+                <a href='#' className='text-blue-500 font-medium inline-flex items-center'>
                   If was not you?, click here
-                  <svg width='20' height='20' viewBox='0 0 24 24' className='ml-2'>
+                  <svg width='18' height='18' viewBox='0 0 24 24' className='ml-2'>
                     <path fill='currentColor' d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z' />
                   </svg>
                 </a>
@@ -2192,10 +2186,10 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-start justify-between bg-white rounded-xl p-4 mb-4 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex items-start justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
             <div className='relative flex items-center justify-center flex-none'>
-              <svg width='74' height='74' viewBox='0 0 63 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='60' height='60' viewBox='0 0 63 63' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M63 31.5C63 48.897 48.897 63 31.5 63C14.103 63 1.08791e-06 48.897 1.08791e-06 31.5C1.08791e-06 14.103 14.103 0 31.5 0C48.897 0 63 14.103 63 31.5ZM5.02136 31.5C5.02136 46.1237 16.8763 57.9786 31.5 57.9786C46.1238 57.9786 57.9786 46.1237 57.9786 31.5C57.9786 16.8763 46.1238 5.02136 31.5 5.02136C16.8763 5.02136 5.02136 16.8763 5.02136 31.5Z' className='fill-slate-200 dark:fill-slate-600' />
                 <path d='M59.4021 39.3648C60.7367 39.7409 61.5232 41.1324 61.0419 42.4328C59.4513 46.7309 56.938 50.6403 53.6675 53.8797C49.8012 57.7094 45.0085 60.4721 39.7568 61.8986C34.505 63.3251 28.9733 63.3666 23.7007 62.0192C18.4281 60.6718 13.5945 57.9813 9.67106 54.2101C5.74759 50.4388 2.86808 45.7155 1.31317 40.5003C-0.24175 35.2851 -0.419028 29.756 0.798611 24.452C2.01625 19.1479 4.58727 14.2498 8.26109 10.2349C11.3686 6.83897 15.1755 4.17299 19.4074 2.4136C20.6877 1.88129 22.1092 2.61213 22.5378 3.93081C22.9665 5.24949 22.2388 6.65505 20.9666 7.20665C17.5567 8.68514 14.4872 10.869 11.9656 13.6248C8.87738 16.9996 6.71621 21.1169 5.69267 25.5755C4.66913 30.034 4.81815 34.6817 6.1252 39.0656C7.43225 43.4494 9.85274 47.4198 13.1508 50.5899C16.4488 53.76 20.5119 56.0215 24.944 57.1542C29.3761 58.2868 34.026 58.2519 38.4406 57.0528C42.8552 55.8537 46.8838 53.5314 50.1339 50.3122C52.7877 47.6835 54.8485 44.53 56.191 41.0643C56.6918 39.7713 58.0675 38.9886 59.4021 39.3648Z' fill='url(#paint0_radial_351_13)' className='dark:fill-slate-300' />
                 <defs>
@@ -2207,8 +2201,8 @@ function App () {
                 </defs>
               </svg>
               <span className='absolute text-md font-bold top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2'>46%</span>
-              <div className='absolute flex justify-center items-center text-md font-bold bottom-0 right-0 rounded-full bg-white h-8 w-8 shadow-[#00000052] shadow-xl dark:bg-slate-400'>
-                <svg height='20' width='20' viewBox='0 0 24 24'>
+              <div className='absolute flex justify-center items-center text-md font-bold bottom-0 right-0 rounded-full bg-white h-7 w-7 shadow-[#00000052] shadow-xl dark:bg-slate-400'>
+                <svg height='18' width='18' viewBox='0 0 24 24'>
                   <path fill='currentColor' d='M9,20.42L2.79,14.21L5.62,11.38L9,14.77L18.88,4.88L21.71,7.71L9,20.42Z' />
                 </svg>
               </div>
@@ -2227,18 +2221,18 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 space-x-2 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 text-sm space-x-2 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-3'>
             <div className='flex flex-none justify-center items-center rounded-lg font-medium border-2 border-black px-2 py-1 space-x-2 text-sm dark:border-slate-300'>
-              <svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='16' height='16' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M5.8 1V4.2M12.2 1V4.2M1 7.4H17M4.2 2.6H13.8C15.5673 2.6 17 4.03269 17 5.8V13.8C17 15.5673 15.5673 17 13.8 17H4.2C2.43269 17 1 15.5673 1 13.8V5.8C1 4.03269 2.43269 2.6 4.2 2.6Z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
               </svg>
               <span>Feb, 24</span>
             </div>
-            <p className='text-sm'>Lorem ipsum dolor sit amet cosectur adipisng...</p>
+            <p>Lorem ipsum dolor sit amet cosectur...</p>
           </div>
           <span>
-            <svg width='23' height='23' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <svg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
               <path d='M10 18.75C7.67936 18.75 5.45376 17.8281 3.81282 16.1872C2.17187 14.5462 1.25 12.3206 1.25 10C1.25 7.67936 2.17187 5.45376 3.81282 3.81282C5.45376 2.17187 7.67936 1.25 10 1.25C12.3206 1.25 14.5462 2.17187 16.1872 3.81282C17.8281 5.45376 18.75 7.67936 18.75 10C18.75 12.3206 17.8281 14.5462 16.1872 16.1872C14.5462 17.8281 12.3206 18.75 10 18.75ZM10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20Z' fill='currentColor' />
               <path d='M13.7125 6.2125C13.7036 6.22113 13.6952 6.23031 13.6875 6.24L9.34625 11.7712L6.73 9.15375C6.55228 8.98815 6.31722 8.898 6.07435 8.90228C5.83147 8.90657 5.59974 9.00496 5.42797 9.17672C5.25621 9.34849 5.15782 9.58022 5.15353 9.8231C5.14925 10.066 5.2394 10.301 5.405 10.4788L8.7125 13.7875C8.8016 13.8764 8.90771 13.9465 9.02448 13.9936C9.14125 14.0406 9.26631 14.0637 9.39218 14.0613C9.51806 14.059 9.64217 14.0313 9.75712 13.98C9.87207 13.9286 9.9755 13.8547 10.0612 13.7625L15.0513 7.525C15.2212 7.34666 15.3141 7.10862 15.3099 6.86234C15.3057 6.61605 15.2047 6.38131 15.0288 6.20887C14.8529 6.03643 14.6162 5.94014 14.3699 5.94081C14.1236 5.94149 13.8874 6.03909 13.7125 6.2125Z' fill='currentColor' />
             </svg>
@@ -2246,18 +2240,18 @@ function App () {
         </div>
 
         {/* widget */}
-        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 space-x-2 dark:bg-slate-700 dark:text-white'>
+        <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 text-sm space-x-2 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-3'>
             <div className='flex flex-none justify-center items-center rounded-lg font-medium border-2 border-black px-2 py-1 space-x-2 text-sm dark:border-slate-300'>
-              <svg width='18' height='18' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='16' height='16' viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M5.8 1V4.2M12.2 1V4.2M1 7.4H17M4.2 2.6H13.8C15.5673 2.6 17 4.03269 17 5.8V13.8C17 15.5673 15.5673 17 13.8 17H4.2C2.43269 17 1 15.5673 1 13.8V5.8C1 4.03269 2.43269 2.6 4.2 2.6Z' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round' />
               </svg>
               <span>Jan, 06</span>
             </div>
-            <p className='text-sm line-through'>Lorem ipsum dolor sit amet cosectur adipisng...</p>
+            <p className='line-through'>Lorem ipsum dolor sit amet cosect...</p>
           </div>
           <span>
-            <svg width='25' height='25' viewBox='0 0 24 24'>
+            <svg width='22' height='22' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19M8,9H16V19H8V9M15.5,4L14.5,3H9.5L8.5,4H5V6H19V4H15.5Z' />
             </svg>
           </span>
