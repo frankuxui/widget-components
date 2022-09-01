@@ -969,31 +969,6 @@ function App () {
           </button>
         </div>
 
-        {/* widget */}
-        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 space-y-2 text-sm dark:bg-slate-800 dark:text-white'>
-          <div className='flex flex-row items-center justify-between'>
-            <div className='flex items-center space-x-2'>
-              <span className='px-2 py-1 rounded-full font-medium bg-green-100 dark:bg-green-400'>Highlight</span>
-              <span className='px-2 py-1 rounded-full font-medium bg-pink-100 dark:bg-pink-400'>Feeds</span>
-            </div>
-            <button className='inline-flex items-center justify-center p-2 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-              <svg width='22' height='22' viewBox='0 0 24 24'>
-                <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
-              </svg>
-            </button>
-          </div>
-          <div className=''>
-            <h5 className='font-bold text-base'>Dashboard</h5>
-            <p className='text-slate-600 dark:text-slate-400'>Business management service</p>
-          </div>
-          <div className='flex justify-between items-center font-bold space-x-4'>
-            <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden dark:bg-slate-500'>
-              <div className='absolute left-0 w-1/3 h-full bg-[#6ed878]' />
-            </div>
-            <span>80%</span>
-          </div>
-        </div>
-
         {/** widget */}
         <div className='flex flex-col break-inside bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex justify-between items-center'>
@@ -1708,6 +1683,31 @@ function App () {
           </button>
         </div>
 
+        {/* widget */}
+        <div className='break-inside flex flex-col justify-between bg-white rounded-xl p-4 mb-4 space-y-2 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='flex flex-row items-center justify-between'>
+            <div className='flex items-center space-x-2'>
+              <span className='px-2 py-1 rounded-full font-medium bg-green-100 dark:bg-green-400'>Highlight</span>
+              <span className='px-2 py-1 rounded-full font-medium bg-pink-100 dark:bg-pink-400'>Feeds</span>
+            </div>
+            <button className='inline-flex items-center justify-center p-2 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
+              <svg width='22' height='22' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+              </svg>
+            </button>
+          </div>
+          <div className=''>
+            <h5 className='font-bold text-base'>Dashboard</h5>
+            <p className='text-slate-600 dark:text-slate-400'>Business management service</p>
+          </div>
+          <div className='flex justify-between items-center font-bold space-x-4'>
+            <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden dark:bg-slate-500'>
+              <div className='absolute left-0 w-1/3 h-full bg-[#6ed878]' />
+            </div>
+            <span>80%</span>
+          </div>
+        </div>
+
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-black text-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-900'>
           <div className='flex items-center space-x-4'>
@@ -1751,6 +1751,78 @@ function App () {
           <svg width='45' height='27' viewBox='0 0 35 17' fill='none' xmlns='http://www.w3.org/2000/svg'>
             <path d='M34.11 14.7892L30.19 8.16921L34.07 1.81921C34.1621 1.66789 34.2124 1.49481 34.2157 1.31769C34.2189 1.14056 34.1751 0.965744 34.0886 0.811122C34.0022 0.6565 33.8762 0.527624 33.7236 0.437678C33.5709 0.347733 33.3972 0.299947 33.22 0.29921H2C1.46957 0.29921 0.960859 0.509924 0.585786 0.884996C0.210714 1.26007 0 1.76878 0 2.29921L0 14.2992C0 14.8296 0.210714 15.3384 0.585786 15.7134C0.960859 16.0885 1.46957 16.2992 2 16.2992H33.25C33.4265 16.2992 33.5999 16.2524 33.7524 16.1637C33.905 16.075 34.0314 15.9475 34.1188 15.7941C34.2061 15.6407 34.2513 15.467 34.2498 15.2905C34.2482 15.114 34.2 14.941 34.11 14.7892ZM10.51 11.4792H9.39L6.13 7.13921V11.4892H5V5.29921H6.13L9.4 9.64921V5.29921H10.52L10.51 11.4792ZM16.84 6.29921H13.31V7.78921H16.51V8.78921H13.31V10.3992H16.84V11.3992H12.18V5.29921H16.83L16.84 6.29921ZM25.13 11.4592H24L22.45 6.86921L20.9 11.4792H19.78L17.78 5.29921H19L20.32 9.72921L21.84 5.29921H23.06L24.52 9.72921L25.85 5.29921H27.08L25.13 11.4592Z' fill='currentColor' />
           </svg>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center px-3 py-2 rounded-lg bg-slate-200 dark:bg-slate-600'>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' width='20' height='20'>
+                <path strokeLinecap='round' strokeLinejoin='round' d='M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z' />
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <h5 className='text-base font-bold block'>Documents</h5>
+              <span className='text-sm text-slate-600 dark:text-gray-400'>873 files</span>
+            </div>
+          </div>
+          <div className='flex flex-col items-center space-y-1 text-base font-bold'>
+            <span>38 Gb</span>
+            <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
+              <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center'>
+              <svg width='37' height='34' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z' fill='#0066DA' />
+                <path d='M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z' fill='#EA4335' />
+                <path d='M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z' fill='#00832D' />
+                <path d='M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z' fill='#2684FC' />
+                <path d='M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z' fill='#00AC47' />
+                <path d='M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z' fill='#FFBA00' />
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <h5 className='text-base font-bold block'>Google drive</h5>
+              <span className='text-sm text-slate-600 dark:text-gray-400'>543 files</span>
+            </div>
+          </div>
+          <div className='flex flex-col items-center space-y-1 text-base font-bold'>
+            <span>10 Gb</span>
+            <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
+              <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center'>
+              <svg width='33' height='30' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z' fill='#0066DA' />
+                <path d='M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z' fill='#EA4335' />
+                <path d='M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z' fill='#00832D' />
+                <path d='M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z' fill='#2684FC' />
+                <path d='M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z' fill='#00AC47' />
+                <path d='M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z' fill='#FFBA00' />
+              </svg>
+            </div>
+            <div className='flex flex-col w-full space-y-1'>
+              <div className='flex justify-between items-center'>
+                <h5 className='text-base font-bold block'>Google drive</h5>
+                <span className='font-medium'>23Gb / 32 Gb</span>
+              </div>
+              <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
+                <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* widget */}
@@ -2490,6 +2562,45 @@ function App () {
         {/** widget */}
         <div className='break-inside relative overflow-hidden flex flex-col justify-between space-y-2 text-sm rounded-xl p-4 mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-between font-medium'>
+            <span className='uppercase text-xs text-green-500'>CURRENT MESSAGE</span>
+            <span className='text-xs text-slate-500'>#teamsdesigners</span>
+          </div>
+          <div className='flex flex-row items-center space-x-3'>
+            <p className='text-base font-medium'>The best team of designers and programmers</p>
+          </div>
+          <div className='flex justify-between items-center'>
+            <div>
+              <dt className='sr-only'>Users</dt>
+              <dd className='flex justify-start -space-x-1.5'>
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-7 h-7 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/men/46.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-7 h-7 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-7 h-7 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/men/47.jpg' alt='avatar' />
+                </a>
+              </dd>
+            </div>
+            <div className='flex items-center space-x-2'>
+              <button className='flex items-center justify-center text-xs font-medium rounded-full w-9 h-9 border-2 border-black bg-white hover:bg-black hover:text-white text-black dark:bg-slate-800 dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black'>
+                <svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                  <path d='M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z' />
+                </svg>
+              </button>
+              <button className='flex items-center justify-center text-xs font-medium rounded-full w-9 h-9 bg-slate-200 dark:bg-slate-600'>
+                <svg width='14' height='15' viewBox='0 0 14 15' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M0.758054 14.9942C0.818089 15.0019 0.87878 15.0019 0.938815 14.9942L3.9515 14.1874C4.08515 14.1534 4.20756 14.0809 4.30549 13.9777L13.562 4.03084C13.8425 3.72854 14 3.31961 14 2.89336C14 2.46711 13.8425 2.05818 13.562 1.75589L12.372 0.473201C12.2321 0.323189 12.0659 0.204183 11.8831 0.122988C11.7002 0.0417924 11.5042 0 11.3062 0C11.1083 0 10.9122 0.0417924 10.7294 0.122988C10.5465 0.204183 10.3804 0.323189 10.2405 0.473201L0.984006 10.3878C0.886687 10.4932 0.816611 10.6238 0.780649 10.767L0.027478 13.9938C0.000407416 14.0982 -0.00675754 14.2074 0.00641047 14.3148C0.0195785 14.4222 0.0528098 14.5257 0.104122 14.619C0.155434 14.7124 0.223776 14.7937 0.30507 14.8582C0.386365 14.9226 0.478947 14.9689 0.577293 14.9942C0.637328 15.0019 0.698019 15.0019 0.758054 14.9942ZM11.3025 1.61068L12.5 2.89336L11.3025 4.17605L10.1124 2.89336L11.3025 1.61068ZM2.19661 11.372L9.04294 4.03084L10.2405 5.31352L3.38662 12.6547L1.79743 13.0742L2.19661 11.372Z' fill='currentColor' />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside relative overflow-hidden flex flex-col justify-between space-y-3 text-sm rounded-xl p-4 mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-center justify-between font-medium'>
             <span className='uppercase text-xs text-green-500'>upgrade team</span>
             <span className='text-xs text-slate-500'>#teamsdesigners</span>
           </div>
@@ -2604,78 +2715,6 @@ function App () {
           <div className='flex flex-col items-center space-y-2'>
             <span className='mt-[1px] text-slate-500 dark:text-slate-400'>Now</span>
             <span className='flex items-center justify-center rounded-full w-5 h-5 font-mniudm bg-blue-600 text-white'> 6 </span>
-          </div>
-        </div>
-
-        {/** widget */}
-        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
-          <div className='flex items-center space-x-4'>
-            <div className='flex items-center justify-center px-3 py-2 rounded-lg bg-slate-200 dark:bg-slate-600'>
-              <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' width='20' height='20'>
-                <path strokeLinecap='round' strokeLinejoin='round' d='M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z' />
-              </svg>
-            </div>
-            <div className='flex-auto'>
-              <h5 className='text-base font-bold block'>Documents</h5>
-              <span className='text-sm text-slate-600 dark:text-gray-400'>873 files</span>
-            </div>
-          </div>
-          <div className='flex flex-col items-center space-y-1 text-base font-bold'>
-            <span>38 Gb</span>
-            <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
-              <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
-            </div>
-          </div>
-        </div>
-
-        {/** widget */}
-        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
-          <div className='flex items-center space-x-4'>
-            <div className='flex items-center justify-center'>
-              <svg width='37' height='34' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path d='M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z' fill='#0066DA' />
-                <path d='M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z' fill='#EA4335' />
-                <path d='M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z' fill='#00832D' />
-                <path d='M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z' fill='#2684FC' />
-                <path d='M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z' fill='#00AC47' />
-                <path d='M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z' fill='#FFBA00' />
-              </svg>
-            </div>
-            <div className='flex-auto'>
-              <h5 className='text-base font-bold block'>Google drive</h5>
-              <span className='text-sm text-slate-600 dark:text-gray-400'>543 files</span>
-            </div>
-          </div>
-          <div className='flex flex-col items-center space-y-1 text-base font-bold'>
-            <span>10 Gb</span>
-            <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
-              <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
-            </div>
-          </div>
-        </div>
-
-        {/** widget */}
-        <div className='break-inside rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
-          <div className='flex items-center space-x-4'>
-            <div className='flex items-center justify-center'>
-              <svg width='33' height='30' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path d='M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z' fill='#0066DA' />
-                <path d='M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z' fill='#EA4335' />
-                <path d='M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z' fill='#00832D' />
-                <path d='M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z' fill='#2684FC' />
-                <path d='M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z' fill='#00AC47' />
-                <path d='M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z' fill='#FFBA00' />
-              </svg>
-            </div>
-            <div className='flex flex-col w-full space-y-1'>
-              <div className='flex justify-between items-center'>
-                <h5 className='text-base font-bold block'>Google drive</h5>
-                <span className='font-medium'>23Gb / 32 Gb</span>
-              </div>
-              <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
-                <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
-              </div>
-            </div>
           </div>
         </div>
 
