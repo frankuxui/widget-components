@@ -2466,6 +2466,31 @@ function App () {
           </div>
         </div>
 
+        {/** widget */}
+        <div className='break-inside relative flex items-start justify-between bg-white rounded-xl py-4 pr-4 mb-4 text-xs dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-start space-x-4 pl-3 border-l-4 border-violet-500'>
+            <img className='flex-none w-10 h-10 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/44.jpg' alt='avatar' />
+            <div className='flex-auto space-y-1'>
+              <div className='flex items-center space-x-1'>
+                <a href='#' className='font-bold'>Esther Howard</a>
+                <span className='fill-blue-500'>
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'>
+                    <path fill='fill-blue-500' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z' />
+                  </svg>
+                </span>
+                <span className='text-slate-500 dark:text-slate-400'>Designer</span>
+              </div>
+              <div className='flex items-center gap-2'>
+                <p className='text-slate-600 dark:text-slate-400'>Hi, I've been calling you and your phone doesn't ring, what's...</p>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col space-y-2'>
+            <span className='mt-[1px] text-slate-500 dark:text-slate-400'>Now</span>
+            <span className='flex items-center justify-center rounded-full w-6 h-6 font-mniudm bg-violet-500 text-white'> 2 </span>
+          </div>
+        </div>
+
       </div>
     </div>
   )
