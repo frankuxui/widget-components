@@ -2488,6 +2488,52 @@ function App () {
         </a>
 
         {/** widget */}
+        <div className='break-inside relative overflow-hidden flex flex-col justify-between space-y-2 text-sm rounded-xl p-4 mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-center justify-between font-medium'>
+            <span className='uppercase text-xs text-green-500'>upgrade team</span>
+            <span className='text-xs text-slate-500'>#teamsdesigners</span>
+          </div>
+          <div className='flex flex-row items-center space-x-3'>
+            <div className='flex flex-none items-center justify-center w-10 h-10 rounded-full bg-green-500 text-white'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                <polygon points='14 2 18 6 7 17 3 17 3 13 14 2' />
+                <line x1='3' y1='22' x2='21' y2='22' />
+              </svg>
+            </div>
+            <span className='text-base font-medium'>Upgrade your team for better performance</span>
+          </div>
+          <div> Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do eiusmod.</div>
+          <div className='flex justify-between items-center'>
+            <div>
+              <dt className='sr-only'>Users</dt>
+              <dd className='flex justify-start -space-x-1.5'>
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-7 h-7 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-7 h-7 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                </a>
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-7 h-7 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/women/47.jpg' alt='avatar' />
+                </a>
+                <span className='inline-block -m-1 rounded-full ring-2 ring-white dark:ring-slate-800'>
+                  <svg width='28' height='28' viewBox='0 0 31 31' fill='none' xmlns='http://www.w3.org/2000/svg' className='text-slate-200 dark:text-slate-600'>
+                    <path d='M31 15.5C31 24.0604 24.0604 31 15.5 31C6.93959 31 0 24.0604 0 15.5C0 6.93959 6.93959 0 15.5 0C24.0604 0 31 6.93959 31 15.5ZM8.20879 15.5C8.20879 19.5268 11.4732 22.7912 15.5 22.7912C19.5268 22.7912 22.7912 19.5268 22.7912 15.5C22.7912 11.4732 19.5268 8.20879 15.5 8.20879C11.4732 8.20879 8.20879 11.4732 8.20879 15.5Z' fill='currentColor' />
+                    <path d='M31 15.5C31 18.049 30.3714 20.5586 29.1698 22.8066C27.9682 25.0547 26.2307 26.9716 24.1113 28.3878C21.9919 29.8039 19.556 30.6755 17.0193 30.9254C14.4826 31.1752 11.9234 30.7956 9.56841 29.8201C7.21345 28.8447 5.1354 27.3035 3.51834 25.3331C1.90128 23.3627 0.795112 21.0239 0.297828 18.5239C-0.199455 16.0239 -0.0725081 13.4398 0.667425 11.0006C1.40736 8.56136 2.73744 6.34225 4.53984 4.53985L10.2876 10.2876C9.43046 11.1448 8.79791 12.2002 8.44602 13.3602C8.09413 14.5202 8.03376 15.7491 8.27025 16.9381C8.50675 18.127 9.03281 19.2393 9.80184 20.1764C10.5709 21.1134 11.5591 21.8464 12.6791 22.3103C13.799 22.7742 15.0161 22.9547 16.2225 22.8359C17.4289 22.7171 18.5874 22.3026 19.5953 21.6291C20.6033 20.9556 21.4295 20.0439 22.001 18.9748C22.5724 17.9058 22.8714 16.7122 22.8714 15.5H31Z' fill='#2BC86A' />
+                  </svg>
+                </span>
+              </dd>
+            </div>
+            <button className='flex items-center justify-center text-xs font-medium rounded-full px-4 py-1 space-x-1 border-2 border-black bg-white hover:bg-black hover:text-white text-black dark:bg-slate-800 dark:text-white dark:border-white dark:hover:bg-white dark:hover:text-black'>
+              <span>Submit</span>
+              <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                <path d='M5 12h13M12 5l7 7-7 7' />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside relative overflow-hidden flex flex-col justify-between space-y-2 text-sm rounded-xl p-4 mb-4 bg-[#5E17F4] text-white'>
           <span className='uppercase text-xs text-[#D2BDFF]'>upgrade team</span>
           <div className='flex flex-row items-center space-x-3'>
@@ -2570,7 +2616,7 @@ function App () {
               </svg>
             </div>
             <div className='flex-auto'>
-              <a href='#' className='text-base font-bold block'>Documents</a>
+              <h5 className='text-base font-bold block'>Documents</h5>
               <span className='text-sm text-slate-600 dark:text-gray-400'>873 files</span>
             </div>
           </div>
@@ -2586,17 +2632,17 @@ function App () {
         <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
           <div className='flex items-center space-x-4'>
             <div className='flex items-center justify-center'>
-              <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z" fill="#0066DA"/>
-                <path d="M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z" fill="#EA4335"/>
-                <path d="M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z" fill="#00832D"/>
-                <path d="M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z" fill="#2684FC"/>
-                <path d="M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z" fill="#00AC47"/>
-                <path d="M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z" fill="#FFBA00"/>
+              <svg width='37' height='34' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z' fill='#0066DA' />
+                <path d='M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z' fill='#EA4335' />
+                <path d='M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z' fill='#00832D' />
+                <path d='M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z' fill='#2684FC' />
+                <path d='M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z' fill='#00AC47' />
+                <path d='M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z' fill='#FFBA00' />
               </svg>
             </div>
             <div className='flex-auto'>
-              <a href='#' className='text-base font-bold block'>Google drive</a>
+              <h5 className='text-base font-bold block'>Google drive</h5>
               <span className='text-sm text-slate-600 dark:text-gray-400'>543 files</span>
             </div>
           </div>
@@ -2604,6 +2650,31 @@ function App () {
             <span>10 Gb</span>
             <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
               <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center'>
+              <svg width='33' height='30' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z' fill='#0066DA' />
+                <path d='M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z' fill='#EA4335' />
+                <path d='M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z' fill='#00832D' />
+                <path d='M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z' fill='#2684FC' />
+                <path d='M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z' fill='#00AC47' />
+                <path d='M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z' fill='#FFBA00' />
+              </svg>
+            </div>
+            <div className='flex flex-col w-full space-y-1'>
+              <div className='flex justify-between items-center'>
+                <h5 className='text-base font-bold block'>Google drive</h5>
+                <span className='font-medium'>23Gb / 32 Gb</span>
+              </div>
+              <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
+                <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
+              </div>
             </div>
           </div>
         </div>
