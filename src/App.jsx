@@ -85,7 +85,7 @@ function App () {
       </div>
 
       {/** container widgets */}
-      <div className='box-border m-auto max-w-[75rem] 3xl:max-w-[100rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3 3xl:columns-5'>
+      <div className='box-border m-auto max-w-[75rem] 3xl:max-w-[120rem] columns-1xs sm:columns-2xs md:columns-2 lg:columns-3 xl:columns-3 3xl:columns-6'>
 
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-slate-50'>
@@ -1043,7 +1043,7 @@ function App () {
               <span className='text-slate-600 dark:text-slate-400'>Engineering</span>
             </div>
             <button className='rounded-full p-2 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
-              <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'viewBox='0 0 24 24'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'>
                 <path d='m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z' fill='currentColor' />
               </svg>
             </button>
@@ -1122,7 +1122,7 @@ function App () {
             </div>
           </div>
           <button className='inline-flex items-center justify-center p-2 transition-all rounded-full hover:bg-yellow-200 dark:hover:bg-yellow-200'>
-            <svg width='24' height='24'className='text-slate-800' viewBox='0 0 24 24'>
+            <svg width='24' height='24' className='text-slate-800' viewBox='0 0 24 24'>
               <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
             </svg>
           </button>
