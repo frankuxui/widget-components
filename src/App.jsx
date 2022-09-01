@@ -1479,8 +1479,8 @@ function App () {
         {/* widget */}
         <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-3 bg-slate-100 rounded-full px-2 py-2 dark:bg-slate-600 dark:text-white'>
-            <div className='flex flex-none justify-center items-center w-10 h-10 bg-[#FF9900] rounded-full font-medium text-white text-xl ring-2 ring-[#FF9900] border-2 border-white'>
-              <svg width='22' height='22' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+            <div className='flex flex-none justify-center items-center w-9 h-9 bg-[#FF9900] rounded-full font-medium text-white text-xl ring-2 ring-[#FF9900] border-2 border-white'>
+              <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M17.06 11.57C17.65 10.88 18 10 18 9C18 7.14 16.73 5.57 15 5.13V3H13V5H11V3H9V5H6V7H8V17H6V19H9V21H11V19H13V21H15V19C17.21 19 19 17.21 19 15C19 13.55 18.22 12.27 17.06 11.57M10 7H14C15.1 7 16 7.9 16 9S15.1 11 14 11H10V7M15 17H10V13H15C16.1 13 17 13.9 17 15S16.1 17 15 17Z' fill='currentColor' />
               </svg>
             </div>
@@ -1955,10 +1955,8 @@ function App () {
             <span className='font-bold block text-sm'>Transaction</span>
             <span className='font-bold block text-sm'>$8.347 / $23.892</span>
           </div>
-          <div>
-            <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden dark:bg-slate-600'>
-              <div className='absolute left-0 w-1/3 h-full bg-pink-500' />
-            </div>
+          <div className='relative w-full h-2 bg-slate-100 rounded-md overflow-hidden dark:bg-slate-600'>
+            <div className='absolute left-0 w-1/3 h-full bg-pink-500' />
           </div>
         </div>
 
@@ -2560,6 +2558,27 @@ function App () {
           <div className='flex flex-col items-center space-y-2'>
             <span className='mt-[1px] text-slate-500 dark:text-slate-400'>Now</span>
             <span className='flex items-center justify-center rounded-full w-5 h-5 font-mniudm bg-blue-600 text-white'> 6 </span>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center px-3 py-2 rounded-lg bg-slate-200 dark:bg-slate-600'>
+              <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={1.5} stroke='currentColor' width='20' height='20'>
+                <path strokeLinecap='round' strokeLinejoin='round' d='M2.25 12.75V12A2.25 2.25 0 014.5 9.75h15A2.25 2.25 0 0121.75 12v.75m-8.69-6.44l-2.12-2.12a1.5 1.5 0 00-1.061-.44H4.5A2.25 2.25 0 002.25 6v12a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9a2.25 2.25 0 00-2.25-2.25h-5.379a1.5 1.5 0 01-1.06-.44z' />
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <a href='#' className='text-base font-bold block'>Documents</a>
+              <span className='text-sm text-slate-600 dark:text-gray-400'>873 files</span>
+            </div>
+          </div>
+          <div className='flex flex-col items-center space-y-1 text-base font-bold'>
+            <span>38 Gb</span>
+            <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
+              <div className='absolute left-0 w-1/3 h-full bg-pink-500' />
+            </div>
           </div>
         </div>
 
