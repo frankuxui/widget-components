@@ -915,7 +915,7 @@ function App () {
               </div>
               <span className='uppercase text-xs font-medium'>Premier league</span>
             </div>
-            <button className='flex items-center justify-between py-3 px-3 text-sm rounded-full flex-1 h-full font-medium bg-white text-black'>
+            <button className='flex items-center justify-between py-3 px-3 text-sm rounded-full h-full font-medium bg-white text-black'>
               <span>2020 - 2021</span>
               <span>
                 <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={2} stroke='currentColor' width='20' height='20'>
@@ -937,7 +937,7 @@ function App () {
               </div>
               <span className='uppercase text-xs font-medium'>bundesliga</span>
             </div>
-            <button className='flex items-center justify-between py-3 px-3 text-sm rounded-full flex-1 h-full font-medium bg-white text-black'>
+            <button className='flex items-center justify-between py-3 px-3 text-sm rounded-full h-full font-medium bg-white text-black'>
               <span>2020 - 2021</span>
               <span>
                 <svg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' strokeWidth={2} stroke='currentColor' width='20' height='20'>
