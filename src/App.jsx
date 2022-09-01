@@ -1153,7 +1153,7 @@ function App () {
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <svg width='52' height='52' viewBox='0 0 64 64' ariaHidden='true' role='img' className='iconify iconify--emojione' preserveAspectRatio='xMidYMid meet'>
+            <svg width='52' height='52' viewBox='0 0 64 64' aria-hidden='true' role='img' className='iconify iconify--emojione' preserveAspectRatio='xMidYMid meet'>
               <g fill='currentColor'>
                 <path className='fill-yellow-400 dark:fill-white' d='M14.7 44.4l4.8-4.9c-1.7-.4-3.3-1-4.7-2l-.1 6.9' />
                 <path className='fill-yellow-400 dark:fill-white' d='M30.3 6.6l-4.8 4.9c1.7.4 3.3 1 4.7 2l.1-6.9' />
