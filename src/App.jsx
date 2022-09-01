@@ -334,7 +334,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-[#740EF5] rounded-full py-4 px-6 mb-4'>
+        <div className='break-inside flex items-center justify-between bg-[#740EF5] rounded-full py-4 px-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div>
               <dt className='sr-only'>Users</dt>
@@ -358,7 +358,7 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='break-inside flex items-center justify-between bg-[#FFF614] rounded-full p-6 mb-4'>
+        <div className='break-inside flex items-center justify-between bg-[#FFF614] rounded-full p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div>
               <dt className='sr-only'>Users</dt>
@@ -401,7 +401,7 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
-          <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
+          <img className='flex-none w-16 object-cover' src='https://randomuser.me/api/portraits/women/45.jpg' alt='avatar' />
           <div className='flex-auto'>
             <a href='#' className='text-base font-bold block'>Julia Robert</a>
             <span className='text-slate-600 dark:text-slate-400'>Frontend Development</span>
@@ -414,7 +414,7 @@ function App () {
             <a href='#' className='font-bold block'>Fermin vargas</a>
             <span className='text-slate-600 dark:text-slate-400'>Construction manager</span>
           </div>
-          <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+          <img className='flex-none w-16 object-cover' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
         </div>
 
         {/** widget */}
@@ -557,6 +557,49 @@ function App () {
                 </linearGradient>
               </defs>
             </svg>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center flex-row justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='flex flex-col items-start space-y-1'>
+            <span className='uppercase text-xs font-medium text-slate-600 dark:text-slate-400'>CURRENT PRICE</span>
+            <div className='flex items-center justify-center space-x-2'>
+              <h5 className='font-bold'>€453.000</h5>
+              <span className='px-2 py-[2px] text-xs rounded-md bg-[#D1FFD6] text-black'>-082%</span>
+            </div>
+            <p className='text-xs'>Update now - 3:23AM</p>
+          </div>
+          <div className='flex flex-col space-y-2'>
+            <div className='flex flex-row items-center'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='currentColor' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                <path d='M17 17L7.8 7.7M7 17V7h10' />
+              </svg>
+              <span className='font-bold block'>Upward</span>
+            </div>
+            <div>
+              <svg width='137' height='30' viewBox='0 0 141 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <g filter='url(#filter0_d_228_43)'>
+                  <path d='M5 1.06827C21.6434 0.767281 22.9399 12.3208 34.9648 17.0373C40.1853 19.085 49.7907 6.92438 50.5584 9.19207C52.0191 13.5068 56.5137 13.1684 59.691 15.8304C62.3177 18.031 66.82 17.223 70.2031 17.223C71.4937 17.223 70.5663 21.5846 71.8795 22.3604C76.5857 25.1406 100.925 -1.04184 101.181 7.6911C101.267 10.6171 104.228 14.784 107.729 14.9638C112.327 15.2001 116.088 13.9989 118.887 18.0586C121.415 21.7246 125.071 23.9078 129.941 23.9078C133.089 23.9078 132.858 20.66 136 24.0625' stroke='url(#paint0_linear_228_43)' strokeWidth='2' strokeLinecap='round' />
+                </g>
+                <defs>
+                  <filter id='filter0_d_228_43' x='0' y='0.0625' width='141' height='33' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>
+                    <feFlood floodOpacity='0' result='BackgroundImageFix' />
+                    <feColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha' />
+                    <feOffset dy='4' />
+                    <feGaussianBlur stdDeviation='2' />
+                    <feComposite in2='hardAlpha' operator='out' />
+                    <feColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0' />
+                    <feBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_228_43' />
+                    <feBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_228_43' result='shape' />
+                  </filter>
+                  <linearGradient id='paint0_linear_228_43' x1='5' y1='1.0625' x2='139.386' y2='19.4725' gradientUnits='userSpaceOnUse'>
+                    <stop stopColor='#7000FF' />
+                    <stop offset='1' stopColor='#EA00B6' />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
           </div>
         </div>
 
@@ -1130,12 +1173,12 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 text-base dark:bg-slate-800 dark:text-white'>
-          <img className='flex-none w-20 h-20 object-cover' src='https://randomuser.me/api/portraits/women/52.jpg' alt='avatar' />
+          <img className='flex-none w-16 object-cover' src='https://randomuser.me/api/portraits/women/52.jpg' alt='avatar' />
           <div className='flex-auto'>
             <a href='#' className='font-bold block'>Maria</a>
           </div>
-          <button className='inline-flex justify-center items-center rounded-full p-3 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
-            <svg viewBox='0 0 24 24' height='26' width='26'>
+          <button className='inline-flex justify-center items-center rounded-full p-2 transition-all hover:bg-slate-100 dark:hover:bg-slate-600'>
+            <svg viewBox='0 0 24 24' height='22' width='22'>
               <path fill='currentColor' d='M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z' />
             </svg>
           </button>
@@ -1143,17 +1186,17 @@ function App () {
 
         {/** widget */}
         <div className='break-inside flex items-center space-x-4 bg-white rounded-xl overflow-hidden pr-4 mb-4 dark:bg-slate-800 dark:text-white'>
-          <img className='flex-none w-20 h-20' src='https://randomuser.me/api/portraits/men/51.jpg' alt='avatar' />
+          <img className='flex-none w-16' src='https://randomuser.me/api/portraits/men/51.jpg' alt='avatar' />
           <div className='flex-auto'>
             <a href='#' className='font-bold block'>Jhonny</a>
           </div>
-          <button className='inline-flex justify-center items-center rounded-md py-2 px-3 font-medium tracking-wide text-sm transition-all bg-violet-500 text-white hover:bg-violet-600 active:bg-violet-700'>Button</button>
+          <button className='inline-flex justify-center items-center rounded-md py-1 px-3 font-medium tracking-wide text-sm transition-all bg-violet-500 text-white hover:bg-violet-600 active:bg-violet-700'>Button</button>
         </div>
 
         {/** widget */}
         <div className='break-inside flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <svg width='52' height='52' viewBox='0 0 64 64' aria-hidden='true' role='img' className='iconify iconify--emojione' preserveAspectRatio='xMidYMid meet'>
+            <svg width='44' height='44' viewBox='0 0 64 64' aria-hidden='true' role='img' className='iconify iconify--emojione' preserveAspectRatio='xMidYMid meet'>
               <g fill='currentColor'>
                 <path className='fill-yellow-400 dark:fill-white' d='M14.7 44.4l4.8-4.9c-1.7-.4-3.3-1-4.7-2l-.1 6.9' />
                 <path className='fill-yellow-400 dark:fill-white' d='M30.3 6.6l-4.8 4.9c1.7.4 3.3 1 4.7 2l.1-6.9' />
@@ -1196,11 +1239,11 @@ function App () {
             <div className='font-bold block text-lg'> New </div>
             <div className='font-bold block text-lg'> Releases </div>
           </div>
-          <img className='flex-none w-24 h-24 object-cover rotate-12 rounded-full -mb-8 -mr-10' src='https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
+          <img className='flex-none w-20 h-20 object-cover rotate-12 rounded-full -mb-8 -mr-8' src='https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt='cover' />
         </div>
 
         {/** widget */}
-        <a href='#' className='break-inside flex items-center justify-center space-x-4 bg-slate-100 rounded-xl overflow-hidden transition-all p-6 mb-4 dark:bg-slate-800 dark:text-white'>
+        <a href='#' className='break-inside flex items-center justify-center space-x-4 bg-slate-100 rounded-xl overflow-hidden transition-all p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <svg width='28' height='28' viewBox='0 0 24 24'>
             <path fill='currentColor' d='M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z' />
           </svg>
@@ -1224,7 +1267,7 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-yellow-100 rounded-full p-4 mb-4'>
           <div className='flex items-center space-x-4'>
             <div className='overflow-hidden rounded-full border-2 border-black'>
-              <img className='flex-none w-12 h-12 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/men/3.jpg' alt='avatar' />
+              <img className='flex-none w-11 h-11 rounded-full object-cover border-2 border-white' src='https://randomuser.me/api/portraits/men/3.jpg' alt='avatar' />
             </div>
             <div className='flex-auto'>
               <a href='#' className='font-bold block'>Marc Andress</a>
@@ -1315,10 +1358,10 @@ function App () {
               <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-11 h-11 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
+                  <img className='w-10 h-10 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/women/46.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-11 h-11 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
+                  <img className='w-10 h-10 rounded-full bg-slate-100 border-2 border-[#503D9C]' src='https://randomuser.me/api/portraits/men/45.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
@@ -1341,7 +1384,7 @@ function App () {
         {/* widget */}
         <div className='break-inside flex justify-between bg-white items-center rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <div className='flex flex-none justify-center items-center w-11 h-11 bg-[#12C6DE] rounded-full font-medium text-white text-xl ring-2 ring-[#12C6DE] border-2 border-white dark:border-slate-700'>
+            <div className='flex flex-none justify-center items-center w-10 h-10 bg-[#12C6DE] rounded-full font-medium text-white text-xl ring-2 ring-[#12C6DE] border-2 border-white dark:border-slate-700'>
               <span>M</span>
             </div>
             <div className='flex flex-col'>
@@ -1373,7 +1416,7 @@ function App () {
 
         {/* widget */}
         <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800'>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Javascript</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1381,7 +1424,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='text-sm font-medium'>React</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1393,7 +1436,7 @@ function App () {
 
         {/* widget */}
         <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800'>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1401,7 +1444,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1409,7 +1452,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-red-100 rounded-lg space-x-1 dark:bg-red-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-red-100 rounded-lg space-x-1 dark:bg-red-300'>
             <span className='font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1421,7 +1464,7 @@ function App () {
 
         {/* widget */}
         <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800'>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1429,7 +1472,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1437,7 +1480,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1445,7 +1488,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>css</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1453,7 +1496,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-red-100 rounded-lg space-x-1 dark:bg-red-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-red-100 rounded-lg space-x-1 dark:bg-red-300'>
             <span className='font-medium'>Material</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1461,7 +1504,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Solid</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1469,7 +1512,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-green-300'>
             <span className='font-medium'>Figma</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1484,7 +1527,7 @@ function App () {
 
         {/* widget */}
         <div className='break-inside flex flex-row justify-start bg-white items-center rounded-xl p-3 mb-4 gap-2 flex-wrap text-sm dark:bg-slate-800 dark:text-white'>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
             <span className='font-medium'>Angular</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1492,7 +1535,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
             <span className='font-medium'>Svelte</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1500,7 +1543,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
             <span className='font-medium'>Next</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1508,7 +1551,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
             <span className='font-medium'>css</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1516,7 +1559,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
             <span className='font-medium'>Bootstrap</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1524,7 +1567,7 @@ function App () {
               </svg>
             </button>
           </span>
-          <span className='cursor-pointer flex items-center px-2 py-1 bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
+          <span className='cursor-pointer flex items-center px-2 py-[2px] bg-green-100 rounded-lg space-x-1 dark:bg-slate-600'>
             <span className='font-medium'>Material</span>
             <button className='flex items-center justify-center p-2'>
               <svg width='10' height='10' viewBox='0 0 7 7' fill='none' xmlns='http://www.w3.org/2000/svg'>
@@ -1588,7 +1631,7 @@ function App () {
         <div className='break-inside flex items-center justify-between bg-black text-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-900'>
           <div className='flex items-center space-x-4'>
             <div className='relative flex flex-row items-center justify-center w-[4.5rem] h-[4.5rem]'>
-              <svg width='60' height='60' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='55' height='55' viewBox='0 0 64 64' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M64 32C64 49.6731 49.6731 64 32 64C14.3269 64 0 49.6731 0 32C0 14.3269 14.3269 2.3509e-05 32 2.3509e-05C49.6731 2.3509e-05 64 14.3269 64 32ZM6.13666 32C6.13666 46.284 17.7161 57.8634 32 57.8634C46.2839 57.8634 57.8633 46.284 57.8633 32C57.8633 17.7161 46.2839 6.13668 32 6.13668C17.7161 6.13668 6.13666 17.7161 6.13666 32Z' fill='#3C3C3C' />
                 <path d='M20.0412 5.65559C19.3408 4.11254 20.0205 2.2786 21.6235 1.72908C27.1738 -0.173579 33.1614 -0.519827 38.9281 0.759001C45.6969 2.26006 51.795 5.91887 56.3049 11.1848C60.8148 16.4508 63.4924 23.039 63.9348 29.9581C64.3117 35.8528 63.0489 41.716 60.3154 46.9078C59.5259 48.4072 57.6093 48.7968 56.1923 47.8674C54.7753 46.9381 54.3984 45.0422 55.1535 43.5252C57.1768 39.4605 58.1027 34.9168 57.8106 30.3497C57.4531 24.7575 55.2889 19.4327 51.6439 15.1766C47.9989 10.9205 43.0702 7.96331 37.5995 6.75011C33.1316 5.7593 28.4996 5.97546 24.1721 7.34971C22.557 7.8626 20.7417 7.19864 20.0412 5.65559Z' fill='white' />
               </svg>
@@ -2159,12 +2202,12 @@ function App () {
             <span className='text-slate-400'>03:12 PM</span>
           </div>
           <div className='flex items-start space-x-3'>
-            <svg width='45' height='45' viewBox='0 0 1024 1024' fill='#232f3e'>
+            <svg width='50' height='50' viewBox='0 0 1024 1024' fill='#232f3e'>
               <circle cx='512' cy='512' r='512' />
               <path fill='white' d='M400.3 479.1c0 6.3.7 11.4 1.9 15.1 1.4 3.8 3.1 7.9 5.5 12.3.9 1.3 1.2 2.7 1.2 3.9 0 1.7-1 3.4-3.2 5.1l-10.7 7.1c-1.3.9-2.8 1.5-4.4 1.5-1.7 0-3.4-.9-5.1-2.4-2.3-2.5-4.3-5.1-6.1-8-1.9-3.3-3.7-6.6-5.3-10-13.3 15.7-30 23.5-50.1 23.5-14.3 0-25.7-4.1-34-12.2-8.3-8.2-12.6-19.1-12.6-32.7 0-14.5 5.1-26.2 15.5-35.1 10.4-8.9 24.2-13.3 41.7-13.3 5.8 0 11.8.5 18 1.4 6.3.9 12.8 2.2 19.6 3.8v-12.4c0-12.9-2.7-22-8-27.2-5.4-5.3-14.6-7.8-27.7-7.8-6 0-12.1.7-18.4 2.2s-12.4 3.4-18.4 5.8c-1.9.9-3.9 1.6-6 2.2-.9.3-1.8.4-2.7.5-2.4 0-3.6-1.7-3.6-5.3v-8.3c0-2.7.3-4.8 1.2-6 1.3-1.5 2.9-2.8 4.8-3.6 6-3.1 13.1-5.6 21.4-7.7 8.7-2.2 17.6-3.3 26.6-3.2 20.3 0 35.1 4.6 44.6 13.8 9.4 9.2 14.1 23.1 14.1 41.9v55.2l.2-.1zM331.2 505c5.6 0 11.4-1 17.5-3.1 6.1-2 11.6-5.8 16.2-10.9 2.7-3.2 4.8-6.8 5.8-10.9 1-4.1 1.7-9 1.7-14.8v-7.1c-5.2-1.3-10.4-2.2-15.7-2.9-5.3-.7-10.7-1-16-1-11.4 0-19.8 2.2-25.4 6.8-5.6 4.6-8.3 11.1-8.3 19.6 0 8 2 14 6.3 18 4.1 4.3 10 6.3 17.9 6.3zm136.7 18.4c-3.1 0-5.1-.5-6.5-1.7-1.4-1-2.6-3.4-3.6-6.6l-40-131.6c-.8-2.2-1.3-4.5-1.5-6.8 0-2.7 1.4-4.3 4.1-4.3h16.7c3.2 0 5.4.5 6.6 1.7 1.4 1 2.4 3.4 3.4 6.7l28.6 112.7 26.6-112.7c.9-3.4 1.9-5.6 3.2-6.7 2-1.3 4.4-1.9 6.8-1.7H526c3.2 0 5.5.5 6.8 1.7 1.3 1 2.6 3.4 3.2 6.7l26.9 114.1 29.5-114.1c1-3.4 2.2-5.6 3.4-6.7 2-1.3 4.3-1.9 6.6-1.7h15.9c2.7 0 4.3 1.4 4.3 4.3 0 .9-.2 1.7-.4 2.7-.3 1.5-.7 2.9-1.2 4.3l-41 131.6c-1 3.4-2.2 5.6-3.6 6.6-1.9 1.2-4.2 1.8-6.5 1.7h-14.7c-3.2 0-5.4-.5-6.8-1.7-1.3-1.2-2.5-3.4-3.2-6.8l-26.4-109.8L492.6 515c-.9 3.4-1.9 5.6-3.2 6.8-1.4 1.2-3.8 1.7-6.8 1.7l-14.7-.1zm218.8 4.6c-8.9 0-17.7-1-26.2-3.1-8.5-2-15.1-4.3-19.6-6.8-2.7-1.5-4.6-3.2-5.3-4.8-.7-1.5-1-3.1-1-4.8v-8.7c0-3.6 1.4-5.3 3.9-5.3 1 0 2 .2 3.1.5 1 .3 2.6 1 4.3 1.7 5.8 2.6 12.1 4.6 18.7 6 6.8 1.4 13.4 2 20.3 2 10.7 0 19.1-1.9 24.9-5.6 5.6-3.4 9-9.6 8.9-16.2.1-4.4-1.5-8.7-4.6-11.9-3.1-3.2-8.9-6.1-17.2-8.9l-24.7-7.7c-12.4-3.9-21.6-9.7-27.2-17.3-5.5-7.1-8.5-15.8-8.5-24.7 0-7.1 1.6-13.4 4.6-18.9 3.1-5.4 7.1-10.2 12.3-14 5.1-3.9 10.9-6.8 17.7-8.9 6.8-2 14-2.9 21.5-2.9 3.7 0 7.7.2 11.4.7 3.9.5 7.5 1.2 11.1 1.9 3.4.9 6.7 1.7 9.7 2.7 3.1 1 5.5 2 7.2 3.1 2 1 3.8 2.5 5.1 4.3 1.1 1.7 1.6 3.6 1.5 5.6v8c0 3.6-1.4 5.5-3.9 5.5-2.3-.3-4.5-1-6.5-2-10.3-4.5-21.4-6.8-32.7-6.6-9.7 0-17.4 1.5-22.7 4.8-5.3 3.2-8 8.2-8 15.1 0 4.8 1.7 8.9 5.1 12.1 3.4 3.2 9.7 6.5 18.7 9.4l24.2 7.6c12.2 3.9 21.1 9.4 26.4 16.4 5.3 7 7.8 15 7.8 23.8 0 7.3-1.5 14-4.4 19.8-3.1 5.8-7.2 10.9-12.4 15-5.3 4.3-11.6 7.3-18.9 9.5-7.9 2.4-15.9 3.6-24.6 3.6zm32.2 82.7c-56 41.4-137.4 63.3-207.4 63.3-98.1 0-186.5-36.3-253.2-96.6-5.3-4.8-.5-11.2 5.8-7.5 72.2 41.9 161.3 67.3 253.4 67.3 62.2 0 130.4-12.9 193.3-39.5 9.3-4.2 17.3 6.2 8.1 13zm23.3-26.5c-7.2-9.2-47.4-4.4-65.6-2.2-5.4.7-6.3-4.1-1.3-7.7 32-22.5 84.6-16 90.8-8.5 6.1 7.7-1.7 60.3-31.7 85.5-4.6 3.9-9 1.9-7-3.2 6.8-16.9 22-54.9 14.8-63.9z' />
             </svg>
             <div>
-              <h5 className='font-bold text-base mb-2'>Amazon</h5>
+              <h5 className='font-bold text-base mb-1'>Amazon</h5>
               <div className='flex items-center'>
                 <span className='mr-2 p-1 bg-slate-200 rounded-md'>
                   <svg width='14' height='14' viewBox='0 0 24 24'>
@@ -2172,14 +2215,6 @@ function App () {
                   </svg>
                 </span>
                 <span className='mr-1'>Last view july 23</span>
-              </div>
-              <div className='mt-1'>
-                <a href='#' className='text-blue-500 font-medium inline-flex items-center'>
-                  If was not you?, click here
-                  <svg width='18' height='18' viewBox='0 0 24 24' className='ml-2'>
-                    <path fill='currentColor' d='M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z' />
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
