@@ -626,7 +626,7 @@ function App () {
                   <path d='M4 1.03702C20.6434 0.736031 21.9399 12.2896 33.9648 17.0061C39.1853 19.0537 46.7323 20.0614 47.5 22.3291C48.9607 26.6439 55.5137 13.1371 58.691 15.7991C61.3177 17.9998 66.6169 10.5 70 10.5C71.2905 10.5 69.5663 21.5533 70.8795 22.3291C75.5857 25.1094 99.9248 -1.07309 100.181 7.65985C100.267 10.5859 103.228 14.7527 106.729 14.9326C111.327 15.1688 115.088 13.9676 117.887 18.0274C120.415 21.6933 124.071 23.8765 128.941 23.8765C132.089 23.8765 131.858 20.6288 135 24.0312' stroke='url(#paint0_linear_417_13)' strokeWidth='2' strokeLinecap='round' />
                 </g>
                 <g filter='url(#filter1_d_417_13)'>
-                  <path d='M19 1C30.5 8.49999 21.9399 16.2896 33.9648 21.0061C39.1853 23.0537 48.7907 10.8931 49.5584 13.1608C51.2366 18.118 67.8515 24.5403 70.8795 26.3291C75.5857 29.1094 97.244 8.76707 97.5 17.5C97.5858 20.426 103.228 18.7528 106.729 18.9326C111.327 19.1688 116.2 4.44024 119 8.49999C121.528 12.1659 124.071 27.8765 128.941 27.8765C132.089 27.8765 131.858 24.6288 135 28.0313' stroke='url(#paint1_linear_417_13)' stroke-width='2' stroke-linecap='round' />
+                  <path d='M19 1C30.5 8.49999 21.9399 16.2896 33.9648 21.0061C39.1853 23.0537 48.7907 10.8931 49.5584 13.1608C51.2366 18.118 67.8515 24.5403 70.8795 26.3291C75.5857 29.1094 97.244 8.76707 97.5 17.5C97.5858 20.426 103.228 18.7528 106.729 18.9326C111.327 19.1688 116.2 4.44024 119 8.49999C121.528 12.1659 124.071 27.8765 128.941 27.8765C132.089 27.8765 131.858 24.6288 135 28.0313' stroke='url(#paint1_linear_417_13)' strokeWidth='2' strokeLinecap='round' />
                 </g>
                 <defs>
                   <filter id='filter0_d_417_13' x='0' y='0.03125' width='139' height='32' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>
@@ -862,7 +862,7 @@ function App () {
           <div className='flex items-center justify-between'>
             <div className='flex items-center justify-center space-x-3 font-medium'>
               <span>Spain</span>
-              <svg width='32' height='32' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='28' height='28' viewBox='0 0 42 42' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.375 21C0.375 25.0562 1.54375 28.8375 3.5375 32H38.3937C40.3875 28.8375 41.5563 25.0562 41.5563 21C41.5563 16.9437 40.3875 13.1625 38.3937 10H3.5375C1.54375 13.1625 0.375 16.9437 0.375 21Z' fill='#FFCE31' />
                 <path d='M38.4625 10C34.8188 4.225 28.3563 0.375 21 0.375C13.6438 0.375 7.18125 4.225 3.5375 10H38.4625Z' fill='#ED4C5C' />
                 <path d='M3.5375 32C7.18125 37.775 13.6438 41.625 21 41.625C28.3563 41.625 34.8188 37.775 38.4625 32H3.5375Z' fill='#ED4C5C' />
@@ -910,14 +910,14 @@ function App () {
               </svg>
             </div>
             <div className='flex items-center justify-center space-x-3'>
-              <div className='flex items-center justify-between bg-slate-100 rounded-2xl px-4 py-2 font-medium space-x-1 dark:bg-slate-500 dark:text-white'>
+              <div className='flex items-center justify-between bg-slate-100 rounded-2xl px-4 py-1 font-medium space-x-1 dark:bg-slate-500 dark:text-white'>
                 <span>0</span>
                 <i>:</i>
                 <span>0</span>
               </div>
             </div>
             <div className='flex items-center justify-center space-x-3 font-medium'>
-              <svg width='32' height='32' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+              <svg width='28' height='28' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.712524 11.6547C0.712524 16.5672 3.86252 20.7297 8.21252 22.2672V1.04216C3.86252 2.57966 0.712524 6.74216 0.712524 11.6547Z' fill='#428BC1' />
                 <path d='M23.2125 11.6547C23.2125 6.74216 20.1 2.57966 15.7125 1.04216V22.2672C20.1 20.7297 23.2125 16.5672 23.2125 11.6547Z' fill='#ED4C5C' />
                 <path d='M8.21252 22.2672C9.37502 22.6797 10.65 22.9047 11.9625 22.9047C13.275 22.9047 14.55 22.6797 15.7125 22.2672V1.04216C14.55 0.629663 13.3125 0.404663 11.9625 0.404663C10.6125 0.404663 9.37502 0.629663 8.21252 1.04216V22.2672Z' fill='white' />
@@ -1664,17 +1664,17 @@ function App () {
         {/** widget */}
         <div className='break-inside relative flex items-center justify-between bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center space-x-4'>
-            <img className='flex-none w-14 h-14 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
+            <img className='flex-none w-12 h-12 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/95.jpg' alt='avatar' />
             <div className='flex-auto space-y-1'>
-              <a href='#' className='text-base font-bold block'>Marloon Flick</a>
-              <div className='flex items-center gap-2'>
-                <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
+              <a href='#' className='text-sm font-bold block'>Marloon Flick</a>
+              <div className='flex items-center space-x-1'>
+                <span className='cursor-pointer flex items-center py-[3px] px-2 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
                   <span className='text-xs font-medium'>Angular</span>
                 </span>
-                <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
+                <span className='cursor-pointer flex items-center py-[3px] px-2 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
                   <span className='text-xs font-medium'>Svelte</span>
                 </span>
-                <span className='cursor-pointer flex items-center p-1 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
+                <span className='cursor-pointer flex items-center py-[3px] px-2 bg-[#EFEFFF] rounded-lg dark:bg-slate-600'>
                   <span className='text-xs font-medium'>Nextjs</span>
                 </span>
               </div>
@@ -2469,7 +2469,7 @@ function App () {
         {/** widget */}
         <div className='break-inside relative flex items-start justify-between bg-white rounded-xl py-4 pr-4 mb-4 text-xs dark:bg-slate-800 dark:text-white'>
           <div className='flex items-start space-x-4 pl-3 border-l-4 border-violet-500'>
-            <img className='flex-none w-10 h-10 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/44.jpg' alt='avatar' />
+            <img className='flex-none w-10 h-10 rounded-full object-cover' src='https://randomuser.me/api/portraits/women/44.jpg' alt='avatar' />
             <div className='flex-auto space-y-1'>
               <div className='flex items-center space-x-1'>
                 <a href='#' className='font-bold'>Esther Howard</a>
@@ -2485,9 +2485,37 @@ function App () {
               </div>
             </div>
           </div>
-          <div className='flex flex-col space-y-2'>
+          <div className='flex flex-col items-center space-y-2'>
             <span className='mt-[1px] text-slate-500 dark:text-slate-400'>Now</span>
-            <span className='flex items-center justify-center rounded-full w-6 h-6 font-mniudm bg-violet-500 text-white'> 2 </span>
+            <span className='flex items-center justify-center rounded-full w-5 h-5 font-mniudm bg-violet-500 text-white'> 2 </span>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside relative flex items-start justify-between bg-white rounded-xl py-4 pr-4 mb-4 text-xs dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-start space-x-4 pl-3 border-l-4 border-blue-600'>
+            <div className='relative flex-none'>
+              <img className='flex-none w-10 h-10 rounded-full object-cover' src='https://randomuser.me/api/portraits/men/44.jpg' alt='avatar' />
+              <span className='absolute -bottom-1 right-0 rounded-full w-[14px] h-[14px] border-2 border-white bg-green-500'></span>
+            </div>
+            <div className='flex-auto space-y-1'>
+              <div className='flex items-center space-x-1'>
+                <a href='#' className='font-bold'>Robert Fox</a>
+                <span className='fill-blue-600'>
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='16' height='16'>
+                    <path fill='fill-blue-500' d='M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z' />
+                  </svg>
+                </span>
+                <span className='text-slate-500 dark:text-slate-400'>Engineer</span>
+              </div>
+              <div className='flex items-center gap-2'>
+                <p className='text-slate-600 dark:text-slate-400'>Hi, I've been calling you and your phone doesn't ring, what's...</p>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col items-center space-y-2'>
+            <span className='mt-[1px] text-slate-500 dark:text-slate-400'>Now</span>
+            <span className='flex items-center justify-center rounded-full w-5 h-5 font-mniudm bg-blue-600 text-white'> 6 </span>
           </div>
         </div>
 
