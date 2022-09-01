@@ -2577,7 +2577,33 @@ function App () {
           <div className='flex flex-col items-center space-y-1 text-base font-bold'>
             <span>38 Gb</span>
             <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
-              <div className='absolute left-0 w-1/3 h-full bg-pink-500' />
+              <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
+        <div className='break-inside flex items-center justify-between rounded-xl p-4 mb-4 text-sm bg-white dark:bg-slate-800 dark:text-gray-50'>
+          <div className='flex items-center space-x-4'>
+            <div className='flex items-center justify-center'>
+              <svg width="37" height="34" viewBox="0 0 37 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.79724 28.7827L4.42898 31.596C4.76805 32.1884 5.2554 32.6538 5.8276 32.9923C7.46657 30.9156 8.6072 29.322 9.25007 28.2115C9.90234 27.0846 10.704 25.3217 11.6552 22.9231C9.09181 22.5862 7.14933 22.4179 5.82774 22.4179C4.5592 22.4179 2.61672 22.5862 0 22.9231C0 23.5788 0.169534 24.2346 0.508601 24.827L2.79724 28.7827Z" fill="#0066DA"/>
+                <path d="M31.1724 32.9923C31.7447 32.6538 32.2321 32.1884 32.571 31.5962L33.2492 30.4327L36.4915 24.827C36.8243 24.2474 36.9996 23.5911 37 22.9231C34.3681 22.5862 32.4292 22.4179 31.1831 22.4179C29.8439 22.4179 27.9049 22.5862 25.366 22.9231C26.3059 25.3348 27.0971 27.0977 27.7395 28.2115C28.3874 29.3352 29.5317 30.9287 31.1724 32.9923Z" fill="#EA4335"/>
+                <path d="M18.5 11.0769C20.3962 8.79086 21.7031 7.02798 22.4204 5.78852C22.9981 4.79043 23.6339 3.19677 24.3276 1.0077C23.7554 0.669234 23.0985 0.5 22.4204 0.5H14.5796C13.9015 0.5 13.2447 0.690442 12.6724 1.0077C13.5549 3.51836 14.3039 5.3052 14.919 6.36807C15.5988 7.54275 16.7925 9.11231 18.5 11.0769Z" fill="#00832D"/>
+                <path d="M25.3448 22.9231H11.6552L5.8276 32.9923C6.39965 33.3308 7.05668 33.5 7.73482 33.5H29.2652C29.9433 33.5 30.6003 33.3097 31.1724 32.9923L25.3448 22.9231Z" fill="#2684FC"/>
+                <path d="M18.5 11.0769L12.6724 1.0077C12.1001 1.34617 11.6128 1.8116 11.2738 2.40399L0.508601 21.0193C0.175767 21.5988 0.000439729 22.2551 0 22.9231H11.6552L18.5 11.0769Z" fill="#00AC47"/>
+                <path d="M31.109 11.7116L25.7262 2.40384C25.3873 1.81145 24.8998 1.34617 24.3276 1.0077L18.5 11.0769L25.3448 22.9231H36.9789C36.9789 22.2672 36.8094 21.6117 36.4703 21.0193L31.109 11.7116Z" fill="#FFBA00"/>
+              </svg>
+            </div>
+            <div className='flex-auto'>
+              <a href='#' className='text-base font-bold block'>Google drive</a>
+              <span className='text-sm text-slate-600 dark:text-gray-400'>543 files</span>
+            </div>
+          </div>
+          <div className='flex flex-col items-center space-y-1 text-base font-bold'>
+            <span>10 Gb</span>
+            <div className='relative w-full h-1 bg-slate-100 rounded-sm overflow-hidden dark:bg-slate-600'>
+              <div className='absolute left-0 w-1/3 h-full bg-[#00AC47]' />
             </div>
           </div>
         </div>
