@@ -2257,6 +2257,28 @@ function App () {
           </span>
         </div>
 
+        {/** widget */}
+        <div className='break-inside flex flex-row  gap-4'>
+          <a href='#' className='flex flex-col w-1/2 items-center justify-between space-y-2 text-sm text-center bg-gradient-to-t from-[#e1004f] to-[#ca0094] text-white rounded-xl p-4 mb-4'>
+            <svg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='1' strokeLinecap='round' strokeLinejoin='round'><circle cx='5.5' cy='17.5' r='2.5' />
+              <circle cx='17.5' cy='15.5' r='2.5' />
+              <path d='M8 17V5l12-2v12' />
+            </svg>
+            <h1 className='text-base font-medium'>Play your favorite songs</h1>
+            <button className='px-1 w-full rounded-full py-2 font-medium bg-white text-black'>Try now</button>
+          </a>
+          <a href='#' className='flex flex-col w-1/2 items-center justify-between overflow-hidden text-sm bg-gradient-to-r from-[#7400e1] to-[#5b00ca] text-white rounded-xl mb-4'>
+            <div>
+              <img src='https://images.pexels.com/photos/9008803/pexels-photo-9008803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' className='object-cover w-full h-32' alt='cover'/>
+            </div>
+            <div className='flex flex-col items-start w-full p-4'>
+              <h1 className='font-medium'>Sultans Of Swing</h1>
+              <span className='text-xs'>Dire Straits</span>
+            </div>
+          </a>
+        </div>
+        
+
       </div>
     </div>
   )
