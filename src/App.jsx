@@ -2257,8 +2257,8 @@ function App () {
           </span>
         </div>
 
-        {/** widget */}
-        <div className='break-inside flex flex-row  gap-4'>
+        {/** widgets */}
+        <div className='break-inside flex flex-row w-full gap-4'>
           <a href='#' className='flex flex-col w-1/2 items-center justify-between space-y-2 text-sm text-center bg-gradient-to-t from-[#e1004f] to-[#ca0094] text-white rounded-xl p-4 mb-4'>
             <svg xmlns='http://www.w3.org/2000/svg' width='45' height='45' viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='1' strokeLinecap='round' strokeLinejoin='round'><circle cx='5.5' cy='17.5' r='2.5' />
               <circle cx='17.5' cy='15.5' r='2.5' />
@@ -2278,8 +2278,8 @@ function App () {
           </a>
         </div>
 
-        {/** widget */}
-        <div className='break-inside flex flex-row  gap-4'>
+        {/** widgets */}
+        <div className='break-inside flex flex-row w-full gap-4'>
           <a href='#' className='flex flex-col w-1/2 items-center justify-between overflow-hidden text-sm bg-white text-black dark:bg-slate-800 dark:text-white rounded-xl mb-4'>
             <div className='relative'>
               <button className='absolute right-2 top-2 flex items-center justify-center rounded-full p-1 transition-all bg-white text-black'>
@@ -2335,6 +2335,20 @@ function App () {
             </div>
           </a>
         </div>
+
+        <a href='#' className='break-inside flex bg-white rounded-xl overflow-hidden mb-4 text-sm text-white'>
+          <div className='relative'>
+            <div className='absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-[#000000] to-[#00000000]'>
+              <div className='flex items-center flex-row justify-between'>
+                <div className='mr-auto'>
+                  <span>Music</span>
+                  <h3 className='font-medium text-base'>Cameron Williamson</h3>
+                </div>
+              </div>
+            </div>
+            <img src='https://images.pexels.com/photos/2479312/pexels-photo-2479312.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' className='object-cover' />
+          </div>
+        </a>
 
       </div>
     </div>
