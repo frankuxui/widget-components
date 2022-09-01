@@ -245,7 +245,7 @@ function App () {
               </svg>
               <h5 className='font-medium text-base'>Improve large organization onboarding</h5>
             </div>
-            <button className='flex items-center justify-center hover:bg-slate-200 dark:hover:bg-red-600 rounded-full p-1 transition-all'>
+            <button className='flex items-center justify-center hover:bg-slate-200 dark:hover:bg-slate-600 rounded-full p-1 transition-all'>
               <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' fill='currentColor' />
               </svg>
@@ -2269,7 +2269,7 @@ function App () {
           </a>
           <a href='#' className='flex flex-col w-1/2 items-center justify-between overflow-hidden text-sm bg-gradient-to-r from-[#7400e1] to-[#5b00ca] text-white rounded-xl mb-4'>
             <div>
-              <img src='https://images.pexels.com/photos/9008803/pexels-photo-9008803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' className='object-cover w-full h-32' alt='cover'/>
+              <img src='https://images.pexels.com/photos/9008803/pexels-photo-9008803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' className='object-cover' alt='cover' />
             </div>
             <div className='flex flex-col items-start w-full p-4'>
               <h1 className='font-medium'>Sultans Of Swing</h1>
@@ -2277,7 +2277,64 @@ function App () {
             </div>
           </a>
         </div>
-        
+
+        {/** widget */}
+        <div className='break-inside flex flex-row  gap-4'>
+          <a href='#' className='flex flex-col w-1/2 items-center justify-between overflow-hidden text-sm bg-white text-black dark:bg-slate-800 dark:text-white rounded-xl mb-4'>
+            <div className='relative'>
+              <button className='absolute right-2 top-2 flex items-center justify-center rounded-full p-1 transition-all bg-white text-black'>
+                <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' fill='currentColor' />
+                </svg>
+              </button>
+              <button className='flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-10 h-10 transition-all bg-[#000000c1] hover:bg-black'>
+                <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#ffffff' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                  <polygon points='5 3 19 12 5 21 5 3' />
+                </svg>
+              </button>
+              <img src='https://images.pexels.com/photos/185030/pexels-photo-185030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' className='object-cover' alt='cover' />
+            </div>
+            <div className='flex flex-col items-start w-full p-4 space-y-2'>
+              <div>
+                <h1 className='font-medium'>You Don't Know</h1>
+                <span className='text-xs'>Smoove & Turell</span>
+              </div>
+              <button className='flex items-center justify-center text-xs rounded-full px-2 py-1 space-x-1 bg-black text-white dark:bg-white dark:text-black'>
+                <svg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' width='14' height='14'>
+                  <path fill='currentColor' d='M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701' />
+                </svg>
+                <span className='mt-[1px]'>Music</span>
+              </button>
+            </div>
+          </a>
+          <a href='#' className='flex flex-col w-1/2 items-center justify-between overflow-hidden text-sm bg-[#009f94] text-white rounded-xl mb-4'>
+            <div className='relative'>
+              <button className='absolute right-2 top-2 flex items-center justify-center hover:bg-white hover:text-black rounded-full p-1 transition-all'>
+                <svg width='22' height='22' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'>
+                  <path d='M12,16A2,2 0 0,1 14,18A2,2 0 0,1 12,20A2,2 0 0,1 10,18A2,2 0 0,1 12,16M12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10M12,4A2,2 0 0,1 14,6A2,2 0 0,1 12,8A2,2 0 0,1 10,6A2,2 0 0,1 12,4Z' fill='currentColor' />
+                </svg>
+              </button>
+              <button className='flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-10 h-10 transition-all bg-[#000000c1] hover:bg-black'>
+                <svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='#ffffff' strokeWidth='2' strokeLinecap='round' strokeLinejoin='round'>
+                  <polygon points='5 3 19 12 5 21 5 3' />
+                </svg>
+              </button>
+              <img src='https://images.pexels.com/photos/144428/pexels-photo-144428.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' className='object-cover' alt='cover' />
+            </div>
+            <div className='flex flex-col items-start w-full p-4 space-y-2'>
+              <div>
+                <h1 className='font-medium'>Why did you do it</h1>
+                <span className='text-xs'>Stretch</span>
+              </div>
+              <button className='flex items-center justify-center text-xs rounded-full px-2 py-1 space-x-1 bg-white text-black'>
+                <svg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg' width='14' height='14'>
+                  <path fill='currentColor' d='M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701' />
+                </svg>
+                <span className='mt-[1px]'>Music</span>
+              </button>
+            </div>
+          </a>
+        </div>
 
       </div>
     </div>
