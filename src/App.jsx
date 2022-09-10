@@ -685,6 +685,38 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-start justify-start space-x-2'>
+            <svg swidth='22' height='22' viewBox='0 0 24 24' className='mt-[1px]'>
+              <path fill='currentColor' d='M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z' />
+            </svg>
+            <div className='flex flex-col'>
+              <div className='font-medium text-base'>Financing system</div>
+              <div className='flex items-center flex-row space-x-2'>
+                <span className='text-slate-400'>Updated today</span>
+                <div className='flex items-center'>
+                  <span className='text-xs'>12,5%</span>
+                  <svg swidth='24' height='24' viewBox='0 0 24 24'>
+                    <path fill='currentColor' d='M7,15L12,10L17,15H7Z' />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='block'>
+            <dt className='sr-only'>Users</dt>
+            <dd className='flex justify-start -space-x-1.5'>
+              <a href='#' className='inline-block -m-1'>
+                <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/women/19.jpg' alt='avatar' />
+              </a>
+              <a href='#' className='inline-block -m-1'>
+                <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/men/12.jpg' alt='avatar' />
+              </a>
+            </dd>
+          </div>
+        </div>
+
+        {/** widget */}
         <button type='button' className='break-inside text-center bg-[#1E49E2] rounded-xl p-4 mb-4 w-full'>
           <span className='uppercase font-medium text-white'>Send files now</span>
         </button>
