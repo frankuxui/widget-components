@@ -717,6 +717,22 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside rounded-xl p-4 mb-4 text-sm bg-[#0C23F1] text-white'>
+          <div className='flex items-start justify-start space-x-3'>
+            <svg swidth='23' height='24' viewBox='0 0 24 24' className='mt-[1px]'>
+              <path fill='currentColor' d='M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z' />
+            </svg>
+            <div className='flex flex-col'>
+              <div className='text-xs'>Validated 3 weeks ago</div>
+              <div className='flex items-center flex-row'>
+                <span className='font-medium text-base'>Upgrade team</span>
+              </div>
+            </div>
+          </div>
+          <button className='inline-flex justify-center items-center rounded-md py-1 px-3 font-medium tracking-wide text-sm transition-all bg-white text-[#0C23F1]'>Approve</button>
+        </div>
+
+        {/** widget */}
         <button type='button' className='break-inside text-center bg-[#1E49E2] rounded-xl p-4 mb-4 w-full'>
           <span className='uppercase font-medium text-white'>Send files now</span>
         </button>
