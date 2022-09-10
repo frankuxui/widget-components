@@ -2668,6 +2668,21 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside relative overflow-hidden flex flex-row justify-between text-sm mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-start justify-between p-4'>
+            <p>This is an alert in progress and may take several minutes...</p>
+            <button className='flex flex-none items-center justify-center w-10 h-10 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
+              <svg width='26' height='26' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z' />
+              </svg>
+            </button>
+          </div>
+          <div className='absolute bottom-0 w-full h-[3px] bg-slate-100 overflow-hidden'>
+            <div className='absolute left-0 w-[83%] h-full bg-[#a202ff]' />
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside relative overflow-hidden flex flex-row justify-between text-sm rounded-xl mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
           <div className='flex items-start justify-between p-4'>
             <p>This is an alert in progress and may take several minutes...</p>
