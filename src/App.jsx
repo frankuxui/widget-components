@@ -664,6 +664,27 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 text-sm dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-center justify-start space-x-2'>
+            <svg swidth='26' height='26' viewBox='0 0 24 24'>
+              <path fill='currentColor' d='M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z' />
+            </svg>
+            <div className='font-medium text-base line-through'>Business goals</div>
+          </div>
+          <div className='block'>
+            <dt className='sr-only'>Users</dt>
+            <dd className='flex justify-start -space-x-1.5'>
+              <a href='#' className='inline-block -m-1'>
+                <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/women/37.jpg' alt='avatar' />
+              </a>
+              <a href='#' className='inline-block -m-1'>
+                <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-800' src='https://randomuser.me/api/portraits/men/78.jpg' alt='avatar' />
+              </a>
+            </dd>
+          </div>
+        </div>
+
+        {/** widget */}
         <button type='button' className='break-inside text-center bg-[#1E49E2] rounded-xl p-4 mb-4 w-full'>
           <span className='uppercase font-medium text-white'>Send files now</span>
         </button>
@@ -975,17 +996,17 @@ function App () {
             <div className='block'>
               <dt className='sr-only'>Users</dt>
               <dd className='flex justify-start -space-x-1.5'>
-                <a href='#' className='inline-block -m-2'>
-                  <img className='w-10 h-10 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/women/48.jpg' alt='avatar' />
+                <a href='#' className='inline-block -m-1'>
+                  <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/women/48.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-10 h-10 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/men/15.jpg' alt='avatar' />
+                  <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/men/15.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-10 h-10 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/women/37.jpg' alt='avatar' />
+                  <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/women/37.jpg' alt='avatar' />
                 </a>
                 <a href='#' className='inline-block -m-1'>
-                  <img className='w-10 h-10 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/men/78.jpg' alt='avatar' />
+                  <img className='w-9 h-9 rounded-full ring-2 ring-white dark:ring-slate-700' src='https://randomuser.me/api/portraits/men/78.jpg' alt='avatar' />
                 </a>
               </dd>
             </div>
