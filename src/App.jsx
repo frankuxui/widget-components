@@ -2668,6 +2668,66 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside relative flex flex-row justify-between rounded-xl text-sm mb-4 bg-white text-black dark:bg-slate-800 dark:text-white shadow-[0_1px_3px_rgba(15,23,42,0.03),0_1px_2px_rgba(15,23,42,0.06)] ring-1 ring-slate-600/[0.04]'>
+          <div className='flex items-start justify-between p-4 space-x-3'>
+            <div className='relative'>
+              <span className='absolute -bottom-1 right-0 flex w-3 h-3 rounded-full ring-2 ring-white bg-[#ff007b] dark:ring-slate-800' />
+              <svg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 120 120'>
+                <defs>
+                  <linearGradient id='a' x1='50%' x2='50%' y1='0%' y2='100%'>
+                    <stop offset='0%' stopColor='#008EE7' />
+                    <stop offset='100%' stopColor='#00D6FA' />
+                  </linearGradient>
+                </defs>
+                <g fill='none' fill-rule='evenodd'>
+                  <rect width='120' height='120' fill='url(#a)' rx='28' />
+                  <path fill='#FFF' d='M25.114 84.964l21.196-21.95 5.13 5.165a12.553 12.553 0 0 0 17.84 0l4.64-4.672L94.666 84.99c-.331.07-.675.106-1.027.106H26.26c-.394 0-.778-.046-1.146-.132zm73.392-46.215c.087.37.133.755.133 1.151v40.196c0 1.29-.489 2.466-1.29 3.353L76.033 61.378l22.472-22.63zM21.36 81.094V40.9c0-.868.221-1.685.61-2.397l22.226 22.382L22.482 83.37a4.983 4.983 0 0 1-1.122-2.277zm75.467-45.046L67.189 65.685c-3.905 3.906-10.237 3.906-14.142 0L23.26 35.9c.835-.627 1.874-.999 3-.999h67.378a4.98 4.98 0 0 1 3.188 1.148z' />
+                </g>
+              </svg>
+            </div>
+            <p>This is an alert in progress and may take several minutes...</p>
+          </div>
+          <svg viewBox='0 0 384 12' fill='none' aria-hidden='true' className='absolute top-full right-0 w-full max-w-[120%] transition'>
+            <mask id=':r1:-a' maskUnits='userSpaceOnUse' x='48' y='0' width='100%' height='4'>
+              <path transform='rotate(180 316.656 4)' fill='#C4C4C4' d='M316.656 4h268v4h-268z' />
+            </mask>
+            <g filter='url(#:r1:-b)' mask='url(#:r1:-a)'>
+              <path transform='rotate(180 292.656 1)' fill='url(#:r1:-c)' d='M292.656 1h220v2h-220z' />
+            </g>
+            <mask id=':r1:-d' maskUnits='userSpaceOnUse' x='116' y='0' width='268' height='12'>
+              <path transform='rotate(180 384 12)' fill='#C4C4C4' d='M384 12h268v12H384z' />
+            </mask>
+            <g filter='url(#:r1:-e)' mask='url(#:r1:-d)'>
+              <path transform='rotate(180 360 1)' fill='url(#:r1:-f)' d='M360 1h220v2H360z' />
+            </g>
+            <defs>
+              <linearGradient id=':r1:-c' x1='292.656' y1='1' x2='512.656' y2='1' gradientUnits='userSpaceOnUse'>
+                <stop stopColor='#A78BFA' stopOpacity='0' />
+                <stop offset='.323' stopColor='#A78BFA' />
+                <stop offset='.672' stopColor='#EC4899' stopOpacity='.3' />
+                <stop offset='1' stopColor='#EC4899' stopOpacity='0' />
+              </linearGradient>
+              <linearGradient id=':r1:-f' x1='360' y1='1' x2='580' y2='1' gradientUnits='userSpaceOnUse'>
+                <stop stopColor='#A78BFA' stopOpacity='0' />
+                <stop offset='.323' stopColor='#A78BFA' />
+                <stop offset='.672' stopColor='#EC4899' stopOpacity='.3' />
+                <stop offset='1' stopColor='#EC4899' stopOpacity='0' />
+              </linearGradient>
+              <filter id=':r1:-b' x='71.656' y='-2' width='222' height='4' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>
+                <feFlood floodOpacity='0' result='BackgroundImageFix' />
+                <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
+                <feGaussianBlur stdDeviation='.5' result='effect1_foregroundBlur_311_43467' />
+              </filter>
+              <filter id=':r1:-e' x='131' y='-10' width='238' height='20' filterUnits='userSpaceOnUse' colorInterpolationFilters='sRGB'>
+                <feFlood floodOpacity='0' result='BackgroundImageFix' />
+                <feBlend in='SourceGraphic' in2='BackgroundImageFix' result='shape' />
+                <feGaussianBlur stdDeviation='4.5' result='effect1_foregroundBlur_311_43467' />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+
+        {/** widget */}
         <div className='break-inside relative overflow-hidden flex flex-row justify-between text-sm mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
           <div className='flex items-start justify-between p-4'>
             <p>This is an alert in progress and may take several minutes...</p>
