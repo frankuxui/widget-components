@@ -740,7 +740,7 @@ function App () {
         {/** widget */}
         <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 text-base  dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#2AB849] w-11 h-11 rounded-full'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#2AB849] w-9 h-9 rounded-full'>
               <svg width='22' height='12' viewBox='0 0 24 14' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M0.33252 8.065L5.98752 13.72L7.39752 12.3L1.74752 6.65L0.33252 8.065ZM22.2465 0.280999L11.6475 10.891L7.41052 6.643L5.98052 8.053L11.6475 13.72L23.6675 1.701L22.2475 0.280999H22.2465ZM18.0095 1.7L16.5995 0.279999L10.2285 6.65L11.6485 8.06L18.0085 1.7H18.0095Z' fill='white' />
               </svg>
@@ -753,7 +753,7 @@ function App () {
         {/** widget */}
         <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 text-base dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#09C6D2] w-11 h-11 rounded-full'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#09C6D2] w-9 h-9 rounded-full'>
               <svg width='22' height='22' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M10 14.0714C9.19475 14.0714 8.40758 13.8326 7.73804 13.3853C7.06849 12.9379 6.54665 12.302 6.23849 11.5581C5.93033 10.8141 5.84971 9.99548 6.0068 9.2057C6.1639 8.41592 6.55167 7.69047 7.12107 7.12107C7.69047 6.55167 8.41592 6.1639 9.2057 6.0068C9.99548 5.84971 10.8141 5.93033 11.5581 6.23849C12.302 6.54665 12.9379 7.06849 13.3853 7.73804C13.8326 8.40758 14.0714 9.19475 14.0714 10C14.0702 11.0794 13.6408 12.1143 12.8775 12.8775C12.1143 13.6408 11.0794 14.0702 10 14.0714ZM10 7.28571C9.46317 7.28571 8.93839 7.4449 8.49202 7.74315C8.04566 8.0414 7.69776 8.46532 7.49233 8.96129C7.28689 9.45726 7.23314 10.003 7.33787 10.5295C7.4426 11.0561 7.70111 11.5397 8.08071 11.9193C8.46031 12.2989 8.94395 12.5574 9.47047 12.6621C9.99699 12.7669 10.5427 12.7131 11.0387 12.5077C11.5347 12.3022 11.9586 11.9543 12.2568 11.508C12.5551 11.0616 12.7143 10.5368 12.7143 10C12.7134 9.2804 12.4271 8.59053 11.9183 8.0817C11.4095 7.57287 10.7196 7.28661 10 7.28571Z' fill='white' />
                 <path d='M10 16.7857C9.04546 16.785 8.10177 16.5832 7.2304 16.1936C6.35902 15.8039 5.5795 15.235 4.9426 14.524L5.95368 13.6188C6.55733 14.2938 7.32024 14.8071 8.17295 15.1118C9.02565 15.4166 9.94105 15.5033 10.8358 15.3639C11.7305 15.2245 12.5762 14.8634 13.2958 14.3137C14.0153 13.7639 14.5859 13.0429 14.9556 12.2163C15.3253 11.3897 15.4824 10.4837 15.4125 9.58085C15.3425 8.67801 15.0479 7.80701 14.5553 7.04716C14.0628 6.2873 13.3879 5.66273 12.5923 5.23033C11.7967 4.79792 10.9055 4.57141 10 4.57143V3.21429C11.7997 3.21429 13.5257 3.92921 14.7982 5.20177C16.0708 6.47434 16.7857 8.20032 16.7857 10C16.7857 11.7997 16.0708 13.5257 14.7982 14.7982C13.5257 16.0708 11.7997 16.7857 10 16.7857Z' fill='white' />
@@ -766,9 +766,33 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside bg-slate-100 rounded-xl gap-2 p-2 mb-4 text-sm dark:bg-slate-800'>
+          <div className='flex flex-1 items-start flex-col p-4 space-y-2 rounded-lg bg-white text-black dark:bg-slate-700 dark:text-white shadow-lg'>
+            <h1 className='font-medium text-slate-500 dark:text-slate-400'>Current trends</h1>
+            <h2 className='font-bold text-3xl'>3242</h2>
+            <div className='flex items-center  space-x-2 py-1 px-2 font-medium rounded-md text-[#f4006e] bg-[#f4006e16] dark:bg-[#b2417467]'>
+              <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z' fill='currentColor' />
+              </svg>
+              <span>43%</span>
+            </div>
+          </div>
+          <div className='flex flex-1 items-start flex-col p-4 rounded-lg space-y-2 bg-transparent text-black dark:text-white'>
+            <h1 className='font-medium text-slate-500 dark:text-slate-400'>Customers</h1>
+            <h2 className='font-bold text-3xl'>1045K</h2>
+            <div className='flex items-center  space-x-2 py-1 px-2 font-medium rounded-md text-[#0ac66b] bg-[#00e1741e]'>
+              <svg width='20' height='20' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z' fill='currentColor' />
+              </svg>
+              <span>43%</span>
+            </div>
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-11 h-11 rounded-full'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-9 h-9 rounded-full'>
               <svg width='16' height='20' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
                 <path d='M12.3857 7.11111H10.7143V4.84444C10.7143 2.10839 9.47464 0.5 7 0.5C4.52443 0.5 3.28571 2.10839 3.28571 4.84444V7.11111H1.42857C0.915071 7.11111 0.5 7.72122 0.5 8.2435V15.6111C0.5 16.1296 0.897429 16.6868 1.38307 16.8455L2.49457 17.211C3.08412 17.3858 3.69329 17.4829 4.30714 17.5H9.69286C10.3065 17.4831 10.9154 17.3856 11.5045 17.2101L12.6151 16.8446C13.1016 16.6868 13.5 16.1296 13.5 15.6111V8.2435C13.5 7.72122 12.8983 7.11111 12.3857 7.11111ZM8.85714 7.11111H5.14286V4.46572C5.14286 3.101 5.88293 2.38889 7 2.38889C8.11707 2.38889 8.85714 3.101 8.85714 4.46572V7.11111Z' fill='white' />
               </svg>

@@ -10,7 +10,7 @@ html, body{
 }
 body {
   display: flex;
-  background-color: #E2E9EE;
+  background-color: #e2e8f0;
   justify-content: space-between;
   flex-direction: column;
   min-height: 100vh;
