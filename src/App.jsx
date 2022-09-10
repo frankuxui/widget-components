@@ -766,6 +766,23 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-center justify-start space-x-4'>
+            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-9 h-9 rounded-full'>
+              <svg width='16' height='20' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                <path d='M12.3857 7.11111H10.7143V4.84444C10.7143 2.10839 9.47464 0.5 7 0.5C4.52443 0.5 3.28571 2.10839 3.28571 4.84444V7.11111H1.42857C0.915071 7.11111 0.5 7.72122 0.5 8.2435V15.6111C0.5 16.1296 0.897429 16.6868 1.38307 16.8455L2.49457 17.211C3.08412 17.3858 3.69329 17.4829 4.30714 17.5H9.69286C10.3065 17.4831 10.9154 17.3856 11.5045 17.2101L12.6151 16.8446C13.1016 16.6868 13.5 16.1296 13.5 15.6111V8.2435C13.5 7.72122 12.8983 7.11111 12.3857 7.11111ZM8.85714 7.11111H5.14286V4.46572C5.14286 3.101 5.88293 2.38889 7 2.38889C8.11707 2.38889 8.85714 3.101 8.85714 4.46572V7.11111Z' fill='white' />
+              </svg>
+            </div>
+            <span className='font-medium'>Blocked up</span>
+          </div>
+          <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
+            <svg width='26' height='26' viewBox='0 0 24 24'>
+              <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+            </svg>
+          </button>
+        </div>
+
+        {/** widget */}
         <div className='flex flex-row justify-between items-center break-inside bg-slate-100 rounded-xl gap-2 p-2 mb-4 text-sm dark:bg-slate-800'>
           <div className='flex flex-1 items-start flex-col p-4 space-y-2 rounded-lg bg-white text-black dark:bg-slate-700 dark:text-white shadow-lg'>
             <h1 className='font-medium text-slate-500 dark:text-slate-400'>Current trends</h1>
@@ -790,20 +807,23 @@ function App () {
         </div>
 
         {/** widget */}
-        <div className='flex flex-row justify-between items-center break-inside bg-white rounded-xl p-4 mb-4 dark:bg-slate-800 dark:text-white'>
-          <div className='flex items-center justify-start space-x-4'>
-            <div className='flex flex-row items-center justify-center space-x-4 bg-[#D20939] w-9 h-9 rounded-full'>
-              <svg width='16' height='20' viewBox='0 0 14 18' fill='none' xmlns='http://www.w3.org/2000/svg'>
-                <path d='M12.3857 7.11111H10.7143V4.84444C10.7143 2.10839 9.47464 0.5 7 0.5C4.52443 0.5 3.28571 2.10839 3.28571 4.84444V7.11111H1.42857C0.915071 7.11111 0.5 7.72122 0.5 8.2435V15.6111C0.5 16.1296 0.897429 16.6868 1.38307 16.8455L2.49457 17.211C3.08412 17.3858 3.69329 17.4829 4.30714 17.5H9.69286C10.3065 17.4831 10.9154 17.3856 11.5045 17.2101L12.6151 16.8446C13.1016 16.6868 13.5 16.1296 13.5 15.6111V8.2435C13.5 7.72122 12.8983 7.11111 12.3857 7.11111ZM8.85714 7.11111H5.14286V4.46572C5.14286 3.101 5.88293 2.38889 7 2.38889C8.11707 2.38889 8.85714 3.101 8.85714 4.46572V7.11111Z' fill='white' />
-              </svg>
-            </div>
-            <span className='font-medium'>Blocked up</span>
-          </div>
-          <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
-            <svg width='26' height='26' viewBox='0 0 24 24'>
-              <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+        <div className='flex flex-row justify-between items-center break-inside rounded-full p-2 mb-4 text-sm bg-slate-100 text-black dark:text-white dark:bg-slate-800'>
+          <a href='#' className='flex flex-1 items-center justify-center px-2 py-3 rounded-full h-full'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width='24' height='24'>
+              <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+
             </svg>
-          </button>
+          </a>
+          <a href='#' className='flex flex-1 items-center justify-center px-2 py-3 rounded-full h-full bg-white dark:bg-slate-700 dark:text-white shadow-sm'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width='24' height='24'>
+              <path fillRule="evenodd" d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z" clipRule="evenodd" />
+            </svg>
+          </a>
+          <a href='#' className='flex flex-1 items-center justify-center px-2 py-3 rounded-full h-full'>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width='24' height='24'>
+              <path d="M18.75 12.75h1.5a.75.75 0 000-1.5h-1.5a.75.75 0 000 1.5zM12 6a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 0112 6zM12 18a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 0112 18zM3.75 6.75h1.5a.75.75 0 100-1.5h-1.5a.75.75 0 000 1.5zM5.25 18.75h-1.5a.75.75 0 010-1.5h1.5a.75.75 0 010 1.5zM3 12a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5A.75.75 0 013 12zM9 3.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5zM12.75 12a2.25 2.25 0 114.5 0 2.25 2.25 0 01-4.5 0zM9 15.75a2.25 2.25 0 100 4.5 2.25 2.25 0 000-4.5z" />
+            </svg>
+          </a>
         </div>
 
         {/** widget */}
