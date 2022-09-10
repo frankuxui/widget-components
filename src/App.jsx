@@ -2668,6 +2668,21 @@ function App () {
         </div>
 
         {/** widget */}
+        <div className='break-inside relative overflow-hidden flex flex-row justify-between text-sm rounded-xl mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
+          <div className='flex items-start justify-between p-4'>
+            <p>This is an alert in progress and may take several minutes...</p>
+            <button className='inline-flex items-center justify-center p-1 transition-all rounded-full hover:bg-gray-100 dark:hover:bg-slate-600'>
+              <svg width='26' height='26' viewBox='0 0 24 24'>
+                <path fill='currentColor' d='M16,12A2,2 0 0,1 18,10A2,2 0 0,1 20,12A2,2 0 0,1 18,14A2,2 0 0,1 16,12M10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14A2,2 0 0,1 10,12M4,12A2,2 0 0,1 6,10A2,2 0 0,1 8,12A2,2 0 0,1 6,14A2,2 0 0,1 4,12Z' />
+              </svg>
+            </button>
+          </div>
+          <div className='absolute bottom-0 w-full h-[5px] bg-slate-100 rounded-md overflow-hidden dark:bg-slate-500'>
+            <div className='absolute left-0 w-1/3 h-full bg-[#1024ff] dark:bg-[#dee1ff]' />
+          </div>
+        </div>
+
+        {/** widget */}
         <div className='break-inside relative overflow-hidden flex flex-col justify-between space-y-3 text-sm rounded-xl p-4 mb-4 bg-white text-black dark:bg-slate-800 dark:text-white'>
           <div className='flex items-center justify-between font-medium'>
             <span className='uppercase text-xs text-green-500'>upgrade team</span>
