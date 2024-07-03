@@ -1,6 +1,6 @@
 ## Widgets components
 
-[Widgets components](https://github.com/frankuxui/widget-components/blob/main/cover.jpg)
+![Alt text](https://github.com/frankuxui/widget-components/blob/main/cover.jpg)
 
 **"Este recurso está disponible de forma gratuita en la comunidad de [Figma](https://www.figma.com/community/file/1122657723598718827/widgets-components). Puedes acceder a él para utilizarlo en tus proyectos de diseño."**
 
